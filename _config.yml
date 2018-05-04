@@ -23,11 +23,10 @@ github_:  https://github.com/batfish
 
 # Build settings
 markdown: kramdown
-destination: docs
 
+safe: true
 plugins:
   - jekyll-feed
-  - bootstrap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
