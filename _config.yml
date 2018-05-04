@@ -16,7 +16,10 @@
 title: Batfish
 email: admin@batfish.org
 description: >- # this means to ignore newlines until "baseurl:"
-  
+
+#comment baseurl when ready to deploy on the production server
+baseurl: dev-batfish.github.io/
+
 url: "https://batfish.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_:  https://github.com/batfish
 
