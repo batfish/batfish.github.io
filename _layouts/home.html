@@ -1,0 +1,87 @@
+--- 
+layout: default 
+title: hello
+---
+
+<div class="home">
+  <!-- Main page block-->
+  <div class="container my-5 banner-container">
+    <div class="row">
+      <div class="col-6">
+        <h1 class="display-1">Batfish</h1>
+        <p class="lead">
+          An open source network configuration analysis tool
+        </p>
+      </div>
+      <div class="col-6">
+        <img id="batfish-logo" src="{{ '/assets/batfish-v1.svg' | relative_url }}" style="width: 500px !important;transform: translate(-15%,-15%);">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row my-3">
+      <h1>Welcome!</h1>
+      <p>Batfish is a network configuration analysis tool developed jointly by researchers at Intentionet, Inc.; University
+        of California, Los Angeles; University of Southern California; and Microsoft Research. Though its individual modules
+        have various applications, its primary purpose is to detect bugs in network configurations.</p>
+
+
+    </div>
+    <h4>The Batfish pipeline consists of 4 stages:</h4>
+    <div class="row d-flex justify-content-center my-4">
+      <div class="card-deck">
+        <div class="card  border-0" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">1. Control plane generator:</h5>
+            <p class="card-text">Parses vendor configuration files into a unified format</p>
+          </div>
+        </div>
+        <div class="card  border-0" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">2. Data plane generator:</h5>
+            <p class="card-text">Computes the data plane corresponding to the input configuration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center my-4">
+      <div class="card-deck">
+        <div class="card  border-0" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">3. Safety Analyzer:</h5>
+            <p class="card-text">Checks specified safety properties and returns counterexamples if they exist</p>
+          </div>
+        </div>
+        <div class="card  border-0" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">4. Provenance Tracker:</h5>
+            <p class="card-text">Provides helpful information about the nature and source of discovered counterexamples</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if site.post.size > 0 -%}
+  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <ul class="post-list">
+    {%- for post in site.post -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.var | escape }}
+        </a>
+      </h3>
+      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">subscribe
+    <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+  </p>
+  {%- endif -%}
+</div>
