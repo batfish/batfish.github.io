@@ -4,12 +4,22 @@
 * 1.414 Augmented Fourth
 */
 
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url('../assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url('../assets/fonts/Raleway-Bold.ttf') format('truetype');
+}
+
 html {
     font-size: 1em;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-regular', sans-serif;
     font-weight: 400;
     line-height: 1.45;
     color: $color_body_text;
@@ -23,6 +33,7 @@ h1,
 h2,
 h3,
 h4 {
+    font-family: 'Raleway-bold', sans-serif;
     margin: 1.414em 0 0.5em;
     font-weight: inherit;
     line-height: 1.2;
