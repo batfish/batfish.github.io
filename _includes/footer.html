@@ -1,23 +1,18 @@
-<footer class="site-footer border-top">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="container p-5">
+<footer class="site-footer accent-border-top">
+  <data class="u-url" href="{{ " / " | relative_url }}"></data>
+  <div class="container py-5">
     <div class="row">
-      <div class="col-5">
-          <div class="card border-0">
-   
-              <div class="card-body">
-    <p class="card-text">
-      Batfish is being maintained and released as a commercial product by <a href="https://www.intentionet.com">Intentionet</a>
-                </p>
-              </div>
-            </div>
+      <div class="col-12 col-md-5">
+        <h5 class="card-title">How do I get started?
+        </h5>
+        <p class="card-text">
+          Batfish is open source, visit us on
+          <a href="{{site.github-project-url}}">Github</a>
+        </p>
       </div>
-      
-      <div class="col-4">
-        <!-- <p>{{- site.description | escape -}}</p> -->
+      <div class="col-12 my-3 my-md-0 col-md-3 offset-md-4">
+        {%- include social.html -%}
       </div>
     </div>
-
   </div>
-
 </footer>
