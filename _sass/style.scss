@@ -1,15 +1,5 @@
-@charset "utf-8";
-
-.banner-container{
-    height: 25vh;
-    min-height: 200px;
-    max-height: 300px;
-}
-
-#batfish-logo{
-    max-width: initial;
-}
-
-.container{
-    max-width: 960px;
-}
+@import "variables";
+@import "typography";
+@import "sections";
+@import "misc";
+@import "media-queries";

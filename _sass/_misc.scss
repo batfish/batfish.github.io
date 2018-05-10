@@ -1,0 +1,20 @@
+.bg-none {
+    background: none;
+    background-color: none;
+}
+
+.accent-border-top {
+    border-top: 1px solid $color_accent_2 !important;
+}
+
+.color-muted {
+    color: $color_muted;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to bottom, #2e2d42, #2c263e, #2a1f38, #291733, #280f2c);
+}
+
+.bg-gradient-1 {
+    background: linear-gradient(to bottom, #4c357f, #392760);
+}

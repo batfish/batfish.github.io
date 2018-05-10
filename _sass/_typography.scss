@@ -1,0 +1,73 @@
+/**
+* Typography
+* https://type-scale.com/ 
+* 1.414 Augmented Fourth
+*/
+
+@font-face {
+    font-family: 'Raleway-regular';
+    src: url('../assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url('../assets/fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Raleway-regular', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: $color_body_text;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway-bold', sans-serif;
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.998em;
+}
+
+h2 {
+    font-size: 2.827em;
+}
+
+h3 {
+    font-size: 1.999em;
+}
+
+h4 {
+    font-size: 1.414em;
+}
+
+small,
+.font_small {
+    font-size: 0.807em;
+}
+
+/* Color */
+
+a {
+    color: $color_accent;
+}
+
+a:hover {
+    color: $color_accent;
+    text-decoration: underline;
+}

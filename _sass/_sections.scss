@@ -1,0 +1,57 @@
+.page-content {
+    min-height: 84vh;
+}
+
+.banner-container {
+    padding-top: 10rem !important;
+    padding-bottom: 6rem !important;
+}
+
+#batfish-logo {
+    max-width: 400px;
+}
+
+.social-media-list {
+    a {
+        display: flex;
+        align-items: center;
+    }
+    .svg-icon {
+        fill: $color_accent;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+}
+
+.site-footer {
+    background: $color_contrast;
+    ul {
+        list-style: none;
+        padding: 0px;
+        color: $color_body_text;
+    }
+}
+
+.site-sub-footer {
+    background: $color_contrast;
+    border-top: 1px solid $color_muted;
+}
+
+.content-row {
+    h4 {
+        color: $color_accent;
+    }
+    p {
+        margin: 0px;
+    }
+}
+
+.section {
+    margin: 8rem 0rem;
+    .section-title {
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
