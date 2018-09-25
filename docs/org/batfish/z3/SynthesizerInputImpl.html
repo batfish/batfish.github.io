@@ -160,14 +160,14 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getAclActions--">getAclActions</a></span>()</code>
-<div class="block">Mapping: hostname -> aclName -> lineNumber -> lineAction <br>
+<div class="block">Mapping: hostname -&gt; aclName -&gt; lineNumber -&gt; lineAction <br>
  This mapping contains only the acls that are required for the operation this <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3"><code>SynthesizerInput</code></a> is being used for.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getAclConditions--">getAclConditions</a></span>()</code>
-<div class="block">Mapping: hostname -> aclName -> lineNumber -> lineConditions <br>
+<div class="block">Mapping: hostname -&gt; aclName -&gt; lineNumber -&gt; lineConditions <br>
  lineConditions is a boolean expression representing the constraints on a header necessary for
  that line to be matched.</div>
 </td>
@@ -175,7 +175,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getArpTrueEdge--">getArpTrueEdge</a></span>()</code>
-<div class="block">Mapping: hostname -> vrfName -> outInterface -> recvNode -> recvInterface ->
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; recvNode -&gt; recvInterface -&gt;
  dstIpConstraintForWhichArpReplySent</div>
 </td>
 </tr>
@@ -186,13 +186,13 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getEnabledInterfaces--">getEnabledInterfaces</a></span>()</code>
-<div class="block">Mapping: hostname -> interfaces</div>
+<div class="block">Mapping: hostname -&gt; interfaces</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getEnabledInterfacesByNodeVrf--">getEnabledInterfacesByNodeVrf</a></span>()</code>
-<div class="block">Mapping: hostname -> vrf -> interfaces</div>
+<div class="block">Mapping: hostname -&gt; vrf -&gt; interfaces</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -202,37 +202,37 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getEnabledVrfs--">getEnabledVrfs</a></span>()</code>
-<div class="block">Mapping: hostname -> vrfs</div>
+<div class="block">Mapping: hostname -&gt; vrfs</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getIncomingAcls--">getIncomingAcls</a></span>()</code>
-<div class="block">Mapping: hostname -> interface-> incomingAcl</div>
+<div class="block">Mapping: hostname -&gt; interface-&gt; incomingAcl</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByHostname--">getIpsByHostname</a></span>()</code>
-<div class="block">Mapping: hostname -> ipsOwnedByHostname</div>
+<div class="block">Mapping: hostname -&gt; ipsOwnedByHostname</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></span>()</code>
-<div class="block">Mapping: hostname -> vrf -> ipsOwnedByVrf</div>
+<div class="block">Mapping: hostname -&gt; vrf -&gt; ipsOwnedByVrf</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getNamedIpSpaces--">getNamedIpSpaces</a></span>()</code>
-<div class="block">Mapping: hostname -> IpSpace name -> IpSpace</div>
+<div class="block">Mapping: hostname -&gt; IpSpace name -&gt; IpSpace</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getNeighborUnreachable--">getNeighborUnreachable</a></span>()</code>
-<div class="block">Mapping: hostname -> vrfName -> outInterface -> dstIpConstraintForWhichNoArpReplySent</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpConstraintForWhichNoArpReplySent</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
@@ -259,19 +259,19 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getNullRoutedIps--">getNullRoutedIps</a></span>()</code>
-<div class="block">Mapping: hostname -> vrfName -> nullRoutedIps</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; nullRoutedIps</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getOutgoingAcls--">getOutgoingAcls</a></span>()</code>
-<div class="block">Mapping: hostname -> interface-> outgoingAcl</div>
+<div class="block">Mapping: hostname -&gt; interface-&gt; outgoingAcl</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getRoutableIps--">getRoutableIps</a></span>()</code>
-<div class="block">Mapping: hostname -> vrfName -> routableIps</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; routableIps</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
@@ -289,13 +289,14 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getSourceInterfaceFieldValues--">getSourceInterfaceFieldValues</a></span>()</code>
-<div class="block">Mapping: hostname -> interface -> constraint on transformed source interface field</div>
+<div class="block">Mapping: hostname -&gt; interface -&gt; constraint on transformed source interface field</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="../../../org/batfish/z3/state/AclPermit.html" title="class in org.batfish.z3.state">AclPermit</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getSourceNats--">getSourceNats</a></span>()</code>
-<div class="block">Mapping: hostname -> interface -> [(preconditionPreTransformationState, transformationToApply)]</div>
+<div class="block">Mapping: hostname -&gt; interface -&gt; [(preconditionPreTransformationState,
+ transformationToApply)]</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -313,7 +314,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getTraversableInterfaces--">getTraversableInterfaces</a></span>()</code>
-<div class="block">Mapping: hostname -> interfacesAllowedToBelongToAnEdge</div>
+<div class="block">Mapping: hostname -&gt; interfacesAllowedToBelongToAnEdge</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
@@ -368,7 +369,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getAclActions</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&gt;&gt;&gt;&nbsp;getAclActions()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getAclActions--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> aclName -> lineNumber -> lineAction <br>
+<div class="block">Mapping: hostname -&gt; aclName -&gt; lineNumber -&gt; lineAction <br>
  This mapping contains only the acls that are required for the operation this <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3"><code>SynthesizerInput</code></a> is being used for. Specifically, for ACL-reachability this should contain all
  ACLs, while for other reachability queries this will only contain ACLs that a packet could
  reasonably encounter (e.g. ACLs assigned to interfaces).</div>
@@ -385,7 +386,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <li class="blockList">
 <h4>getAclConditions</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&nbsp;getAclConditions()</pre>
-<div class="block">Mapping: hostname -> aclName -> lineNumber -> lineConditions <br>
+<div class="block">Mapping: hostname -&gt; aclName -&gt; lineNumber -&gt; lineConditions <br>
  lineConditions is a boolean expression representing the constraints on a header necessary for
  that line to be matched.</div>
 <dl>
@@ -402,7 +403,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getArpTrueEdge</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&gt;&gt;&nbsp;getArpTrueEdge()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getArpTrueEdge--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrfName -> outInterface -> recvNode -> recvInterface ->
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; recvNode -&gt; recvInterface -&gt;
  dstIpConstraintForWhichArpReplySent</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -431,7 +432,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getEnabledInterfaces</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getEnabledInterfaces()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledInterfaces--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interfaces</div>
+<div class="block">Mapping: hostname -&gt; interfaces</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledInterfaces--">getEnabledInterfaces</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -446,7 +447,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getEnabledInterfacesByNodeVrf</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;getEnabledInterfacesByNodeVrf()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledInterfacesByNodeVrf--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrf -> interfaces</div>
+<div class="block">Mapping: hostname -&gt; vrf -&gt; interfaces</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledInterfacesByNodeVrf--">getEnabledInterfacesByNodeVrf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -474,7 +475,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getEnabledVrfs</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getEnabledVrfs()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledVrfs--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrfs</div>
+<div class="block">Mapping: hostname -&gt; vrfs</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getEnabledVrfs--">getEnabledVrfs</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -489,7 +490,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getIncomingAcls</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getIncomingAcls()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIncomingAcls--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interface-> incomingAcl</div>
+<div class="block">Mapping: hostname -&gt; interface-&gt; incomingAcl</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIncomingAcls--">getIncomingAcls</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -519,7 +520,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getIpsByHostname</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&nbsp;getIpsByHostname()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIpsByHostname--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> ipsOwnedByHostname</div>
+<div class="block">Mapping: hostname -&gt; ipsOwnedByHostname</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIpsByHostname--">getIpsByHostname</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -534,7 +535,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getIpsByNodeVrf</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;&nbsp;getIpsByNodeVrf()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIpsByNodeVrf--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrf -> ipsOwnedByVrf</div>
+<div class="block">Mapping: hostname -&gt; vrf -&gt; ipsOwnedByVrf</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -549,7 +550,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getNamedIpSpaces</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&nbsp;getNamedIpSpaces()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNamedIpSpaces--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> IpSpace name -> IpSpace</div>
+<div class="block">Mapping: hostname -&gt; IpSpace name -&gt; IpSpace</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNamedIpSpaces--">getNamedIpSpaces</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -564,7 +565,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getNeighborUnreachable</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&nbsp;getNeighborUnreachable()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachable--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrfName -> outInterface -> dstIpConstraintForWhichNoArpReplySent</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpConstraintForWhichNoArpReplySent</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachable--">getNeighborUnreachable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -593,7 +594,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getNullRoutedIps</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&nbsp;getNullRoutedIps()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNullRoutedIps--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrfName -> nullRoutedIps</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; nullRoutedIps</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNullRoutedIps--">getNullRoutedIps</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -608,7 +609,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getOutgoingAcls</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getOutgoingAcls()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getOutgoingAcls--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interface-> outgoingAcl</div>
+<div class="block">Mapping: hostname -&gt; interface-&gt; outgoingAcl</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getOutgoingAcls--">getOutgoingAcls</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -623,7 +624,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getRoutableIps</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&nbsp;getRoutableIps()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getRoutableIps--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> vrfName -> routableIps</div>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; routableIps</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getRoutableIps--">getRoutableIps</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -653,7 +654,8 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getSourceNats</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="../../../org/batfish/z3/state/AclPermit.html" title="class in org.batfish.z3.state">AclPermit</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&gt;&nbsp;getSourceNats()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getSourceNats--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interface -> [(preconditionPreTransformationState, transformationToApply)]</div>
+<div class="block">Mapping: hostname -&gt; interface -&gt; [(preconditionPreTransformationState,
+ transformationToApply)]</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getSourceNats--">getSourceNats</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -683,7 +685,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getTraversableInterfaces</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getTraversableInterfaces()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getTraversableInterfaces--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interfacesAllowedToBelongToAnEdge</div>
+<div class="block">Mapping: hostname -&gt; interfacesAllowedToBelongToAnEdge</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getTraversableInterfaces--">getTraversableInterfaces</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
@@ -745,7 +747,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 <h4>getSourceInterfaceFieldValues</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&gt;&nbsp;getSourceInterfaceFieldValues()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getSourceInterfaceFieldValues--">SynthesizerInput</a></code></span></div>
-<div class="block">Mapping: hostname -> interface -> constraint on transformed source interface field</div>
+<div class="block">Mapping: hostname -&gt; interface -&gt; constraint on transformed source interface field</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getSourceInterfaceFieldValues--">getSourceInterfaceFieldValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>

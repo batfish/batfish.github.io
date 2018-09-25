@@ -176,9 +176,9 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#BgpSessionStatusQuestion-java.util.SortedSet-java.lang.Boolean-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.lang.String-java.lang.String-">BgpSessionStatusQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;foreignBgpGroups,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;includeEstablishedCount,
-                        <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;regex1,
-                        <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;regex2,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statusRegex,
+                        <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
+                        <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;status,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</code>
 <div class="block">Create a new BGP Session question.</div>
 </td>
@@ -217,11 +217,11 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getNode1Regex--">getNode1Regex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getNodes--">getNodes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getNode2Regex--">getNode2Regex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getRemoteNodes--">getRemoteNodes</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -273,24 +273,24 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;includeEstablishedCount,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;regex1,
+                                <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;regex2,
+                                <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statusRegex,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;status,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</pre>
 <div class="block">Create a new BGP Session question.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>foreignBgpGroups</code> - only look at peers that belong to a given named BGP group.</dd>
-<dd><code>includeEstablishedCount</code> - run post-dataplane analysis to see how many seesions get
+<dd><code>includeEstablishedCount</code> - run post-dataplane analysis to see how many sessions get
      actually established.</dd>
-<dd><code>regex1</code> - Regular expression to match the nodes names for one end of the sessions. Default
+<dd><code>nodes</code> - Regular expression to match the nodes names for one end of the sessions. Default
      is '.*' (all nodes).</dd>
-<dd><code>regex2</code> - Regular expression to match the nodes names for the other end of the sessions.
-     Default is '.*' (all nodes).</dd>
-<dd><code>statusRegex</code> - Regular expression to match status type (see <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><code>BgpSessionInfo.SessionStatus</code></a>)</dd>
+<dd><code>remoteNodes</code> - Regular expression to match the nodes names for the other end of the
+     sessions. Default is '.*' (all nodes).</dd>
+<dd><code>status</code> - Regular expression to match status type (see <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><code>BgpSessionInfo.SessionStatus</code></a>)</dd>
 <dd><code>type</code> - Regular expression to match session type (see <a href="../../../../org/batfish/datamodel/BgpSessionProperties.SessionType.html" title="enum in org.batfish.datamodel"><code>BgpSessionProperties.SessionType</code></a>)</dd>
 </dl>
 </li>
@@ -343,22 +343,22 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </dl>
 </li>
 </ul>
-<a name="getNode1Regex--">
+<a name="getNodes--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNode1Regex</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNode1Regex()</pre>
+<h4>getNodes</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodes()</pre>
 </li>
 </ul>
-<a name="getNode2Regex--">
+<a name="getRemoteNodes--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getNode2Regex</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNode2Regex()</pre>
+<h4>getRemoteNodes</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getRemoteNodes()</pre>
 </li>
 </ul>
 </li>

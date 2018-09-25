@@ -43,7 +43,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/datamodel/acl/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../org/batfish/datamodel/acl/normalize/package-summary.html">Prev&nbsp;Package</a></li>
 <li><a href="../../../../org/batfish/datamodel/collections/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
@@ -75,23 +75,6 @@
 <div class="contentContainer">
 <ul class="blockList">
 <li class="blockList">
-<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
-<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Interface</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLinesAnswerElementInterface.html" title="interface in org.batfish.datamodel.answers">AclLinesAnswerElementInterface</a></td>
-<td class="colLast">
-<div class="block">Interface for representing answers to aclReachability and aclReachability2.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
 <caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -100,38 +83,34 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLines2Rows.html" title="class in org.batfish.datamodel.answers">AclLines2Rows</a></td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclSpecs.html" title="class in org.batfish.datamodel.answers">AclSpecs</a></td>
 <td class="colLast">
-<div class="block">Represents answers to aclReachability2.</div>
+<div class="block">Representation of an ACL, including a <a href="../../../../org/batfish/datamodel/acl/CanonicalAcl.html" title="class in org.batfish.datamodel.acl"><code>CanonicalAcl</code></a> and all sources that contain that ACL
+ as a map of hostnames to sets of ACL names.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLinesAnswerElement.html" title="class in org.batfish.datamodel.answers">AclLinesAnswerElement</a></td>
-<td class="colLast">
-<div class="block">Represents answers to aclReachability.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLinesAnswerElement.AclReachabilityEntry.html" title="class in org.batfish.datamodel.answers">AclLinesAnswerElement.AclReachabilityEntry</a></td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclSpecs.Builder.html" title="class in org.batfish.datamodel.answers">AclSpecs.Builder</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLinesAnswerElementInterface.AclSpecs.html" title="class in org.batfish.datamodel.answers">AclLinesAnswerElementInterface.AclSpecs</a></td>
-<td class="colLast">
-<div class="block">Representation of an ACL, including a <a href="../../../../org/batfish/datamodel/acl/CanonicalAcl.html" title="class in org.batfish.datamodel.acl"><code>CanonicalAcl</code></a> and all sources that contain that
- ACL as a map of hostnames to sets of ACL names.</div>
-</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AclLinesAnswerElementInterface.AclSpecs.Builder.html" title="class in org.batfish.datamodel.answers">AclLinesAnswerElementInterface.AclSpecs.Builder</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerMetadata.Builder.html" title="class in org.batfish.datamodel.answers">AnswerMetadata.Builder</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerMetadataUtil.html" title="class in org.batfish.datamodel.answers">AnswerMetadataUtil</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -142,6 +121,14 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AutocompleteSuggestion.html" title="class in org.batfish.datamodel.answers">AutocompleteSuggestion</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/ColumnAggregation.html" title="class in org.batfish.datamodel.answers">ColumnAggregation</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/ColumnAggregationResult.html" title="class in org.batfish.datamodel.answers">ColumnAggregationResult</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -160,7 +147,17 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/FilterLineReachabilityRows.html" title="class in org.batfish.datamodel.answers">FilterLineReachabilityRows</a></td>
+<td class="colLast">
+<div class="block">Represents answers to aclReachability.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/FlattenVendorConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">FlattenVendorConfigurationAnswerElement</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/GetAnalysisAnswerMetricsAnswer.html" title="class in org.batfish.datamodel.answers">GetAnalysisAnswerMetricsAnswer</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -190,6 +187,26 @@
 <tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/JsonDiffAnswerElement.html" title="class in org.batfish.datamodel.answers">JsonDiffAnswerElement</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/MajorIssueConfig.html" title="class in org.batfish.datamodel.answers">MajorIssueConfig</a></td>
+<td class="colLast">
+<div class="block">Represents the configuration of a major issue type</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/Metrics.html" title="class in org.batfish.datamodel.answers">Metrics</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/Metrics.Builder.html" title="class in org.batfish.datamodel.answers">Metrics.Builder</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/MinorIssueConfig.html" title="class in org.batfish.datamodel.answers">MinorIssueConfig</a></td>
+<td class="colLast">
+<div class="block">Represents the configuration of a minor issue type</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/NodAnswerElement.html" title="class in org.batfish.datamodel.answers">NodAnswerElement</a></td>
@@ -228,10 +245,6 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/ReportAnswerElement.html" title="class in org.batfish.datamodel.answers">ReportAnswerElement</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/RoleConsistencyPolicy.html" title="class in org.batfish.datamodel.answers">RoleConsistencyPolicy</a></td>
 <td class="colLast">
 <div class="block">Represents an inferred policy for the network that all nodes belonging to the same role,
@@ -239,16 +252,20 @@
  node.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/RunAnalysisAnswerElement.html" title="class in org.batfish.datamodel.answers">RunAnalysisAnswerElement</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/Schema.html" title="class in org.batfish.datamodel.answers">Schema</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/SchemaUtils.html" title="class in org.batfish.datamodel.answers">SchemaUtils</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/SelfDescribingObject.html" title="class in org.batfish.datamodel.answers">SelfDescribingObject</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -271,11 +288,19 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerStatus.html" title="enum in org.batfish.datamodel.answers">AnswerStatus</a></td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/Aggregation.html" title="enum in org.batfish.datamodel.answers">Aggregation</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AnswerStatus.html" title="enum in org.batfish.datamodel.answers">AnswerStatus</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/AutocompleteSuggestion.CompletionType.html" title="enum in org.batfish.datamodel.answers">AutocompleteSuggestion.CompletionType</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/answers/FilterLineReachabilityRows.Reason.html" title="enum in org.batfish.datamodel.answers">FilterLineReachabilityRows.Reason</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -312,7 +337,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/datamodel/acl/package-summary.html">Prev&nbsp;Package</a></li>
+<li><a href="../../../../org/batfish/datamodel/acl/normalize/package-summary.html">Prev&nbsp;Package</a></li>
 <li><a href="../../../../org/batfish/datamodel/collections/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">

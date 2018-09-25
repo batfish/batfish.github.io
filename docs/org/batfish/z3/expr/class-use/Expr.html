@@ -230,7 +230,31 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AndExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/AndExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">TrueExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/TrueExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">VarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/VarIntExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">NotExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/NotExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">ExtractExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/ExtractExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">ListExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/ListExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">RangeMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/RangeMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">TransformedVarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/TransformedVarIntExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -238,51 +262,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">EqExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/EqExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected abstract boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Expr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/Expr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">ExtractExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/ExtractExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">FalseExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/FalseExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">HeaderSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/HeaderSpaceMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IdExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IdExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IfExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IfExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IfThenElse.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IfThenElse.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IpSpaceMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">ListExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/ListExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">LitIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/LitIntExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">NotExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/NotExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IfExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IfExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -294,7 +278,23 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">RangeMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/RangeMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">EqExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/EqExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">HeaderSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/HeaderSpaceMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IpSpaceMatchExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">FalseExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/FalseExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Expr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/Expr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -302,15 +302,15 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">TransformedVarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/TransformedVarIntExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IfThenElse.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IfThenElse.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">TrueExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/TrueExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AndExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/AndExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">VarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/VarIntExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IdExpr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/expr/IdExpr.html#exprEquals-org.batfish.z3.expr.Expr-">exprEquals</a></span>(<a href="../../../../../org/batfish/z3/expr/Expr.html" title="class in org.batfish.z3.expr">Expr</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -83,6 +83,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.common.ipspace">org.batfish.common.ipspace</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.common.plugin">org.batfish.common.plugin</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -107,58 +115,66 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.hsrp">org.batfish.datamodel.hsrp</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.ospf">org.batfish.datamodel.ospf</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions">org.batfish.datamodel.questions</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.routing_policy">org.batfish.datamodel.routing_policy</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.routing_policy.expr">org.batfish.datamodel.routing_policy.expr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.table">org.batfish.datamodel.table</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.vendor_family.juniper">org.batfish.datamodel.vendor_family.juniper</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.visitors">org.batfish.datamodel.visitors</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.ibdp">org.batfish.dataplane.ibdp</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.protocols">org.batfish.dataplane.protocols</a></td>
 <td class="colLast">
 <div class="block">package org.batfish.dataplane.protocols contains a group of helper classes and functions that
  implement logic specific to a given routing protocol.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.rib">org.batfish.dataplane.rib</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.main">org.batfish.main</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.ipsecsessionstatus">org.batfish.question.ipsecsessionstatus</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -190,14 +206,10 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.z3">org.batfish.z3</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.z3.expr">org.batfish.z3.expr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -206,6 +218,46 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDIpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.Ip-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.common.ipspace">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> in <a href="../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a> with parameters of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.common.plugin">
 <!--   -->
 </a>
@@ -240,8 +292,8 @@
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeInterfaceOwnedIps-java.util.Map-">computeInterfaceOwnedIps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</code>
-<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -> hostname -> interface name) to
- (hostname -> interface name -> Ip).</div>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ to (hostname -&gt; interface name -&gt; Ip).</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -288,7 +340,8 @@
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeIpVrfOwners-java.util.Map-java.util.Map-">computeIpVrfOwners</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</code>
-<div class="block">Aggregate a mapping (Ip -> host name -> interface name) to (Ip -> host name -> vrf name)</div>
+<div class="block">Aggregate a mapping (Ip -&gt; host name -&gt; interface name) to (Ip -&gt; host name -&gt; vrf
+ name)</div>
 </td>
 </tr>
 </tbody>
@@ -319,15 +372,15 @@
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeInterfaceOwnedIps-java.util.Map-">computeInterfaceOwnedIps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</code>
-<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -> hostname -> interface name) to
- (hostname -> interface name -> Ip).</div>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ to (hostname -&gt; interface name -&gt; Ip).</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeInterfaceOwnedIpSpaces-java.util.Map-">computeInterfaceOwnedIpSpaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</code>
-<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -> hostname -> interface name) and
- convert the set of owned Ips into an IpSpace.</div>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ and convert the set of owned Ips into an IpSpace.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -338,14 +391,15 @@
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeIpVrfOwners-java.util.Map-java.util.Map-">computeIpVrfOwners</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</code>
-<div class="block">Aggregate a mapping (Ip -> host name -> interface name) to (Ip -> host name -> vrf name)</div>
+<div class="block">Aggregate a mapping (Ip -&gt; host name -&gt; interface name) to (Ip -&gt; host name -&gt; vrf
+ name)</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">CommonUtil.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/util/CommonUtil.html#computeVrfOwnedIpSpaces-java.util.Map-">computeVrfOwnedIpSpaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipVrfOwners)</code>
-<div class="block">Invert a mapping from Ip to VRF owners (Ip -> host name -> VRF name) and combine all IPs owned
- by each VRF into an IpSpace.</div>
+<div class="block">Invert a mapping from Ip to VRF owners (Ip -&gt; host name -&gt; VRF name) and combine all IPs
+ owned by each VRF into an IpSpace.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -393,11 +447,11 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">OspfRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#Z:Z_nextHopIp">_nextHopIp</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RipRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#Z:Z_nextHopIp">_nextHopIp</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RipRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#Z:Z_nextHopIp">_nextHopIp</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">OspfRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#Z:Z_nextHopIp">_nextHopIp</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -512,19 +566,19 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BgpPeerConfig.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpPeerConfig.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IkeGateway.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RipNeighbor.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipNeighbor.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RipNeighbor.RipNeighborSummary.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipNeighbor.RipNeighborSummary.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BgpPeerConfig.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpPeerConfig.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IkeGateway.html#getLocalIp--">getLocalIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -535,32 +589,8 @@
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#getNetworkAddress-org.batfish.datamodel.Ip-">getNetworkAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;mask)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BgpAdvertisement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BgpRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ConnectedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ConnectedRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GeneratedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GeneratedRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IsisRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IsisRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RipRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -568,11 +598,11 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">OspfRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IsisRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IsisRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RipRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">BgpAdvertisement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -580,89 +610,117 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/StaticRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">OspfRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/StaticRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EigrpRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/EigrpRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BgpRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ConnectedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ConnectedRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">GeneratedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GeneratedRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpAdvertisement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.html#getOriginatorIp--">getOriginatorIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpRoute.html#getOriginatorIp--">getOriginatorIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpRoute.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpRoute.Builder.html#getOriginatorIp--">getOriginatorIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpActivePeerConfig.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpActivePeerConfig.html#getPeerAddress--">getPeerAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SourceNat.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/SourceNat.html#getPoolIpFirst--">getPoolIpFirst</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SourceNat.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/SourceNat.html#getPoolIpLast--">getPoolIpLast</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#getPrefixWildcard--">getPrefixWildcard</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpRoute.html#getReceivedFromIp--">getReceivedFromIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RipNeighbor.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipNeighbor.html#getRemoteIp--">getRemoteIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RipNeighbor.RipNeighborSummary.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipNeighbor.RipNeighborSummary.html#getRemoteIp--">getRemoteIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpProcess.html#getRouterId--">getRouterId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IkePhase1Policy.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IkePhase1Policy.html#getSelfIdentity--">getSelfIdentity</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpAdvertisement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.html#getSrcIp--">getSrcIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Flow.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Flow.html#getSrcIp--">getSrcIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Flow.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Flow.Builder.html#getSrcIp--">getSrcIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#getStartIp--">getStartIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#getSubnetEnd-org.batfish.datamodel.Ip-">getSubnetEnd</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;mask)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpWildcard.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#getWildcard--">getWildcard</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#getWildcardEndIp-org.batfish.datamodel.Ip-">getWildcardEndIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;wildcard)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#inverted--">inverted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#numSubnetBitsToSubnetMask-int-">numSubnetBitsToSubnetMask</a></span>(int&nbsp;numBits)</code>&nbsp;</td>
 </tr>
@@ -713,24 +771,14 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Fib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces--">getNextHopInterfaces</a></span>()</code>
-<div class="block">Mapping: route -> nexthopinterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Mapping: route -&gt; nexthopinterface -&gt; nextHopIp -&gt; interfaceRoutes</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">FibImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FibImpl.html#getNextHopInterfaces--">getNextHopInterfaces</a></span>()</code>
-<div class="block">Mapping: route -> nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Mapping: route -&gt; nextHopInterface -&gt; nextHopIp -&gt; interfaceRoutes</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Fib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>
-<div class="block">Mapping: nextHopInterface -> nextHopIp -> interfaceRoutes</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">FibImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FibImpl.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&gt;</code></td>
@@ -767,39 +815,29 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#containsIp-org.batfish.datamodel.Ip-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">PrefixTrie.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixTrie.html#containsIp-org.batfish.datamodel.Ip-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">IpWildcard.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#containsIp-org.batfish.datamodel.Ip-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#containsIp-org.batfish.datamodel.Ip-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixTrie.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixTrie.html#containsIp-org.batfish.datamodel.Ip-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AclIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">EmptyIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/EmptyIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">IpIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceReference.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpSpaceReference.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
+<td class="colLast"><span class="typeNameLabel">AclIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -809,7 +847,7 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">IpWildcardSetIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcardSetIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
+<td class="colLast"><span class="typeNameLabel">IpSpaceReference.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpSpaceReference.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -820,6 +858,16 @@
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">UniverseIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/UniverseIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">IpWildcardSetIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcardSetIpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpSpace.html#containsIp-org.batfish.datamodel.Ip-java.util.Map-">containsIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -838,13 +886,13 @@
 <td class="colLast"><span class="typeNameLabel">Ip.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip.html#getNetworkAddress-org.batfish.datamodel.Ip-">getNetworkAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;mask)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Fib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>
-<div class="block">Mapping: nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Set of interfaces used to forward traffic destined to this IP.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">FibImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FibImpl.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -913,12 +961,12 @@
 <td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IkeGateway.html#setLocalIp-org.batfish.datamodel.Ip-">setLocalIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localIp)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html" title="type parameter in AbstractRouteBuilder">S</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#setNextHopIp-org.batfish.datamodel.Ip-">setNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/BgpAdvertisement.Builder.html" title="class in org.batfish.datamodel">BgpAdvertisement.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpAdvertisement.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.Builder.html#setNextHopIp-org.batfish.datamodel.Ip-">setNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html" title="type parameter in AbstractRouteBuilder">S</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#setNextHopIp-org.batfish.datamodel.Ip-">setNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -1137,6 +1185,14 @@
         int&nbsp;weight)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/EigrpRoute.html#EigrpRoute-int-org.batfish.datamodel.Prefix-java.lang.String-org.batfish.datamodel.Ip-org.batfish.datamodel.eigrp.EigrpMetric-long-">EigrpRoute</a></span>(int&nbsp;admin,
+          <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface,
+          <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
+          <a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric,
+          long&nbsp;processAsn)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GeneratedRoute.html#GeneratedRoute-org.batfish.datamodel.Prefix-int-org.batfish.datamodel.Ip-org.batfish.datamodel.AsPath-java.lang.String-boolean-java.lang.String-java.lang.Long-java.lang.String-">GeneratedRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
               int&nbsp;administrativeCost,
               <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
@@ -1147,33 +1203,33 @@
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;metric,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/InterfaceAddress.html#InterfaceAddress-org.batfish.datamodel.Ip-int-">InterfaceAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                 int&nbsp;networkBits)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/InterfaceAddress.html#InterfaceAddress-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-">InterfaceAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                 <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;networkMask)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpLink.html#IpLink-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-">IpLink</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip1,
       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip2)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpsecPeerConfig.html#IpsecPeerConfig-java.lang.String-java.lang.String-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.Ip-java.lang.String-">IpsecPeerConfig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipsecPolicy,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;physicalInterface,
                <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;policyAccessList,
                <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localAddress,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tunnelInterface)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#IpWildcard-org.batfish.datamodel.Ip-">IpWildcard</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#IpWildcard-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-">IpWildcard</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address,
           <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;wildcardMask)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalRoute.html#OspfExternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-java.lang.String-long-">OspfExternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                  int&nbsp;admin,
@@ -1183,7 +1239,7 @@
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser,
                  long&nbsp;costToAdvertiser)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalType1Route.html#OspfExternalType1Route-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-long-java.lang.String-">OspfExternalType1Route</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
                       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                       int&nbsp;admin,
@@ -1193,7 +1249,7 @@
                       long&nbsp;costToAdvertiser,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalType2Route.html#OspfExternalType2Route-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-long-java.lang.String-">OspfExternalType2Route</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                       int&nbsp;admin,
@@ -1203,61 +1259,61 @@
                       long&nbsp;costToAdvertiser,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfInterAreaRoute.html#OspfInterAreaRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfInterAreaRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                   int&nbsp;admin,
                   long&nbsp;metric,
                   long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfInternalRoute.html#OspfInternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfInternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                  int&nbsp;admin,
                  long&nbsp;metric,
                  long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfIntraAreaRoute.html#OspfIntraAreaRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfIntraAreaRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                   int&nbsp;admin,
                   long&nbsp;metric,
                   long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#OspfRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
          <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
          int&nbsp;admin,
          long&nbsp;metric,
          long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#Prefix-org.batfish.datamodel.Ip-int-">Prefix</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
       int&nbsp;prefixLength)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#Prefix-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-">Prefix</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address,
       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;mask)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipInternalRoute.html#RipInternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-">RipInternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                 <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                 int&nbsp;admin,
                 long&nbsp;metric)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipNeighbor.RipNeighborSummary.html#RipNeighborSummary-java.lang.String-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-java.lang.String-">RipNeighborSummary</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localIp,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;remoteIp,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vrf)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#RipRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-">RipRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
         <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
         int&nbsp;admin,
         long&nbsp;metric)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Route.html#Route-java.lang.String-java.lang.String-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-java.lang.String-java.lang.String-int-long-org.batfish.datamodel.RoutingProtocol-int-">Route</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vrf,
      <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
@@ -1269,7 +1325,7 @@
      <a href="../../../../org/batfish/datamodel/RoutingProtocol.html" title="enum in org.batfish.datamodel">RoutingProtocol</a>&nbsp;protocol,
      int&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/StaticRoute.html#StaticRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-java.lang.String-int-long-int-">StaticRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
            <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface,
@@ -1323,6 +1379,10 @@
 <td class="colLast"><span class="typeNameLabel">AclLineMatchExprs.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html#matchDst-org.batfish.datamodel.Ip-">matchDst</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AclLineMatchExprs.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html#matchSrc-org.batfish.datamodel.Ip-">matchSrc</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordAction-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-int-org.batfish.datamodel.AclIpSpaceLine-org.batfish.datamodel.Ip-java.lang.String-org.batfish.datamodel.visitors.IpSpaceDescriber-">recordAction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;aclIpSpaceName,
             <a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&nbsp;ipSpaceMetadata,
@@ -1332,14 +1392,14 @@
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription,
             <a href="../../../../org/batfish/datamodel/visitors/IpSpaceDescriber.html" title="class in org.batfish.datamodel.visitors">IpSpaceDescriber</a>&nbsp;describer)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordDefaultDeny-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-org.batfish.datamodel.Ip-java.lang.String-">recordDefaultDeny</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;aclIpSpaceName,
                  <a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&nbsp;ipSpaceMetadata,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordNamedIpSpaceAction-java.lang.String-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-boolean-org.batfish.datamodel.Ip-java.lang.String-">recordNamedIpSpaceAction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipSpaceDescription,
@@ -1348,18 +1408,18 @@
                         <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#trace-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-java.lang.String-">trace</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
      <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#traceDstIp-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-">traceDstIp</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
           <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">AclTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#traceSrcIp-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-">traceSrcIp</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
           <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
@@ -1501,9 +1561,43 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpProcess.html#EigrpProcess-java.lang.Long-org.batfish.datamodel.eigrp.EigrpProcessMode-org.batfish.datamodel.Ip-">EigrpProcess</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpProcess.html#EigrpProcess-java.lang.Long-java.lang.String-org.batfish.datamodel.eigrp.EigrpProcessMode-org.batfish.datamodel.Ip-">EigrpProcess</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;exportPolicy,
             <a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a>&nbsp;mode,
             <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.hsrp">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> in <a href="../../../../org/batfish/datamodel/hsrp/package-summary.html">org.batfish.datamodel.hsrp</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/hsrp/package-summary.html">org.batfish.datamodel.hsrp</a> that return <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HsrpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/hsrp/HsrpGroup.html#getIp--">getIp</a></span>()</code>
+<div class="block">The HSRP standby IP address to assume when this is the active router in the group</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/hsrp/package-summary.html">org.batfish.datamodel.hsrp</a> with parameters of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/hsrp/HsrpGroup.Builder.html" title="class in org.batfish.datamodel.hsrp">HsrpGroup.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">HsrpGroup.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/hsrp/HsrpGroup.Builder.html#setIp-org.batfish.datamodel.Ip-">setIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1666,12 +1760,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpExpr.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">NextHopIp.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/NextHopIp.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpExpr.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -1679,23 +1773,23 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Ip6NextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Ip6NextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PeerAddressNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PeerAddressNextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpNextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NextHopExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/NextHopExpr.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SelfNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/SelfNextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PeerAddressNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PeerAddressNextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Ip6NextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Ip6NextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">SelfNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/SelfNextHop.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
+<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NextHopExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/NextHopExpr.html#getNextHopIp-org.batfish.datamodel.routing_policy.Environment-">getNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1709,19 +1803,6 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">IpNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpNextHop.html#getIps--">getIps</a></span>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Method parameters in <a href="../../../../org/batfish/datamodel/routing_policy/expr/package-summary.html">org.batfish.datamodel.routing_policy.expr</a> with type arguments of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IpNextHop.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpNextHop.html#setIps-java.util.List-">setIps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&nbsp;ips)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1799,11 +1880,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceRepresentative.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentative.html#getRepresentative-org.batfish.datamodel.IpSpace-">getRepresentative</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceRepresentativeImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentativeImpl.html#getRepresentative-org.batfish.datamodel.IpSpace-">getRepresentative</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace)</code>
+<td class="colLast"><span class="typeNameLabel">IpSpaceRepresentative.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentative.html#getRepresentative-org.batfish.datamodel.IpSpace-">getRepresentative</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace)</code>
 <div class="block">Returns some representative element of an <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>ip space</code></a>, if any exists.</div>
 </td>
 </tr>
@@ -2069,6 +2146,45 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.ipsecsessionstatus">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> in <a href="../../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a> that return <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpsecSessionInfo.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.html#getInitiatorIp--">getInitiatorIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpsecSessionInfo.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.html#getResponderIp--">getResponderIp</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a> with parameters of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.Builder.html" title="class in org.batfish.question.ipsecsessionstatus">IpsecSessionInfo.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpsecSessionInfo.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.Builder.html#setInitiatorIp-org.batfish.datamodel.Ip-">setInitiatorIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;initiatorIp)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.Builder.html" title="class in org.batfish.question.ipsecsessionstatus">IpsecSessionInfo.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpsecSessionInfo.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionInfo.Builder.html#setResponderIp-org.batfish.datamodel.Ip-">setResponderIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;responderIp)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.representation.aws">
 <!--   -->
 </a>
@@ -2233,57 +2349,61 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpBgpPeerGroup.html#getIp--">getIp</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">HsrpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/HsrpGroup.html#getIp--">getIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpBgpPeerGroup.html#getIp--">getIp</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">NatPool.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/NatPool.html#getLast--">getLast</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IsakmpProfile.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IsakmpProfile.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Keyring.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Keyring.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">OspfWildcardNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfWildcardNetwork.html#getNetworkAddress--">getNetworkAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StaticRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">CryptoMapEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/CryptoMapEntry.html#getPeer--">getPeer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/BgpProcess.html#getRouterId--">getRouterId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">EigrpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getRouterId--">getRouterId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">OspfProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfProcess.html#getRouterId--">getRouterId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IsakmpProfile.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IsakmpProfile.html#getSelfIdentity--">getSelfIdentity</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Tunnel.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Tunnel.html#getSourceAddress--">getSourceAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">VrrpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/VrrpGroup.html#getVirtualAddress--">getVirtualAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><span class="typeNameLabel">OspfWildcardNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfWildcardNetwork.html#getWildcard--">getWildcard</a></span>()</code>&nbsp;</td>
 </tr>
@@ -2351,41 +2471,45 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NatPool.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/NatPool.html#setLast-org.batfish.datamodel.Ip-">setLast</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;last)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">HsrpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/HsrpGroup.html#setIp-org.batfish.datamodel.Ip-">setIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">NatPool.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/NatPool.html#setLast-org.batfish.datamodel.Ip-">setLast</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;last)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">IsakmpProfile.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IsakmpProfile.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Keyring.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Keyring.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">CryptoMapEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/CryptoMapEntry.html#setPeer-org.batfish.datamodel.Ip-">setPeer</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;peer)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">BgpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/BgpProcess.html#setRouterId-org.batfish.datamodel.Ip-">setRouterId</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">EigrpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setRouterId-org.batfish.datamodel.Ip-">setRouterId</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">OspfProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfProcess.html#setRouterId-org.batfish.datamodel.Ip-">setRouterId</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">IsakmpProfile.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IsakmpProfile.html#setSelfIdentity-org.batfish.datamodel.Ip-">setSelfIdentity</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;selfIdentity)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Tunnel.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Tunnel.html#setSourceAddress-org.batfish.datamodel.Ip-">setSourceAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">VrrpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/VrrpGroup.html#setVirtualAddress-org.batfish.datamodel.Ip-">setVirtualAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;virtualAddress)</code>&nbsp;</td>
 </tr>
@@ -2560,11 +2684,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BgpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BgpGroup.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/IkeGateway.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/IkeGateway.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">BgpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BgpGroup.html#getLocalAddress--">getLocalAddress</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
@@ -2622,11 +2746,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">BgpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BgpGroup.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localAddress)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/IkeGateway.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localAddress)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IkeGateway.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/IkeGateway.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localAddress)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">BgpGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BgpGroup.html#setLocalAddress-org.batfish.datamodel.Ip-">setLocalAddress</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;localAddress)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -2781,24 +2905,6 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.symbolic.bdd">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.Ip-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="org.batfish.z3">
 <!--   -->
 </a>
@@ -2812,23 +2918,23 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getIpsByHostname--">getIpsByHostname</a></span>()</code>
-<div class="block">Mapping: hostname -> ipsOwnedByHostname</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByHostname--">getIpsByHostname</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByHostname--">getIpsByHostname</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getIpsByHostname--">getIpsByHostname</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; ipsOwnedByHostname</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></span>()</code>
-<div class="block">Mapping: hostname -> vrf -> ipsOwnedByVrf</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getIpsByNodeVrf--">getIpsByNodeVrf</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; vrf -&gt; ipsOwnedByVrf</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2840,16 +2946,8 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceIpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

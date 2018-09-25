@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/z3/BDDIpSpaceSpecializer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/BlacklistDstIpQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/z3/BDDIpAccessListSpecializer.html" target="_top">Frames</a></li>
@@ -120,6 +120,24 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">BDDIpAccessListSpecializer</span>
 extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="class in org.batfish.z3">IpAccessListSpecializer</a></pre>
+<div class="block">An <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="class in org.batfish.z3"><code>IpAccessListSpecializer</code></a> that uses <code>BDDs</code> to represent the headerspace of
+ interest. The intuition of specialization is to remove parts of the ACL that are irrelevant for
+ the headerspace of interest.
+
+ <p>The superclass <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="class in org.batfish.z3"><code>IpAccessListSpecializer</code></a> walks over the <code>ACL</code> and its
+ <a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>match expressions</code></a>, downcalling at the match expression leaves. For each
+ leaf, we compute the space matched by that expression (as a BDD) and compare with the space of
+ interest. There are three cases:
+
+ <ol>
+   <li>The two spaces are disjoint. Then the expression is not relevant to the space of interest,
+       and will be replaced by the <code>FalseExpr.INSTANCE</code>.
+   <li>The match expression space contains the space of interest. Then the expression is relevant,
+       but we also know that it will always evaluate to <code>true</code>. We can optionally optimize
+       such expressions by replacing them with <code>TrueExpr.INSTANCE</code>.
+   <li>The match expression intersects, but does not contain the space of interest. We preserve
+       the expression as-is.
+ </ol></div>
 </li>
 </ul>
 </div>
@@ -138,9 +156,31 @@ extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="cl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#BDDIpAccessListSpecializer-org.batfish.symbolic.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-">BDDIpAccessListSpecializer</a></span>(<a href="../../../org/batfish/symbolic/bdd/BDDPacket.html" title="class in org.batfish.symbolic.bdd">BDDPacket</a>&nbsp;pkt,
-                          net.sf.javabdd.BDD&nbsp;headerSpaceBDD,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-">BDDIpAccessListSpecializer</a></span>(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                          net.sf.javabdd.BDD&nbsp;flowBDD,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-">BDDIpAccessListSpecializer</a></span>(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                          net.sf.javabdd.BDD&nbsp;flowBDD,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                          <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-boolean-">BDDIpAccessListSpecializer</a></span>(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                          net.sf.javabdd.BDD&nbsp;flowBDD,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                          <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager,
+                          boolean&nbsp;simplifyToTrue)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-org.batfish.common.bdd.IpSpaceToBDD-org.batfish.common.bdd.IpSpaceToBDD-boolean-">BDDIpAccessListSpecializer</a></span>(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                          net.sf.javabdd.BDD&nbsp;flowBDD,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                          <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager,
+                          <a href="../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a>&nbsp;dstIpSpaceToBdd,
+                          <a href="../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a>&nbsp;srcIpSpaceToBdd,
+                          boolean&nbsp;simplifyToTrue)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -161,13 +201,21 @@ extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="cl
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a></span>(<a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a>&nbsp;matchSrcInterface)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/BDDIpAccessListSpecializer.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a></span>(<a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a>&nbsp;originatingFromDevice)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.batfish.z3.IpAccessListSpecializer">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.z3.<a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="class in org.batfish.z3">IpAccessListSpecializer</a></h3>
-<code><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessList-">specialize</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessListLine-">specialize</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></code></li>
+<code><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessList-">specialize</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessListLine-">specialize</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specializeUpToLine-org.batfish.datamodel.IpAccessList-int-">specializeUpToLine</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a>, <a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -197,14 +245,64 @@ extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="cl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BDDIpAccessListSpecializer-org.batfish.symbolic.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-">
+<a name="BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BDDIpAccessListSpecializer</h4>
+<pre>public&nbsp;BDDIpAccessListSpecializer(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                                  net.sf.javabdd.BDD&nbsp;flowBDD,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                                  <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager)</pre>
+</li>
+</ul>
+<a name="BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BDDIpAccessListSpecializer</h4>
+<pre>public&nbsp;BDDIpAccessListSpecializer(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                                  net.sf.javabdd.BDD&nbsp;flowBDD,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                                  <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager,
+                                  boolean&nbsp;simplifyToTrue)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pkt</code> - The <code>BDD</code> variables representing a symbolic packet.</dd>
+<dd><code>flowBDD</code> - The representation of the headerspace of interest.</dd>
+<dd><code>namedIpSpaces</code> - Definitions of named <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpaces</code></a> currently in scope.</dd>
+<dd><code>bddSrcManager</code> - Manages constraints for <a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl"><code>OriginatingFromDevice</code></a> and <a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl"><code>MatchSrcInterface</code></a> expressions.</dd>
+<dd><code>simplifyToTrue</code> - Indicates whether expressions that are always true within the headerspace
+     of interest (i.e. the match a space that includes the space of interest) should be
+     optimized to the constant <a href="../../../org/batfish/datamodel/acl/TrueExpr.html" title="class in org.batfish.datamodel.acl"><code>TrueExpr</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-org.batfish.common.bdd.BDDSourceManager-org.batfish.common.bdd.IpSpaceToBDD-org.batfish.common.bdd.IpSpaceToBDD-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BDDIpAccessListSpecializer</h4>
+<pre>public&nbsp;BDDIpAccessListSpecializer(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                                  net.sf.javabdd.BDD&nbsp;flowBDD,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                                  <a href="../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager,
+                                  <a href="../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a>&nbsp;dstIpSpaceToBdd,
+                                  <a href="../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a>&nbsp;srcIpSpaceToBdd,
+                                  boolean&nbsp;simplifyToTrue)</pre>
+</li>
+</ul>
+<a name="BDDIpAccessListSpecializer-org.batfish.common.bdd.BDDPacket-net.sf.javabdd.BDD-java.util.Map-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BDDIpAccessListSpecializer</h4>
-<pre>public&nbsp;BDDIpAccessListSpecializer(<a href="../../../org/batfish/symbolic/bdd/BDDPacket.html" title="class in org.batfish.symbolic.bdd">BDDPacket</a>&nbsp;pkt,
-                                  net.sf.javabdd.BDD&nbsp;headerSpaceBDD,
+<pre>public&nbsp;BDDIpAccessListSpecializer(<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                                  net.sf.javabdd.BDD&nbsp;flowBDD,
                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</pre>
 </li>
 </ul>
@@ -219,10 +317,28 @@ extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="cl
 <a name="specialize-org.batfish.datamodel.HeaderSpace-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>specialize</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;specialize(<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</pre>
+</li>
+</ul>
+<a name="visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitOriginatingFromDevice</h4>
+<pre>public final&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;visitOriginatingFromDevice(<a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a>&nbsp;originatingFromDevice)</pre>
+</li>
+</ul>
+<a name="visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>visitMatchSrcInterface</h4>
+<pre>public final&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;visitMatchSrcInterface(<a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a>&nbsp;matchSrcInterface)</pre>
 </li>
 </ul>
 </li>
@@ -254,7 +370,7 @@ extends <a href="../../../org/batfish/z3/IpAccessListSpecializer.html" title="cl
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/z3/BDDIpSpaceSpecializer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/BlacklistDstIpQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/z3/BDDIpAccessListSpecializer.html" target="_top">Frames</a></li>

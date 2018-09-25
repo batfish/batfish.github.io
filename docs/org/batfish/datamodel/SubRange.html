@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -116,6 +116,7 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">SubRange</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;</pre>
+<div class="block">A closed interval of integers.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../serialized-form.html#org.batfish.datamodel.SubRange">Serialized Form</a></dd>
@@ -139,7 +140,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#SubRange-int-int-">SubRange</a></span>(int&nbsp;start,
-        int&nbsp;end)</code>&nbsp;</td>
+        int&nbsp;end)</code>
+<div class="block">Create a new subrange.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#SubRange-java.lang.Object-">SubRange</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
@@ -154,7 +157,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -169,35 +172,59 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#contains-org.batfish.datamodel.SubRange-">contains</a></span>(<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;other)</code>
+<div class="block">Returns true if the <code>other</code> subrange is <b>fully</b> contained within this subrange.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#getEnd--">getEnd</a></span>()</code>
+<div class="block">Return the end of the interval.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#getStart--">getStart</a></span>()</code>
+<div class="block">Return the start of the interval.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#includes-int-">includes</a></span>(int&nbsp;integer)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#invertedRange-int-int-int-">invertedRange</a></span>(int&nbsp;value,
-             int&nbsp;min,
-             int&nbsp;max)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#includes-int-">includes</a></span>(int&nbsp;integer)</code>
+<div class="block">Check whether a given integer belongs to this range</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#intersection-org.batfish.datamodel.SubRange-">intersection</a></span>(<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;other)</code>
+<div class="block">Compute the intersection of this and another range.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#isEmpty--">isEmpty</a></span>()</code>
+<div class="block">Returns true if this subrange is empty</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#isSingleValue--">isSingleValue</a></span>()</code>
+<div class="block">Check if this range is a singleton value.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#serializedForm--">serializedForm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/SubRange.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -230,7 +257,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>SubRange</h4>
 <pre>public&nbsp;SubRange(int&nbsp;start,
-                int&nbsp;end)</pre>
+                int&nbsp;end)
+         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></pre>
+<div class="block">Create a new subrange. <code>start</code> and <code>end</code> are included in the range. If <code>start</code> is larger than <code>end</code>, the subrange will be empty.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="SubRange-java.lang.Object-">
@@ -239,7 +272,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SubRange</h4>
-<pre>public&nbsp;SubRange(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;SubRange(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 </li>
 </ul>
 </li>
@@ -250,17 +284,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="invertedRange-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>invertedRange</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;invertedRange(int&nbsp;value,
-                                           int&nbsp;min,
-                                           int&nbsp;max)</pre>
-</li>
-</ul>
 <a name="asStream--">
 <!--   -->
 </a>
@@ -276,11 +299,24 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>compareTo</h4>
-<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;rhs)</pre>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                     <a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;rhs)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo-T-" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;</code></dd>
 </dl>
+</li>
+</ul>
+<a name="contains-org.batfish.datamodel.SubRange-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contains</h4>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                        <a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;other)</pre>
+<div class="block">Returns true if the <code>other</code> subrange is <b>fully</b> contained within this subrange. An
+ empty <code>other</code> is trivially considered to be contained within any subrange.</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -303,6 +339,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getEnd</h4>
 <pre>public&nbsp;int&nbsp;getEnd()</pre>
+<div class="block">Return the end of the interval.</div>
 </li>
 </ul>
 <a name="getStart--">
@@ -312,6 +349,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getStart</h4>
 <pre>public&nbsp;int&nbsp;getStart()</pre>
+<div class="block">Return the start of the interval.</div>
 </li>
 </ul>
 <a name="hashCode--">
@@ -334,6 +372,37 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>includes</h4>
 <pre>public&nbsp;boolean&nbsp;includes(int&nbsp;integer)</pre>
+<div class="block">Check whether a given integer belongs to this range</div>
+</li>
+</ul>
+<a name="intersection-org.batfish.datamodel.SubRange-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>intersection</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;intersection(<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;other)</pre>
+<div class="block">Compute the intersection of this and another range.</div>
+</li>
+</ul>
+<a name="isEmpty--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEmpty</h4>
+<pre>public&nbsp;boolean&nbsp;isEmpty()</pre>
+<div class="block">Returns true if this subrange is empty</div>
+</li>
+</ul>
+<a name="isSingleValue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSingleValue</h4>
+<pre>public&nbsp;boolean&nbsp;isSingleValue()</pre>
+<div class="block">Check if this range is a singleton value.</div>
 </li>
 </ul>
 <a name="serializedForm--">

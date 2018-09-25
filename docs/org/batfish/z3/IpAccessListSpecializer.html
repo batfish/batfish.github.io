@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,27 +159,33 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessList-">specialize</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessList-">specialize</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList)</code>
+<div class="block">Returns a specialized version of the given <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specialize-org.batfish.datamodel.IpAccessListLine-">specialize</a></span>(<a href="../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&nbsp;ipAccessListLine)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a>&nbsp;andMatchExpr)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#specializeUpToLine-org.batfish.datamodel.IpAccessList-int-">specializeUpToLine</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList,
+                  int&nbsp;lineNum)</code>
+<div class="block">Returns a version of the given <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a> with lines up to <code>lineNum</code>
+ specialized, line <code>lineNum</code> unchanged, and all later lines removed.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/FalseExpr.html" title="class in org.batfish.datamodel.acl">FalseExpr</a>&nbsp;falseExpr)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a>&nbsp;andMatchExpr)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a></span>(<a href="../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a>&nbsp;matchHeaderSpace)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/FalseExpr.html" title="class in org.batfish.datamodel.acl">FalseExpr</a>&nbsp;falseExpr)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a></span>(<a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a>&nbsp;matchSrcInterface)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a></span>(<a href="../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a>&nbsp;matchHeaderSpace)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
@@ -187,17 +193,13 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a></span>(<a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a>&nbsp;originatingFromDevice)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a>&nbsp;orMatchExpr)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a>&nbsp;orMatchExpr)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a></span>(<a href="../../../org/batfish/datamodel/acl/PermittedByAcl.html" title="class in org.batfish.datamodel.acl">PermittedByAcl</a>&nbsp;permittedByAcl)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpAccessListSpecializer.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></span>(<a href="../../../org/batfish/datamodel/acl/TrueExpr.html" title="class in org.batfish.datamodel.acl">TrueExpr</a>&nbsp;trueExpr)</code>&nbsp;</td>
 </tr>
@@ -214,7 +216,7 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.batfish.datamodel.acl.<a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a></h3>
-<code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visit-org.batfish.datamodel.acl.AclLineMatchExpr-">visit</a></code></li>
+<code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visit-org.batfish.datamodel.acl.AclLineMatchExpr-">visit</a>, <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a>, <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a></code></li>
 </ul>
 </li>
 </ul>
@@ -254,6 +256,32 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <li class="blockList">
 <h4>specialize</h4>
 <pre>public final&nbsp;<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;specialize(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList)</pre>
+<div class="block">Returns a specialized version of the given <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ipAccessList</code> - ACL to specialize</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Specialized version of the given ACL</dd>
+</dl>
+</li>
+</ul>
+<a name="specializeUpToLine-org.batfish.datamodel.IpAccessList-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>specializeUpToLine</h4>
+<pre>public final&nbsp;<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;specializeUpToLine(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList,
+                                             int&nbsp;lineNum)</pre>
+<div class="block">Returns a version of the given <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a> with lines up to <code>lineNum</code>
+ specialized, line <code>lineNum</code> unchanged, and all later lines removed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ipAccessList</code> - ACL to specialize</dd>
+<dd><code>lineNum</code> - Final line to include in specialized version; this line will not be specialized</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Version of the given ACL specialized up to line <code>lineNum</code></dd>
+</dl>
 </li>
 </ul>
 <a name="specialize-org.batfish.datamodel.IpAccessListLine-">
@@ -304,19 +332,6 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 </dl>
 </li>
 </ul>
-<a name="visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitMatchSrcInterface</h4>
-<pre>public final&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;visitMatchSrcInterface(<a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a>&nbsp;matchSrcInterface)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
 <a name="visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">
 <!--   -->
 </a>
@@ -327,19 +342,6 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitOriginatingFromDevice</h4>
-<pre>public final&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;visitOriginatingFromDevice(<a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a>&nbsp;originatingFromDevice)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

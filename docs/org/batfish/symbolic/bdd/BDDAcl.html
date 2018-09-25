@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/symbolic/bdd/AclLineMatchExprToBDD.html" title="class in org.batfish.symbolic.bdd"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
 <li><a href="../../../../org/batfish/symbolic/bdd/BDDDomain.html" title="class in org.batfish.symbolic.bdd"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -109,8 +109,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">BDDAcl</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">BDDAcl</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Representation of an Access Control List (ACL) as a Binary Decision Diagram (BDD).</div>
 </li>
 </ul>
 </div>
@@ -131,21 +133,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#create-org.batfish.datamodel.IpAccessList-">create</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-">create</a></span>(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+      <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl)</code>
+<div class="block">Create a new BDD given an ACL</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#create-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-">create</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-">create</a></span>(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+      <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;aclEnv,
-      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;ipSpaceEnv)</code>&nbsp;</td>
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;ipSpaceEnv)</code>
+<div class="block">Create a new BDD given an ACL</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-org.batfish.common.bdd.BDDSourceManager-">create</a></span>(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+      <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;aclEnv,
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;ipSpaceEnv,
+      <a href="../../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#getAcl--">getAcl</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
@@ -156,7 +168,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#getFactory--">getFactory</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDPacket.html" title="class in org.batfish.symbolic.bdd">BDDPacket</a></code></td>
+<td class="colFirst"><code><a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#getPkt--">getPkt</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -165,11 +177,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>
+<div class="block">Create a new version of the BDD restricted to a list of prefixes</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-org.batfish.datamodel.Prefix-">restrict</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-org.batfish.datamodel.Prefix-">restrict</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>
+<div class="block">Create a new version of the BDD restricted to a prefix</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -193,33 +209,54 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="create-org.batfish.datamodel.IpAccessList-">
+<a name="create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>public static&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;create(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl)</pre>
+<pre>public static&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;create(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                            <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl)</pre>
+<div class="block">Create a new BDD given an ACL</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pkt</code> - a <a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd"><code>BDDPacket</code></a> -- a collection of attributes to use in a BDD</dd>
+<dd><code>acl</code> - the <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a> to represent</dd>
+</dl>
 </li>
 </ul>
-<a name="create-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-">
+<a name="create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>public static&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;create(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
+<pre>public static&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;create(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                            <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;aclEnv,
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;ipSpaceEnv)</pre>
+<div class="block">Create a new BDD given an ACL</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pkt</code> - a <a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd"><code>BDDPacket</code></a> -- a collection of attributes to use in a BDD</dd>
+<dd><code>acl</code> - the <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a> to represent</dd>
+<dd><code>aclEnv</code> - a map of ACL names to <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>. Used when original <code>acl</code> refers
+     to other ACLs.</dd>
+<dd><code>ipSpaceEnv</code> - a map of names to named IpSpaces.</dd>
+</dl>
 </li>
 </ul>
-<a name="getAcl--">
+<a name="create-org.batfish.common.bdd.BDDPacket-org.batfish.datamodel.IpAccessList-java.util.Map-java.util.Map-org.batfish.common.bdd.BDDSourceManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAcl</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;getAcl()</pre>
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;create(<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;pkt,
+                            <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;aclEnv,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;ipSpaceEnv,
+                            <a href="../../../../org/batfish/common/bdd/BDDSourceManager.html" title="class in org.batfish.common.bdd">BDDSourceManager</a>&nbsp;bddSrcManager)</pre>
 </li>
 </ul>
 <a name="getBdd--">
@@ -228,7 +265,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getBdd</h4>
-<pre>public&nbsp;net.sf.javabdd.BDD&nbsp;getBdd()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;net.sf.javabdd.BDD&nbsp;getBdd()</pre>
 </li>
 </ul>
 <a name="getFactory--">
@@ -237,7 +275,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getFactory</h4>
-<pre>public&nbsp;net.sf.javabdd.BDDFactory&nbsp;getFactory()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;net.sf.javabdd.BDDFactory&nbsp;getFactory()</pre>
 </li>
 </ul>
 <a name="getPkt--">
@@ -246,7 +285,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPkt</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDPacket.html" title="class in org.batfish.symbolic.bdd">BDDPacket</a>&nbsp;getPkt()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;getPkt()</pre>
 </li>
 </ul>
 <a name="hashCode--">
@@ -282,6 +322,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>restrict</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;restrict(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</pre>
+<div class="block">Create a new version of the BDD restricted to a prefix</div>
 </li>
 </ul>
 <a name="restrict-java.util.List-">
@@ -291,6 +332,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>restrict</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a>&nbsp;restrict(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</pre>
+<div class="block">Create a new version of the BDD restricted to a list of prefixes</div>
 </li>
 </ul>
 </li>
@@ -321,7 +363,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/symbolic/bdd/AclLineMatchExprToBDD.html" title="class in org.batfish.symbolic.bdd"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
 <li><a href="../../../../org/batfish/symbolic/bdd/BDDDomain.html" title="class in org.batfish.symbolic.bdd"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

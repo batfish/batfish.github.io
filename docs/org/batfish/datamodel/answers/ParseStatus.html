@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,11 +178,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/answers/ParseStatus.html#resolve-org.batfish.datamodel.answers.ParseStatus...-">resolve</a></span>(<a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a>...&nbsp;statuses)</code>
+<div class="block">A helper function to determine a "canonical" <a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers"><code>ParseStatus</code></a> for an object with multiple
+ status components, e.g, a host with multiple files contributing status to it.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/answers/ParseStatus.html#valueOf-java.lang.String-">valueOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/answers/ParseStatus.html#values--">values</a></span>()</code>
 <div class="block">Returns an array containing the constants of this enum type, in
@@ -321,7 +328,7 @@ for (ParseStatus c : ParseStatus.values())
 <a name="valueOf-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>valueOf</h4>
 <pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a>&nbsp;valueOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
@@ -338,6 +345,17 @@ not permitted.)</div>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if this enum type has no constant with the specified name</dd>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the argument is null</dd>
 </dl>
+</li>
+</ul>
+<a name="resolve-org.batfish.datamodel.answers.ParseStatus...-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>resolve</h4>
+<pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a>&nbsp;resolve(<a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers">ParseStatus</a>...&nbsp;statuses)</pre>
+<div class="block">A helper function to determine a "canonical" <a href="../../../../org/batfish/datamodel/answers/ParseStatus.html" title="enum in org.batfish.datamodel.answers"><code>ParseStatus</code></a> for an object with multiple
+ status components, e.g, a host with multiple files contributing status to it.</div>
 </li>
 </ul>
 </li>

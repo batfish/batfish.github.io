@@ -203,7 +203,7 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ForwardingAnalysis.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ForwardingAnalysis.html#getArpTrueEdge--">getArpTrueEdge</a></span>()</code>
-<div class="block">Mapping: edge -> dstIpsForWhichArpReplySent</div>
+<div class="block">Mapping: edge -&gt; dstIpsForWhichArpReplySent</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -258,18 +258,13 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FlowTraceHop.html#FlowTraceHop-org.batfish.datamodel.Edge-java.util.SortedSet-org.batfish.datamodel.Flow-">FlowTraceHop</a></span>(<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;routes,
-            <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;transformedFlow)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FlowTraceHop.html#FlowTraceHop-org.batfish.datamodel.Edge-java.util.SortedSet-java.lang.String-java.lang.String-org.batfish.datamodel.Flow-">FlowTraceHop</a></span>(<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;routes,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filterOut,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filterIn,
             <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;transformedFlow)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/VerboseEdge.html#VerboseEdge-org.batfish.datamodel.Interface-org.batfish.datamodel.Interface-org.batfish.datamodel.Edge-">VerboseEdge</a></span>(<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&nbsp;int1,
            <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&nbsp;int2,
            <a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;e)</code>&nbsp;</td>
@@ -376,7 +371,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getLanNeighbors--">getLanNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getLayer3Neighbors--">getLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -389,7 +384,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#addLanEdge-org.batfish.datamodel.Edge-">addLanEdge</a></span>(<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#addLayer3Edge-org.batfish.datamodel.Edge-">addLayer3Edge</a></span>(<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -402,7 +397,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLanNeighbors-java.util.SortedSet-">setLanNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;lanNeighbors)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NeighborsQuestionPlugin.NeighborsAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer3Neighbors-java.util.SortedSet-">setLayer3Neighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;layer3Neighbors)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -420,11 +415,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getEnabledEdges--">getEnabledEdges</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getEnabledEdges--">getEnabledEdges</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getEnabledEdges--">getEnabledEdges</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getEnabledEdges--">getEnabledEdges</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

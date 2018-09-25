@@ -113,7 +113,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">AsPathAccessListLine</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">AsPathAccessListLine</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/AsPathAccessListLine.html" title="class in org.batfish.datamodel">AsPathAccessListLine</a>&gt;</pre>
 <dl>
@@ -138,7 +139,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AsPathAccessListLine.html#AsPathAccessListLine--">AsPathAccessListLine</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AsPathAccessListLine.html#AsPathAccessListLine-org.batfish.datamodel.LineAction-java.lang.String-">AsPathAccessListLine</a></span>(<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regex)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -205,13 +207,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AsPathAccessListLine--">
+<a name="AsPathAccessListLine-org.batfish.datamodel.LineAction-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AsPathAccessListLine</h4>
-<pre>public&nbsp;AsPathAccessListLine()</pre>
+<pre>public&nbsp;AsPathAccessListLine(<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regex)</pre>
 </li>
 </ul>
 </li>
@@ -255,6 +258,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getAction</h4>
 <pre>@JsonPropertyDescription(value="The action the underlying access-list will take when this line matches a route.")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;getAction()</pre>
 </li>
 </ul>
@@ -265,6 +269,7 @@ public&nbsp;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum
 <li class="blockList">
 <h4>getRegex</h4>
 <pre>@JsonPropertyDescription(value="The regex against which a route\'s AS-path will be compared")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getRegex()</pre>
 </li>
 </ul>

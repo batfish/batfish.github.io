@@ -120,6 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public enum <span class="typeNameLabel">Protocol</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?is-external=true" title="class or interface in java.lang">Enum</a>&lt;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a>&gt;</pre>
+<div class="block">Shorthands for application-level protocols (i.e., combos of TCP or UDP and port)</div>
 </li>
 </ul>
 </div>
@@ -147,16 +148,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#HTTPS">HTTPS</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#SSH">SSH</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#SNMP">SNMP</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#TCP">TCP</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#SSH">SSH</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#TELNET">TELNET</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Protocol.html#UDP">UDP</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -258,6 +256,15 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a> HTTPS</pre>
 </li>
 </ul>
+<a name="SNMP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SNMP</h4>
+<pre>public static final&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a> SNMP</pre>
+</li>
+</ul>
 <a name="SSH">
 <!--   -->
 </a>
@@ -270,28 +277,10 @@ the order they are declared.</div>
 <a name="TELNET">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>TELNET</h4>
 <pre>public static final&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a> TELNET</pre>
-</li>
-</ul>
-<a name="TCP">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TCP</h4>
-<pre>public static final&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a> TCP</pre>
-</li>
-</ul>
-<a name="UDP">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>UDP</h4>
-<pre>public static final&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a> UDP</pre>
 </li>
 </ul>
 </li>
@@ -350,7 +339,8 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>fromString</h4>
-<pre>public static&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a>&nbsp;fromString(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre>public static&nbsp;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a>&nbsp;fromString(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 <a name="getIpProtocol--">
@@ -359,7 +349,8 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIpProtocol</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpProtocol.html" title="enum in org.batfish.datamodel">IpProtocol</a>&nbsp;getIpProtocol()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/datamodel/IpProtocol.html" title="enum in org.batfish.datamodel">IpProtocol</a>&nbsp;getIpProtocol()</pre>
 </li>
 </ul>
 <a name="getName--">
@@ -368,7 +359,8 @@ not permitted.)</div>
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 </li>
 </ul>
 <a name="getPort--">
@@ -377,7 +369,8 @@ not permitted.)</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPort</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getPort()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getPort()</pre>
 </li>
 </ul>
 </li>

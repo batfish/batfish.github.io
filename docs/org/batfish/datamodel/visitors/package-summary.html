@@ -83,11 +83,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;</td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/CommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">CommunitySetExprVisitor</a>&lt;T&gt;</td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentative.html" title="interface in org.batfish.datamodel.visitors">IpSpaceRepresentative</a></td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;</td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/VoidCommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">VoidCommunitySetExprVisitor</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -133,12 +137,19 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentativeImpl.html" title="class in org.batfish.datamodel.visitors">IpSpaceRepresentativeImpl</a></td>
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRenamer.html" title="class in org.batfish.datamodel.visitors">IpSpaceRenamer</a></td>
 <td class="colLast">
-<div class="block">Finds a representative <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> contained in an input <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>, if any exists.</div>
+<div class="block">Renames all <a href="../../../../org/batfish/datamodel/IpSpaceReference.html" title="class in org.batfish.datamodel"><code>IpSpaceReference</code></a> expressions in an input <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> using an input
+ renaming function.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceRepresentative.html" title="class in org.batfish.datamodel.visitors">IpSpaceRepresentative</a></td>
+<td class="colLast">
+<div class="block">Simple class for finding representative <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>IP Addresses</code></a> in an <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/visitors/IpSpaceTracer.html" title="class in org.batfish.datamodel.visitors">IpSpaceTracer</a></td>
 <td class="colLast">
 <div class="block">Evaluates whether an <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> contains an <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>.<br>

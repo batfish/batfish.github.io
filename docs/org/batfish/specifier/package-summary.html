@@ -44,7 +44,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/role/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../org/batfish/symbolic/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../org/batfish/storage/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/specifier/package-summary.html" target="_top">Frames</a></li>
@@ -84,6 +84,26 @@
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FilterSpecifier.html" title="interface in org.batfish.specifier">FilterSpecifier</a></td>
+<td class="colLast">
+<div class="block">An abstract specification of a set of filters in the network.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FilterSpecifierFactory.html" title="interface in org.batfish.specifier">FilterSpecifierFactory</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier">InterfaceSpecifier</a></td>
+<td class="colLast">
+<div class="block">An abstract specification of a set of interfaces in the network.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceSpecifierFactory.html" title="interface in org.batfish.specifier">InterfaceSpecifierFactory</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></td>
 <td class="colLast">
@@ -175,76 +195,107 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../org/batfish/specifier/AltFlexibleLocationSpecifierFactory.html" title="class in org.batfish.specifier">AltFlexibleLocationSpecifierFactory</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/CaseInsensitiveRegexLocationSpecifierFactory.html" title="class in org.batfish.specifier">CaseInsensitiveRegexLocationSpecifierFactory</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/ConstantIpSpaceSpecifier.html" title="class in org.batfish.specifier">ConstantIpSpaceSpecifier</a></td>
 <td class="colLast">
 <div class="block">An <a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifier</code></a> that is constant (independent of the input <a href="../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier"><code>Location</code></a>).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/ConstantUniverseIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">ConstantUniverseIpSpaceSpecifierFactory</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../org/batfish/specifier/ConstantWildcardSetIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">ConstantWildcardSetIpSpaceSpecifierFactory</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ConstantWildcardSetIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">ConstantWildcardSetIpSpaceSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/IpSpaceSpecifierFactory.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifierFactory</code></a> for a <a href="../../../org/batfish/specifier/ConstantIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>ConstantIpSpaceSpecifier</code></a> where the <code>IpSpace</code> is a string representation of an <a href="../../../org/batfish/datamodel/IpWildcardSetIpSpace.html" title="class in org.batfish.datamodel"><code>IpWildcardSetIpSpace</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">DescriptionRegexInterfaceLinkLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying all links of interfaces whose description matches the
  input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLinkLocationSpecifierFactory.html" title="class in org.batfish.specifier">DescriptionRegexInterfaceLinkLocationSpecifierFactory</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> for <a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier"><code>DescriptionRegexInterfaceLinkLocationSpecifier</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">DescriptionRegexInterfaceLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying all interfaces whose description matches the input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLocationSpecifierFactory.html" title="class in org.batfish.specifier">DescriptionRegexInterfaceLocationSpecifierFactory</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> for <a href="../../../org/batfish/specifier/DescriptionRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier"><code>DescriptionRegexInterfaceLocationSpecifier</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DifferenceLocationSpecifier.html" title="class in org.batfish.specifier">DifferenceLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that specifies the set difference of nodes specified by two other
  specifiers.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/DifferenceNodeSpecifier.html" title="class in org.batfish.specifier">DifferenceNodeSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier"><code>NodeSpecifier</code></a> that specifies the set difference of nodes specified by two other
  specifiers.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleFilterSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleFilterSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/FilterSpecifierFactory.html" title="interface in org.batfish.specifier"><code>FilterSpecifierFactory</code></a> that accepts three types of inputs:
+
+ 
+   null, which returns <a href="../../../org/batfish/specifier/ShorthandFilterSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandFilterSpecifier</code></a> that matches everything
+   inFilterOf(foo), which returns <a href="../../../org/batfish/specifier/InterfaceSpecifierFilterSpecifier.html" title="class in org.batfish.specifier"><code>InterfaceSpecifierFilterSpecifier</code></a> with foo being fed
+       to <a href="../../../org/batfish/specifier/FlexibleInterfaceSpecifierFactory.html" title="class in org.batfish.specifier"><code>FlexibleInterfaceSpecifierFactory</code></a>
+   outFilterOf(foo), as above but for output filters
+   ref.filtergroup(foo, bar), which returns <a href="../../../org/batfish/specifier/ReferenceFilterGroupFilterSpecifier.html" title="class in org.batfish.specifier"><code>ReferenceFilterGroupFilterSpecifier</code></a>;
+   inputs accepted by <a href="../../../org/batfish/specifier/ShorthandFilterSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandFilterSpecifier</code></a>
+ </div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleInferFromLocationIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleInferFromLocationIpSpaceSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier"><code>FlexibleIpSpaceSpecifierFactory</code></a> that uses <a href="../../../org/batfish/specifier/InferFromLocationIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>InferFromLocationIpSpaceSpecifier</code></a> as
+ the default.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleInterfaceSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleInterfaceSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/InterfaceSpecifierFactory.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifierFactory</code></a> that accepts three forms of input
+
+ 
+   null: returns ShorthandInterfaceSpecifier(InterfacesSpecifier.ALL)
+   connectedTo(ip, prefix, or wildcard): returns <a href="../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.html" title="class in org.batfish.specifier"><code>InterfaceWithConnectedIpsSpecifier</code></a>
+   vrf(regex): returns <a href="../../../org/batfish/specifier/VrfNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>VrfNameRegexInterfaceSpecifier</code></a>
+   zone(regex): returns <a href="../../../org/batfish/specifier/ZoneNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>ZoneNameRegexInterfaceSpecifier</code></a>
+   all other inputs go directly to <a href="../../../org/batfish/specifier/ShorthandInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandInterfaceSpecifier</code></a>
+ </div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleIpSpaceSpecifierFactory</a></td>
 <td class="colLast">
-<div class="block">An IpSpaceSpecifierFactory that accepts three types of inputs:
+<div class="block">An abstract IpSpaceSpecifierFactory that accepts the following types of inputs:
 
  
-   null, which returns <a href="../../../org/batfish/specifier/InferFromLocationIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>InferFromLocationIpSpaceSpecifier</code></a>;
-   ref.addressgroup(foo, bar), which returns <a href="../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>ReferenceAddressGroupIpSpaceSpecifier</code></a>;
-   inputs accepted by <a href="../../../org/batfish/specifier/ConstantWildcardSetIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier"><code>ConstantWildcardSetIpSpaceSpecifierFactory</code></a>
- </div>
+   <code>null</code>, which returns a default factory provided by the subclass.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -256,8 +307,24 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleLocationSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleLocationSpecifierFactory</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleNodeSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleNodeSpecifierFactory</a></td>
 <td class="colLast">
-<div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> that parses a specification from a string.</div>
+<div class="block">A <a href="../../../org/batfish/specifier/NodeSpecifierFactory.html" title="interface in org.batfish.specifier"><code>NodeSpecifierFactory</code></a> that accepts three forms of input
+
+ 
+   null: returns AllNodesNodeSpecifier
+   ref.noderole(roleRegex, roleDim): returns <a href="../../../org/batfish/specifier/RoleRegexNodeSpecifier.html" title="class in org.batfish.specifier"><code>RoleRegexNodeSpecifier</code></a> (dim is optional)
+   all other inputs go directly to <a href="../../../org/batfish/specifier/ShorthandNodeSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandNodeSpecifier</code></a>
+ </div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/FlexibleUniverseIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleUniverseIpSpaceSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier"><code>FlexibleIpSpaceSpecifierFactory</code></a> that returns a <a href="../../../org/batfish/specifier/ConstantIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>constant</code></a> <a href="../../../org/batfish/datamodel/UniverseIpSpace.html" title="class in org.batfish.datamodel"><code>universe</code></a> <a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifier</code></a> by default.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -292,6 +359,30 @@
 <td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceNameRegexLocationSpecifier.html" title="class in org.batfish.specifier">InterfaceNameRegexLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">An abstract <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces with names matching the input regex.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceSpecifierFilterSpecifier.html" title="class in org.batfish.specifier">InterfaceSpecifierFilterSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/FilterSpecifier.html" title="interface in org.batfish.specifier"><code>FilterSpecifier</code></a> based on an <a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceSpecifierInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">InterfaceSpecifierInterfaceLocationSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that yields <a href="../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocation</code></a>s based on an <code>InterfaceSpecifier</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.html" title="class in org.batfish.specifier">InterfaceWithConnectedIpsSpecifier</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a> that resolves interfaces connected to a given <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.Factory.html" title="class in org.batfish.specifier">InterfaceWithConnectedIpsSpecifier.Factory</a></td>
+<td class="colLast">
+<div class="block">Factory for <a href="../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.html" title="class in org.batfish.specifier"><code>InterfaceWithConnectedIpsSpecifier</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -439,88 +530,142 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/NodeSpecifierInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">NodeSpecifierInterfaceLocationSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that yields <a href="../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocation</code></a>s based on a <code>NodeSpecifier</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/NodeSpecifiers.html" title="class in org.batfish.specifier">NodeSpecifiers</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/NoNodesNodeSpecifier.html" title="class in org.batfish.specifier">NoNodesNodeSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier"><code>NodeSpecifier</code></a> the specifies the empty set of nodes</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/NullLocationSpecifier.html" title="class in org.batfish.specifier">NullLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">Specifies the null set of <a href="../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier"><code>Location</code></a>s.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifier.html" title="class in org.batfish.specifier">ReferenceAddressGroupIpSpaceSpecifier</a></td>
 <td class="colLast">
 <div class="block">An <a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifier</code></a> that looks up an <a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary"><code>AddressGroup</code></a> in a <a href="../../../org/batfish/referencelibrary/ReferenceBook.html" title="class in org.batfish.referencelibrary"><code>ReferenceBook</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier">ReferenceAddressGroupIpSpaceSpecifierFactory</a></td>
 <td class="colLast">
 <div class="block">A factory for <a href="../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifier.html" title="class in org.batfish.specifier"><code>ReferenceAddressGroupIpSpaceSpecifier</code></a>.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ReferenceFilterGroupFilterSpecifier.html" title="class in org.batfish.specifier">ReferenceFilterGroupFilterSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/FilterSpecifier.html" title="interface in org.batfish.specifier"><code>FilterSpecifier</code></a> that looks up an <a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary"><code>FilterGroup</code></a> in a
+ <a href="../../../org/batfish/referencelibrary/ReferenceBook.html" title="class in org.batfish.referencelibrary"><code>ReferenceBook</code></a>.</div>
+</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ReferenceFilterGroupFilterSpecifierFactory.html" title="class in org.batfish.specifier">ReferenceFilterGroupFilterSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">A factory for <a href="../../../org/batfish/specifier/ReferenceFilterGroupFilterSpecifier.html" title="class in org.batfish.specifier"><code>ReferenceFilterGroupFilterSpecifier</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/RoleRegexNodeSpecifier.html" title="class in org.batfish.specifier">RoleRegexNodeSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier"><code>NodeSpecifier</code></a> that specifies the set of nodes with a role with the input dimension and
  a name matching the input regex.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier">SpecifierContextImpl</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../org/batfish/specifier/ToInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">ToInterfaceLinkLocationSpecifier</a></td>
+<td class="colFirst"><a href="../../../org/batfish/specifier/ShorthandFilterSpecifier.html" title="class in org.batfish.specifier">ShorthandFilterSpecifier</a></td>
 <td class="colLast">
-<div class="block">Wraps another LocationSpecifer, and converts all its InterfaceLocations to
- InterfaceLinkLocations.</div>
+<div class="block">A <a href="../../../org/batfish/specifier/FilterSpecifier.html" title="interface in org.batfish.specifier"><code>FilterSpecifier</code></a> based on the original <a href="../../../org/batfish/datamodel/questions/FiltersSpecifier.html" title="class in org.batfish.datamodel.questions"><code>FiltersSpecifier</code></a> which used a shorthand notation.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ShorthandFilterSpecifierFactory.html" title="class in org.batfish.specifier">ShorthandFilterSpecifierFactory</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/FilterSpecifierFactory.html" title="interface in org.batfish.specifier"><code>FilterSpecifierFactory</code></a> for a <a href="../../../org/batfish/specifier/ShorthandFilterSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandFilterSpecifier</code></a> where the filters to
+ match are specified using the shorthands in <a href="../../../org/batfish/datamodel/questions/FiltersSpecifier.html" title="class in org.batfish.datamodel.questions"><code>FiltersSpecifier</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ShorthandInterfaceSpecifier.html" title="class in org.batfish.specifier">ShorthandInterfaceSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a> based on the original <a href="../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions"><code>InterfacesSpecifier</code></a> which used a
+ shorthand notation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ShorthandNodeSpecifier.html" title="class in org.batfish.specifier">ShorthandNodeSpecifier</a></td>
+<td class="colLast">
+<div class="block">A <a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier"><code>NodeSpecifier</code></a> based on the original <a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions"><code>NodesSpecifier</code></a> which used a shorthand
+ notation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier">SpecifierContextImpl</a></td>
+<td class="colLast">
+<div class="block">Implementation of <a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier"><code>SpecifierContext</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ToInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">ToInterfaceLinkLocationSpecifier</a></td>
+<td class="colLast">
+<div class="block">Wraps another <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a>, and converts all its <a href="../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocations</code></a> to <a href="../../../org/batfish/specifier/InterfaceLinkLocation.html" title="class in org.batfish.specifier"><code>InterfaceLinkLocations</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/TypedLocationSpecifierFactory.html" title="class in org.batfish.specifier">TypedLocationSpecifierFactory</a>&lt;T&gt;</td>
 <td class="colLast">
 <div class="block">Helper class for implementing type-safe subclasses of <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/UnionLocationSpecifier.html" title="class in org.batfish.specifier">UnionLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that specifies the set union of nodes specified by two other
  specifiers.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">VrfNameRegexInterfaceLinkLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying links of interfaces that belong to VRFs with names
  matching the input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLinkLocationSpecifierFactory.html" title="class in org.batfish.specifier">VrfNameRegexInterfaceLinkLocationSpecifierFactory</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> that builds <a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier"><code>VrfNameRegexInterfaceLinkLocationSpecifier</code></a>s.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">VrfNameRegexInterfaceLocationSpecifier</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces that belong to VRFs with names matching the
  input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLocationSpecifierFactory.html" title="class in org.batfish.specifier">VrfNameRegexInterfaceLocationSpecifierFactory</a></td>
 <td class="colLast">
 <div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> that builds <a href="../../../org/batfish/specifier/VrfNameRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier"><code>VrfNameRegexInterfaceLinkLocationSpecifier</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/VrfNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier">VrfNameRegexInterfaceSpecifier</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a> specifying interfaces that belong to VRFs with names matching the
+ input regex.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -529,6 +674,28 @@
 <div class="block">An abstract <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces that belong to VRFs with names
  matching the input regex.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/ZoneNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier">ZoneNameRegexInterfaceSpecifier</a></td>
+<td class="colLast">
+<div class="block">An <a href="../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a> specifying interfaces that belong to Zones with names matching the
+ input regex.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Enum Summary table, listing enums, and an explanation">
+<caption><span>Enum Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Enum</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/batfish/specifier/InterfaceSpecifierFilterSpecifier.Type.html" title="enum in org.batfish.specifier">InterfaceSpecifierFilterSpecifier.Type</a></td>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -557,7 +724,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/role/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../org/batfish/symbolic/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../org/batfish/storage/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/specifier/package-summary.html" target="_top">Frames</a></li>

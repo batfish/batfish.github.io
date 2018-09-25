@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/common/Warnings.Deserializer.html" title="class in org.batfish.common"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/common/Warnings.ParseWarning.html" title="class in org.batfish.common"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/common/Warnings.html" target="_top">Frames</a></li>
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -140,38 +140,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.Deserializer.html" title="class in org.batfish.common">Warnings.Deserializer</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.Serializer.html" title="class in org.batfish.common">Warnings.Serializer</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Z:Z_pedanticWarnings">_pedanticWarnings</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Z:Z_redFlagWarnings">_redFlagWarnings</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Z:Z_unimplementedWarnings">_unimplementedWarnings</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.ParseWarning.html" title="class in org.batfish.common">Warnings.ParseWarning</a></span></code>
+<div class="block">A class to represent a parse warning in a file.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -191,13 +162,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Warnings--">Warnings</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Warnings-boolean-boolean-boolean-boolean-boolean-boolean-boolean-">Warnings</a></span>(boolean&nbsp;pedanticAsError,
-        boolean&nbsp;pedanticRecord,
-        boolean&nbsp;redFlagAsError,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#Warnings-boolean-boolean-boolean-">Warnings</a></span>(boolean&nbsp;pedanticRecord,
         boolean&nbsp;redFlagRecord,
-        boolean&nbsp;unimplementedAsError,
-        boolean&nbsp;unimplementedRecord,
-        boolean&nbsp;printParseTree)</code>&nbsp;</td>
+        boolean&nbsp;unimplementedRecord)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -215,110 +182,61 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getPedanticAsError--">getPedanticAsError</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#addWarning-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-java.lang.String-">addWarning</a></span>(org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;line,
+          <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</code>
+<div class="block">Adds a note that there is work to do to handle the given <code>ParserRuleContext</code>.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getPedanticRecord--">getPedanticRecord</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warnings.ParseWarning.html" title="class in org.batfish.common">Warnings.ParseWarning</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getParseWarnings--">getParseWarnings</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getPedanticWarnings--">getPedanticWarnings</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getPrintParseTree--">getPrintParseTree</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getRedFlagAsError--">getRedFlagAsError</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getRedFlagRecord--">getRedFlagRecord</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getRedFlagWarnings--">getRedFlagWarnings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getUnimplementedAsError--">getUnimplementedAsError</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getUnimplementedRecord--">getUnimplementedRecord</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#getUnimplementedWarnings--">getUnimplementedWarnings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#isEmpty--">isEmpty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#pedantic-java.lang.String-">pedantic</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#pedantic-java.lang.String-java.lang.String-">pedantic</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#redFlag-java.lang.String-">redFlag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#redFlag-java.lang.String-java.lang.String-">redFlag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setPedanticAsError-boolean-">setPedanticAsError</a></span>(boolean&nbsp;pedanticAsError)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#todo-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-">todo</a></span>(org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;line,
+    <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setPedanticRecord-boolean-">setPedanticRecord</a></span>(boolean&nbsp;pedanticRecord)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setPrintParseTree-boolean-">setPrintParseTree</a></span>(boolean&nbsp;printParseTree)</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setRedFlagAsError-boolean-">setRedFlagAsError</a></span>(boolean&nbsp;redFlagAsError)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setRedFlagRecord-boolean-">setRedFlagRecord</a></span>(boolean&nbsp;redFlagRecord)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setUnimplementedAsError-boolean-">setUnimplementedAsError</a></span>(boolean&nbsp;unimplementedAsError)</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#setUnimplementedRecord-boolean-">setUnimplementedRecord</a></span>(boolean&nbsp;unimplementedRecord)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#todo-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-java.lang.String-">todo</a></span>(org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;feature,
-    <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#unimplemented-java.lang.String-">unimplemented</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/Warnings.html#unimplemented-java.lang.String-java.lang.String-">unimplemented</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -336,41 +254,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="Z:Z_pedanticWarnings">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>_pedanticWarnings</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt; _pedanticWarnings</pre>
-</li>
-</ul>
-<a name="Z:Z_redFlagWarnings">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>_redFlagWarnings</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt; _redFlagWarnings</pre>
-</li>
-</ul>
-<a name="Z:Z_unimplementedWarnings">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>_unimplementedWarnings</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt; _unimplementedWarnings</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -386,19 +269,15 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;Warnings()</pre>
 </li>
 </ul>
-<a name="Warnings-boolean-boolean-boolean-boolean-boolean-boolean-boolean-">
+<a name="Warnings-boolean-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Warnings</h4>
-<pre>public&nbsp;Warnings(boolean&nbsp;pedanticAsError,
-                boolean&nbsp;pedanticRecord,
-                boolean&nbsp;redFlagAsError,
+<pre>public&nbsp;Warnings(boolean&nbsp;pedanticRecord,
                 boolean&nbsp;redFlagRecord,
-                boolean&nbsp;unimplementedAsError,
-                boolean&nbsp;unimplementedRecord,
-                boolean&nbsp;printParseTree)</pre>
+                boolean&nbsp;unimplementedRecord)</pre>
 </li>
 </ul>
 </li>
@@ -409,22 +288,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getPedanticAsError--">
+<a name="getParseWarnings--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getPedanticAsError</h4>
-<pre>public&nbsp;boolean&nbsp;getPedanticAsError()</pre>
-</li>
-</ul>
-<a name="getPedanticRecord--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPedanticRecord</h4>
-<pre>public&nbsp;boolean&nbsp;getPedanticRecord()</pre>
+<h4>getParseWarnings</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warnings.ParseWarning.html" title="class in org.batfish.common">Warnings.ParseWarning</a>&gt;&nbsp;getParseWarnings()</pre>
 </li>
 </ul>
 <a name="getPedanticWarnings--">
@@ -436,33 +307,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;&nbsp;getPedanticWarnings()</pre>
 </li>
 </ul>
-<a name="getPrintParseTree--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPrintParseTree</h4>
-<pre>public&nbsp;boolean&nbsp;getPrintParseTree()</pre>
-</li>
-</ul>
-<a name="getRedFlagAsError--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRedFlagAsError</h4>
-<pre>public&nbsp;boolean&nbsp;getRedFlagAsError()</pre>
-</li>
-</ul>
-<a name="getRedFlagRecord--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRedFlagRecord</h4>
-<pre>public&nbsp;boolean&nbsp;getRedFlagRecord()</pre>
-</li>
-</ul>
 <a name="getRedFlagWarnings--">
 <!--   -->
 </a>
@@ -470,24 +314,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getRedFlagWarnings</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a>&gt;&nbsp;getRedFlagWarnings()</pre>
-</li>
-</ul>
-<a name="getUnimplementedAsError--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedAsError</h4>
-<pre>public&nbsp;boolean&nbsp;getUnimplementedAsError()</pre>
-</li>
-</ul>
-<a name="getUnimplementedRecord--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedRecord</h4>
-<pre>public&nbsp;boolean&nbsp;getUnimplementedRecord()</pre>
 </li>
 </ul>
 <a name="getUnimplementedWarnings--">
@@ -546,98 +372,50 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</pre>
 </li>
 </ul>
-<a name="setPedanticAsError-boolean-">
+<a name="addWarning-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setPedanticAsError</h4>
-<pre>public&nbsp;void&nbsp;setPedanticAsError(boolean&nbsp;pedanticAsError)</pre>
+<h4>addWarning</h4>
+<pre>public&nbsp;void&nbsp;addWarning(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                       org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;line,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                       <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;comment)</pre>
+<div class="block">Adds a note that there is work to do to handle the given <code>ParserRuleContext</code>. The output
+ will include the text of the given <code>line</code> and, for debugging/implementation, the current
+ parser rule stack, and the given <code>comment</code> if present.</div>
 </li>
 </ul>
-<a name="setPedanticRecord-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPedanticRecord</h4>
-<pre>public&nbsp;void&nbsp;setPedanticRecord(boolean&nbsp;pedanticRecord)</pre>
-</li>
-</ul>
-<a name="setPrintParseTree-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPrintParseTree</h4>
-<pre>public&nbsp;void&nbsp;setPrintParseTree(boolean&nbsp;printParseTree)</pre>
-</li>
-</ul>
-<a name="setRedFlagAsError-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setRedFlagAsError</h4>
-<pre>public&nbsp;void&nbsp;setRedFlagAsError(boolean&nbsp;redFlagAsError)</pre>
-</li>
-</ul>
-<a name="setRedFlagRecord-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setRedFlagRecord</h4>
-<pre>public&nbsp;void&nbsp;setRedFlagRecord(boolean&nbsp;redFlagRecord)</pre>
-</li>
-</ul>
-<a name="setUnimplementedAsError-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setUnimplementedAsError</h4>
-<pre>public&nbsp;void&nbsp;setUnimplementedAsError(boolean&nbsp;unimplementedAsError)</pre>
-</li>
-</ul>
-<a name="setUnimplementedRecord-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setUnimplementedRecord</h4>
-<pre>public&nbsp;void&nbsp;setUnimplementedRecord(boolean&nbsp;unimplementedRecord)</pre>
-</li>
-</ul>
-<a name="todo-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-java.lang.String-">
+<a name="todo-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>todo</h4>
-<pre>public&nbsp;void&nbsp;todo(org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;feature,
-                 <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</pre>
+<pre>public&nbsp;void&nbsp;todo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                 org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;line,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                 <a href="../../../org/batfish/grammar/BatfishCombinedParser.html" title="class in org.batfish.grammar">BatfishCombinedParser</a>&lt;?,?&gt;&nbsp;parser)</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../org/batfish/common/Warnings.html#addWarning-org.antlr.v4.runtime.ParserRuleContext-java.lang.String-org.batfish.grammar.BatfishCombinedParser-java.lang.String-"><code>addWarning(ParserRuleContext, String, BatfishCombinedParser, String)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="unimplemented-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>unimplemented</h4>
-<pre>public&nbsp;void&nbsp;unimplemented(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="unimplemented-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>unimplemented</h4>
-<pre>public&nbsp;void&nbsp;unimplemented(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag)</pre>
+<pre>public&nbsp;void&nbsp;unimplemented(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;msg)</pre>
 </li>
 </ul>
 </li>
@@ -669,7 +447,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/common/Warnings.Deserializer.html" title="class in org.batfish.common"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/common/Warnings.ParseWarning.html" title="class in org.batfish.common"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/common/Warnings.html" target="_top">Frames</a></li>
@@ -694,13 +472,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

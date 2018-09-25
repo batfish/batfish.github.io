@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/representation/cisco/Edge.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/representation/cisco/ExpandedCommunityList.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/representation/cisco/EigrpRedistributionPolicy.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/representation/cisco/EigrpProcess.html" target="_top">Frames</a></li>
@@ -138,8 +138,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#EigrpProcess-java.lang.Long-org.batfish.datamodel.eigrp.EigrpProcessMode-">EigrpProcess</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
-            <a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a>&nbsp;mode)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#EigrpProcess-java.lang.Long-org.batfish.datamodel.eigrp.EigrpProcessMode-java.lang.String-">EigrpProcess</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
+            <a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a>&nbsp;mode,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vrfName)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -165,7 +166,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getAddressFamily--">getAddressFamily</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>long</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getAsn--">getAsn</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -173,34 +174,62 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getAutoSummary--">getAutoSummary</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getDefaultMetric--">getDefaultMetric</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getInterfacePassiveStatus--">getInterfacePassiveStatus</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getMode--">getMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getNetworks--">getNetworks</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getPassiveInterfaceDefault--">getPassiveInterfaceDefault</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/RoutingProtocol.html" title="enum in org.batfish.datamodel">RoutingProtocol</a>,<a href="../../../../org/batfish/representation/cisco/EigrpRedistributionPolicy.html" title="class in org.batfish.representation.cisco">EigrpRedistributionPolicy</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getRedistributionPolicies--">getRedistributionPolicies</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getRouterId--">getRouterId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getVrf--">getVrf</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getWildcardNetworks--">getWildcardNetworks</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setAddressFamily-java.lang.String-">setAddressFamily</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;af)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setAsn-long-">setAsn</a></span>(long&nbsp;asn)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setAsn-java.lang.Long-">setAsn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setAutoSummary-boolean-">setAutoSummary</a></span>(boolean&nbsp;enable)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setDefaultMetric-org.batfish.datamodel.eigrp.EigrpMetric-">setDefaultMetric</a></span>(<a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setPassiveInterfaceDefault-boolean-">setPassiveInterfaceDefault</a></span>(boolean&nbsp;passiveInterfaceDefault)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#setRouterId-org.batfish.datamodel.Ip-">setRouterId</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</code>&nbsp;</td>
 </tr>
@@ -226,14 +255,17 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EigrpProcess-java.lang.Long-org.batfish.datamodel.eigrp.EigrpProcessMode-">
+<a name="EigrpProcess-java.lang.Long-org.batfish.datamodel.eigrp.EigrpProcessMode-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EigrpProcess</h4>
-<pre>public&nbsp;EigrpProcess(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
-                    <a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a>&nbsp;mode)</pre>
+<pre>public&nbsp;EigrpProcess(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn,
+                    <a href="../../../../org/batfish/datamodel/eigrp/EigrpProcessMode.html" title="enum in org.batfish.datamodel.eigrp">EigrpProcessMode</a>&nbsp;mode,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vrfName)</pre>
 </li>
 </ul>
 </li>
@@ -277,7 +309,18 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>getAsn</h4>
-<pre>public&nbsp;long&nbsp;getAsn()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getAsn()</pre>
+</li>
+</ul>
+<a name="setAsn-java.lang.Long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAsn</h4>
+<pre>public&nbsp;void&nbsp;setAsn(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn)</pre>
 </li>
 </ul>
 <a name="getAutoSummary--">
@@ -298,6 +341,35 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;void&nbsp;setAutoSummary(boolean&nbsp;enable)</pre>
 </li>
 </ul>
+<a name="getDefaultMetric--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultMetric</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;getDefaultMetric()</pre>
+</li>
+</ul>
+<a name="setDefaultMetric-org.batfish.datamodel.eigrp.EigrpMetric-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefaultMetric</h4>
+<pre>public&nbsp;void&nbsp;setDefaultMetric(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                             <a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric)</pre>
+</li>
+</ul>
+<a name="getInterfacePassiveStatus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInterfacePassiveStatus</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;getInterfacePassiveStatus()</pre>
+</li>
+</ul>
 <a name="getMode--">
 <!--   -->
 </a>
@@ -316,13 +388,41 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;getNetworks()</pre>
 </li>
 </ul>
+<a name="getPassiveInterfaceDefault--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPassiveInterfaceDefault</h4>
+<pre>public&nbsp;boolean&nbsp;getPassiveInterfaceDefault()</pre>
+</li>
+</ul>
+<a name="setPassiveInterfaceDefault-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPassiveInterfaceDefault</h4>
+<pre>public&nbsp;void&nbsp;setPassiveInterfaceDefault(boolean&nbsp;passiveInterfaceDefault)</pre>
+</li>
+</ul>
+<a name="getRedistributionPolicies--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRedistributionPolicies</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/RoutingProtocol.html" title="enum in org.batfish.datamodel">RoutingProtocol</a>,<a href="../../../../org/batfish/representation/cisco/EigrpRedistributionPolicy.html" title="class in org.batfish.representation.cisco">EigrpRedistributionPolicy</a>&gt;&nbsp;getRedistributionPolicies()</pre>
+</li>
+</ul>
 <a name="getRouterId--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getRouterId</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getRouterId()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getRouterId()</pre>
 </li>
 </ul>
 <a name="setRouterId-org.batfish.datamodel.Ip-">
@@ -331,7 +431,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>setRouterId</h4>
-<pre>public&nbsp;void&nbsp;setRouterId(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</pre>
+<pre>public&nbsp;void&nbsp;setRouterId(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;routerId)</pre>
 </li>
 </ul>
 <a name="getWildcardNetworks--">
@@ -343,13 +444,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;getWildcardNetworks()</pre>
 </li>
 </ul>
-<a name="setAsn-long-">
+<a name="getVrf--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>setAsn</h4>
-<pre>public&nbsp;void&nbsp;setAsn(long&nbsp;asn)</pre>
+<h4>getVrf</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getVrf()</pre>
 </li>
 </ul>
 </li>
@@ -381,7 +482,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/representation/cisco/Edge.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/representation/cisco/ExpandedCommunityList.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/representation/cisco/EigrpRedistributionPolicy.html" title="class in org.batfish.representation.cisco"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/representation/cisco/EigrpProcess.html" target="_top">Frames</a></li>

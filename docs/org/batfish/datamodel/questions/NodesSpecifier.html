@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -116,9 +116,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>Currently supported example specifiers:
 
  <ul>
-   <li>lhr-.* —> all nodes with matching names (old style)
-   <li>name:lhr-.* -> same as above; name: is optional
-   <li>role:auto0:a1.* —> all nodes with roles that match a1.* in role dimension auto0
+   <li>lhr-.* -&gt; all nodes with matching names (old style)
+   <li>name:lhr-.* -&gt; same as above; name: is optional
+   <li>role:auto0:a1.* -&gt; all nodes with roles that match a1.* in role dimension auto0
  </ul>
 
  <p>In the future, we might need other tags (e.g., loc:) and boolean expressions (e.g.,
@@ -229,35 +229,45 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getCaseSensitive--">getCaseSensitive</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodes-org.batfish.common.plugin.IBatfish-">getMatchingNodes</a></span>(<a href="../../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>&nbsp;batfish)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getExpression--">getExpression</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodesByName-java.util.Set-">getMatchingNodesByName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodes-org.batfish.common.plugin.IBatfish-">getMatchingNodes</a></span>(<a href="../../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>&nbsp;batfish)</code>
+<div class="block">Return the set of nodes that match this specifier</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodes-org.batfish.specifier.SpecifierContext-">getMatchingNodes</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodesByName-java.util.Set-">getMatchingNodesByName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodesByRole-org.batfish.role.NodeRoleDimension-java.util.Set-">getMatchingNodesByRole</a></span>(<a href="../../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&nbsp;roleDimension,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getRegex--">getRegex</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getRoleDimension--">getRoleDimension</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.Type.html" title="enum in org.batfish.datamodel.questions">NodesSpecifier.Type</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -382,8 +392,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>What is produced for various queries:
 
  <ul>
-   <li>na --> all <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.Type.html" title="enum in org.batfish.datamodel.questions"><code>NodesSpecifier.Type</code></a>s whose names begin with srv and nodes whose name begins with srv
-   <li>NAME:srv --> all nodes whose names with srv
+   <li>na -&gt; all <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.Type.html" title="enum in org.batfish.datamodel.questions"><code>NodesSpecifier.Type</code></a>s whose names begin with srv and nodes whose name begins with
+       srv
+   <li>NAME:srv -&gt; all nodes whose names with srv
    <li>ROLE:d all role dimensions that begin with r
    <li>ROLE:dim:r all roles in dimension 'dim' that begin with r
  </ul></div>
@@ -397,6 +408,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
+<a name="getExpression--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpression</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getExpression()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The input <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> expression.</dd>
+</dl>
+</li>
+</ul>
 <a name="getMatchingNodes-org.batfish.common.plugin.IBatfish-">
 <!--   -->
 </a>
@@ -404,6 +428,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getMatchingNodes</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getMatchingNodes(<a href="../../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>&nbsp;batfish)</pre>
+<div class="block">Return the set of nodes that match this specifier</div>
+</li>
+</ul>
+<a name="getMatchingNodes-org.batfish.specifier.SpecifierContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMatchingNodes</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getMatchingNodes(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</pre>
 </li>
 </ul>
 <a name="getMatchingNodesByName-java.util.Set-">

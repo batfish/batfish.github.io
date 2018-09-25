@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":6,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../org/batfish/dataplane/rib/BgpBestPathRib.html" title="class in org.batfish.dataplane.rib">BgpBestPathRib</a>, <a href="../../../../org/batfish/dataplane/rib/BgpMultipathRib.html" title="class in org.batfish.dataplane.rib">BgpMultipathRib</a>, <a href="../../../../org/batfish/dataplane/rib/ConnectedRib.html" title="class in org.batfish.dataplane.rib">ConnectedRib</a>, <a href="../../../../org/batfish/dataplane/rib/IsisLevelRib.html" title="class in org.batfish.dataplane.rib">IsisLevelRib</a>, <a href="../../../../org/batfish/dataplane/rib/IsisRib.html" title="class in org.batfish.dataplane.rib">IsisRib</a>, <a href="../../../../org/batfish/dataplane/rib/LocalRib.html" title="class in org.batfish.dataplane.rib">LocalRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfExternalType1Rib.html" title="class in org.batfish.dataplane.rib">OspfExternalType1Rib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfExternalType2Rib.html" title="class in org.batfish.dataplane.rib">OspfExternalType2Rib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfInterAreaRib.html" title="class in org.batfish.dataplane.rib">OspfInterAreaRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfIntraAreaRib.html" title="class in org.batfish.dataplane.rib">OspfIntraAreaRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfRib.html" title="class in org.batfish.dataplane.rib">OspfRib</a>, <a href="../../../../org/batfish/dataplane/rib/Rib.html" title="class in org.batfish.dataplane.rib">Rib</a>, <a href="../../../../org/batfish/dataplane/rib/RipInternalRib.html" title="class in org.batfish.dataplane.rib">RipInternalRib</a>, <a href="../../../../org/batfish/dataplane/rib/RipRib.html" title="class in org.batfish.dataplane.rib">RipRib</a>, <a href="../../../../org/batfish/dataplane/rib/StaticRib.html" title="class in org.batfish.dataplane.rib">StaticRib</a></dd>
+<dd><a href="../../../../org/batfish/dataplane/rib/BgpBestPathRib.html" title="class in org.batfish.dataplane.rib">BgpBestPathRib</a>, <a href="../../../../org/batfish/dataplane/rib/BgpMultipathRib.html" title="class in org.batfish.dataplane.rib">BgpMultipathRib</a>, <a href="../../../../org/batfish/dataplane/rib/ConnectedRib.html" title="class in org.batfish.dataplane.rib">ConnectedRib</a>, <a href="../../../../org/batfish/dataplane/rib/EigrpExternalRib.html" title="class in org.batfish.dataplane.rib">EigrpExternalRib</a>, <a href="../../../../org/batfish/dataplane/rib/EigrpInternalRib.html" title="class in org.batfish.dataplane.rib">EigrpInternalRib</a>, <a href="../../../../org/batfish/dataplane/rib/EigrpRib.html" title="class in org.batfish.dataplane.rib">EigrpRib</a>, <a href="../../../../org/batfish/dataplane/rib/IsisLevelRib.html" title="class in org.batfish.dataplane.rib">IsisLevelRib</a>, <a href="../../../../org/batfish/dataplane/rib/IsisRib.html" title="class in org.batfish.dataplane.rib">IsisRib</a>, <a href="../../../../org/batfish/dataplane/rib/LocalRib.html" title="class in org.batfish.dataplane.rib">LocalRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfExternalType1Rib.html" title="class in org.batfish.dataplane.rib">OspfExternalType1Rib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfExternalType2Rib.html" title="class in org.batfish.dataplane.rib">OspfExternalType2Rib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfInterAreaRib.html" title="class in org.batfish.dataplane.rib">OspfInterAreaRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfIntraAreaRib.html" title="class in org.batfish.dataplane.rib">OspfIntraAreaRib</a>, <a href="../../../../org/batfish/dataplane/rib/OspfRib.html" title="class in org.batfish.dataplane.rib">OspfRib</a>, <a href="../../../../org/batfish/dataplane/rib/Rib.html" title="class in org.batfish.dataplane.rib">Rib</a>, <a href="../../../../org/batfish/dataplane/rib/RipInternalRib.html" title="class in org.batfish.dataplane.rib">RipInternalRib</a>, <a href="../../../../org/batfish/dataplane/rib/RipRib.html" title="class in org.batfish.dataplane.rib">RipRib</a>, <a href="../../../../org/batfish/dataplane/rib/StaticRib.html" title="class in org.batfish.dataplane.rib">StaticRib</a></dd>
 </dl>
 <hr>
 <br>
@@ -202,102 +202,114 @@ implements <a href="../../../../org/batfish/datamodel/GenericRib.html" title="in
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#addBackupRoute-R-">addBackupRoute</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>
+<div class="block">Add route to backup route map if the route map is not null</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/dataplane/rib/RibDelta.html" title="class in org.batfish.dataplane.rib">RibDelta</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#clearRoutes-org.batfish.datamodel.Prefix-">clearRoutes</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>
 <div class="block">Clear the routes for a given prefix.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#comparePreference-R-R-">comparePreference</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;lhs,
                  <a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;rhs)</code>
 <div class="block">Compare the preferability of one route with anther</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#containsRoute-R-">containsRoute</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>
 <div class="block">Check if two RIBs have exactly same sets of routes.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getMatchingIps--">getMatchingIps</a></span>()</code>
 <div class="block">For each prefix appearing in a route in the RIB, get the IPs for which the longest-prefix match
  is a route of that prefix.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getRoutableIps--">getRoutableIps</a></span>()</code>
 <div class="block">Get all the IPs for which there is a matching route</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getRoutes--">getRoutes</a></span>()</code>
 <div class="block">Return a set of routes this RIB contains.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getRoutes-org.batfish.datamodel.Prefix-">getRoutes</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;p)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static &lt;U extends <a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,T extends U&gt;<br><a href="../../../../org/batfish/dataplane/rib/RibDelta.html" title="class in org.batfish.dataplane.rib">RibDelta</a>&lt;U&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#importRib-org.batfish.dataplane.rib.AbstractRib-org.batfish.dataplane.rib.AbstractRib-">importRib</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="class in org.batfish.dataplane.rib">AbstractRib</a>&lt;U&gt;&nbsp;importingRib,
          <a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="class in org.batfish.dataplane.rib">AbstractRib</a>&lt;T&gt;&nbsp;exportingRib)</code>
 <div class="block">Import routes from one RIB into another</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#longestPrefixMatch-org.batfish.datamodel.Ip-">longestPrefixMatch</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address)</code>
 <div class="block">Execute the longest prefix match for a given IP address.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#longestPrefixMatch-org.batfish.datamodel.Ip-int-">longestPrefixMatch</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;address,
                   int&nbsp;maxPrefixLength)</code>
 <div class="block">Execute a constrained longest prefix match for a given IP address.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#mergeRoute-R-">mergeRoute</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>
 <div class="block">Add a new route to the RIB.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/dataplane/rib/RibDelta.html" title="class in org.batfish.dataplane.rib">RibDelta</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#mergeRouteGetDelta-R-">mergeRouteGetDelta</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>
 <div class="block">Add a new route to the RIB.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#removeBackupRoute-R-">removeBackupRoute</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>
+<div class="block">Remove a route from backup route map if it was present and backup route map exists</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#removeRoute-R-">removeRoute</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>
 <div class="block">Remove given route from the RIB</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/dataplane/rib/RibDelta.html" title="class in org.batfish.dataplane.rib">RibDelta</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#removeRouteGetDelta-R-">removeRouteGetDelta</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/dataplane/rib/RibDelta.html" title="class in org.batfish.dataplane.rib">RibDelta</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#removeRouteGetDelta-R-org.batfish.dataplane.rib.RouteAdvertisement.Reason-">removeRouteGetDelta</a></span>(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route,
                    <a href="../../../../org/batfish/dataplane/rib/RouteAdvertisement.Reason.html" title="enum in org.batfish.dataplane.rib">RouteAdvertisement.Reason</a>&nbsp;reason)</code>
@@ -406,6 +418,22 @@ public static&nbsp;&lt;U extends <a href="../../../../org/batfish/datamodel/Abst
 </dl>
 </li>
 </ul>
+<a name="addBackupRoute-org.batfish.datamodel.AbstractRoute-">
+<!--   -->
+</a><a name="addBackupRoute-R-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addBackupRoute</h4>
+<pre>public final&nbsp;void&nbsp;addBackupRoute(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</pre>
+<div class="block">Add route to backup route map if the route map is not null</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>route</code> - Route to add</dd>
+</dl>
+</li>
+</ul>
 <a name="containsRoute-org.batfish.datamodel.AbstractRoute-">
 <!--   -->
 </a><a name="containsRoute-R-">
@@ -452,6 +480,22 @@ public static&nbsp;&lt;U extends <a href="../../../../org/batfish/datamodel/Abst
 <li class="blockList">
 <h4>getRoutes</h4>
 <pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&gt;&nbsp;getRoutes(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;p)</pre>
+</li>
+</ul>
+<a name="removeBackupRoute-org.batfish.datamodel.AbstractRoute-">
+<!--   -->
+</a><a name="removeBackupRoute-R-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeBackupRoute</h4>
+<pre>public final&nbsp;void&nbsp;removeBackupRoute(<a href="../../../../org/batfish/dataplane/rib/AbstractRib.html" title="type parameter in AbstractRib">R</a>&nbsp;route)</pre>
+<div class="block">Remove a route from backup route map if it was present and backup route map exists</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>route</code> - Route to remove</dd>
+</dl>
 </li>
 </ul>
 <a name="comparePreference-org.batfish.datamodel.AbstractRoute-org.batfish.datamodel.AbstractRoute-">

@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/specifier/FlexibleLocationIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/specifier/InferFromLocationIpSpaceSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/specifier/FlexibleNodeSpecifierFactory.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/specifier/FlexibleLocationSpecifierFactory.html" target="_top">Frames</a></li>
@@ -114,38 +114,10 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>@AutoService(value=<a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier">LocationSpecifierFactory.class</a>)
-public final class <span class="typeNameLabel">FlexibleLocationSpecifierFactory</span>
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public class <span class="typeNameLabel">FlexibleLocationSpecifierFactory</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier">LocationSpecifierFactory</a></pre>
-<div class="block">A <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier"><code>LocationSpecifierFactory</code></a> that parses a specification from a string. The goals are to be
- suitable for use on the command line (so a fairly terse format), while also being expressive
- enough to express any subset of <a href="../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier"><code>locations</code></a>. For example, you can simply enumerate
- a list of locations.
-
- <p>Recognizes the language defined by this pseudo-grammar:
-
- <pre>
- Pattern      ::= [Specifier](;[Specifier])*
- Specifier    ::= ([LocationType]:)?[Clause](,[Clause])*
- Clause       ::= ([PropertyType]=)?[Regex]
- PropertyType ::= node | vrf | interface | nodeRole:[Dimension]
- Dimension    ::= [Identifier]
- LocationType ::= interface | interfaceLink
- </pre>
-
- <p>A Pattern is a semicolon-separated list of Specifiers. Each specifier represents a set of
- locations of a single type -- <a href="../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocation</code></a> or <a href="../../../org/batfish/specifier/InterfaceLinkLocation.html" title="class in org.batfish.specifier"><code>InterfaceLinkLocation</code></a>. The
- Pattern represents the union of those sets.
-
- <p>A Specifier includes an optional constraint on the location type (the default is
- "interfaceLink"), and between 1 and 3 clauses. Each clause represents a set of a locations, and
- the specifier represents the intersection of those sets.
-
- <p>A clause is a regex, optionally prepended with a property type specifier followed by '='. The
- default property type is "node".
-
- <p>There property types support specifying locations by node name ("node"), node role
- ("nodeRole:[Dimension]"), VRF name ("vrf"), or interface name ("interface").</div>
 </li>
 </ul>
 </div>
@@ -273,23 +245,10 @@ implements <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/specifier/LocationSpecifierFactory.html#getName--">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier">LocationSpecifierFactory</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="buildLocationSpecifier-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>buildLocationSpecifier</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a>&nbsp;buildLocationSpecifier(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
@@ -304,6 +263,19 @@ implements <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html
 <dd><code>input</code> - User input of <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> fields to be parsed and/or validated.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The constructed <a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/batfish/specifier/LocationSpecifierFactory.html#getName--">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/LocationSpecifierFactory.html" title="interface in org.batfish.specifier">LocationSpecifierFactory</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -336,7 +308,7 @@ implements <a href="../../../org/batfish/specifier/LocationSpecifierFactory.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/specifier/FlexibleLocationIpSpaceSpecifierFactory.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/specifier/InferFromLocationIpSpaceSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/specifier/FlexibleNodeSpecifierFactory.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/specifier/FlexibleLocationSpecifierFactory.html" target="_top">Frames</a></li>

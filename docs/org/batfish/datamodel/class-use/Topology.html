@@ -99,23 +99,31 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.eigrp">org.batfish.datamodel.eigrp</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.isis">org.batfish.datamodel.isis</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.pojo">org.batfish.datamodel.pojo</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.ibdp">org.batfish.dataplane.ibdp</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.main">org.batfish.main</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.role">org.batfish.role</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.storage">org.batfish.storage</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -247,6 +255,27 @@
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/GenericRib.html" title="interface in org.batfish.datamodel">GenericRib</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&nbsp;ribs,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a>&gt;&gt;&nbsp;fibs,
                       <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a>&nbsp;topology)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.eigrp">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a> in <a href="../../../../org/batfish/datamodel/eigrp/package-summary.html">org.batfish.datamodel.eigrp</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/eigrp/package-summary.html">org.batfish.datamodel.eigrp</a> with parameters of type <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.graph.Network&lt;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterface.html" title="class in org.batfish.datamodel.eigrp">EigrpInterface</a>,<a href="../../../../org/batfish/datamodel/eigrp/EigrpEdge.html" title="class in org.batfish.datamodel.eigrp">EigrpEdge</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">EigrpTopology.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpTopology.html#initEigrpTopology-java.util.Map-org.batfish.datamodel.Topology-">initEigrpTopology</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                 <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a>&nbsp;topology)</code>
+<div class="block">Initialize the EIGRP topology as a directed graph.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -388,6 +417,32 @@
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/role/InferRoles.html#InferRoles-java.util.Collection-org.batfish.datamodel.Topology-boolean-">InferRoles</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
           <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a>&nbsp;topology,
           boolean&nbsp;caseSensitive)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.storage">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a> in <a href="../../../../org/batfish/storage/package-summary.html">org.batfish.storage</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/storage/package-summary.html">org.batfish.storage</a> that return <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></code></td>
+<td class="colLast"><span class="typeNameLabel">StorageProvider.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/storage/StorageProvider.html#loadLegacyTopology-java.lang.String-java.lang.String-">loadLegacyTopology</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>
+<div class="block">Returns the old-style combined layer-1 through layer-3 topology provided in the given snapshot</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FileBasedStorage.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/storage/FileBasedStorage.html#loadLegacyTopology-java.lang.String-java.lang.String-">loadLegacyTopology</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

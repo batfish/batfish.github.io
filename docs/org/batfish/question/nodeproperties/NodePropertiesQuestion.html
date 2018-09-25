@@ -120,7 +120,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">NodePropertiesQuestion</span>
 extends <a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></pre>
-<div class="block">A question that returns properties of nodes in a tabular format. <a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#Z:Z_nodeRegex"><code>_nodeRegex</code></a> determines which nodes are included, and <a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#Z:Z_propertySpec"><code>_propertySpec</code></a> determines which properties are included.</div>
+<div class="block">A question that returns properties of nodes in a tabular format. <a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#Z:Z_nodes"><code>_nodes</code></a> determines which nodes are included, and <a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#Z:Z_properties"><code>_properties</code></a> determines which properties are included.</div>
 </li>
 </ul>
 </div>
@@ -202,11 +202,11 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#getNodeRegex--">getNodeRegex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#getNodes--">getNodes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#getPropertySpec--">getPropertySpec</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -286,22 +286,22 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </dl>
 </li>
 </ul>
-<a name="getNodeRegex--">
+<a name="getNodes--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNodeRegex</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodeRegex()</pre>
+<h4>getNodes</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodes()</pre>
 </li>
 </ul>
-<a name="getPropertySpec--">
+<a name="getProperties--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getPropertySpec</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a>&nbsp;getPropertySpec()</pre>
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a>&nbsp;getProperties()</pre>
 </li>
 </ul>
 </li>

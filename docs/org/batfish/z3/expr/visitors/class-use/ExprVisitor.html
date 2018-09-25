@@ -108,7 +108,31 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AndExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/AndExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">TrueExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/TrueExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">VarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/VarIntExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">NotExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/NotExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ExtractExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/ExtractExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ListExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/ListExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">RangeMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/RangeMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">TransformedVarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/TransformedVarIntExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -116,51 +140,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">EqExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/EqExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><span class="typeNameLabel">Expr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/Expr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ExtractExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/ExtractExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FalseExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/FalseExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">HeaderSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/HeaderSpaceMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IdExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IdExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IfExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IfExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IfThenElse.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IfThenElse.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IpSpaceMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ListExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/ListExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">LitIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/LitIntExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NotExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/NotExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IfExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IfExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -172,7 +156,23 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">RangeMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/RangeMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">EqExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/EqExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">HeaderSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/HeaderSpaceMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceMatchExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IpSpaceMatchExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FalseExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/FalseExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><span class="typeNameLabel">Expr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/Expr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -180,15 +180,15 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">TransformedVarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/TransformedVarIntExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IfThenElse.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IfThenElse.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">TrueExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/TrueExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AndExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/AndExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">VarIntExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/VarIntExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IdExpr.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/z3/expr/IdExpr.html#accept-org.batfish.z3.expr.visitors.ExprVisitor-">accept</a></span>(<a href="../../../../../../org/batfish/z3/expr/visitors/ExprVisitor.html" title="interface in org.batfish.z3.expr.visitors">ExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -87,11 +87,19 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.aaaauthenticationlogin">org.batfish.question.aaaauthenticationlogin</a></td>
+<td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.aclreachability2">org.batfish.question.aclreachability2</a></td>
+<td class="colFirst"><a href="#org.batfish.question.aaaauthenticationlogin">org.batfish.question.aaaauthenticationlogin</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.filterlinereachability">org.batfish.question.filterlinereachability</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -99,7 +107,19 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.tracefilters">org.batfish.question.tracefilters</a></td>
+<td class="colFirst"><a href="#org.batfish.question.nodeproperties">org.batfish.question.nodeproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.reducedreachability">org.batfish.question.reducedreachability</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.referencedstructures">org.batfish.question.referencedstructures</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.testfilters">org.batfish.question.testfilters</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -129,7 +149,7 @@
 <td class="colLast"><span class="typeNameLabel">TableDiff.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/table/TableDiff.html#diffTables-org.batfish.datamodel.table.TableAnswerElement-org.batfish.datamodel.table.TableAnswerElement-boolean-">diffTables</a></span>(<a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a>&nbsp;baseTable,
           <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a>&nbsp;deltaTable,
           boolean&nbsp;includeOneTableKeys)</code>
-<div class="block">Computes the difference table of the two tables</div>
+<div class="block">Computes the difference table of the two tables by taking a "join" on the key columns.</div>
 </td>
 </tr>
 </tbody>
@@ -146,8 +166,30 @@
 <td class="colLast"><span class="typeNameLabel">TableDiff.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/table/TableDiff.html#diffTables-org.batfish.datamodel.table.TableAnswerElement-org.batfish.datamodel.table.TableAnswerElement-boolean-">diffTables</a></span>(<a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a>&nbsp;baseTable,
           <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a>&nbsp;deltaTable,
           boolean&nbsp;includeOneTableKeys)</code>
-<div class="block">Computes the difference table of the two tables</div>
+<div class="block">Computes the difference table of the two tables by taking a "join" on the key columns.</div>
 </td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/package-summary.html">org.batfish.question</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/package-summary.html">org.batfish.question</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UnusedStructuresQuestionPlugin.UnusedStructuresAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UnusedStructuresQuestionPlugin.UnusedStructuresAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -170,12 +212,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.aclreachability2">
+<li class="blockList"><a name="org.batfish.question.filterlinereachability">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/aclreachability2/package-summary.html">org.batfish.question.aclreachability2</a></h3>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/filterlinereachability/package-summary.html">org.batfish.question.filterlinereachability</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../org/batfish/question/aclreachability2/package-summary.html">org.batfish.question.aclreachability2</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../org/batfish/question/filterlinereachability/package-summary.html">org.batfish.question.filterlinereachability</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -183,7 +225,25 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AclReachability2Answerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/aclreachability2/AclReachability2Answerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FilterLineReachabilityAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/filterlinereachability/FilterLineReachabilityAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.interfaceproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/interfaceproperties/package-summary.html">org.batfish.question.interfaceproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/interfaceproperties/package-summary.html">org.batfish.question.interfaceproperties</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InterfacePropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/interfaceproperties/InterfacePropertiesAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -222,12 +282,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.tracefilters">
+<li class="blockList"><a name="org.batfish.question.nodeproperties">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/tracefilters/package-summary.html">org.batfish.question.tracefilters</a></h3>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/nodeproperties/package-summary.html">org.batfish.question.nodeproperties</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../org/batfish/question/tracefilters/package-summary.html">org.batfish.question.tracefilters</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../org/batfish/question/nodeproperties/package-summary.html">org.batfish.question.nodeproperties</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -235,12 +295,70 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TraceFiltersAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/tracefilters/TraceFiltersAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NodePropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/nodeproperties/NodePropertiesAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.reducedreachability">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/reducedreachability/package-summary.html">org.batfish.question.reducedreachability</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/reducedreachability/package-summary.html">org.batfish.question.reducedreachability</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReducedReachabilityAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/reducedreachability/ReducedReachabilityAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReducedReachabilityAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/reducedreachability/ReducedReachabilityAnswerer.html#answerDiff--">answerDiff</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.referencedstructures">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/referencedstructures/package-summary.html">org.batfish.question.referencedstructures</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/referencedstructures/package-summary.html">org.batfish.question.referencedstructures</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReferencedStructuresAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/referencedstructures/ReferencedStructuresAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.testfilters">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a> in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a> that return <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TestFiltersAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/testfilters/TestFiltersAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table">TableAnswerElement</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TraceFiltersAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/tracefilters/TraceFiltersAnswerer.html#create-org.batfish.question.tracefilters.TraceFiltersQuestion-">create</a></span>(<a href="../../../../../org/batfish/question/tracefilters/TraceFiltersQuestion.html" title="class in org.batfish.question.tracefilters">TraceFiltersQuestion</a>&nbsp;question)</code>
-<div class="block">Creates a <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table"><code>TableAnswerElement</code></a> object the right metadata</div>
+<td class="colLast"><span class="typeNameLabel">TestFiltersAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/testfilters/TestFiltersAnswerer.html#create-org.batfish.question.testfilters.TestFiltersQuestion-">create</a></span>(<a href="../../../../../org/batfish/question/testfilters/TestFiltersQuestion.html" title="class in org.batfish.question.testfilters">TestFiltersQuestion</a>&nbsp;question)</code>
+<div class="block">Creates a <a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table"><code>TableAnswerElement</code></a> object containing the right metadata</div>
 </td>
 </tr>
 </tbody>

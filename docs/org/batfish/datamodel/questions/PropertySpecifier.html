@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":6};
+var methods = {"i0":9,"i1":9,"i2":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.Type.html" title="enum in org.batfish.datamodel.questions"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/datamodel/questions/OspfPropertySpecifier.html" title="class in org.batfish.datamodel.questions"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.PropertyDescriptor.html" title="class in org.batfish.datamodel.questions"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>, <a href="../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a></dd>
+<dd><a href="../../../../org/batfish/datamodel/questions/BgpPropertySpecifier.html" title="class in org.batfish.datamodel.questions">BgpPropertySpecifier</a>, <a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>, <a href="../../../../org/batfish/datamodel/questions/NamedStructureSpecifier.html" title="class in org.batfish.datamodel.questions">NamedStructureSpecifier</a>, <a href="../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a>, <a href="../../../../org/batfish/datamodel/questions/OspfPropertySpecifier.html" title="class in org.batfish.datamodel.questions">OspfPropertySpecifier</a></dd>
 </dl>
 <hr>
 <br>
@@ -170,6 +170,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.html#convertTypeIfNeeded-java.lang.Object-org.batfish.datamodel.questions.PropertySpecifier.PropertyDescriptor-">convertTypeIfNeeded</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;propertyValue,
+                   <a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.PropertyDescriptor.html" title="class in org.batfish.datamodel.questions">PropertySpecifier.PropertyDescriptor</a>&lt;?&gt;&nbsp;propertyDescriptor)</code>
+<div class="block">Converts the extracted propertyValue to what is specified in the properyDescriptor</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.html#fillProperty-org.batfish.datamodel.questions.PropertySpecifier.PropertyDescriptor-T-java.lang.String-org.batfish.datamodel.table.Row.RowBuilder-">fillProperty</a></span>(<a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.PropertyDescriptor.html" title="class in org.batfish.datamodel.questions">PropertySpecifier.PropertyDescriptor</a>&lt;T&gt;&nbsp;propertyDescriptor,
             T&nbsp;object,
@@ -179,7 +186,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  into  at <code>columnName</code>.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.html#getMatchingProperties--">getMatchingProperties</a></span>()</code>
 <div class="block">Returns all properties that match this specifier object</div>
@@ -224,6 +231,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="convertTypeIfNeeded-java.lang.Object-org.batfish.datamodel.questions.PropertySpecifier.PropertyDescriptor-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertTypeIfNeeded</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;convertTypeIfNeeded(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;propertyValue,
+                                         <a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.PropertyDescriptor.html" title="class in org.batfish.datamodel.questions">PropertySpecifier.PropertyDescriptor</a>&lt;?&gt;&nbsp;propertyDescriptor)</pre>
+<div class="block">Converts the extracted propertyValue to what is specified in the properyDescriptor</div>
+</li>
+</ul>
 <a name="fillProperty-org.batfish.datamodel.questions.PropertySpecifier.PropertyDescriptor-java.lang.Object-java.lang.String-org.batfish.datamodel.table.Row.RowBuilder-">
 <!--   -->
 </a><a name="fillProperty-org.batfish.datamodel.questions.PropertySpecifier.PropertyDescriptor-T-java.lang.String-org.batfish.datamodel.table.Row.RowBuilder-">
@@ -287,7 +305,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.Type.html" title="enum in org.batfish.datamodel.questions"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/datamodel/questions/OspfPropertySpecifier.html" title="class in org.batfish.datamodel.questions"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/batfish/datamodel/questions/PropertySpecifier.PropertyDescriptor.html" title="class in org.batfish.datamodel.questions"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

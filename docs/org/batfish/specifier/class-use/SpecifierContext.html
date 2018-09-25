@@ -87,7 +87,15 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.questions">org.batfish.datamodel.questions</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.main">org.batfish.main</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -117,6 +125,24 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.datamodel.questions">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a> in <a href="../../../../org/batfish/datamodel/questions/package-summary.html">org.batfish.datamodel.questions</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/questions/package-summary.html">org.batfish.datamodel.questions</a> with parameters of type <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NodesSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html#getMatchingNodes-org.batfish.specifier.SpecifierContext-">getMatchingNodes</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.main">
 <!--   -->
 </a>
@@ -135,6 +161,26 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a> in <a href="../../../../org/batfish/question/package-summary.html">org.batfish.question</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/question/package-summary.html">org.batfish.question</a> with parameters of type <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.html#resolveHeaderspace-org.batfish.specifier.SpecifierContext-">resolveHeaderspace</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctx)</code>
+<div class="block">Resolve all parameters and update the underlying headerspace.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.specifier">
 <!--   -->
 </a>
@@ -148,7 +194,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier">SpecifierContextImpl</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier">SpecifierContextImpl</a></span></code>
+<div class="block">Implementation of <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier"><code>SpecifierContext</code></a>.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -161,7 +209,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ConstantIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ConstantIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+<td class="colLast"><span class="typeNameLabel">IpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>
+<div class="block">Resolve the specifier into concrete <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NodeNameRegexConnectedHostsIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexConnectedHostsIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReferenceAddressGroupIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
        <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -171,10 +231,8 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
-       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>
-<div class="block">Resolve the specifier into concrete <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">ConstantIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ConstantIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
@@ -182,30 +240,35 @@
        <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeNameRegexConnectedHostsIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexConnectedHostsIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ZoneNameRegexInterfaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ZoneNameRegexInterfaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
        <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceAssignment.html" title="class in org.batfish.specifier">IpSpaceAssignment</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ReferenceAddressGroupIpSpaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;&nbsp;locations,
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ShorthandInterfaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ShorthandInterfaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
        <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">VrfNameRegexInterfaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/VrfNameRegexInterfaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AllInterfacesLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfacesLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfaceWithConnectedIpsSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfaceSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceSpecifier.html#resolve-java.util.Set-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>
+<div class="block">Returns the interfaces on <code>nodes</code> that match this specifier.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AllNodesNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllNodesNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DifferenceLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DifferenceLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NoNodesNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NoNodesNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
@@ -213,15 +276,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">InterfaceDescriptionRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceDescriptionRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">InterfaceNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AllInterfacesLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfacesLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">IntersectionLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IntersectionLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">InterfaceNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
@@ -230,16 +293,64 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NullLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NullLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">IntersectionLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IntersectionLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfaceDescriptionRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceDescriptionRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AllNodesNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllNodesNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">NameRegexNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">NodeNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ShorthandNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ShorthandNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">DifferenceLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DifferenceLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">NodeRoleRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">UnionLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/UnionLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfaceSpecifierInterfaceLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceSpecifierInterfaceLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NodeSpecifierInterfaceLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeSpecifierInterfaceLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ToInterfaceLinkLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ToInterfaceLinkLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">VrfNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/VrfNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">RoleRegexNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/RoleRegexNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NodeNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
@@ -248,28 +359,26 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">NoNodesNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NoNodesNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ReferenceFilterGroupFilterSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ReferenceFilterGroupFilterSpecifier.html#resolve-java.lang.String-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">NullLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NullLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">FilterSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FilterSpecifier.html#resolve-java.lang.String-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>
+<div class="block">Returns the filters on <code>node</code> that match this specifier.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">RoleRegexNodeSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/RoleRegexNodeSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfaceSpecifierFilterSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceSpecifierFilterSpecifier.html#resolve-java.lang.String-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ToInterfaceLinkLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ToInterfaceLinkLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">UnionLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/UnionLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/specifier/Location.html" title="interface in org.batfish.specifier">Location</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">VrfNameRegexLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/VrfNameRegexLocationSpecifier.html#resolve-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ShorthandFilterSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ShorthandFilterSpecifier.html#resolve-java.lang.String-org.batfish.specifier.SpecifierContext-">resolve</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
+       <a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctxt)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -116,7 +116,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.html#getDestinationIpSpaceSpecifier--">getDestinationIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.html#getSourceIpSpaceSpecifier--">getSourceIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.html#getSourceIpSpaceSpecifier--">getSourceIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -132,8 +140,16 @@
 <td class="colLast"><span class="typeNameLabel">ReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html#setDestinationIpSpaceSpecifier-org.batfish.specifier.IpSpaceSpecifier-">setDestinationIpSpaceSpecifier</a></span>(<a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a>&nbsp;destinationIpSpaceSpecifier)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html" title="class in org.batfish.question">SearchFiltersParameters.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html#setDestinationIpSpaceSpecifier-org.batfish.specifier.IpSpaceSpecifier-">setDestinationIpSpaceSpecifier</a></span>(<a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a>&nbsp;destinationIpSpaceSpecifier)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html" title="class in org.batfish.question">ReachabilityParameters.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html#setSourceIpSpaceSpecifier-org.batfish.specifier.IpSpaceSpecifier-">setSourceIpSpaceSpecifier</a></span>(<a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a>&nbsp;sourceIpSpaceSpecifier)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html" title="class in org.batfish.question">SearchFiltersParameters.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html#setSourceIpSpaceSpecifier-org.batfish.specifier.IpSpaceSpecifier-">setSourceIpSpaceSpecifier</a></span>(<a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a>&nbsp;sourceIpSpaceSpecifier)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -211,37 +227,49 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ConstantUniverseIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ConstantUniverseIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ConstantWildcardSetIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ConstantWildcardSetIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FlexibleIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FlexibleLocationIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleLocationIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">InferFromLocationIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InferFromLocationIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReferenceAddressGroupIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FlexibleIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>
 <div class="block">Construct an <a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifier</code></a> object for the supplied input.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">NodeNameRegexConnectedHostsIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexConnectedHostsIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FlexibleLocationIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleLocationIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ReferenceAddressGroupIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ReferenceAddressGroupIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ConstantUniverseIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ConstantUniverseIpSpaceSpecifierFactory.html#buildIpSpaceSpecifier-java.lang.Object-">buildIpSpaceSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FlexibleInferFromLocationIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleInferFromLocationIpSpaceSpecifierFactory.html#defaultIpSpaceSpecifier--">defaultIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FlexibleUniverseIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleUniverseIpSpaceSpecifierFactory.html#defaultIpSpaceSpecifier--">defaultIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FlexibleIpSpaceSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleIpSpaceSpecifierFactory.html#defaultIpSpaceSpecifier--">defaultIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

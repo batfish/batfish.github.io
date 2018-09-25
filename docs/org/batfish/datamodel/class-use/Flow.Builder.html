@@ -83,23 +83,19 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions">org.batfish.datamodel.questions</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.traceroute">org.batfish.question.traceroute</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
+<td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -107,6 +103,37 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a> in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> that return <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDPacket.html#getFlowFromAssignment-net.sf.javabdd.BDD-">getFlowFromAssignment</a></span>(net.sf.javabdd.BDD&nbsp;satAssignment)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> that return types with arguments of type <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDPacket.html#getFlow-net.sf.javabdd.BDD-">getFlow</a></span>(net.sf.javabdd.BDD&nbsp;bdd)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel">
 <!--   -->
 </a>
@@ -184,7 +211,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Flow.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Flow.Builder.html#setState-org.batfish.datamodel.State-">setState</a></span>(<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Flow.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Flow.Builder.html#setState-org.batfish.datamodel.FlowState-">setState</a></span>(<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></code></td>
@@ -262,7 +289,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TracerouteQuestionPlugin.TracerouteQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html#createFlowBuilder--">createFlowBuilder</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">TracerouteQuestionPlugin.TracerouteQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html#createFlowBuilder--">createFlowBuilder</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -275,43 +304,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">TracerouteQuestionPlugin.TracerouteQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html#getFlowBuilders--">getFlowBuilders</a></span>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="org.batfish.question.traceroute">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a> in <a href="../../../../org/batfish/question/traceroute/package-summary.html">org.batfish.question.traceroute</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/batfish/question/traceroute/package-summary.html">org.batfish.question.traceroute</a> that return types with arguments of type <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">TracerouteQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getFlowBuilders--">getFlowBuilders</a></span>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="org.batfish.symbolic.bdd">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a> in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> that return types with arguments of type <a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDPacket.html#getFlow-net.sf.javabdd.BDD-">getFlow</a></span>(net.sf.javabdd.BDD&nbsp;bdd)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">TracerouteQuestionPlugin.TracerouteQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html#getFlowBuilders--">getFlowBuilders</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>

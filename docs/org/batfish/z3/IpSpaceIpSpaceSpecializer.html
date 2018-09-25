@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/z3/IpSpaceIpAccessListSpecializer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/z3/IpSpaceSimplifier.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/LocationToIngressLocation.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/z3/IpSpaceIpSpaceSpecializer.html" target="_top">Frames</a></li>
@@ -75,7 +75,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.z3.IpSpaceSpecializer">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.batfish.common.ipspace.IpSpaceSpecializer">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">org.batfish.z3.IpSpaceSpecializer</a></li>
+<li><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">org.batfish.common.ipspace.IpSpaceSpecializer</a></li>
 <li>
 <ul class="inheritance">
 <li>org.batfish.z3.IpSpaceIpSpaceSpecializer</li>
@@ -119,7 +119,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">IpSpaceIpSpaceSpecializer</span>
-extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></pre>
+extends <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></pre>
 <div class="block">Specialize an <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to input destination IP whitelist and blacklist. The goal is to
  simplify the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> as much as possible under the assumption that the whitelist and
  blacklist are always true (i.e. all packets match the whitelist, no packets match the blacklist).
@@ -138,11 +138,11 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.org.batfish.z3.IpSpaceSpecializer">
+<li class="blockList"><a name="fields.inherited.from.class.org.batfish.common.ipspace.IpSpaceSpecializer">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;org.batfish.z3.<a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></h3>
-<code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html#Z:Z_namedIpSpaces">_namedIpSpaces</a></code></li>
+<h3>Fields inherited from class&nbsp;org.batfish.common.ipspace.<a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></h3>
+<code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#Z:Z_namedIpSpaces">_namedIpSpaces</a></code></li>
 </ul>
 </li>
 </ul>
@@ -177,7 +177,7 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/IpSpaceIpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>
 <div class="block">Specialize the whitelist using a refined specializer obtained by specializing _ipSpace to the
  blacklist.</div>
@@ -193,11 +193,11 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.batfish.z3.IpSpaceSpecializer">
+<li class="blockList"><a name="methods.inherited.from.class.org.batfish.common.ipspace.IpSpaceSpecializer">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;org.batfish.z3.<a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></h3>
-<code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html#castToGenericIpSpaceVisitorReturnType-java.lang.Object-">castToGenericIpSpaceVisitorReturnType</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpSpace-">specialize</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitAclIpSpace-org.batfish.datamodel.AclIpSpace-">visitAclIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitEmptyIpSpace-org.batfish.datamodel.EmptyIpSpace-">visitEmptyIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitIpIpSpace-org.batfish.datamodel.IpIpSpace-">visitIpIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitIpSpaceReference-org.batfish.datamodel.IpSpaceReference-">visitIpSpaceReference</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitIpWildcardIpSpace-org.batfish.datamodel.IpWildcardIpSpace-">visitIpWildcardIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitIpWildcardSetIpSpace-org.batfish.datamodel.IpWildcardSetIpSpace-">visitIpWildcardSetIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitPrefixIpSpace-org.batfish.datamodel.PrefixIpSpace-">visitPrefixIpSpace</a>, <a href="../../../org/batfish/z3/IpSpaceSpecializer.html#visitUniverseIpSpace-org.batfish.datamodel.UniverseIpSpace-">visitUniverseIpSpace</a></code></li>
+<h3>Methods inherited from class&nbsp;org.batfish.common.ipspace.<a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></h3>
+<code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#castToGenericIpSpaceVisitorReturnType-java.lang.Object-">castToGenericIpSpaceVisitorReturnType</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpSpace-">specialize</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitAclIpSpace-org.batfish.datamodel.AclIpSpace-">visitAclIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitEmptyIpSpace-org.batfish.datamodel.EmptyIpSpace-">visitEmptyIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitIpIpSpace-org.batfish.datamodel.IpIpSpace-">visitIpIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitIpSpaceReference-org.batfish.datamodel.IpSpaceReference-">visitIpSpaceReference</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitIpWildcardIpSpace-org.batfish.datamodel.IpWildcardIpSpace-">visitIpWildcardIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitIpWildcardSetIpSpace-org.batfish.datamodel.IpWildcardSetIpSpace-">visitIpWildcardSetIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitPrefixIpSpace-org.batfish.datamodel.PrefixIpSpace-">visitPrefixIpSpace</a>, <a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#visitUniverseIpSpace-org.batfish.datamodel.UniverseIpSpace-">visitUniverseIpSpace</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -252,15 +252,15 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>restrictSpecializerToBlacklist</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a>&gt;&nbsp;restrictSpecializerToBlacklist(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</pre>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a>&gt;&nbsp;restrictSpecializerToBlacklist(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</pre>
 <div class="block">Specialize the whitelist using a refined specializer obtained by specializing _ipSpace to the
- blacklist. This helps situations like this: _ipSpace <= blacklist <= whitelist If _ipSpace is
- covered by the blacklist, then refinedIpSpace will be empty, and we will later infer that the
- input ipWildcardSetIpSpace should be specialized to empty as well. Without this, specialization
- would not be able to infer this, so we'd do less optimization.</div>
+ blacklist. This helps situations like this: _ipSpace &lt;= blacklist &lt;= whitelist If
+ _ipSpace is covered by the blacklist, then refinedIpSpace will be empty, and we will later
+ infer that the input ipWildcardSetIpSpace should be specialized to empty as well. Without this,
+ specialization would not be able to infer this, so we'd do less optimization.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></code></dd>
+<dd><code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -273,7 +273,7 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;specialize(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></code></dd>
+<dd><code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.Ip-">specialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -286,7 +286,7 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;specialize(<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></code></dd>
+<dd><code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -319,7 +319,7 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/z3/IpSpaceIpAccessListSpecializer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/z3/IpSpaceSimplifier.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/LocationToIngressLocation.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/z3/IpSpaceIpSpaceSpecializer.html" target="_top">Frames</a></li>
@@ -344,7 +344,7 @@ extends <a href="../../../org/batfish/z3/IpSpaceSpecializer.html" title="class i
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.z3.IpSpaceSpecializer">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.batfish.common.ipspace.IpSpaceSpecializer">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
