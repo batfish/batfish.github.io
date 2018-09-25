@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../org/batfish/question/tracefilters/TraceFiltersQuestion.html" title="class in org.batfish.question.tracefilters">TraceFiltersQuestion</a>, <a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html" title="class in org.batfish.question.traceroute">TracerouteQuestion</a>, <a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html" title="class in org.batfish.question">TracerouteQuestionPlugin.TracerouteQuestion</a></dd>
+<dd><a href="../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html" title="class in org.batfish.question">TracerouteQuestionPlugin.TracerouteQuestion</a></dd>
 </dl>
 <hr>
 <br>
@@ -260,7 +260,7 @@ implements <a href="../../../../org/batfish/datamodel/questions/IQuestion.html" 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getSrcProtocol--">getSrcProtocol</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a></code></td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getState--">getState</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -353,7 +353,7 @@ implements <a href="../../../../org/batfish/datamodel/questions/IQuestion.html" 
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setState-org.batfish.datamodel.State-">setState</a></span>(<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setState-org.batfish.datamodel.FlowState-">setState</a></span>(<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -606,7 +606,7 @@ implements <a href="../../../../org/batfish/datamodel/questions/IQuestion.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getState</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;getState()</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;getState()</pre>
 </li>
 </ul>
 <a name="getTcpFlagsAck--">
@@ -820,13 +820,13 @@ implements <a href="../../../../org/batfish/datamodel/questions/IQuestion.html" 
 <pre>public&nbsp;void&nbsp;setSrcProtocol(<a href="../../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a>&nbsp;srcProtocol)</pre>
 </li>
 </ul>
-<a name="setState-org.batfish.datamodel.State-">
+<a name="setState-org.batfish.datamodel.FlowState-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setState</h4>
-<pre>public&nbsp;void&nbsp;setState(<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;state)</pre>
+<pre>public&nbsp;void&nbsp;setState(<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;state)</pre>
 </li>
 </ul>
 <a name="setTcpFlagsAck-java.lang.Boolean-">

@@ -87,10 +87,14 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.datamodel.answers">org.batfish.datamodel.answers</a></td>
+<td class="colFirst"><a href="#org.batfish.coordinator">org.batfish.coordinator</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.answers">org.batfish.datamodel.answers</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.main">org.batfish.main</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -130,6 +134,27 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.coordinator">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a> in <a href="../../../../../org/batfish/coordinator/package-summary.html">org.batfish.coordinator</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/coordinator/package-summary.html">org.batfish.coordinator</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">WorkMgr.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/coordinator/WorkMgr.html#processAnalysisAnswers-java.util.Map-java.util.Map-">processAnalysisAnswers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;rawAnswers,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/common/AnswerRowsOptions.html" title="class in org.batfish.common">AnswerRowsOptions</a>&gt;&nbsp;answersRowsOptions)</code>
+<div class="block">Filter and sort <code>rawAnswers</code> according to options specified in <code>analysisAnswersOptions</code></div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel.answers">
 <!--   -->
 </a>
@@ -145,10 +170,6 @@
 <td class="colFirst"><code>static <a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Answer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/Answer.html#failureAnswer-java.lang.String-org.batfish.datamodel.questions.Question-">failureAnswer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
              <a href="../../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>&nbsp;question)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Answer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/Answer.html#prettyPrintAnswer--">prettyPrintAnswer</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -175,6 +196,11 @@
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Answer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/Answer.html#append-org.batfish.datamodel.answers.Answer-">append</a></span>(<a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a>&nbsp;answer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AnswerMetadataUtil.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/AnswerMetadataUtil.html#computeAnswerMetadata-org.batfish.datamodel.answers.Answer-org.batfish.common.BatfishLogger-">computeAnswerMetadata</a></span>(<a href="../../../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a>&nbsp;answer,
+                     <a href="../../../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -128,7 +128,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AclIpSpaceLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IpAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
@@ -136,23 +136,9 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CommunityListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/CommunityListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FilterResult.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FilterResult.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Ip6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixSpaceLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixSpaceLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RouteFilterLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#getAction--">getAction</a></span>()</code>
+<div class="block">The action the underlying access-list will take when this line matches an IPV4 route.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
@@ -160,11 +146,21 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RouteFilterLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FilterResult.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FilterResult.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixSpaceList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixSpaceList.html#getAction-org.batfish.datamodel.Prefix-">getAction</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">CommunityListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/CommunityListLine.html#getAction--">getAction</a></span>()</code>
+<div class="block">The action the underlying access-list will take when this line matches a route.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AclIpSpaceLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Ip6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
@@ -205,20 +201,20 @@ the order they are declared.</div>
       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;defaultAction)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.Builder.html" title="class in org.batfish.datamodel">AclIpSpaceLine.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AclIpSpaceLine.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.Builder.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessListLine.Builder.html" title="class in org.batfish.datamodel">IpAccessListLine.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpAccessListLine.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.Builder.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">AsPathAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AsPathAccessListLine.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">Ip6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip6AccessListLine.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.Builder.html" title="class in org.batfish.datamodel">AclIpSpaceLine.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AclIpSpaceLine.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AclIpSpaceLine.Builder.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessListLine.Builder.html" title="class in org.batfish.datamodel">IpAccessListLine.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpAccessListLine.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.Builder.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">Ip6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Ip6AccessListLine.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -245,21 +241,21 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/CommunityListLine.html#CommunityListLine-org.batfish.datamodel.LineAction-java.lang.String-">CommunityListLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regex)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AsPathAccessListLine.html#AsPathAccessListLine-org.batfish.datamodel.LineAction-java.lang.String-">AsPathAccessListLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regex)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/CommunityListLine.html#CommunityListLine-org.batfish.datamodel.LineAction-org.batfish.datamodel.routing_policy.expr.CommunitySetExpr-">CommunityListLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+                 <a href="../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;matchCondition)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/FilterResult.html#FilterResult-java.lang.Integer-org.batfish.datamodel.LineAction-">FilterResult</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;t1,
             <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;t2)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.html#IpAccessListLine-org.batfish.datamodel.LineAction-org.batfish.datamodel.acl.AclLineMatchExpr-java.lang.String-">IpAccessListLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
                 <a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;matchCondition,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixSpaceLine.html#PrefixSpaceLine-org.batfish.datamodel.PrefixSpace-org.batfish.datamodel.LineAction-">PrefixSpaceLine</a></span>(<a href="../../../../org/batfish/datamodel/PrefixSpace.html" title="class in org.batfish.datamodel">PrefixSpace</a>&nbsp;prefixSpace,
-               <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Route6FilterLine.html#Route6FilterLine-org.batfish.datamodel.LineAction-org.batfish.datamodel.Ip6Wildcard-org.batfish.datamodel.SubRange-">Route6FilterLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
@@ -305,23 +301,23 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">StandardIpv6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StandardIpv6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ExtendedIpv6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/ExtendedIpv6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ExpandedCommunityListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/ExpandedCommunityListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ExtendedAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/ExtendedAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RouteMapClause.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/RouteMapClause.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ExtendedIpv6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/ExtendedIpv6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpAsPathAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpAsPathAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Prefix6ListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Prefix6ListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">StandardAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StandardAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
@@ -329,21 +325,17 @@ the order they are declared.</div>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RouteMapClause.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/RouteMapClause.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ExtendedAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/ExtendedAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StandardAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StandardAccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
 <td class="colLast"><span class="typeNameLabel">StandardCommunityListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StandardCommunityListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StandardIpv6AccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StandardIpv6AccessListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Prefix6ListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Prefix6ListLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
 <td class="colLast"><span class="typeNameLabel">InspectPolicyMap.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/InspectPolicyMap.html#getClassDefaultAction--">getClassDefaultAction</a></span>()</code>&nbsp;</td>
 </tr>
@@ -390,8 +382,8 @@ the order they are declared.</div>
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;ecns,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;icmpType,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;icmpCode,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;&nbsp;states,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;states,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpAsPathAccessListLine.html#IpAsPathAccessListLine-org.batfish.datamodel.LineAction-java.lang.String-">IpAsPathAccessListLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
@@ -445,11 +437,11 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IptablesChain.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/iptables/IptablesChain.html#getIpAccessListLineAction--">getIpAccessListLineAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IptablesRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/iptables/IptablesRule.html#getIpAccessListLineAction--">getIpAccessListLineAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IptablesRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/iptables/IptablesRule.html#getIpAccessListLineAction--">getIpAccessListLineAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IptablesChain.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/iptables/IptablesChain.html#getIpAccessListLineAction--">getIpAccessListLineAction</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -480,39 +472,7 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">BaseApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BaseApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromApplicationOrApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationOrApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
@@ -528,6 +488,38 @@ the order they are declared.</div>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">JunosApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JunosApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromApplicationOrApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationOrApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromJunosApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromJunosApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
@@ -536,7 +528,7 @@ the order they are declared.</div>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">JunosApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JunosApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+<td class="colLast"><span class="typeNameLabel">ApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
@@ -558,6 +550,19 @@ the order they are declared.</div>
 </a>
 <h3>Uses of <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a> in <a href="../../../../org/batfish/representation/palo_alto/package-summary.html">org.batfish.representation.palo_alto</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/representation/palo_alto/package-summary.html">org.batfish.representation.palo_alto</a> that return <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Rule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Rule.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../org/batfish/representation/palo_alto/package-summary.html">org.batfish.representation.palo_alto</a> with parameters of type <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -565,10 +570,8 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Service.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Service.html#toIpAccessList-org.batfish.datamodel.LineAction-org.batfish.representation.palo_alto.PaloAltoConfiguration-org.batfish.representation.palo_alto.Vsys-">toIpAccessList</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-              <a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html" title="class in org.batfish.representation.palo_alto">PaloAltoConfiguration</a>&nbsp;pc,
-              <a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;vsys)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">Rule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Rule.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
@@ -577,6 +580,12 @@ the order they are declared.</div>
               <a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;vsys)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Service.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Service.html#toIpAccessList-org.batfish.datamodel.LineAction-org.batfish.representation.palo_alto.PaloAltoConfiguration-org.batfish.representation.palo_alto.Vsys-">toIpAccessList</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+              <a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html" title="class in org.batfish.representation.palo_alto">PaloAltoConfiguration</a>&nbsp;pc,
+              <a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;vsys)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ServiceGroupMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/ServiceGroupMember.html#toIpAccessList-org.batfish.datamodel.LineAction-org.batfish.representation.palo_alto.PaloAltoConfiguration-org.batfish.representation.palo_alto.Vsys-">toIpAccessList</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
               <a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html" title="class in org.batfish.representation.palo_alto">PaloAltoConfiguration</a>&nbsp;pc,
@@ -600,11 +609,11 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixListRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/PrefixListRule.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RouteMapRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/RouteMapRule.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RouteMapRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/RouteMapRule.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PrefixListRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/PrefixListRule.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -617,11 +626,11 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixListRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/PrefixListRule.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RouteMapRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/RouteMapRule.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">RouteMapRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/RouteMapRule.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PrefixListRule.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/vyos/PrefixListRule.html#setAction-org.batfish.datamodel.LineAction-">setAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -639,14 +648,14 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getAclActions--">getAclActions</a></span>()</code>
-<div class="block">Mapping: hostname -> aclName -> lineNumber -> lineAction <br>
- This mapping contains only the acls that are required for the operation this <a href="../../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3"><code>SynthesizerInput</code></a> is being used for.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getAclActions--">getAclActions</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.html#getAclActions--">getAclActions</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SynthesizerInput.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInput.html#getAclActions--">getAclActions</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; aclName -&gt; lineNumber -&gt; lineAction <br>
+ This mapping contains only the acls that are required for the operation this <a href="../../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3"><code>SynthesizerInput</code></a> is being used for.</div>
+</td>
 </tr>
 </tbody>
 </table>

@@ -165,13 +165,13 @@ implements <a href="../../../org/batfish/datamodel/Fib.html" title="interface in
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/FibImpl.html#getNextHopInterfaces--">getNextHopInterfaces</a></span>()</code>
-<div class="block">Mapping: route -> nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Mapping: route -&gt; nextHopInterface -&gt; nextHopIp -&gt; interfaceRoutes</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/FibImpl.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></span>(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>
-<div class="block">Mapping: nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Set of interfaces used to forward traffic destined to this IP.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -236,7 +236,7 @@ implements <a href="../../../org/batfish/datamodel/Fib.html" title="interface in
 <dd><code>rib</code> - <a href="../../../org/batfish/datamodel/GenericRib.html" title="interface in org.batfish.datamodel"><code>GenericRib</code></a> for which to do the resolution.</dd>
 <dd><code>route</code> - <a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel"><code>AbstractRoute</code></a> with a next hop IP to be resolved.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A map (interface name -> last hop IP -> last taken route) for</dd>
+<dd>A map (interface name -&gt; last hop IP -&gt; last taken route) for</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../org/batfish/common/BatfishException.html" title="class in org.batfish.common">BatfishException</a></code> - if resolution depth is exceeded (high likelihood of a routing loop) OR
      an invalid route in the RIB has been encountered.</dd>
@@ -251,7 +251,7 @@ implements <a href="../../../org/batfish/datamodel/Fib.html" title="interface in
 <h4>getNextHopInterfaces</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&gt;&nbsp;getNextHopInterfaces()</pre>
-<div class="block">Mapping: route -> nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Mapping: route -&gt; nextHopInterface -&gt; nextHopIp -&gt; interfaceRoutes</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces--">getNextHopInterfaces</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a></code></dd>
@@ -265,9 +265,9 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.htm
 <li class="blockList">
 <h4>getNextHopInterfaces</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&nbsp;getNextHopInterfaces(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getNextHopInterfaces(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">Fib</a></code></span></div>
-<div class="block">Mapping: nextHopInterface -> nextHopIp -> interfaceRoutes</div>
+<div class="block">Set of interfaces used to forward traffic destined to this IP.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/datamodel/Fib.html#getNextHopInterfaces-org.batfish.datamodel.Ip-">getNextHopInterfaces</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a></code></dd>

@@ -252,11 +252,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HeaderSpace.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html#setStates-java.lang.Iterable-">setStates</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;&nbsp;states)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">HeaderSpace.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html#setStates-java.lang.Iterable-">setStates</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;states)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">HeaderSpace.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html#setTcpFlags-java.lang.Iterable-">setTcpFlags</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">HeaderSpace.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html#setTcpFlags-java.lang.Iterable-">setTcpFlags</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a></code></td>
@@ -281,29 +281,15 @@
 <td class="colLast"><span class="typeNameLabel">BaseApplication.Term.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BaseApplication.Term.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;destinationHeaderSpace)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFrom.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFrom.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromFragmentOffset.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromFragmentOffset.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddress.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddressBookEntry.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddressExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromSourceAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddress.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
@@ -317,35 +303,21 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromDestinationPrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationPrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromSourceAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddressExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromDestinationPrefixListExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationPrefixListExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddress.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromFragmentOffset.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromFragmentOffset.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromIcmpCode.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromIcmpCode.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromIcmpType.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromIcmpType.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFrom.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFrom.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
@@ -366,35 +338,21 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromPrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromPrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromProtocol.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromProtocol.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourceAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddress.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
-       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
-       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromSourceAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddressBookEntry.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromIcmpCode.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromIcmpCode.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourceAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddressExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromSourcePrefixListExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourcePrefixListExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
@@ -408,60 +366,70 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourcePrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourcePrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromPrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromPrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourcePrefixListExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourcePrefixListExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+<td class="colLast"><span class="typeNameLabel">FwFromSourcePrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourcePrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddressExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromIcmpType.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromIcmpType.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromDestinationPrefixList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationPrefixList.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromTcpFlags.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromTcpFlags.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
        <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
        <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromProtocol.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromProtocol.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FwFromDestinationPrefixListExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationPrefixListExcept.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FwFromDestinationAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddressBookEntry.html#applyTo-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.common.Warnings-org.batfish.datamodel.Configuration-">applyTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;headerSpaceBuilder,
+       <a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w,
+       <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">BaseApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/BaseApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromApplicationOrApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationOrApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
-       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
-       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
-       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
@@ -477,6 +445,38 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">JunosApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JunosApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromApplicationOrApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationOrApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+       <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
+       <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,
+       <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromJunosApplicationSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromJunosApplicationSet.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
@@ -485,7 +485,7 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">JunosApplication.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JunosApplication.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
+<td class="colLast"><span class="typeNameLabel">ApplicationSetMember.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/ApplicationSetMember.html#applyTo-org.batfish.representation.juniper.JuniperConfiguration-org.batfish.datamodel.HeaderSpace.Builder-org.batfish.datamodel.LineAction-java.util.List-org.batfish.common.Warnings-">applyTo</a></span>(<a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html" title="class in org.batfish.representation.juniper">JuniperConfiguration</a>&nbsp;jc,
        <a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a>&nbsp;srcHeaderSpaceBuilder,
        <a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&gt;&nbsp;lines,

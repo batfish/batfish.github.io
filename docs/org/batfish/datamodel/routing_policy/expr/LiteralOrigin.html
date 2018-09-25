@@ -142,8 +142,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#LiteralOrigin-org.batfish.datamodel.OriginType-java.lang.Integer-">LiteralOrigin</a></span>(<a href="../../../../../org/batfish/datamodel/OriginType.html" title="enum in org.batfish.datamodel">OriginType</a>&nbsp;originType,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;asNum)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#LiteralOrigin-org.batfish.datamodel.OriginType-java.lang.Long-">LiteralOrigin</a></span>(<a href="../../../../../org/batfish/datamodel/OriginType.html" title="enum in org.batfish.datamodel">OriginType</a>&nbsp;originType,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asNum)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -169,7 +169,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#getAsNum--">getAsNum</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -182,7 +182,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#setAsNum-java.lang.Integer-">setAsNum</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;asNum)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralOrigin.html#setAsNum-java.lang.Long-">setAsNum</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asNum)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -210,7 +210,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LiteralOrigin-org.batfish.datamodel.OriginType-java.lang.Integer-">
+<a name="LiteralOrigin-org.batfish.datamodel.OriginType-java.lang.Long-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -218,7 +218,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 <h4>LiteralOrigin</h4>
 <pre>public&nbsp;LiteralOrigin(<a href="../../../../../org/batfish/datamodel/OriginType.html" title="enum in org.batfish.datamodel">OriginType</a>&nbsp;originType,
                      <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;asNum)</pre>
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asNum)</pre>
 </li>
 </ul>
 </li>
@@ -261,7 +261,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 <ul class="blockList">
 <li class="blockList">
 <h4>getAsNum</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getAsNum()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getAsNum()</pre>
 </li>
 </ul>
 <a name="getOriginType--">
@@ -286,13 +287,14 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Origin
 </dl>
 </li>
 </ul>
-<a name="setAsNum-java.lang.Integer-">
+<a name="setAsNum-java.lang.Long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setAsNum</h4>
-<pre>public&nbsp;void&nbsp;setAsNum(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;asNum)</pre>
+<pre>public&nbsp;void&nbsp;setAsNum(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asNum)</pre>
 </li>
 </ul>
 <a name="setOriginType-org.batfish.datamodel.OriginType-">

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":10,"i28":10,"i29":9,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":9,"i30":10,"i31":10,"i32":9,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,8 +180,9 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#WorkMgr-org.batfish.coordinator.config.Settings-org.batfish.common.BatfishLogger-">WorkMgr</a></span>(<a href="../../../org/batfish/coordinator/config/Settings.html" title="class in org.batfish.coordinator.config">Settings</a>&nbsp;settings,
-       <a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#WorkMgr-org.batfish.coordinator.config.Settings-org.batfish.common.BatfishLogger-org.batfish.storage.StorageProvider-">WorkMgr</a></span>(<a href="../../../org/batfish/coordinator/config/Settings.html" title="class in org.batfish.coordinator.config">Settings</a>&nbsp;settings,
+       <a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger,
+       <a href="../../../org/batfish/storage/StorageProvider.html" title="interface in org.batfish.storage">StorageProvider</a>&nbsp;storage)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -208,9 +209,7 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#checkContainerExists-java.lang.String-">checkContainerExists</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>
-<div class="block">Returns true if the container <code>containerName</code> exists, false otherwise.</div>
-</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#checkContainerExists-java.lang.String-">checkContainerExists</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -250,29 +249,45 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnalysisAnswers-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">getAnalysisAnswers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseTestrig,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnalysisAnswers-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.util.Set-">getAnalysisAnswers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseEnv,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaTestrig,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaEnv,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysisName)</code>&nbsp;</td>
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;analysisQuestions)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnalysisAnswersMetadata-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.util.Set-">getAnalysisAnswersMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;analysisQuestions)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnalysisQuestion-java.lang.String-java.lang.String-java.lang.String-">getAnalysisQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysisName,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnswer-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">getAnswer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseTestrig,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseEnv,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaTestrig,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaEnv,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</code>&nbsp;</td>
-</tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnswer-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">getAnswer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getAnswerMetadata-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">getAnswerMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getConfiguration-java.lang.String-java.lang.String-java.lang.String-">getConfiguration</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
@@ -280,220 +295,256 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <div class="block">Returns a string representation of the content of configuration file <code>configName</code>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common">Container</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getContainer-java.nio.file.Path-">getContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;containerDir)</code>
 <div class="block">Return a <a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common"><code>container</code></a> contains all testrigs directories inside it</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common">Container</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getContainer-java.lang.String-">getContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>
 <div class="block">Return a <a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common"><code>container</code></a> contains all testrigs directories inside it.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getContainerNames--">getContainerNames</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common">Container</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getContainers-java.lang.String-">getContainers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;apiKey)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getdirContainer-java.lang.String-">getdirContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
-</tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getdirNetwork-java.lang.String-">getdirNetwork</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getdirSnapshots-java.lang.String-">getdirSnapshots</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getdirTestrig-java.lang.String-java.lang.String-">getdirTestrig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getdirTestrigs-java.lang.String-">getdirTestrigs</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getLatestTestrig-java.lang.String-">getLatestTestrig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container)</code>
 <div class="block">Returns the latest testrig in the container.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getLogger--">getLogger</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/answers/MajorIssueConfig.html" title="class in org.batfish.datamodel.answers">MajorIssueConfig</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getMajorIssueConfig-java.lang.String-java.lang.String-">getMajorIssueConfig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorIssueType)</code>
+<div class="block">Fetches the <code>MajorIssueConfig</code> for the given network and major issue type.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/coordinator/QueuedWork.html" title="class in org.batfish.coordinator">QueuedWork</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getMatchingWork-org.batfish.common.WorkItem-org.batfish.coordinator.WorkQueueMgr.QueueType-">getMatchingWork</a></span>(<a href="../../../org/batfish/common/WorkItem.html" title="class in org.batfish.common">WorkItem</a>&nbsp;workItem,
                <a href="../../../org/batfish/coordinator/WorkQueueMgr.QueueType.html" title="enum in org.batfish.coordinator">WorkQueueMgr.QueueType</a>&nbsp;qType)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getNetworkNames--">getNetworkNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role">NodeRolesData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getNodeRolesData-java.lang.String-">getNodeRolesData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container)</code>
 <div class="block">Gets the <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role"><code>NodeRolesData</code></a> for the <code>container</code>.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getNodeRolesPath-java.lang.String-">getNodeRolesPath</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container)</code>
 <div class="block">Gets the path of the node roles file</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getNodes-java.lang.String-java.lang.String-">getNodes</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrig)</code>
 <div class="block">Gets the set of nodes in this container and testrig.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>org.codehaus.jettison.json.JSONObject</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getParsingResults-java.lang.String-java.lang.String-">getParsingResults</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getpathAnalysisMetadata-java.lang.String-java.lang.String-">getpathAnalysisMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getpathAnalysisQuestion-java.lang.String-java.lang.String-java.lang.String-">getpathAnalysisQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysisName,
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getpathContainerQuestion-java.lang.String-java.lang.String-">getpathContainerQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getpathTestrigMetadata-java.lang.String-java.lang.String-">getpathTestrigMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrig)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getQuestion-java.lang.String-java.lang.String-">getQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getQuestionSettings-java.lang.String-java.lang.String-java.util.List-">getQuestionSettings</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionClass,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;components)</code>
+<div class="block">Return the JSON-serialized settings for the specified question class for the specified network;
+ or <code>null</code> if either no custom settings exist for the question or no value is present at
+ the path produced from the sepcified components.</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/referencelibrary/ReferenceLibrary.html" title="class in org.batfish.referencelibrary">ReferenceLibrary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getReferenceLibrary-java.lang.String-">getReferenceLibrary</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container)</code>
 <div class="block">Gets the <a href="../../../org/batfish/referencelibrary/ReferenceLibrary.html" title="class in org.batfish.referencelibrary"><code>ReferenceLibrary</code></a> for the <code>container</code>.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getReferenceLibraryPath-java.lang.String-">getReferenceLibraryPath</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container)</code>
 <div class="block">Gets the path of the reference library file</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>org.codehaus.jettison.json.JSONObject</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getStatusJson--">getStatusJson</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/storage/StorageProvider.html" title="interface in org.batfish.storage">StorageProvider</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getStorage--">getStorage</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getTestrigInfo-java.lang.String-java.lang.String-">getTestrigInfo</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/TestrigMetadata.html" title="class in org.batfish.datamodel">TestrigMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getTestrigMetadata-java.lang.String-java.lang.String-">getTestrigMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getTestrigObject-java.lang.String-java.lang.String-java.lang.String-">getTestrigObject</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;objectName)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/coordinator/QueuedWork.html" title="class in org.batfish.coordinator">QueuedWork</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#getWork-java.util.UUID-">getWork</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;workItemId)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#initContainer-java.lang.String-java.lang.String-">initContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerPrefix)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#initTestrig-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">initTestrig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
-           boolean&nbsp;autoAnalyze)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#initSnapshot-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">initSnapshot</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
+            boolean&nbsp;autoAnalyze)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#killWork-org.batfish.coordinator.QueuedWork-">killWork</a></span>(<a href="../../../org/batfish/coordinator/QueuedWork.html" title="class in org.batfish.coordinator">QueuedWork</a>&nbsp;work)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listAnalyses-java.lang.String-org.batfish.coordinator.AnalysisMetadataMgr.AnalysisType-">listAnalyses</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
             <a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.AnalysisType.html" title="enum in org.batfish.coordinator">AnalysisMetadataMgr.AnalysisType</a>&nbsp;analysisType)</code>
 <div class="block">Returns the Analysis names which exist in the container and match the <a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.AnalysisType.html" title="enum in org.batfish.coordinator"><code>AnalysisMetadataMgr.AnalysisType</code></a></div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listAnalysisQuestions-java.lang.String-java.lang.String-">listAnalysisQuestions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysisName)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listContainers-java.lang.String-">listContainers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;apiKey)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listEnvironments-java.lang.String-java.lang.String-">listEnvironments</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/coordinator/QueuedWork.html" title="class in org.batfish.coordinator">QueuedWork</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listIncompleteWork-java.lang.String-java.lang.String-org.batfish.coordinator.WorkDetails.WorkType-">listIncompleteWork</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
                   <a href="../../../org/batfish/coordinator/WorkDetails.WorkType.html" title="enum in org.batfish.coordinator">WorkDetails.WorkType</a>&nbsp;workType)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listQuestions-java.lang.String-boolean-">listQuestions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
              boolean&nbsp;verbose)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#listTestrigs-java.lang.String-">listTestrigs</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#processAnalysisAnswers-java.util.Map-java.util.Map-">processAnalysisAnswers</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;rawAnswers,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/common/AnswerRowsOptions.html" title="class in org.batfish.common">AnswerRowsOptions</a>&gt;&nbsp;answersRowsOptions)</code>
+<div class="block">Filter and sort <code>rawAnswers</code> according to options specified in <code>analysisAnswersOptions</code></div>
+</td>
+</tr>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#putMajorIssueConfig-java.lang.String-java.lang.String-org.batfish.datamodel.answers.MajorIssueConfig-">putMajorIssueConfig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorIssueType,
+                   <a href="../../../org/batfish/datamodel/answers/MajorIssueConfig.html" title="class in org.batfish.datamodel.answers">MajorIssueConfig</a>&nbsp;config)</code>
+<div class="block">Writes the <code>MajorIssueConfig</code> for the given network and major issue type.</div>
+</td>
+</tr>
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#putObject-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-">putObject</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;objectName,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;fileStream)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#queueWork-org.batfish.common.WorkItem-">queueWork</a></span>(<a href="../../../org/batfish/common/WorkItem.html" title="class in org.batfish.common">WorkItem</a>&nbsp;workItem)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#startWorkManager--">startWorkManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#syncTestrigsSyncNow-java.lang.String-java.lang.String-boolean-">syncTestrigsSyncNow</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pluginId,
                    boolean&nbsp;force)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#syncTestrigsUpdateSettings-java.lang.String-java.lang.String-java.util.Map-">syncTestrigsUpdateSettings</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pluginId,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;settings)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#uploadEnvironment-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-">uploadEnvironment</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
@@ -503,18 +554,30 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <div class="block">Upload a new environment to an existing testrig.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#uploadQuestion-java.lang.String-java.lang.String-java.lang.String-">uploadQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qName,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#uploadQuestion-java.lang.String-java.lang.String-java.lang.String-">uploadQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionJson)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#uploadTestrig-java.lang.String-java.lang.String-java.io.InputStream-boolean-">uploadTestrig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;fileStream,
-             boolean&nbsp;autoAnalyze)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#uploadSnapshot-java.lang.String-java.lang.String-java.io.InputStream-boolean-">uploadSnapshot</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;fileStream,
+              boolean&nbsp;autoAnalyze)</code>
+<div class="block">Upload a new snapshot to the specified network.</div>
+</td>
+</tr>
+<tr id="i63" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgr.html#writeQuestionSettings-java.lang.String-java.lang.String-java.util.List-com.fasterxml.jackson.databind.JsonNode-">writeQuestionSettings</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionClass,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;components,
+                     com.fasterxml.jackson.databind.JsonNode&nbsp;value)</code>
+<div class="block">Write the JSON settings for the specified question class for the specified network at the end
+ of the path computed from the specified components.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -552,14 +615,16 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WorkMgr-org.batfish.coordinator.config.Settings-org.batfish.common.BatfishLogger-">
+<a name="WorkMgr-org.batfish.coordinator.config.Settings-org.batfish.common.BatfishLogger-org.batfish.storage.StorageProvider-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WorkMgr</h4>
 <pre>public&nbsp;WorkMgr(<a href="../../../org/batfish/coordinator/config/Settings.html" title="class in org.batfish.coordinator.config">Settings</a>&nbsp;settings,
-               <a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger)</pre>
+               <a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger,
+               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+               <a href="../../../org/batfish/storage/StorageProvider.html" title="interface in org.batfish.storage">StorageProvider</a>&nbsp;storage)</pre>
 </li>
 </ul>
 </li>
@@ -570,6 +635,16 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getStorage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStorage</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/storage/StorageProvider.html" title="interface in org.batfish.storage">StorageProvider</a>&nbsp;getStorage()</pre>
+</li>
+</ul>
 <a name="autoComplete-java.lang.String-java.lang.String-org.batfish.datamodel.answers.AutocompleteSuggestion.CompletionType-java.lang.String-int-">
 <!--   -->
 </a>
@@ -664,22 +739,69 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qName)</pre>
 </li>
 </ul>
-<a name="getAnalysisAnswers-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
+<a name="getAnswer-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAnswer</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAnswer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)
+                 throws com.fasterxml.jackson.core.JsonProcessingException,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAnalysisAnswers-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.util.Set-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAnalysisAnswers</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAnalysisAnswers(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseTestrig,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseEnv,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaTestrig,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaEnv,
-                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysisName)
-                                      throws com.fasterxml.jackson.core.JsonProcessingException</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAnalysisAnswers(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseEnv,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaEnv,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;analysisQuestions)
+                                               throws com.fasterxml.jackson.core.JsonProcessingException,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAnalysisAnswersMetadata-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAnalysisAnswersMetadata</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a>&gt;&nbsp;getAnalysisAnswersMetadata(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis,
+                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;analysisQuestions)
+                                                               throws com.fasterxml.jackson.core.JsonProcessingException,
+                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -694,22 +816,29 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)</pre>
 </li>
 </ul>
-<a name="getAnswer-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
+<a name="getAnswerMetadata-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAnswer</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getAnswer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseTestrig,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseEnv,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaTestrig,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;deltaEnv,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName)
-                 throws com.fasterxml.jackson.core.JsonProcessingException</pre>
+<h4>getAnswerMetadata</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/datamodel/answers/AnswerMetadata.html" title="class in org.batfish.datamodel.answers">AnswerMetadata</a>&nbsp;getAnswerMetadata(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;referenceSnapshot,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)
+                                          throws com.fasterxml.jackson.core.JsonProcessingException,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -751,13 +880,13 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <div class="block">Return a <a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common"><code>container</code></a> contains all testrigs directories inside it</div>
 </li>
 </ul>
-<a name="getdirContainer-java.lang.String-">
+<a name="getdirNetwork-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getdirContainer</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirContainer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
+<h4>getdirNetwork</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirNetwork(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</pre>
 </li>
 </ul>
 <a name="getLogger--">
@@ -769,13 +898,13 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
 <pre>public&nbsp;<a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;getLogger()</pre>
 </li>
 </ul>
-<a name="getContainerNames--">
+<a name="getNetworkNames--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getContainerNames</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getContainerNames()</pre>
+<h4>getNetworkNames</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getNetworkNames()</pre>
 </li>
 </ul>
 <a name="getdirTestrig-java.lang.String-java.lang.String-">
@@ -788,13 +917,24 @@ extends <a href="../../../org/batfish/common/plugin/AbstractCoordinator.html" ti
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName)</pre>
 </li>
 </ul>
-<a name="getdirTestrigs-java.lang.String-">
+<a name="getdirSnapshots-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getdirTestrigs</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirTestrigs(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
+<h4>getdirSnapshots</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirSnapshots(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</pre>
+</li>
+</ul>
+<a name="getMajorIssueConfig-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMajorIssueConfig</h4>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/answers/MajorIssueConfig.html" title="class in org.batfish.datamodel.answers">MajorIssueConfig</a>&nbsp;getMajorIssueConfig(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorIssueType)</pre>
+<div class="block">Fetches the <code>MajorIssueConfig</code> for the given network and major issue type.</div>
 </li>
 </ul>
 <a name="getLatestTestrig-java.lang.String-">
@@ -1038,16 +1178,16 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Pat
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerPrefix)</pre>
 </li>
 </ul>
-<a name="initTestrig-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">
+<a name="initSnapshot-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>initTestrig</h4>
-<pre>public&nbsp;void&nbsp;initTestrig(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
-                        boolean&nbsp;autoAnalyze)</pre>
+<h4>initSnapshot</h4>
+<pre>public&nbsp;void&nbsp;initSnapshot(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
+                         boolean&nbsp;autoAnalyze)</pre>
 </li>
 </ul>
 <a name="killWork-org.batfish.coordinator.QueuedWork-">
@@ -1148,6 +1288,23 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Pat
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;listTestrigs(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
 </li>
 </ul>
+<a name="putMajorIssueConfig-java.lang.String-java.lang.String-org.batfish.datamodel.answers.MajorIssueConfig-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putMajorIssueConfig</h4>
+<pre>public&nbsp;void&nbsp;putMajorIssueConfig(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;majorIssueType,
+                                <a href="../../../org/batfish/datamodel/answers/MajorIssueConfig.html" title="class in org.batfish.datamodel.answers">MajorIssueConfig</a>&nbsp;config)
+                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Writes the <code>MajorIssueConfig</code> for the given network and major issue type.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="putObject-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-">
 <!--   -->
 </a>
@@ -1231,31 +1388,99 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Pat
 <ul class="blockList">
 <li class="blockList">
 <h4>uploadQuestion</h4>
-<pre>public&nbsp;void&nbsp;uploadQuestion(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qName,
+<pre>public&nbsp;void&nbsp;uploadQuestion(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;question,
                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionJson)</pre>
 </li>
 </ul>
-<a name="uploadTestrig-java.lang.String-java.lang.String-java.io.InputStream-boolean-">
+<a name="uploadSnapshot-java.lang.String-java.lang.String-java.io.InputStream-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>uploadTestrig</h4>
-<pre>public&nbsp;void&nbsp;uploadTestrig(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;fileStream,
-                          boolean&nbsp;autoAnalyze)</pre>
+<h4>uploadSnapshot</h4>
+<pre>public&nbsp;void&nbsp;uploadSnapshot(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;fileStream,
+                           boolean&nbsp;autoAnalyze)</pre>
+<div class="block">Upload a new snapshot to the specified network.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>networkName</code> - Name of the network to upload the snapshot to.</dd>
+<dd><code>snapshotName</code> - Name of the new snapshot.</dd>
+<dd><code>fileStream</code> - <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io"><code>InputStream</code></a> of the snapshot zip.</dd>
+<dd><code>autoAnalyze</code> - Boolean determining if the snapshot analysis should be triggered on upload.</dd>
+</dl>
 </li>
 </ul>
 <a name="checkContainerExists-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>checkContainerExists</h4>
 <pre>public&nbsp;boolean&nbsp;checkContainerExists(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
-<div class="block">Returns true if the container <code>containerName</code> exists, false otherwise.</div>
+</li>
+</ul>
+<a name="processAnalysisAnswers-java.util.Map-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processAnalysisAnswers</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/answers/Answer.html" title="class in org.batfish.datamodel.answers">Answer</a>&gt;&nbsp;processAnalysisAnswers(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;rawAnswers,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/common/AnswerRowsOptions.html" title="class in org.batfish.common">AnswerRowsOptions</a>&gt;&nbsp;answersRowsOptions)</pre>
+<div class="block">Filter and sort <code>rawAnswers</code> according to options specified in <code>analysisAnswersOptions</code></div>
+</li>
+</ul>
+<a name="getQuestionSettings-java.lang.String-java.lang.String-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQuestionSettings</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getQuestionSettings(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionClass,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;components)
+                                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Return the JSON-serialized settings for the specified question class for the specified network;
+ or <code>null</code> if either no custom settings exist for the question or no value is present at
+ the path produced from the sepcified components.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>network</code> - The name of the network</dd>
+<dd><code>questionClass</code> - The fully-qualified class name of the question</dd>
+<dd><code>components</code> - The components to traverse from the root of the question settings to reach
+     the desired section or value</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if there is an error reading the settings</dd>
+</dl>
+</li>
+</ul>
+<a name="writeQuestionSettings-java.lang.String-java.lang.String-java.util.List-com.fasterxml.jackson.databind.JsonNode-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>writeQuestionSettings</h4>
+<pre>public&nbsp;void&nbsp;writeQuestionSettings(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionClass,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;components,
+                                  com.fasterxml.jackson.databind.JsonNode&nbsp;value)
+                           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Write the JSON settings for the specified question class for the specified network at the end
+ of the path computed from the specified components. Any absent components will be created.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>network</code> - The name of the network</dd>
+<dd><code>questionClass</code> - The fully-qualified class name of the question</dd>
+<dd><code>components</code> - The components to traverse from the root of the question settings to reach
+     the desired section or value</dd>
+<dd><code>value</code> - The settings value to write at the end of the path</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if there is an error writing the settings</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/referencelibrary/ReferenceLibrary.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -134,7 +134,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#ReferenceBook-java.util.List-java.lang.String-java.util.List-java.util.List-java.util.List-">ReferenceBook</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary">AddressGroup</a>&gt;&nbsp;addressGroups,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#ReferenceBook-java.util.List-java.util.List-java.lang.String-java.util.List-java.util.List-java.util.List-">ReferenceBook</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary">AddressGroup</a>&gt;&nbsp;addressGroups,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;&nbsp;filterGroups,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceEndpoint.html" title="class in org.batfish.referencelibrary">ServiceEndpoint</a>&gt;&nbsp;serviceEndpoints,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceObjectGroup.html" title="class in org.batfish.referencelibrary">ServiceObjectGroup</a>&gt;&nbsp;serviceObjectGroups,
@@ -174,22 +175,32 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getAddressGroups--">getAddressGroups</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getFilterGroup-java.lang.String-">getFilterGroup</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;groupName)</code>
+<div class="block">Return the <a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary"><code>FilterGroup</code></a> with name <code>groupName</code></div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getFilterGroups--">getFilterGroups</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceEndpoint.html" title="class in org.batfish.referencelibrary">ServiceEndpoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getServiceEndpoints--">getServiceEndpoints</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceObjectGroup.html" title="class in org.batfish.referencelibrary">ServiceObjectGroup</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getServiceObjectGroups--">getServiceObjectGroups</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceObject.html" title="class in org.batfish.referencelibrary">ServiceObject</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#getServiceObjects--">getServiceObjects</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/referencelibrary/ReferenceBook.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
@@ -215,13 +226,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ReferenceBook-java.util.List-java.lang.String-java.util.List-java.util.List-java.util.List-">
+<a name="ReferenceBook-java.util.List-java.util.List-java.lang.String-java.util.List-java.util.List-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ReferenceBook</h4>
 <pre>public&nbsp;ReferenceBook(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary">AddressGroup</a>&gt;&nbsp;addressGroups,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;&nbsp;filterGroups,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceEndpoint.html" title="class in org.batfish.referencelibrary">ServiceEndpoint</a>&gt;&nbsp;serviceEndpoints,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/referencelibrary/ServiceObjectGroup.html" title="class in org.batfish.referencelibrary">ServiceObjectGroup</a>&gt;&nbsp;serviceObjectGroups,
@@ -279,6 +291,25 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <li class="blockList">
 <h4>getAddressGroups</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary">AddressGroup</a>&gt;&nbsp;getAddressGroups()</pre>
+</li>
+</ul>
+<a name="getFilterGroup-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFilterGroup</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;&nbsp;getFilterGroup(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;groupName)</pre>
+<div class="block">Return the <a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary"><code>FilterGroup</code></a> with name <code>groupName</code></div>
+</li>
+</ul>
+<a name="getFilterGroups--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFilterGroups</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary">FilterGroup</a>&gt;&nbsp;getFilterGroups()</pre>
 </li>
 </ul>
 <a name="getName--">
@@ -358,7 +389,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/referencelibrary/AddressGroup.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/referencelibrary/FilterGroup.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/referencelibrary/ReferenceLibrary.html" title="class in org.batfish.referencelibrary"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

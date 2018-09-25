@@ -83,50 +83,54 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.acl">org.batfish.datamodel.acl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions.smt">org.batfish.datamodel.questions.smt</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.visitors">org.batfish.datamodel.visitors</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.main">org.batfish.main</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.representation.aws">org.batfish.representation.aws</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.representation.juniper">org.batfish.representation.juniper</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.symbolic.abstraction">org.batfish.symbolic.abstraction</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.symbolic.utils">org.batfish.symbolic.utils</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.z3">org.batfish.z3</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.z3.expr">org.batfish.z3.expr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -135,6 +139,24 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a> in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">HeaderSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/HeaderSpaceToBDD.html#toBDD-org.batfish.datamodel.HeaderSpace-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel">
 <!--   -->
 </a>
@@ -149,6 +171,20 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">HeaderSpace.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.Builder.html#build--">build</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/package-summary.html">org.batfish.datamodel</a> that return types with arguments of type <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">IntersectHeaderSpaces.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IntersectHeaderSpaces.html#intersect-org.batfish.datamodel.HeaderSpace-org.batfish.datamodel.HeaderSpace-">intersect</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;h1,
+         <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;h2)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -168,6 +204,11 @@
 <td class="colLast"><span class="typeNameLabel">HeaderSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/HeaderSpace.html#compareTo-org.batfish.datamodel.HeaderSpace-">compareTo</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">IntersectHeaderSpaces.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IntersectHeaderSpaces.html#intersect-org.batfish.datamodel.HeaderSpace-org.batfish.datamodel.HeaderSpace-">intersect</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;h1,
+         <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;h2)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpAccessListLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpAccessListLine.html#rejectingHeaderSpace-org.batfish.datamodel.HeaderSpace-">rejectingHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
@@ -378,11 +419,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ResolvedReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ResolvedReachabilityParameters.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ResolvedReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ResolvedReachabilityParameters.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
@@ -391,6 +432,12 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilitySettings.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilitySettings.Builder.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.html#resolveHeaderspace-org.batfish.specifier.SpecifierContext-">resolveHeaderspace</a></span>(<a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a>&nbsp;ctx)</code>
+<div class="block">Resolve all parameters and update the underlying headerspace.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -402,14 +449,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html" title="class in org.batfish.question">ReachabilityParameters.Builder</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/question/ResolvedReachabilityParameters.Builder.html" title="class in org.batfish.question">ResolvedReachabilityParameters.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ResolvedReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ResolvedReachabilityParameters.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html" title="class in org.batfish.question">ReachabilityParameters.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html" title="class in org.batfish.question">SearchFiltersParameters.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/question/ReachabilitySettings.Builder.html" title="class in org.batfish.question">ReachabilitySettings.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilitySettings.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilitySettings.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
@@ -594,12 +645,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -611,20 +662,20 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ReachabilityQuerySynthesizer.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/z3/SynthesizerInputImpl.Builder.html" title="class in org.batfish.z3">SynthesizerInputImpl.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizerInputImpl.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/SynthesizerInputImpl.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ReachabilityQuerySynthesizer.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDIpAccessListSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpAccessListSpecializer.html#specialize-org.batfish.datamodel.HeaderSpace-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

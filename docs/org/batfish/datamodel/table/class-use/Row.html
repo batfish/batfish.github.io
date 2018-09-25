@@ -83,23 +83,55 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common">org.batfish.common</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.answers">org.batfish.datamodel.answers</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions">org.batfish.datamodel.questions</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.table">org.batfish.datamodel.table</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus</a></td>
+<td class="colFirst"><a href="#org.batfish.question.bgpproperties">org.batfish.question.bgpproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.filtertable">org.batfish.question.filtertable</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.multipath">org.batfish.question.multipath</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.nodeproperties">org.batfish.question.nodeproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.ospfproperties">org.batfish.question.ospfproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.testfilters">org.batfish.question.testfilters</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -111,6 +143,24 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/common/package-summary.html">org.batfish.common</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/common/package-summary.html">org.batfish.common</a> with parameters of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">ColumnFilter.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/ColumnFilter.html#matches-org.batfish.datamodel.table.Row-">matches</a></span>(<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&nbsp;row)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel.answers">
 <!--   -->
 </a>
@@ -124,7 +174,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AclLines2Rows.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/AclLines2Rows.html#getRows--">getRows</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FilterLineReachabilityRows.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/answers/FilterLineReachabilityRows.html#getRows--">getRows</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -192,6 +242,14 @@
 <td class="colLast"><span class="typeNameLabel">Rows.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/table/Rows.html#getData--">getData</a></span>()</code>
 <div class="block">Returns an immutable copy of the rows in this object</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">ExcludedRows.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/table/ExcludedRows.html#getRowsList--">getRowsList</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">TableAnswerElement.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/table/TableAnswerElement.html#getRowsList--">getRowsList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
@@ -281,6 +339,47 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/package-summary.html">org.batfish.question</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/package-summary.html">org.batfish.question</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerer.html#processEntryToRows-java.util.Map.Entry-">processEntryToRows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&gt;&gt;&gt;&gt;&nbsp;e)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.bgpproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/bgpproperties/package-summary.html">org.batfish.question.bgpproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/bgpproperties/package-summary.html">org.batfish.question.bgpproperties</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BgpPropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/bgpproperties/BgpPropertiesAnswerer.html#getProperties-org.batfish.datamodel.questions.BgpPropertySpecifier-java.util.Map-java.util.Set-java.util.Map-">getProperties</a></span>(<a href="../../../../../org/batfish/datamodel/questions/BgpPropertySpecifier.html" title="class in org.batfish.datamodel.questions">BgpPropertySpecifier</a>&nbsp;propertySpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/table/ColumnMetadata.html" title="class in org.batfish.datamodel.table">ColumnMetadata</a>&gt;&nbsp;columnMetadata)</code>
+<div class="block">Returns a set of rows that contain the values of all the properties denoted by <code>propertySpecifier</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.bgpsessionstatus">
 <!--   -->
 </a>
@@ -321,6 +420,128 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.interfaceproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/interfaceproperties/package-summary.html">org.batfish.question.interfaceproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/interfaceproperties/package-summary.html">org.batfish.question.interfaceproperties</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfacePropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/interfaceproperties/InterfacePropertiesAnswerer.html#getProperties-org.batfish.datamodel.questions.InterfacePropertySpecifier-java.util.Map-java.util.Set-org.batfish.datamodel.questions.InterfacesSpecifier-boolean-java.util.Map-">getProperties</a></span>(<a href="../../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;propertySpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+             <a href="../../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfacesSpecifier,
+             boolean&nbsp;excludeShutInterfaces,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/table/ColumnMetadata.html" title="class in org.batfish.datamodel.table">ColumnMetadata</a>&gt;&nbsp;columns)</code>
+<div class="block">Gets properties of interfaces.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">InterfacePropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/interfaceproperties/InterfacePropertiesAnswerer.html#getProperties-org.batfish.datamodel.questions.InterfacePropertySpecifier-java.util.Map-java.util.Set-org.batfish.datamodel.questions.InterfacesSpecifier-java.util.Map-">getProperties</a></span>(<a href="../../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;propertySpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+             <a href="../../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfacesSpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/table/ColumnMetadata.html" title="class in org.batfish.datamodel.table">ColumnMetadata</a>&gt;&nbsp;columns)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.multipath">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/multipath/package-summary.html">org.batfish.question.multipath</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/multipath/package-summary.html">org.batfish.question.multipath</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">MultipathConsistencyAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/multipath/MultipathConsistencyAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-">flowHistoryToRows</a></span>(<a href="../../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory)</code>
+<div class="block">Converts a flowHistory object into a set of Rows.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.nodeproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/nodeproperties/package-summary.html">org.batfish.question.nodeproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/nodeproperties/package-summary.html">org.batfish.question.nodeproperties</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">NodePropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/nodeproperties/NodePropertiesAnswerer.html#getProperties-org.batfish.datamodel.questions.NodePropertySpecifier-java.util.Map-java.util.Set-java.util.Map-">getProperties</a></span>(<a href="../../../../../org/batfish/datamodel/questions/NodePropertySpecifier.html" title="class in org.batfish.datamodel.questions">NodePropertySpecifier</a>&nbsp;propertySpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/table/ColumnMetadata.html" title="class in org.batfish.datamodel.table">ColumnMetadata</a>&gt;&nbsp;columns)</code>
+<div class="block">Gets properties of nodes.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.ospfproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/ospfproperties/package-summary.html">org.batfish.question.ospfproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/ospfproperties/package-summary.html">org.batfish.question.ospfproperties</a> that return types with arguments of type <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">OspfPropertiesAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ospfproperties/OspfPropertiesAnswerer.html#getProperties-org.batfish.datamodel.questions.OspfPropertySpecifier-java.util.Map-java.util.Set-java.util.Map-">getProperties</a></span>(<a href="../../../../../org/batfish/datamodel/questions/OspfPropertySpecifier.html" title="class in org.batfish.datamodel.questions">OspfPropertySpecifier</a>&nbsp;propertySpecifier,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodes,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/table/ColumnMetadata.html" title="class in org.batfish.datamodel.table">ColumnMetadata</a>&gt;&nbsp;columnMetadata)</code>
+<div class="block">Returns a set of rows that contain the values of all the properties denoted by <code>propertySpecifier</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.testfilters">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a> in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a> that return <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TestFiltersAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/testfilters/TestFiltersAnswerer.html#getRow-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.Flow-org.batfish.datamodel.Configuration-">getRow</a></span>(<a href="../../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;filter,
+      <a href="../../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;flow,
+      <a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c)</code>
+<div class="block">Returns a <a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table"><code>Row</code></a> with results from injecting <code>flow</code> into <code>filter</code> at node
+ represented by <code>c</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.traceroute">
 <!--   -->
 </a>
@@ -334,7 +555,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">TracerouteAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-">flowHistoryToRows</a></span>(<a href="../../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory)</code>
+<td class="colLast"><span class="typeNameLabel">TracerouteAnswerer.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-boolean-">flowHistoryToRows</a></span>(<a href="../../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory,
+                 boolean&nbsp;differential)</code>
 <div class="block">Converts a flowHistory object into a set of Rows.</div>
 </td>
 </tr>

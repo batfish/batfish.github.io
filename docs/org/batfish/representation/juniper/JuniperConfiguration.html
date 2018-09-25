@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,7 +180,7 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#JuniperConfiguration-java.util.Set-">JuniperConfiguration</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;unimplementedFeatures)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#JuniperConfiguration--">JuniperConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -326,42 +326,38 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#getTacplusServers--">getTacplusServers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/juniper/Vlan.html" title="class in org.batfish.representation.juniper">Vlan</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#getVlanNameToVlan--">getVlanNameToVlan</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/juniper/Zone.html" title="class in org.batfish.representation.juniper">Zone</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#getZones--">getZones</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setDefaultAddressSelection-boolean-">setDefaultAddressSelection</a></span>(boolean&nbsp;defaultAddressSelection)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setDefaultCrossZoneAction-org.batfish.datamodel.LineAction-">setDefaultCrossZoneAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;defaultCrossZoneAction)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setDefaultInboundAction-org.batfish.datamodel.LineAction-">setDefaultInboundAction</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;defaultInboundAction)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setHostname-java.lang.String-">setHostname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setSyslogHosts-java.util.NavigableSet-">setSyslogHosts</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;syslogHosts)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#setVendor-org.batfish.datamodel.ConfigurationFormat-">setVendor</a></span>(<a href="../../../../org/batfish/datamodel/ConfigurationFormat.html" title="enum in org.batfish.datamodel">ConfigurationFormat</a>&nbsp;format)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/JuniperConfiguration.html#toVendorIndependentConfiguration--">toVendorIndependentConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
@@ -454,13 +450,13 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JuniperConfiguration-java.util.Set-">
+<a name="JuniperConfiguration--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JuniperConfiguration</h4>
-<pre>public&nbsp;JuniperConfiguration(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;unimplementedFeatures)</pre>
+<pre>public&nbsp;JuniperConfiguration()</pre>
 </li>
 </ul>
 </li>
@@ -752,19 +748,6 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <li class="blockList">
 <h4>getTacplusServers</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getTacplusServers()</pre>
-</li>
-</ul>
-<a name="getUnimplementedFeatures--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedFeatures</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getUnimplementedFeatures()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/batfish/vendor/VendorConfiguration.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/vendor/VendorConfiguration.html" title="class in org.batfish.vendor">VendorConfiguration</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="getVlanNameToVlan--">

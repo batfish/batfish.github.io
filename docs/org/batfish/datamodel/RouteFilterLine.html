@@ -116,6 +116,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">RouteFilterLine</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">A line in a <a href="../../../org/batfish/datamodel/RouteFilterList.html" title="class in org.batfish.datamodel"><code>RouteFilterList</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../serialized-form.html#org.batfish.datamodel.RouteFilterLine">Serialized Form</a></dd>
@@ -172,15 +173,21 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getAction--">getAction</a></span>()</code>
+<div class="block">The action the underlying access-list will take when this line matches an IPV4 route.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getIpWildcard--">getIpWildcard</a></span>()</code>
+<div class="block">The bits against which to compare a route's prefix.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getLengthRange--">getLengthRange</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/RouteFilterLine.html#getLengthRange--">getLengthRange</a></span>()</code>
+<div class="block">The range of acceptable prefix-lengths for a route.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -275,8 +282,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>getAction</h4>
-<pre>@JsonPropertyDescription(value="The action the underlying access-list will take when this line matches an IPV4 route.")
-public&nbsp;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;getAction()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;getAction()</pre>
+<div class="block">The action the underlying access-list will take when this line matches an IPV4 route.</div>
 </li>
 </ul>
 <a name="getLengthRange--">
@@ -285,8 +292,8 @@ public&nbsp;<a href="../../../org/batfish/datamodel/LineAction.html" title="enum
 <ul class="blockList">
 <li class="blockList">
 <h4>getLengthRange</h4>
-<pre>@JsonPropertyDescription(value="The range of acceptable prefix-lengths for a route.")
-public&nbsp;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;getLengthRange()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;getLengthRange()</pre>
+<div class="block">The range of acceptable prefix-lengths for a route.</div>
 </li>
 </ul>
 <a name="getIpWildcard--">
@@ -295,8 +302,9 @@ public&nbsp;<a href="../../../org/batfish/datamodel/SubRange.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getIpWildcard</h4>
-<pre>@JsonPropertyDescription(value="The bits against which to compare a route\'s prefix. The mask of this IP Wildcard determines which bits must match")
-public&nbsp;<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;getIpWildcard()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;getIpWildcard()</pre>
+<div class="block">The bits against which to compare a route's prefix. The mask of this IP Wildcard determines
+ which bits must match.</div>
 </li>
 </ul>
 <a name="hashCode--">

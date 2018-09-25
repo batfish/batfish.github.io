@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/common/plugin/IClientPlugin.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/common/plugin/IClient.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/batfish/common/plugin/IDataPlanePlugin.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -125,27 +125,27 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getContainerNames--">getContainerNames</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getdirNetwork-java.lang.String-">getdirNetwork</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getdirContainer-java.lang.String-">getdirContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getdirSnapshots-java.lang.String-">getdirSnapshots</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getdirTestrigs-java.lang.String-">getdirTestrigs</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getLogger--">getLogger</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#getNetworkNames--">getNetworkNames</a></span>()</code>&nbsp;</td>
+</tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#initTestrig-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">initTestrig</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
-           boolean&nbsp;autoAnalyze)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ICoordinator.html#initSnapshot-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">initSnapshot</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
+            boolean&nbsp;autoAnalyze)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -167,22 +167,22 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getdirContainer-java.lang.String-">
+<a name="getdirNetwork-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getdirContainer</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirContainer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
+<h4>getdirNetwork</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirNetwork(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</pre>
 </li>
 </ul>
-<a name="getdirTestrigs-java.lang.String-">
+<a name="getdirSnapshots-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getdirTestrigs</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirTestrigs(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName)</pre>
+<h4>getdirSnapshots</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;getdirSnapshots(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName)</pre>
 </li>
 </ul>
 <a name="getLogger--">
@@ -194,25 +194,25 @@ var activeTableTab = "activeTableTab";
 <pre><a href="../../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;getLogger()</pre>
 </li>
 </ul>
-<a name="getContainerNames--">
+<a name="getNetworkNames--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getContainerNames</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getContainerNames()</pre>
+<h4>getNetworkNames</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getNetworkNames()</pre>
 </li>
 </ul>
-<a name="initTestrig-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">
+<a name="initSnapshot-java.lang.String-java.lang.String-java.nio.file.Path-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>initTestrig</h4>
-<pre>void&nbsp;initTestrig(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;containerName,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
-                 boolean&nbsp;autoAnalyze)</pre>
+<h4>initSnapshot</h4>
+<pre>void&nbsp;initSnapshot(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;networkName,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshotName,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;srcDir,
+                  boolean&nbsp;autoAnalyze)</pre>
 </li>
 </ul>
 <a name="registerTestrigSyncer-java.lang.String-org.batfish.common.plugin.SyncTestrigsPlugin-">
@@ -253,7 +253,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/common/plugin/IClientPlugin.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/common/plugin/IClient.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../org/batfish/common/plugin/IDataPlanePlugin.html" title="interface in org.batfish.common.plugin"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

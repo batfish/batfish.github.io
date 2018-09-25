@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -118,7 +118,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">MatchPrefix6Set</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">MatchPrefix6Set</span>
 extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -141,7 +142,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;org.batfish.datamodel.routing_policy.expr.<a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></h3>
-<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a></code></li>
+<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#PROP_COMMENT">PROP_COMMENT</a></code></li>
 </ul>
 </li>
 </ul>
@@ -194,14 +195,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefix6Set.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefix6Set.html#setPrefix-org.batfish.datamodel.routing_policy.expr.Prefix6Expr-">setPrefix</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6Expr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6Expr</a>&nbsp;prefix)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefix6Set.html#setPrefixSet-org.batfish.datamodel.routing_policy.expr.Prefix6SetExpr-">setPrefixSet</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6SetExpr</a>&nbsp;prefixSet)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -282,7 +275,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrefix</h4>
-<pre>public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6Expr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6Expr</a>&nbsp;getPrefix()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6Expr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6Expr</a>&nbsp;getPrefix()</pre>
 </li>
 </ul>
 <a name="getPrefixSet--">
@@ -291,13 +285,14 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrefixSet</h4>
-<pre>public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6SetExpr</a>&nbsp;getPrefixSet()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6SetExpr</a>&nbsp;getPrefixSet()</pre>
 </li>
 </ul>
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
@@ -305,24 +300,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="setPrefix-org.batfish.datamodel.routing_policy.expr.Prefix6Expr-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPrefix</h4>
-<pre>public&nbsp;void&nbsp;setPrefix(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6Expr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6Expr</a>&nbsp;prefix)</pre>
-</li>
-</ul>
-<a name="setPrefixSet-org.batfish.datamodel.routing_policy.expr.Prefix6SetExpr-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setPrefixSet</h4>
-<pre>public&nbsp;void&nbsp;setPrefixSet(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">Prefix6SetExpr</a>&nbsp;prefixSet)</pre>
 </li>
 </ul>
 </li>

@@ -120,6 +120,19 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">AbstractionPrefixSet</span>
 extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a></pre>
+<div class="block">A specific kind of prefix match used only by the abstraction code Does *not* correspond to any
+ real configuration feature
+
+ <p>Checks if a given prefix has any overlap with another set of prefixes. To check this, it
+ encodes the set of prefixes as a prefix trie.
+
+ <p>For example, if the abstraction wants to restrict to prefixes that overlap with 1.2.3.0/24,
+ then it will allow any of the following: 0.0.0.0/0, 0.0.0.0/1, ..., 1.2.3.0/24, 1.2.3.0/25,
+ 1.2.3.0/32, 1.2.3.1/32, ...
+
+ <p>This check gets broken down into two checks on the prefix trie. Either (1) the prefix is a
+ subsequence of another (i.e., 1.2.3.0/23), or (2) the address is contained in the trie (i.e.,
+ 1.2.3.4).</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../serialized-form.html#org.batfish.datamodel.routing_policy.expr.AbstractionPrefixSet">Serialized Form</a></dd>

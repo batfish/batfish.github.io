@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":10,"i6":6,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":6,"i16":10,"i17":10,"i18":6,"i19":10,"i20":6,"i21":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":6,"i15":10,"i16":10,"i17":6,"i18":10,"i19":6,"i20":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,18 +219,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#getOverlayConfiguration--">getOverlayConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#getUnrecognized--">getUnrecognized</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#getWarnings--">getWarnings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#markAbstractStructure-org.batfish.vendor.StructureType-org.batfish.vendor.StructureUsage-java.util.Collection-">markAbstractStructure</a></span>(<a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor">StructureType</a>&nbsp;type,
                      <a href="../../../org/batfish/vendor/StructureUsage.html" title="interface in org.batfish.vendor">StructureUsage</a>&nbsp;usage,
@@ -240,7 +236,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
  types passed in <code>structureTypesToCheck</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#markConcreteStructure-org.batfish.vendor.StructureType-org.batfish.vendor.StructureUsage...-">markConcreteStructure</a></span>(<a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor">StructureType</a>&nbsp;type,
                      <a href="../../../org/batfish/vendor/StructureUsage.html" title="interface in org.batfish.vendor">StructureUsage</a>...&nbsp;usages)</code>
@@ -248,53 +244,53 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
  <a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor"><code>StructureType</code></a>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#recordStructure-org.batfish.vendor.StructureType-java.lang.String-int-int-">recordStructure</a></span>(<a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor">StructureType</a>&nbsp;structureType,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                int&nbsp;numReferrers,
                int&nbsp;line)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#referenceStructure-org.batfish.vendor.StructureType-java.lang.String-org.batfish.vendor.StructureUsage-int-">referenceStructure</a></span>(<a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor">StructureType</a>&nbsp;type,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                   <a href="../../../org/batfish/vendor/StructureUsage.html" title="interface in org.batfish.vendor">StructureUsage</a>&nbsp;usage,
                   int&nbsp;line)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setAnswerElement-org.batfish.datamodel.answers.ConvertConfigurationAnswerElement-">setAnswerElement</a></span>(<a href="../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a>&nbsp;answerElement)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setFilename-java.lang.String-">setFilename</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setHostname-java.lang.String-">setHostname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setOverlayConfiguration-org.batfish.vendor.VendorConfiguration-">setOverlayConfiguration</a></span>(<a href="../../../org/batfish/vendor/VendorConfiguration.html" title="class in org.batfish.vendor">VendorConfiguration</a>&nbsp;overlayConfiguration)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setUnrecognized-boolean-">setUnrecognized</a></span>(boolean&nbsp;unrecognized)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setVendor-org.batfish.datamodel.ConfigurationFormat-">setVendor</a></span>(<a href="../../../org/batfish/datamodel/ConfigurationFormat.html" title="enum in org.batfish.datamodel">ConfigurationFormat</a>&nbsp;format)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#setWarnings-org.batfish.common.Warnings-">setWarnings</a></span>(<a href="../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;warnings)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#toVendorIndependentConfiguration--">toVendorIndependentConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/vendor/VendorConfiguration.html#undefined-org.batfish.vendor.StructureType-java.lang.String-org.batfish.vendor.StructureUsage-int-">undefined</a></span>(<a href="../../../org/batfish/vendor/StructureType.html" title="interface in org.batfish.vendor">StructureType</a>&nbsp;structureType,
          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
@@ -427,15 +423,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getOverlayConfiguration</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/vendor/VendorConfiguration.html" title="class in org.batfish.vendor">VendorConfiguration</a>&nbsp;getOverlayConfiguration()</pre>
-</li>
-</ul>
-<a name="getUnimplementedFeatures--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedFeatures</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getUnimplementedFeatures()</pre>
 </li>
 </ul>
 <a name="getUnrecognized--">

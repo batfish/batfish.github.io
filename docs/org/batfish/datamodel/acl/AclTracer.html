@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -178,32 +178,51 @@ extends <a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="cl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#endTrace--">endTrace</a></span>()</code>
+<div class="block">End a trace: indicates that tracing of a structure is finished.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#getFlow--">getFlow</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>,<a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#getIpSpaceMetadata--">getIpSpaceMetadata</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#getIpSpaceNames--">getIpSpaceNames</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#getNamedIpSpaces--">getNamedIpSpaces</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/acl/AclTrace.html" title="class in org.batfish.datamodel.acl">AclTrace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#getTrace--">getTrace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#newTrace--">newTrace</a></span>()</code>
+<div class="block">Start a new trace at the current depth level.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#nextLine--">nextLine</a></span>()</code>
+<div class="block">Indicate we are moving on to the next line in current data structure (i.e., did not match
+ previous line)</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordAction-org.batfish.datamodel.IpAccessList-int-org.batfish.datamodel.IpAccessListLine-">recordAction</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList,
             int&nbsp;index,
             <a href="../../../../org/batfish/datamodel/IpAccessListLine.html" title="class in org.batfish.datamodel">IpAccessListLine</a>&nbsp;line)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordAction-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-int-org.batfish.datamodel.AclIpSpaceLine-org.batfish.datamodel.Ip-java.lang.String-org.batfish.datamodel.visitors.IpSpaceDescriber-">recordAction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;aclIpSpaceName,
             <a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&nbsp;ipSpaceMetadata,
@@ -213,18 +232,18 @@ extends <a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="cl
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription,
             <a href="../../../../org/batfish/datamodel/visitors/IpSpaceDescriber.html" title="class in org.batfish.datamodel.visitors">IpSpaceDescriber</a>&nbsp;describer)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordDefaultDeny-org.batfish.datamodel.IpAccessList-">recordDefaultDeny</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordDefaultDeny-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-org.batfish.datamodel.Ip-java.lang.String-">recordDefaultDeny</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;aclIpSpaceName,
                  <a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&nbsp;ipSpaceMetadata,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#recordNamedIpSpaceAction-java.lang.String-java.lang.String-org.batfish.datamodel.IpSpaceMetadata-boolean-org.batfish.datamodel.Ip-java.lang.String-">recordNamedIpSpaceAction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipSpaceDescription,
@@ -233,7 +252,7 @@ extends <a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="cl
                         <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/acl/AclTrace.html" title="class in org.batfish.datamodel.acl">AclTrace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#trace-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.Flow-java.lang.String-java.util.Map-java.util.Map-java.util.Map-">trace</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;ipAccessList,
      <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;flow,
@@ -242,27 +261,35 @@ extends <a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="cl
      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpaceMetadata.html" title="class in org.batfish.datamodel">IpSpaceMetadata</a>&gt;&nbsp;namedIpSpaceMetadata)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#trace-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-java.lang.String-">trace</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
      <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ipDescription)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#traceDstIp-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-">traceDstIp</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
           <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#traceSrcIp-org.batfish.datamodel.IpSpace-org.batfish.datamodel.Ip-">traceSrcIp</a></span>(<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&nbsp;ipSpace,
           <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a>&nbsp;andMatchExpr)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a>&nbsp;matchHeaderSpace)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a>&nbsp;orMatchExpr)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a></span>(<a href="../../../../org/batfish/datamodel/acl/PermittedByAcl.html" title="class in org.batfish.datamodel.acl">PermittedByAcl</a>&nbsp;permittedByAcl)</code>&nbsp;</td>
 </tr>
@@ -272,7 +299,7 @@ extends <a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="cl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.datamodel.acl.<a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="class in org.batfish.datamodel.acl">Evaluator</a></h3>
-<code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html#matches-org.batfish.datamodel.acl.AclLineMatchExpr-org.batfish.datamodel.Flow-java.lang.String-java.util.Map-java.util.Map-">matches</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></code></li>
+<code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html#matches-org.batfish.datamodel.acl.AclLineMatchExpr-org.batfish.datamodel.Flow-java.lang.String-java.util.Map-java.util.Map-">matches</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a>, <a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -523,7 +550,7 @@ public&nbsp;<a href="../../../../org/batfish/datamodel/acl/AclTrace.html" title=
 <a name="visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>visitPermittedByAcl</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;visitPermittedByAcl(<a href="../../../../org/batfish/datamodel/acl/PermittedByAcl.html" title="class in org.batfish.datamodel.acl">PermittedByAcl</a>&nbsp;permittedByAcl)</pre>
@@ -533,6 +560,68 @@ public&nbsp;<a href="../../../../org/batfish/datamodel/acl/AclTrace.html" title=
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="class in org.batfish.datamodel.acl">Evaluator</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitAndMatchExpr</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;visitAndMatchExpr(<a href="../../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a>&nbsp;andMatchExpr)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="class in org.batfish.datamodel.acl">Evaluator</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitOrMatchExpr</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;visitOrMatchExpr(<a href="../../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a>&nbsp;orMatchExpr)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="class in org.batfish.datamodel.acl">Evaluator</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="newTrace--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newTrace</h4>
+<pre>public&nbsp;void&nbsp;newTrace()</pre>
+<div class="block">Start a new trace at the current depth level. Indicates jump in a level of indirection to a new
+ structure (even though said structure can still be part of a single ACL line.</div>
+</li>
+</ul>
+<a name="endTrace--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endTrace</h4>
+<pre>public&nbsp;void&nbsp;endTrace()</pre>
+<div class="block">End a trace: indicates that tracing of a structure is finished.</div>
+</li>
+</ul>
+<a name="nextLine--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>nextLine</h4>
+<pre>public&nbsp;void&nbsp;nextLine()</pre>
+<div class="block">Indicate we are moving on to the next line in current data structure (i.e., did not match
+ previous line)</div>
 </li>
 </ul>
 </li>

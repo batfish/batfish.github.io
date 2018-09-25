@@ -99,7 +99,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.aclreachability2">org.batfish.question.aclreachability2</a></td>
+<td class="colFirst"><a href="#org.batfish.question.bgpproperties">org.batfish.question.bgpproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -111,15 +111,31 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.edges">org.batfish.question.edges</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.filterlinereachability">org.batfish.question.filterlinereachability</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.filtertable">org.batfish.question.filtertable</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
+<td class="colFirst"><a href="#org.batfish.question.initialization">org.batfish.question.initialization</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question.ipowners">org.batfish.question.ipowners</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.ipsecsessionstatus">org.batfish.question.ipsecsessionstatus</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -139,7 +155,15 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.namedstructures">org.batfish.question.namedstructures</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.nodeproperties">org.batfish.question.nodeproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.ospfproperties">org.batfish.question.ospfproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -147,26 +171,30 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.reachfilter">org.batfish.question.reachfilter</a></td>
+<td class="colFirst"><a href="#org.batfish.question.reducedreachability">org.batfish.question.reducedreachability</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.routes">org.batfish.question.routes</a></td>
+<td class="colFirst"><a href="#org.batfish.question.referencedstructures">org.batfish.question.referencedstructures</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.searchfilters">org.batfish.question.searchfilters</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.specifiers">org.batfish.question.specifiers</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.tracefilters">org.batfish.question.tracefilters</a></td>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.testfilters">org.batfish.question.testfilters</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.traceroute">org.batfish.question.traceroute</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.z3">org.batfish.z3</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -185,6 +213,11 @@
 <tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/ReachabilityParameters.html#org.batfish.common.plugin">ReachabilityParameters</a>
 <div class="block">A set of parameters for reachability analysis that uses high-level specifiers.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/SearchFiltersParameters.html#org.batfish.common.plugin">SearchFiltersParameters</a>
+<div class="block">A set of parameters for ACL filter analysis that uses high-level specifiers.</div>
 </td>
 </tr>
 </tbody>
@@ -207,6 +240,11 @@
 <tr class="rowColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/ResolvedReachabilityParameters.html#org.batfish.main">ResolvedReachabilityParameters</a>
 <div class="block">A set of parameters for reachability that are fully resolved, meaning everything is concrete.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/SearchFiltersParameters.html#org.batfish.main">SearchFiltersParameters</a>
+<div class="block">A set of parameters for ACL filter analysis that uses high-level specifiers.</div>
 </td>
 </tr>
 </tbody>
@@ -261,28 +299,6 @@
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/CompositeQuestionPlugin.CompositeQuestion.html#org.batfish.question">CompositeQuestionPlugin.CompositeQuestion</a>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileMapQuestionPlugin.FileMapAnswerElement.html#org.batfish.question">FileMapQuestionPlugin.FileMapAnswerElement</a>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileMapQuestionPlugin.FileMapAnswerer.html#org.batfish.question">FileMapQuestionPlugin.FileMapAnswerer</a>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileMapQuestionPlugin.FileMapQuestion.html#org.batfish.question">FileMapQuestionPlugin.FileMapQuestion</a>
-<div class="block">Outputs mapping of hostnames to filenames</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileTreeQuestionPlugin.FileTreeAnswerElement.html#org.batfish.question">FileTreeQuestionPlugin.FileTreeAnswerElement</a>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileTreeQuestionPlugin.FileTreeAnswerer.html#org.batfish.question">FileTreeQuestionPlugin.FileTreeAnswerer</a>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/FileTreeQuestionPlugin.FileTreeQuestion.html#org.batfish.question">FileTreeQuestionPlugin.FileTreeQuestion</a>
-<div class="block">Outputs file tree of test-rig directory</div>
-</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/InferPoliciesQuestionPlugin.InferPoliciesAnswerElement.html#org.batfish.question">InferPoliciesQuestionPlugin.InferPoliciesAnswerElement</a>&nbsp;</td>
@@ -416,16 +432,21 @@
 <td class="colOne"><a href="../../../org/batfish/question/class-use/RoutesQuestionPlugin.RoutesAnswerElement.html#org.batfish.question">RoutesQuestionPlugin.RoutesAnswerElement</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/SearchFiltersParameters.html#org.batfish.question">SearchFiltersParameters</a>
+<div class="block">A set of parameters for ACL filter analysis that uses high-level specifiers.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/SearchFiltersParameters.Builder.html#org.batfish.question">SearchFiltersParameters.Builder</a>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair.html#org.batfish.question">SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/SrcNattedConstraint.html#org.batfish.question">SrcNattedConstraint</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerElement.html#org.batfish.question">UndefinedReferencesQuestionPlugin.UndefinedReferencesAnswerElement</a>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/UnusedStructuresQuestionPlugin.UnusedStructuresAnswerElement.html#org.batfish.question">UnusedStructuresQuestionPlugin.UnusedStructuresAnswerElement</a>&nbsp;</td>
+<td class="colOne"><a href="../../../org/batfish/question/class-use/VIModelQuestionPlugin.VIModelAnswerElement.html#org.batfish.question">VIModelQuestionPlugin.VIModelAnswerElement</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -445,17 +466,17 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.aclreachability2">
+<li class="blockList"><a name="org.batfish.question.bgpproperties">
 <!--   -->
 </a>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/aclreachability2/package-summary.html">org.batfish.question.aclreachability2</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/bgpproperties/package-summary.html">org.batfish.question.bgpproperties</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Class and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.aclreachability2">QuestionPlugin</a>&nbsp;</td>
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.bgpproperties">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -490,6 +511,36 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.edges">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/edges/package-summary.html">org.batfish.question.edges</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.edges">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.filterlinereachability">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/filterlinereachability/package-summary.html">org.batfish.question.filterlinereachability</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.filterlinereachability">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.filtertable">
 <!--   -->
 </a>
@@ -501,6 +552,21 @@
 <tbody>
 <tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.filtertable">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.initialization">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/initialization/package-summary.html">org.batfish.question.initialization</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.initialization">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -531,6 +597,21 @@
 <tbody>
 <tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.ipowners">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.ipsecsessionstatus">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.ipsecsessionstatus">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -595,6 +676,21 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.namedstructures">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/namedstructures/package-summary.html">org.batfish.question.namedstructures</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.namedstructures">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.nodeproperties">
 <!--   -->
 </a>
@@ -606,6 +702,21 @@
 <tbody>
 <tr class="altColor">
 <td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.nodeproperties">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.ospfproperties">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/ospfproperties/package-summary.html">org.batfish.question.ospfproperties</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.ospfproperties">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -625,32 +736,47 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.reachfilter">
+<li class="blockList"><a name="org.batfish.question.reducedreachability">
 <!--   -->
 </a>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/reachfilter/package-summary.html">org.batfish.question.reachfilter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/reducedreachability/package-summary.html">org.batfish.question.reducedreachability</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Class and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.reachfilter">QuestionPlugin</a>&nbsp;</td>
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.reducedreachability">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.routes">
+<li class="blockList"><a name="org.batfish.question.referencedstructures">
 <!--   -->
 </a>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/routes/package-summary.html">org.batfish.question.routes</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/referencedstructures/package-summary.html">org.batfish.question.referencedstructures</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Class and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.routes">QuestionPlugin</a>&nbsp;</td>
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.referencedstructures">QuestionPlugin</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.searchfilters">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/searchfilters/package-summary.html">org.batfish.question.searchfilters</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.searchfilters">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -670,17 +796,17 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.tracefilters">
+<li class="blockList"><a name="org.batfish.question.testfilters">
 <!--   -->
 </a>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/tracefilters/package-summary.html">org.batfish.question.tracefilters</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../org/batfish/question/package-summary.html">org.batfish.question</a> used by <a href="../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Class and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.tracefilters">QuestionPlugin</a>&nbsp;</td>
+<td class="colOne"><a href="../../../org/batfish/question/class-use/QuestionPlugin.html#org.batfish.question.testfilters">QuestionPlugin</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>

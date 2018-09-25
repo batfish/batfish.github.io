@@ -104,6 +104,18 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleNodeSpecifierFactory.html" title="class in org.batfish.specifier">FlexibleNodeSpecifierFactory</a></span></code>
+<div class="block">A <a href="../../../../org/batfish/specifier/NodeSpecifierFactory.html" title="interface in org.batfish.specifier"><code>NodeSpecifierFactory</code></a> that accepts three forms of input
+
+ 
+   null: returns AllNodesNodeSpecifier
+   ref.noderole(roleRegex, roleDim): returns <a href="../../../../org/batfish/specifier/RoleRegexNodeSpecifier.html" title="class in org.batfish.specifier"><code>RoleRegexNodeSpecifier</code></a> (dim is optional)
+   all other inputs go directly to <a href="../../../../org/batfish/specifier/ShorthandNodeSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandNodeSpecifier</code></a>
+ </div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexNodeSpecifierFactory.html" title="class in org.batfish.specifier">NameRegexNodeSpecifierFactory</a></span></code>&nbsp;</td>
 </tr>
 </tbody>

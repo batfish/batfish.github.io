@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -120,8 +120,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">InterfacePropertiesQuestion</span>
 extends <a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></pre>
-<div class="block">A question that returns properties of interfaces in a tabular format. <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_nodeRegex"><code>_nodeRegex</code></a>, <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_interfaceRegex"><code>_interfaceRegex</code></a>, and <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_propertySpec"><code>_propertySpec</code></a> determine which nodes, interfaces, and properties
- are included. The default is to include everything.</div>
+<div class="block">A question that returns properties of interfaces in a tabular format. <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_nodes"><code>_nodes</code></a>, <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_interfaces"><code>_interfaces</code></a>, and <a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#Z:Z_properties"><code>_properties</code></a> determine which nodes, interfaces, and properties are
+ included. The default is to include everything.</div>
 </li>
 </ul>
 </div>
@@ -170,7 +170,8 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#InterfacePropertiesQuestion-org.batfish.datamodel.questions.InterfacesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.InterfacePropertySpecifier-">InterfacePropertiesQuestion</a></span>(<a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfaceRegex,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#InterfacePropertiesQuestion-java.lang.Boolean-org.batfish.datamodel.questions.InterfacesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.InterfacePropertySpecifier-">InterfacePropertiesQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;excludeShutInterfaces,
+                           <a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfaceRegex,
                            <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodeRegex,
                            <a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;propertySpec)</code>&nbsp;</td>
 </tr>
@@ -197,7 +198,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getInterfaceRegex--">getInterfaceRegex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getInterfaces--">getInterfaces</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -208,11 +209,15 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getNodeRegex--">getNodeRegex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getNodes--">getNodes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getOnlyActive--">getOnlyActive</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getPropertySpec--">getPropertySpec</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/interfaceproperties/InterfacePropertiesQuestion.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -243,13 +248,14 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="InterfacePropertiesQuestion-org.batfish.datamodel.questions.InterfacesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.InterfacePropertySpecifier-">
+<a name="InterfacePropertiesQuestion-java.lang.Boolean-org.batfish.datamodel.questions.InterfacesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.InterfacePropertySpecifier-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>InterfacePropertiesQuestion</h4>
-<pre>public&nbsp;InterfacePropertiesQuestion(<a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfaceRegex,
+<pre>public&nbsp;InterfacePropertiesQuestion(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;excludeShutInterfaces,
+                                   <a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;interfaceRegex,
                                    <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodeRegex,
                                    <a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;propertySpec)</pre>
 </li>
@@ -293,31 +299,40 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </dl>
 </li>
 </ul>
-<a name="getInterfaceRegex--">
+<a name="getOnlyActive--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getInterfaceRegex</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;getInterfaceRegex()</pre>
+<h4>getOnlyActive</h4>
+<pre>public&nbsp;boolean&nbsp;getOnlyActive()</pre>
 </li>
 </ul>
-<a name="getNodeRegex--">
+<a name="getInterfaces--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNodeRegex</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodeRegex()</pre>
+<h4>getInterfaces</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;getInterfaces()</pre>
 </li>
 </ul>
-<a name="getPropertySpec--">
+<a name="getNodes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNodes</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodes()</pre>
+</li>
+</ul>
+<a name="getProperties--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getPropertySpec</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;getPropertySpec()</pre>
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/InterfacePropertySpecifier.html" title="class in org.batfish.datamodel.questions">InterfacePropertySpecifier</a>&nbsp;getProperties()</pre>
 </li>
 </ul>
 </li>

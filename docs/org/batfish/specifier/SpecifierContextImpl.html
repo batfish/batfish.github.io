@@ -116,6 +116,7 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">SpecifierContextImpl</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></pre>
+<div class="block">Implementation of <a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier"><code>SpecifierContext</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -134,7 +135,7 @@ implements <a href="../../../org/batfish/specifier/SpecifierContext.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html#SpecifierContextImpl-org.batfish.main.Batfish-java.util.Map-">SpecifierContextImpl</a></span>(<a href="../../../org/batfish/main/Batfish.html" title="class in org.batfish.main">Batfish</a>&nbsp;batfish,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html#SpecifierContextImpl-org.batfish.common.plugin.IBatfish-java.util.Map-">SpecifierContextImpl</a></span>(<a href="../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>&nbsp;batfish,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</code>&nbsp;</td>
 </tr>
 </table>
@@ -161,8 +162,8 @@ implements <a href="../../../org/batfish/specifier/SpecifierContext.html" title=
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html#getInterfaceOwnedIps--">getInterfaceOwnedIps</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role">NodeRole</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html#getNodeRolesByDimension-java.lang.String-">getNodeRolesByDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContextImpl.html#getNodeRoleDimension-java.lang.String-">getNodeRoleDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/referencelibrary/ReferenceBook.html" title="class in org.batfish.referencelibrary">ReferenceBook</a>&gt;</code></td>
@@ -201,14 +202,14 @@ implements <a href="../../../org/batfish/specifier/SpecifierContext.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpecifierContextImpl-org.batfish.main.Batfish-java.util.Map-">
+<a name="SpecifierContextImpl-org.batfish.common.plugin.IBatfish-java.util.Map-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpecifierContextImpl</h4>
 <pre>public&nbsp;SpecifierContextImpl(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                            <a href="../../../org/batfish/main/Batfish.html" title="class in org.batfish.main">Batfish</a>&nbsp;batfish,
+                            <a href="../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>&nbsp;batfish,
                             <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</pre>
 </li>
@@ -252,19 +253,20 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.htm
 </dl>
 </li>
 </ul>
-<a name="getNodeRolesByDimension-java.lang.String-">
+<a name="getNodeRoleDimension-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNodeRolesByDimension</h4>
+<h4>getNodeRoleDimension</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role">NodeRole</a>&gt;&nbsp;getNodeRolesByDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/specifier/SpecifierContext.html#getNodeRolesByDimension-java.lang.String-">getNodeRolesByDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></code></dd>
+<dd><code><a href="../../../org/batfish/specifier/SpecifierContext.html#getNodeRoleDimension-java.lang.String-">getNodeRoleDimension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the set of <a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role"><code>NodeRole</code></a>s in the network with the input dimension.</dd>
+<dd>the <a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role"><code>NodeRoleDimension</code></a> if one exists by the provided name <code>dimension</code>. If
+     <code>dimension</code> is null, looks for the default dimension.</dd>
 </dl>
 </li>
 </ul>
@@ -279,8 +281,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/specifier/SpecifierContext.html#getInterfaceOwnedIps--">getInterfaceOwnedIps</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each interface in the network. Mapping: hostname ->
-     interface name -> IpSpace.</dd>
+<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each interface in the network. Mapping: hostname -&gt;
+     interface name -&gt; IpSpace.</dd>
 </dl>
 </li>
 </ul>
@@ -295,8 +297,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/specifier/SpecifierContext.html#getVrfOwnedIps--">getVrfOwnedIps</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each VRF in the network. Mapping: hostname -> VRF name ->
-     IpSpace.</dd>
+<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each VRF in the network. Mapping: hostname -&gt; VRF name
+     -&gt; IpSpace.</dd>
 </dl>
 </li>
 </ul>

@@ -309,11 +309,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#getSrcProtocols--">getSrcProtocols</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#getStates--">getStates</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#getTcpFlags--">getTcpFlags</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
@@ -467,11 +467,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#setStates-java.lang.Iterable-">setStates</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;&nbsp;states)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#setStates-java.lang.Iterable-">setStates</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;states)</code>&nbsp;</td>
 </tr>
 <tr id="i73" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#setTcpFlags-java.lang.Iterable-">setTcpFlags</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/HeaderSpace.html#setTcpFlags-java.lang.Iterable-">setTcpFlags</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
 </tr>
 <tr id="i74" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/HeaderSpace.Builder.html" title="class in org.batfish.datamodel">HeaderSpace.Builder</a></code></td>
@@ -860,7 +860,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedS
 <li class="blockList">
 <h4>getStates</h4>
 <pre>@JsonPropertyDescription(value="A set of acceptable abstract firewall states for a packet to match")
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;&nbsp;getStates()</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;getStates()</pre>
 </li>
 </ul>
 <a name="getTcpFlags--">
@@ -870,7 +870,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedS
 <li class="blockList">
 <h4>getTcpFlags</h4>
 <pre>@JsonPropertyDescription(value="A set of acceptable TCP flag bitmasks for a TCP packet to match")
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;&nbsp;getTcpFlags()</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;getTcpFlags()</pre>
 </li>
 </ul>
 <a name="hashCode--">
@@ -1217,7 +1217,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>setStates</h4>
-<pre>public&nbsp;void&nbsp;setStates(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&gt;&nbsp;states)</pre>
+<pre>public&nbsp;void&nbsp;setStates(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;states)</pre>
 </li>
 </ul>
 <a name="setTcpFlags-java.lang.Iterable-">
@@ -1226,7 +1226,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>setTcpFlags</h4>
-<pre>public&nbsp;void&nbsp;setTcpFlags(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&gt;&nbsp;tcpFlags)</pre>
+<pre>public&nbsp;void&nbsp;setTcpFlags(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</pre>
 </li>
 </ul>
 <a name="toBuilder--">
