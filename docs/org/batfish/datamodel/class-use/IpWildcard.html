@@ -83,6 +83,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.common.ipspace">org.batfish.common.ipspace</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.common.util">org.batfish.common.util</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -91,39 +99,39 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.acl">org.batfish.datamodel.acl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions">org.batfish.datamodel.questions</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions.smt">org.batfish.datamodel.questions.smt</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.visitors">org.batfish.datamodel.visitors</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.representation.aws">org.batfish.representation.aws</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.representation.cisco">org.batfish.representation.cisco</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.representation.iptables">org.batfish.representation.iptables</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.representation.juniper">org.batfish.representation.juniper</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
+<td class="colFirst"><a href="#org.batfish.representation.juniper">org.batfish.representation.juniper</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -139,6 +147,72 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a> in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDIpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.IpWildcard-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with type arguments of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDIpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.common.ipspace">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a> in <a href="../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a> with parameters of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a> with type arguments of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.common.util">
 <!--   -->
 </a>
@@ -187,11 +261,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpWildcardIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcardIpSpace.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">RouteFilterLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#getIpWildcard--">getIpWildcard</a></span>()</code>
+<div class="block">The bits against which to compare a route's prefix.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RouteFilterLine.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IpWildcardIpSpace.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcardIpSpace.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -322,6 +398,24 @@
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#RouteFilterLine-org.batfish.datamodel.LineAction-org.batfish.datamodel.IpWildcard-org.batfish.datamodel.SubRange-">RouteFilterLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
                <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard,
                <a href="../../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;lengthRange)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.acl">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a> in <a href="../../../../org/batfish/datamodel/acl/package-summary.html">org.batfish.datamodel.acl</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/acl/package-summary.html">org.batfish.datamodel.acl</a> with parameters of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AclLineMatchExprs.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html#matchDst-org.batfish.datamodel.IpWildcard-">matchDst</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;wc)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -629,23 +723,23 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AddressAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/AddressAddressBookEntry.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FwFromSourceAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddress.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FwFromSourceAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddressExcept.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromDestinationAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddress.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FwFromDestinationAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromDestinationAddressExcept.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourceAddress.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddress.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FwFromSourceAddressExcept.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/FwFromSourceAddressExcept.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AddressAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/AddressAddressBookEntry.html#getIpWildcard--">getIpWildcard</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -657,12 +751,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AddressAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/AddressAddressBookEntry.html#getIpWildcards-org.batfish.common.Warnings-">getIpWildcards</a></span>(<a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">AddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/AddressBookEntry.html#getIpWildcards-org.batfish.common.Warnings-">getIpWildcards</a></span>(<a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AddressAddressBookEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/AddressAddressBookEntry.html#getIpWildcards-org.batfish.common.Warnings-">getIpWildcards</a></span>(<a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;</code></td>
@@ -699,24 +793,6 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.symbolic.bdd">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a> in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.IpWildcard-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="org.batfish.z3">
 <!--   -->
 </a>
@@ -729,16 +805,8 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceIpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceSpecializer.html#specialize-org.batfish.datamodel.IpWildcard-">specialize</a></span>(<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&nbsp;ipWildcard)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -750,19 +818,11 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">BDDIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/BDDIpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">IpSpaceIpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceIpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>
 <div class="block">Specialize the whitelist using a refined specializer obtained by specializing _ipSpace to the
  blacklist.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceSpecializer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/z3/IpSpaceSpecializer.html#restrictSpecializerToBlacklist-java.util.Set-">restrictSpecializerToBlacklist</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>&gt;&nbsp;blacklist)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

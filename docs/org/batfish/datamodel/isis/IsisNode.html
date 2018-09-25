@@ -134,7 +134,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#IsisNode-java.lang.String-java.lang.String-">IsisNode</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#IsisNode-java.lang.String-java.lang.String-">IsisNode</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</code>&nbsp;</td>
 </tr>
 </table>
@@ -161,20 +161,20 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#getHostname--">getHostname</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#getInterface-org.batfish.datamodel.NetworkConfigurations-">getInterface</a></span>(<a href="../../../../org/batfish/datamodel/NetworkConfigurations.html" title="class in org.batfish.datamodel">NetworkConfigurations</a>&nbsp;nc)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#getInterfaceName--">getInterfaceName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/isis/IsisProcess.html" title="class in org.batfish.datamodel.isis">IsisProcess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#getIsisProcess-org.batfish.datamodel.NetworkConfigurations-">getIsisProcess</a></span>(<a href="../../../../org/batfish/datamodel/NetworkConfigurations.html" title="class in org.batfish.datamodel">NetworkConfigurations</a>&nbsp;nc)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/isis/IsisNode.html#getNode--">getNode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -213,7 +213,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <li class="blockList">
 <h4>IsisNode</h4>
 <pre>public&nbsp;IsisNode(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</pre>
 </li>
@@ -252,14 +252,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </dl>
 </li>
 </ul>
-<a name="getHostname--">
+<a name="getNode--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getHostname</h4>
+<h4>getNode</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHostname()</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNode()</pre>
 </li>
 </ul>
 <a name="getInterface-org.batfish.datamodel.NetworkConfigurations-">

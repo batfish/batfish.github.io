@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":10};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":10,"i7":6,"i8":6,"i9":10,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetElemHalfExpr.html" title="interface in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/Conjunction.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../org/batfish/datamodel/routing_policy/expr/InlineCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">InlineCommunitySet</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/NamedCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">NamedCommunitySet</a></dd>
+<dd><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunityHalvesExpr</a>, <a href="../../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/EmptyCommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">EmptyCommunitySetExpr</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunity.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunity</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunityConjunction.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunityConjunction</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunitySet</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/NamedCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">NamedCommunitySet</a>, <a href="../../../../../org/batfish/datamodel/RegexCommunitySet.html" title="class in org.batfish.datamodel">RegexCommunitySet</a></dd>
 </dl>
 <hr>
 <br>
@@ -160,31 +160,69 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#allCommunities-org.batfish.datamodel.routing_policy.Environment-">allCommunities</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>
-<div class="block">Returns the set of all communities that match this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.</div>
-</td>
+<td class="colFirst"><code>abstract &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#accept-org.batfish.datamodel.visitors.CommunitySetExprVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/CommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">CommunitySetExprVisitor</a>&lt;T&gt;&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#communities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">communities</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</code>
-<div class="block">Returns the subset of the given communities that match this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.</div>
-</td>
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#accept-org.batfish.datamodel.visitors.VoidCommunitySetExprVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/VoidCommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">VoidCommunitySetExprVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#asLiteralCommunities-org.batfish.datamodel.routing_policy.Environment-">asLiteralCommunities</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>
+<div class="block">Returns the set of all literal communities represented by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.<br>
+ <code>environment</code> is used to resolve references to named <code>CommunityList</code>s.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#dynamicMatchCommunity--">dynamicMatchCommunity</a></span>()</code>
+<div class="block">Whether membership of a single community in this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> cannot be statically
+ determined.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#matchSingleCommunity-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">matchSingleCommunity</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communities)</code>
-<div class="block">Return true iff this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matches any community in the given set.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#matchAnyCommunity-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">matchAnyCommunity</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</code>
+<div class="block">Returns true iff any of the given <code>communityCandidates</code> is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#matchCommunities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">matchCommunities</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communitySetCandidate)</code>
+<div class="block">Returns true iff the given <code>communitySetCandidate</code> as a whole is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#matchCommunity-org.batfish.datamodel.routing_policy.Environment-long-">matchCommunity</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+              long&nbsp;community)</code>
+<div class="block">Returns true iff the given <code>community</code> is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under
+ the provided <code>environment</code>.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#matchedCommunities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">matchedCommunities</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</code>
+<div class="block">Returns the subset of the given <code>communityCandidates</code> matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html#reducible--">reducible</a></span>()</code>
+<div class="block">Whether checking membership of a candidate set of communities as a whole in this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> can be reduced to checking individual membership of any community from the
+ candidate set in.</div>
 </td>
 </tr>
 </table>
@@ -226,36 +264,51 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="allCommunities-org.batfish.datamodel.routing_policy.Environment-">
+<a name="accept-org.batfish.datamodel.visitors.CommunitySetExprVisitor-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>allCommunities</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;allCommunities(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</pre>
-<div class="block">Returns the set of all communities that match this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.</div>
+<h4>accept</h4>
+<pre>public abstract&nbsp;&lt;T&gt;&nbsp;T&nbsp;accept(<a href="../../../../../org/batfish/datamodel/visitors/CommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">CommunitySetExprVisitor</a>&lt;T&gt;&nbsp;visitor)</pre>
 </li>
 </ul>
-<a name="communities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">
+<a name="accept-org.batfish.datamodel.visitors.VoidCommunitySetExprVisitor-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>communities</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communities(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</pre>
-<div class="block">Returns the subset of the given communities that match this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.</div>
+<h4>accept</h4>
+<pre>public abstract&nbsp;void&nbsp;accept(<a href="../../../../../org/batfish/datamodel/visitors/VoidCommunitySetExprVisitor.html" title="interface in org.batfish.datamodel.visitors">VoidCommunitySetExprVisitor</a>&nbsp;visitor)</pre>
 </li>
 </ul>
-<a name="matchSingleCommunity-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">
+<a name="asLiteralCommunities-org.batfish.datamodel.routing_policy.Environment-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>matchSingleCommunity</h4>
-<pre>public final&nbsp;boolean&nbsp;matchSingleCommunity(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
-                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communities)</pre>
-<div class="block">Return true iff this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matches any community in the given set.</div>
+<h4>asLiteralCommunities</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;asLiteralCommunities(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                              <a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</pre>
+<div class="block">Returns the set of all literal communities represented by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a>.<br>
+ <code>environment</code> is used to resolve references to named <code>CommunityList</code>s.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>{@link</code> - UnsupportedOperationException} if this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> does not
+     represent a set of literal communities.</dd>
+</dl>
+</li>
+</ul>
+<a name="dynamicMatchCommunity--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dynamicMatchCommunity</h4>
+<pre>public abstract&nbsp;boolean&nbsp;dynamicMatchCommunity()</pre>
+<div class="block">Whether membership of a single community in this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> cannot be statically
+ determined.</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -274,7 +327,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public abstract&nbsp;int&nbsp;hashCode()</pre>
@@ -282,6 +335,64 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="matchAnyCommunity-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matchAnyCommunity</h4>
+<pre>public&nbsp;boolean&nbsp;matchAnyCommunity(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</pre>
+<div class="block">Returns true iff any of the given <code>communityCandidates</code> is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</li>
+</ul>
+<a name="matchCommunities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matchCommunities</h4>
+<pre>public abstract&nbsp;boolean&nbsp;matchCommunities(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communitySetCandidate)</pre>
+<div class="block">Returns true iff the given <code>communitySetCandidate</code> as a whole is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</li>
+</ul>
+<a name="matchCommunity-org.batfish.datamodel.routing_policy.Environment-long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matchCommunity</h4>
+<pre>public abstract&nbsp;boolean&nbsp;matchCommunity(<a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                                       long&nbsp;community)</pre>
+<div class="block">Returns true iff the given <code>community</code> is matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under
+ the provided <code>environment</code>.</div>
+</li>
+</ul>
+<a name="matchedCommunities-org.batfish.datamodel.routing_policy.Environment-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matchedCommunities</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;matchedCommunities(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                          <a href="../../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment,
+                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;communityCandidates)</pre>
+<div class="block">Returns the subset of the given <code>communityCandidates</code> matched by this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> under the provided <code>environment</code>.</div>
+</li>
+</ul>
+<a name="reducible--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>reducible</h4>
+<pre>public abstract&nbsp;boolean&nbsp;reducible()</pre>
+<div class="block">Whether checking membership of a candidate set of communities as a whole in this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> can be reduced to checking individual membership of any community from the
+ candidate set in. This must be <code>false</code> e.g. if this <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> only matches
+ community-sets with at least two elements.</div>
 </li>
 </ul>
 </li>
@@ -312,7 +423,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetElemHalfExpr.html" title="interface in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/Conjunction.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

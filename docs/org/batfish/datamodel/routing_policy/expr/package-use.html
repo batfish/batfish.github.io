@@ -83,11 +83,19 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.datamodel.routing_policy.expr">org.batfish.datamodel.routing_policy.expr</a></td>
+<td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.routing_policy.expr">org.batfish.datamodel.routing_policy.expr</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.routing_policy.statement">org.batfish.datamodel.routing_policy.statement</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.visitors">org.batfish.datamodel.visitors</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -105,6 +113,25 @@
 <tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.symbolic">org.batfish.symbolic</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/datamodel/routing_policy/expr/package-summary.html">org.batfish.datamodel.routing_policy.expr</a> used by <a href="../../../../../org/batfish/datamodel/package-summary.html">org.batfish.datamodel</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.datamodel">CommunitySetExpr</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -140,18 +167,28 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/BooleanExprs.StaticExpressionType.html#org.batfish.datamodel.routing_policy.expr">BooleanExprs.StaticExpressionType</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetElem.html#org.batfish.datamodel.routing_policy.expr">CommunitySetElem</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunityHalfExpr.html#org.batfish.datamodel.routing_policy.expr">CommunityHalfExpr</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetElemHalfExpr.html#org.batfish.datamodel.routing_policy.expr">CommunitySetElemHalfExpr</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/DestinationNetwork.html#org.batfish.datamodel.routing_policy.expr">DestinationNetwork</a>
+<div class="block">Expression that extracts a route's destination network given a routing policy environment.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/DiscardNextHop.html#org.batfish.datamodel.routing_policy.expr">DiscardNextHop</a>
 <div class="block">A next hop expression indicating that the route should drop traffic destined to its network, but
  otherwise leave route parameters unchanged.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EigrpMetricExpr.html#org.batfish.datamodel.routing_policy.expr">EigrpMetricExpr</a>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EmptyCommunitySetExpr.html#org.batfish.datamodel.routing_policy.expr">EmptyCommunitySetExpr</a>
+<div class="block">A  matching all community-sets.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -164,7 +201,9 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/Ip6Expr.html#org.batfish.datamodel.routing_policy.expr">Ip6Expr</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/IpExpr.html#org.batfish.datamodel.routing_policy.expr">IpExpr</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/IpExpr.html#org.batfish.datamodel.routing_policy.expr">IpExpr</a>
+<div class="block">Base class for expressions that return an <a href="../../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> address.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/IsisLevelExpr.html#org.batfish.datamodel.routing_policy.expr">IsisLevelExpr</a>&nbsp;</td>
@@ -176,22 +215,35 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NextHopExpr.html#org.batfish.datamodel.routing_policy.expr">NextHopExpr</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NextHopIp.html#org.batfish.datamodel.routing_policy.expr">NextHopIp</a>
+<div class="block">Expression that extracts a route's next hop IP given a routing policy environment.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/OriginExpr.html#org.batfish.datamodel.routing_policy.expr">OriginExpr</a>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/PeerAddressNextHop.html#org.batfish.datamodel.routing_policy.expr">PeerAddressNextHop</a>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/Prefix6Expr.html#org.batfish.datamodel.routing_policy.expr">Prefix6Expr</a>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/Prefix6SetExpr.html#org.batfish.datamodel.routing_policy.expr">Prefix6SetExpr</a>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/PrefixExpr.html#org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>
+<div class="block">Base class for expressions that extract a <a href="../../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel"><code>Prefix</code></a>.</div>
+</td>
+</tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/PrefixExpr.html#org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/PrefixSetExpr.html#org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/PrefixSetExpr.html#org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/RangeCommunityHalf.html#org.batfish.datamodel.routing_policy.expr">RangeCommunityHalf</a>
+<div class="block">A match expression for a 16-bit half of a community that matches when the half is in the
+ contained interval</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/RouteIsClassful.html#org.batfish.datamodel.routing_policy.expr">RouteIsClassful</a>
@@ -235,19 +287,65 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.datamodel.routing_policy.statement">CommunitySetExpr</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EigrpMetricExpr.html#org.batfish.datamodel.routing_policy.statement">EigrpMetricExpr</a>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/IntExpr.html#org.batfish.datamodel.routing_policy.statement">IntExpr</a>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/IsisLevelExpr.html#org.batfish.datamodel.routing_policy.statement">IsisLevelExpr</a>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LongExpr.html#org.batfish.datamodel.routing_policy.statement">LongExpr</a>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NextHopExpr.html#org.batfish.datamodel.routing_policy.statement">NextHopExpr</a>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/OriginExpr.html#org.batfish.datamodel.routing_policy.statement">OriginExpr</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.visitors">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/datamodel/routing_policy/expr/package-summary.html">org.batfish.datamodel.routing_policy.expr</a> used by <a href="../../../../../org/batfish/datamodel/visitors/package-summary.html">org.batfish.datamodel.visitors</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunityHalvesExpr.html#org.batfish.datamodel.visitors">CommunityHalvesExpr</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> that matches 32-bit community values via two separate <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalfExpr.html" title="interface in org.batfish.datamodel.routing_policy.expr"><code>CommunityHalfExpr</code></a> matchers for the value's upper and lower 16-bits, retrievable via <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getLeft--"><code>CommunityHalvesExpr.getLeft()</code></a> and <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getRight--"><code>CommunityHalvesExpr.getRight()</code></a> respectively.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EmptyCommunitySetExpr.html#org.batfish.datamodel.visitors">EmptyCommunitySetExpr</a>
+<div class="block">A  matching all community-sets.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunity.html#org.batfish.datamodel.visitors">LiteralCommunity</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets that contain at least the community returned
+ by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunity.html#getCommunity--"><code>LiteralCommunity.getCommunity()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunityConjunction.html#org.batfish.datamodel.visitors">LiteralCommunityConjunction</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching only community-sets that contain ALL of the communities
+ returned by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunityConjunction.html#getRequiredCommunities--"><code>LiteralCommunityConjunction.getRequiredCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunitySet.html#org.batfish.datamodel.visitors">LiteralCommunitySet</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets containing ANY of the communites returned by
+ <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunitySet.html#getCommunities--"><code>LiteralCommunitySet.getCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NamedCommunitySet.html#org.batfish.datamodel.visitors">NamedCommunitySet</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +372,7 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/BooleanExpr.html#org.batfish.representation.cisco">BooleanExpr</a>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetElem.html#org.batfish.representation.cisco">CommunitySetElem</a>&nbsp;</td>
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunityHalfExpr.html#org.batfish.representation.cisco">CommunityHalfExpr</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.representation.cisco">CommunitySetExpr</a>&nbsp;</td>
@@ -355,7 +453,84 @@
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/BooleanExpr.html#org.batfish.symbolic">BooleanExpr</a>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunityHalvesExpr.html#org.batfish.symbolic">CommunityHalvesExpr</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> that matches 32-bit community values via two separate <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalfExpr.html" title="interface in org.batfish.datamodel.routing_policy.expr"><code>CommunityHalfExpr</code></a> matchers for the value's upper and lower 16-bits, retrievable via <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getLeft--"><code>CommunityHalvesExpr.getLeft()</code></a> and <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getRight--"><code>CommunityHalvesExpr.getRight()</code></a> respectively.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.symbolic">CommunitySetExpr</a>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EmptyCommunitySetExpr.html#org.batfish.symbolic">EmptyCommunitySetExpr</a>
+<div class="block">A  matching all community-sets.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunity.html#org.batfish.symbolic">LiteralCommunity</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets that contain at least the community returned
+ by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunity.html#getCommunity--"><code>LiteralCommunity.getCommunity()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunityConjunction.html#org.batfish.symbolic">LiteralCommunityConjunction</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching only community-sets that contain ALL of the communities
+ returned by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunityConjunction.html#getRequiredCommunities--"><code>LiteralCommunityConjunction.getRequiredCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunitySet.html#org.batfish.symbolic">LiteralCommunitySet</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets containing ANY of the communites returned by
+ <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunitySet.html#getCommunities--"><code>LiteralCommunitySet.getCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NamedCommunitySet.html#org.batfish.symbolic">NamedCommunitySet</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.symbolic.bdd">
+<!--   -->
+</a>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/datamodel/routing_policy/expr/package-summary.html">org.batfish.datamodel.routing_policy.expr</a> used by <a href="../../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunityHalvesExpr.html#org.batfish.symbolic.bdd">CommunityHalvesExpr</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> that matches 32-bit community values via two separate <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalfExpr.html" title="interface in org.batfish.datamodel.routing_policy.expr"><code>CommunityHalfExpr</code></a> matchers for the value's upper and lower 16-bits, retrievable via <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getLeft--"><code>CommunityHalvesExpr.getLeft()</code></a> and <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html#getRight--"><code>CommunityHalvesExpr.getRight()</code></a> respectively.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/CommunitySetExpr.html#org.batfish.symbolic.bdd">CommunitySetExpr</a>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/EmptyCommunitySetExpr.html#org.batfish.symbolic.bdd">EmptyCommunitySetExpr</a>
+<div class="block">A  matching all community-sets.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunity.html#org.batfish.symbolic.bdd">LiteralCommunity</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets that contain at least the community returned
+ by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunity.html#getCommunity--"><code>LiteralCommunity.getCommunity()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunityConjunction.html#org.batfish.symbolic.bdd">LiteralCommunityConjunction</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching only community-sets that contain ALL of the communities
+ returned by <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunityConjunction.html#getRequiredCommunities--"><code>LiteralCommunityConjunction.getRequiredCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/LiteralCommunitySet.html#org.batfish.symbolic.bdd">LiteralCommunitySet</a>
+<div class="block">A <a href="../../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr"><code>CommunitySetExpr</code></a> matching community-sets containing ANY of the communites returned by
+ <a href="../../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunitySet.html#getCommunities--"><code>LiteralCommunitySet.getCommunities()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/class-use/NamedCommunitySet.html#org.batfish.symbolic.bdd">NamedCommunitySet</a>&nbsp;</td>
 </tr>
 </tbody>
 </table>

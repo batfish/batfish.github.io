@@ -44,7 +44,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/datamodel/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../org/batfish/datamodel/answers/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../org/batfish/datamodel/acl/explanation/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/datamodel/acl/package-summary.html" target="_top">Frames</a></li>
@@ -106,18 +106,39 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclExplainer.html" title="class in org.batfish.datamodel.acl">AclExplainer</a></td>
+<td class="colLast">
+<div class="block">Generate an explanation of the headerspace permitted by an <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclExplanation.html" title="class in org.batfish.datamodel.acl">AclExplanation</a></td>
+<td class="colLast">
+<div class="block">Generates reduced explanations of satisfiable sets of <a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>AclLineMatchExpr</code></a> literals: positive
+ <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl"><code>MatchHeaderSpace</code></a>, negative <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl"><code>MatchHeaderSpace</code></a> (negated by <a href="../../../../org/batfish/datamodel/acl/NotMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>NotMatchExpr</code></a>),
+ <a href="../../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl"><code>OriginatingFromDevice</code></a>, and <a href="../../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl"><code>MatchSrcInterface</code></a>).</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprNormalizer.html" title="class in org.batfish.datamodel.acl">AclLineMatchExprNormalizer</a></td>
+<td class="colLast">
+<div class="block">Normalizes <a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>AclLineMatchExprs</code></a> to their version of DNF (disjunctive normal
+ form).</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html" title="class in org.batfish.datamodel.acl">AclLineMatchExprs</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclTrace.html" title="class in org.batfish.datamodel.acl">AclTrace</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AclTracer.html" title="class in org.batfish.datamodel.acl">AclTracer</a></td>
 <td class="colLast">
 <div class="block">Tracer for <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>, <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>, <a href="../../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel"><code>HeaderSpace</code></a>.<br>
@@ -125,35 +146,42 @@
  encountering traceable classes.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/CanonicalAcl.html" title="class in org.batfish.datamodel.acl">CanonicalAcl</a></td>
 <td class="colLast">
 <div class="block">Represents an ACL with all its dependencies for the purpose of detecting identical ACLs.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DefaultDeniedByAclIpSpace.html" title="class in org.batfish.datamodel.acl">DefaultDeniedByAclIpSpace</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DefaultDeniedByIpAccessList.html" title="class in org.batfish.datamodel.acl">DefaultDeniedByIpAccessList</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DeniedByAclIpSpaceLine.html" title="class in org.batfish.datamodel.acl">DeniedByAclIpSpaceLine</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DeniedByIpAccessListLine.html" title="class in org.batfish.datamodel.acl">DeniedByIpAccessListLine</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DeniedByNamedIpSpace.html" title="class in org.batfish.datamodel.acl">DeniedByNamedIpSpace</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/DifferentialIpAccessList.html" title="class in org.batfish.datamodel.acl">DifferentialIpAccessList</a></td>
+<td class="colLast">
+<div class="block">Given two <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>ACLs</code></a> <code>denyAcl</code> and <code>permitAcl</code>, generate a new ACL
+ that permits exactly those flows that are permitted by <code>permitAcl</code> and denied by <code>denyAcl</code> -- i.e.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/Evaluator.html" title="class in org.batfish.datamodel.acl">Evaluator</a></td>
@@ -164,51 +192,69 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/IpAccessListRenamer.html" title="class in org.batfish.datamodel.acl">IpAccessListRenamer</a></td>
+<td class="colLast">
+<div class="block">Renames references to named <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>ACLs</code></a> and <a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpaces</code></a> in an <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>IpAccessList</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/IpSpaceTraceEvent.html" title="class in org.batfish.datamodel.acl">IpSpaceTraceEvent</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/NotMatchExpr.html" title="class in org.batfish.datamodel.acl">NotMatchExpr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a></td>
 <td class="colLast">
 <div class="block">Match condition that holds when flow originated from this device rather than being received on
  some interface.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/PermittedByAcl.html" title="class in org.batfish.datamodel.acl">PermittedByAcl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/PermittedByAclIpSpaceLine.html" title="class in org.batfish.datamodel.acl">PermittedByAclIpSpaceLine</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/PermittedByIpAccessListLine.html" title="class in org.batfish.datamodel.acl">PermittedByIpAccessListLine</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/PermittedByNamedIpSpace.html" title="class in org.batfish.datamodel.acl">PermittedByNamedIpSpace</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/SourcesReferencedByIpAccessLists.html" title="class in org.batfish.datamodel.acl">SourcesReferencedByIpAccessLists</a></td>
+<td class="colLast">
+<div class="block">Find all the ACLs referenced by an IpAccessList or a collection of IpAccessLists.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/TrueExpr.html" title="class in org.batfish.datamodel.acl">TrueExpr</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../org/batfish/datamodel/acl/TypeMatchExprsCollector.html" title="class in org.batfish.datamodel.acl">TypeMatchExprsCollector</a>&lt;T extends <a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&gt;</td>
+<td class="colLast">
+<div class="block">Collects all <a href="../../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>AclLineMatchExpr</code></a>s of the given type built into the visited expression.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -260,7 +306,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/datamodel/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../org/batfish/datamodel/answers/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../org/batfish/datamodel/acl/explanation/package-summary.html">Next&nbsp;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/datamodel/acl/package-summary.html" target="_top">Frames</a></li>

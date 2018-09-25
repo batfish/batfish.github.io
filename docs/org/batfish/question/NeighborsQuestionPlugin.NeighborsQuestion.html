@@ -175,8 +175,8 @@ extends <a href="../../../org/batfish/datamodel/questions/Question.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#NeighborsQuestion-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.util.SortedSet-org.batfish.question.NeighborsQuestionPlugin.EdgeStyle-java.lang.String-">NeighborsQuestion</a></span>(<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes1,
-                 <a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes2,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#NeighborsQuestion-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.util.SortedSet-org.batfish.question.NeighborsQuestionPlugin.EdgeStyle-java.lang.String-">NeighborsQuestion</a></span>(<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
+                 <a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/NeighborType.html" title="enum in org.batfish.datamodel">NeighborType</a>&gt;&nbsp;neighborTypes,
                  <a href="../../../org/batfish/question/NeighborsQuestionPlugin.EdgeStyle.html" title="enum in org.batfish.question">NeighborsQuestionPlugin.EdgeStyle</a>&nbsp;style,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension)</code>&nbsp;</td>
@@ -215,11 +215,11 @@ extends <a href="../../../org/batfish/datamodel/questions/Question.html" title="
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#getNode1Regex--">getNode1Regex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#getNodes--">getNodes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#getNode2Regex--">getNode2Regex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html#getRemoteNodes--">getRemoteNodes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -268,8 +268,8 @@ extends <a href="../../../org/batfish/datamodel/questions/Question.html" title="
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NeighborsQuestion</h4>
-<pre>public&nbsp;NeighborsQuestion(<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes1,
-                         <a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes2,
+<pre>public&nbsp;NeighborsQuestion(<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
+                         <a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/NeighborType.html" title="enum in org.batfish.datamodel">NeighborType</a>&gt;&nbsp;neighborTypes,
                          <a href="../../../org/batfish/question/NeighborsQuestionPlugin.EdgeStyle.html" title="enum in org.batfish.question">NeighborsQuestionPlugin.EdgeStyle</a>&nbsp;style,
                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension)</pre>
@@ -323,22 +323,22 @@ extends <a href="../../../org/batfish/datamodel/questions/Question.html" title="
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/NeighborType.html" title="enum in org.batfish.datamodel">NeighborType</a>&gt;&nbsp;getNeighborTypes()</pre>
 </li>
 </ul>
-<a name="getNode1Regex--">
+<a name="getNodes--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNode1Regex</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNode1Regex()</pre>
+<h4>getNodes</h4>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodes()</pre>
 </li>
 </ul>
-<a name="getNode2Regex--">
+<a name="getRemoteNodes--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNode2Regex</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNode2Regex()</pre>
+<h4>getRemoteNodes</h4>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getRemoteNodes()</pre>
 </li>
 </ul>
 <a name="getRoleDimension--">

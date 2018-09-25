@@ -83,6 +83,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.common.ipspace">org.batfish.common.ipspace</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -95,18 +103,14 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.symbolic.smt">org.batfish.symbolic.smt</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.z3">org.batfish.z3</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.z3.expr.visitors">org.batfish.z3.expr.visitors</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -115,6 +119,65 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a> in <a href="../../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> that implement <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/bdd/BDDIpSpaceSpecializer.html" title="class in org.batfish.common.bdd">BDDIpSpaceSpecializer</a></span></code>
+<div class="block">An <a href="../../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace"><code>IpSpaceSpecializer</code></a> that uses a <code>BDD</code> to represent the headerspace to which we
+ want to specialize.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a></span></code>
+<div class="block">Visitor that converts an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to a <code>BDD</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/bdd/MemoizedIpSpaceToBDD.html" title="class in org.batfish.common.bdd">MemoizedIpSpaceToBDD</a></span></code>
+<div class="block">An <a href="../../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd"><code>IpSpaceToBDD</code></a> that memoizes its <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html#visit-org.batfish.datamodel.IpSpace-"><code>visit(org.batfish.datamodel.IpSpace)</code></a> method using an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html?is-external=true" title="class or interface in java.util"><code>IdentityHashMap</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.common.ipspace">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a> in <a href="../../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/common/ipspace/package-summary.html">org.batfish.common.ipspace</a> that implement <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/ipspace/IpSpaceSimplifier.html" title="class in org.batfish.common.ipspace">IpSpaceSimplifier</a></span></code>
+<div class="block">Simplify an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/common/ipspace/IpSpaceSpecializer.html" title="class in org.batfish.common.ipspace">IpSpaceSpecializer</a></span></code>
+<div class="block">Abstract class for specializing an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to some other <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel">
 <!--   -->
 </a>
@@ -128,23 +191,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
-<td class="colLast"><span class="typeNameLabel">AclIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/AclIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;ipSpaceVisitor)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
 <td class="colLast"><span class="typeNameLabel">EmptyIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/EmptyIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
 <td class="colLast"><span class="typeNameLabel">IpIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>abstract &lt;R&gt;&nbsp;R</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceReference.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpSpaceReference.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AclIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/AclIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;ipSpaceVisitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
@@ -152,7 +207,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
-<td class="colLast"><span class="typeNameLabel">IpWildcardSetIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpWildcardSetIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;ipSpaceVisitor)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceReference.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpSpaceReference.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
@@ -161,6 +216,14 @@
 <tr class="altColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
 <td class="colLast"><span class="typeNameLabel">UniverseIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/UniverseIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;ipSpaceVisitor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;R&gt;&nbsp;R</code></td>
+<td class="colLast"><span class="typeNameLabel">IpWildcardSetIpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpWildcardSetIpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;ipSpaceVisitor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract &lt;R&gt;&nbsp;R</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpace.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/IpSpace.html#accept-org.batfish.datamodel.visitors.GenericIpSpaceVisitor-">accept</a></span>(<a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a>&lt;R&gt;&nbsp;visitor)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -233,26 +296,6 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.symbolic.bdd">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a> in <a href="../../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> that implement <a href="../../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html" title="interface in org.batfish.datamodel.visitors">GenericIpSpaceVisitor</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/symbolic/bdd/IpSpaceToBDD.html" title="class in org.batfish.symbolic.bdd">IpSpaceToBDD</a></span></code>
-<div class="block">Visitor that converts an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to a <code>BDD</code>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="org.batfish.symbolic.smt">
 <!--   -->
 </a>
@@ -284,24 +327,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/BDDIpSpaceSpecializer.html" title="class in org.batfish.z3">BDDIpSpaceSpecializer</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/IpSpaceIpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceIpSpaceSpecializer</a></span></code>
 <div class="block">Specialize an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to input destination IP whitelist and blacklist.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/IpSpaceSimplifier.html" title="class in org.batfish.z3">IpSpaceSimplifier</a></span></code>
-<div class="block">Simplify an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/z3/IpSpaceSpecializer.html" title="class in org.batfish.z3">IpSpaceSpecializer</a></span></code>
-<div class="block">Abstract class for specializing an <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a> to some other <a href="../../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>.</div>
 </td>
 </tr>
 </tbody>

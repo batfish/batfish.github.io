@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -118,7 +118,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">Zone</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">Zone</span>
 extends <a href="../../../org/batfish/common/util/ComparableStructure.html" title="class in org.batfish.common.util">ComparableStructure</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -159,12 +160,6 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#Zone-java.lang.String-">Zone</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#Zone-java.lang.String-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.IpAccessList-">Zone</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-    <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;inboundFilter,
-    <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;fromHostFilter,
-    <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;toHostFilter)</code>&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -185,96 +180,52 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getFromHostFilter--">getFromHostFilter</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getFromHostFilterName--">getFromHostFilterName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getInboundFilter--">getInboundFilter</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getInboundFilterName--">getInboundFilterName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getInboundInterfaceFilters--">getInboundInterfaceFilters</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getInboundInterfaceFiltersNames--">getInboundInterfaceFiltersNames</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getInterfaces--">getInterfaces</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getToHostFilter--">getToHostFilter</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getToHostFilterName--">getToHostFilterName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getToZonePolicies--">getToZonePolicies</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#getToZonePoliciesNames--">getToZonePoliciesNames</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setFromHostFilter-org.batfish.datamodel.IpAccessList-">setFromHostFilter</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;fromHostFilter)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setFromHostFilterName-java.lang.String-">setFromHostFilterName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fromHostFilterName)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setInboundFilter-org.batfish.datamodel.IpAccessList-">setInboundFilter</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;inboundFilter)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setInboundFilterName-java.lang.String-">setInboundFilterName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;inboundFilterName)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setInboundInterfaceFilters-java.util.SortedMap-">setInboundInterfaceFilters</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;inboundInterfaceFilters)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setInboundInterfaceFiltersNames-java.util.SortedMap-">setInboundInterfaceFiltersNames</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;inboundInterfaceFiltersNames)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setInterfaces-java.lang.Iterable-">setInterfaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setToHostFilter-org.batfish.datamodel.IpAccessList-">setToHostFilter</a></span>(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;toHostFilter)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setToHostFilterName-java.lang.String-">setToHostFilterName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toHostFilterName)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setToZonePolicies-java.util.SortedMap-">setToZonePolicies</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;toZonePolicies)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#setToZonePoliciesNames-java.util.SortedMap-">setToZonePoliciesNames</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;toZonePoliciesNames)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Zone.html#unorderedEqual-java.lang.Object-">unorderedEqual</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -308,22 +259,10 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 <a name="Zone-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Zone</h4>
-<pre>public&nbsp;Zone(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-</li>
-</ul>
-<a name="Zone-java.lang.String-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.IpAccessList-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Zone</h4>
-<pre>public&nbsp;Zone(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-            <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;inboundFilter,
-            <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;fromHostFilter,
-            <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;toHostFilter)</pre>
+<pre>public&nbsp;Zone(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 </li>
@@ -347,15 +286,6 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 </dl>
 </li>
 </ul>
-<a name="getFromHostFilter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getFromHostFilter</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;getFromHostFilter()</pre>
-</li>
-</ul>
 <a name="getFromHostFilterName--">
 <!--   -->
 </a>
@@ -363,16 +293,8 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 <li class="blockList">
 <h4>getFromHostFilterName</h4>
 <pre>@JsonPropertyDescription(value="Filter applied against packets originating from an interface in this zone on this node")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFromHostFilterName()</pre>
-</li>
-</ul>
-<a name="getInboundFilter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInboundFilter</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;getInboundFilter()</pre>
 </li>
 </ul>
 <a name="getInboundFilterName--">
@@ -382,16 +304,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getInboundFilterName</h4>
 <pre>@JsonPropertyDescription(value="Filter applied against packets whose final destination is an interface in this zone that does not have its own inbound filter")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getInboundFilterName()</pre>
-</li>
-</ul>
-<a name="getInboundInterfaceFilters--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInboundInterfaceFilters</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;getInboundInterfaceFilters()</pre>
 </li>
 </ul>
 <a name="getInboundInterfaceFiltersNames--">
@@ -401,6 +315,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getInboundInterfaceFiltersNames</h4>
 <pre>@JsonPropertyDescription(value="Mapping of interfaces in this zone to their corresponding inbound filters: the filter applied against packets whose final destination is the interface whose name is the key in this mapping")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getInboundInterfaceFiltersNames()</pre>
 </li>
 </ul>
@@ -410,16 +325,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>getInterfaces</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getInterfaces()</pre>
-</li>
-</ul>
-<a name="getToHostFilter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getToHostFilter</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;getToHostFilter()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getInterfaces()</pre>
 </li>
 </ul>
 <a name="getToHostFilterName--">
@@ -429,16 +336,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <li class="blockList">
 <h4>getToHostFilterName</h4>
 <pre>@JsonPropertyDescription(value="Filter applied against packets whose final destination is an interface in this zone. If this filter exists, it is applied IN ADDITION to the interface-specific or default inbound filter.")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getToHostFilterName()</pre>
-</li>
-</ul>
-<a name="getToZonePolicies--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getToZonePolicies</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;getToZonePolicies()</pre>
 </li>
 </ul>
 <a name="getToZonePoliciesNames--">
@@ -448,16 +347,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li class="blockList">
 <h4>getToZonePoliciesNames</h4>
 <pre>@JsonPropertyDescription(value="Maps names of destination zones to the corresponding filter applied against packets which are received on this zone and routed to the named zone")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getToZonePoliciesNames()</pre>
-</li>
-</ul>
-<a name="setFromHostFilter-org.batfish.datamodel.IpAccessList-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setFromHostFilter</h4>
-<pre>public&nbsp;void&nbsp;setFromHostFilter(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;fromHostFilter)</pre>
 </li>
 </ul>
 <a name="setFromHostFilterName-java.lang.String-">
@@ -466,16 +357,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>setFromHostFilterName</h4>
-<pre>public&nbsp;void&nbsp;setFromHostFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fromHostFilterName)</pre>
-</li>
-</ul>
-<a name="setInboundFilter-org.batfish.datamodel.IpAccessList-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setInboundFilter</h4>
-<pre>public&nbsp;void&nbsp;setInboundFilter(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;inboundFilter)</pre>
+<pre>public&nbsp;void&nbsp;setFromHostFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fromHostFilterName)</pre>
 </li>
 </ul>
 <a name="setInboundFilterName-java.lang.String-">
@@ -484,16 +367,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>setInboundFilterName</h4>
-<pre>public&nbsp;void&nbsp;setInboundFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;inboundFilterName)</pre>
-</li>
-</ul>
-<a name="setInboundInterfaceFilters-java.util.SortedMap-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setInboundInterfaceFilters</h4>
-<pre>public&nbsp;void&nbsp;setInboundInterfaceFilters(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;inboundInterfaceFilters)</pre>
+<pre>public&nbsp;void&nbsp;setInboundFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;inboundFilterName)</pre>
 </li>
 </ul>
 <a name="setInboundInterfaceFiltersNames-java.util.SortedMap-">
@@ -502,7 +377,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>setInboundInterfaceFiltersNames</h4>
-<pre>public&nbsp;void&nbsp;setInboundInterfaceFiltersNames(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;inboundInterfaceFiltersNames)</pre>
+<pre>public&nbsp;void&nbsp;setInboundInterfaceFiltersNames(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;inboundInterfaceFiltersNames)</pre>
 </li>
 </ul>
 <a name="setInterfaces-java.lang.Iterable-">
@@ -511,16 +387,8 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>setInterfaces</h4>
-<pre>public&nbsp;void&nbsp;setInterfaces(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</pre>
-</li>
-</ul>
-<a name="setToHostFilter-org.batfish.datamodel.IpAccessList-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setToHostFilter</h4>
-<pre>public&nbsp;void&nbsp;setToHostFilter(<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;toHostFilter)</pre>
+<pre>public&nbsp;void&nbsp;setInterfaces(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</pre>
 </li>
 </ul>
 <a name="setToHostFilterName-java.lang.String-">
@@ -529,34 +397,18 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedM
 <ul class="blockList">
 <li class="blockList">
 <h4>setToHostFilterName</h4>
-<pre>public&nbsp;void&nbsp;setToHostFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toHostFilterName)</pre>
-</li>
-</ul>
-<a name="setToZonePolicies-java.util.SortedMap-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setToZonePolicies</h4>
-<pre>public&nbsp;void&nbsp;setToZonePolicies(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;toZonePolicies)</pre>
+<pre>public&nbsp;void&nbsp;setToHostFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toHostFilterName)</pre>
 </li>
 </ul>
 <a name="setToZonePoliciesNames-java.util.SortedMap-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setToZonePoliciesNames</h4>
-<pre>public&nbsp;void&nbsp;setToZonePoliciesNames(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;toZonePoliciesNames)</pre>
-</li>
-</ul>
-<a name="unorderedEqual-java.lang.Object-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>unorderedEqual</h4>
-<pre>public&nbsp;boolean&nbsp;unorderedEqual(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<h4>setToZonePoliciesNames</h4>
+<pre>public&nbsp;void&nbsp;setToZonePoliciesNames(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;toZonePoliciesNames)</pre>
 </li>
 </ul>
 </li>

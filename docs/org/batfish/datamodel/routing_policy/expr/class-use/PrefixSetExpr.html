@@ -108,7 +108,10 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/AbstractionPrefixSet.html" title="class in org.batfish.datamodel.routing_policy.expr">AbstractionPrefixSet</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/AbstractionPrefixSet.html" title="class in org.batfish.datamodel.routing_policy.expr">AbstractionPrefixSet</a></span></code>
+<div class="block">A specific kind of prefix match used only by the abstraction code Does *not* correspond to any
+ real configuration feature</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
@@ -116,7 +119,9 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/NamedPrefixSet.html" title="class in org.batfish.datamodel.routing_policy.expr">NamedPrefixSet</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/NamedPrefixSet.html" title="class in org.batfish.datamodel.routing_policy.expr">NamedPrefixSet</a></span></code>
+<div class="block">Expression for matching a <a href="../../../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel"><code>Prefix</code></a> against a named <a href="../../../../../../org/batfish/datamodel/RouteFilterList.html" title="class in org.batfish.datamodel"><code>RouteFilterList</code></a>.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -147,10 +152,6 @@
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">HasRoute.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/HasRoute.html#setExpr-org.batfish.datamodel.routing_policy.expr.PrefixSetExpr-">setExpr</a></span>(<a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;expr)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">MatchPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html#setPrefixSet-org.batfish.datamodel.routing_policy.expr.PrefixSetExpr-">setPrefixSet</a></span>(<a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;prefixSet)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -183,19 +184,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RoutePolicyInlinePrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/representation/cisco/RoutePolicyInlinePrefix6Set.html#toPrefixSetExpr-org.batfish.representation.cisco.CiscoConfiguration-org.batfish.datamodel.Configuration-org.batfish.common.Warnings-">toPrefixSetExpr</a></span>(<a href="../../../../../../org/batfish/representation/cisco/CiscoConfiguration.html" title="class in org.batfish.representation.cisco">CiscoConfiguration</a>&nbsp;cc,
-               <a href="../../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c,
-               <a href="../../../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RoutePolicyInlinePrefixSet.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/representation/cisco/RoutePolicyInlinePrefixSet.html#toPrefixSetExpr-org.batfish.representation.cisco.CiscoConfiguration-org.batfish.datamodel.Configuration-org.batfish.common.Warnings-">toPrefixSetExpr</a></span>(<a href="../../../../../../org/batfish/representation/cisco/CiscoConfiguration.html" title="class in org.batfish.representation.cisco">CiscoConfiguration</a>&nbsp;cc,
                <a href="../../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c,
                <a href="../../../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RoutePolicyPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/representation/cisco/RoutePolicyPrefixSet.html#toPrefixSetExpr-org.batfish.representation.cisco.CiscoConfiguration-org.batfish.datamodel.Configuration-org.batfish.common.Warnings-">toPrefixSetExpr</a></span>(<a href="../../../../../../org/batfish/representation/cisco/CiscoConfiguration.html" title="class in org.batfish.representation.cisco">CiscoConfiguration</a>&nbsp;cc,
+               <a href="../../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c,
+               <a href="../../../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RoutePolicyInlinePrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../../../org/batfish/representation/cisco/RoutePolicyInlinePrefix6Set.html#toPrefixSetExpr-org.batfish.representation.cisco.CiscoConfiguration-org.batfish.datamodel.Configuration-org.batfish.common.Warnings-">toPrefixSetExpr</a></span>(<a href="../../../../../../org/batfish/representation/cisco/CiscoConfiguration.html" title="class in org.batfish.representation.cisco">CiscoConfiguration</a>&nbsp;cc,
                <a href="../../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;c,
                <a href="../../../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;w)</code>&nbsp;</td>
 </tr>

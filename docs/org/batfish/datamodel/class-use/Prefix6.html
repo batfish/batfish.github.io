@@ -299,11 +299,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DestinationNetwork6.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/DestinationNetwork6.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Ip6Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Ip6Prefix.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Ip6Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Ip6Prefix.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DestinationNetwork6.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/DestinationNetwork6.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
@@ -319,18 +319,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">ExplicitPrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/ExplicitPrefix6Set.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix6,
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Prefix6SetExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">NamedPrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/NamedPrefix6Set.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix,
+<td class="colLast"><span class="typeNameLabel">ExplicitPrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/ExplicitPrefix6Set.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix6,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Prefix6SetExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/Prefix6SetExpr.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix,
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">NamedPrefix6Set.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/NamedPrefix6Set.html#matches-org.batfish.datamodel.Prefix6-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a>&nbsp;prefix,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 </tbody>
@@ -357,15 +357,15 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
-<td class="colLast"><span class="typeNameLabel">IpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpBgpPeerGroup.html#getNeighborPrefix6--">getNeighborPrefix6</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Ipv6BgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Ipv6BgpPeerGroup.html#getNeighborPrefix6--">getNeighborPrefix6</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LeafBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/LeafBgpPeerGroup.html#getNeighborPrefix6--">getNeighborPrefix6</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpBgpPeerGroup.html#getNeighborPrefix6--">getNeighborPrefix6</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix6.html" title="class in org.batfish.datamodel">Prefix6</a></code></td>

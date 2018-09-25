@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefix6Set.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchProtocol.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchProcessAsn.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html" target="_top">Frames</a></li>
@@ -118,7 +118,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">MatchPrefixSet</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">MatchPrefixSet</span>
 extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -141,7 +142,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;org.batfish.datamodel.routing_policy.expr.<a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></h3>
-<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a></code></li>
+<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#PROP_COMMENT">PROP_COMMENT</a></code></li>
 </ul>
 </li>
 </ul>
@@ -196,14 +197,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html#setPrefix-org.batfish.datamodel.routing_policy.expr.PrefixExpr-">setPrefix</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>&nbsp;prefix)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html#setPrefixSet-org.batfish.datamodel.routing_policy.expr.PrefixSetExpr-">setPrefixSet</a></span>(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;prefixSet)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -286,7 +279,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrefix</h4>
-<pre>public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>&nbsp;getPrefix()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>&nbsp;getPrefix()</pre>
 </li>
 </ul>
 <a name="getPrefixSet--">
@@ -295,7 +289,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrefixSet</h4>
-<pre>public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;getPrefixSet()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;getPrefixSet()</pre>
 </li>
 </ul>
 <a name="hashCode--">
@@ -309,24 +304,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="setPrefix-org.batfish.datamodel.routing_policy.expr.PrefixExpr-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPrefix</h4>
-<pre>public&nbsp;void&nbsp;setPrefix(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixExpr</a>&nbsp;prefix)</pre>
-</li>
-</ul>
-<a name="setPrefixSet-org.batfish.datamodel.routing_policy.expr.PrefixSetExpr-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPrefixSet</h4>
-<pre>public&nbsp;void&nbsp;setPrefixSet(<a href="../../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">PrefixSetExpr</a>&nbsp;prefixSet)</pre>
 </li>
 </ul>
 <a name="toString--">
@@ -371,7 +348,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchPrefix6Set.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchProtocol.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../org/batfish/datamodel/routing_policy/expr/MatchProcessAsn.html" title="class in org.batfish.datamodel.routing_policy.expr"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?org/batfish/datamodel/routing_policy/expr/MatchPrefixSet.html" target="_top">Frames</a></li>

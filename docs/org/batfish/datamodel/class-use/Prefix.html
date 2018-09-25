@@ -83,58 +83,66 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.common.bdd">org.batfish.common.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.acl">org.batfish.datamodel.acl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.ospf">org.batfish.datamodel.ospf</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.questions.smt">org.batfish.datamodel.questions.smt</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.routing_policy">org.batfish.datamodel.routing_policy</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.routing_policy.expr">org.batfish.datamodel.routing_policy.expr</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.datamodel.table">org.batfish.datamodel.table</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.ibdp">org.batfish.dataplane.ibdp</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.protocols">org.batfish.dataplane.protocols</a></td>
 <td class="colLast">
 <div class="block">package org.batfish.dataplane.protocols contains a group of helper classes and functions that
  implement logic specific to a given routing protocol.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.dataplane.rib">org.batfish.dataplane.rib</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question">org.batfish.question</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.prefixtracer">org.batfish.question.prefixtracer</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.routes">org.batfish.question.routes</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -190,6 +198,43 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.batfish.common.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a> in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDPacket.html#restrict-net.sf.javabdd.BDD-org.batfish.datamodel.Prefix-">restrict</a></span>(net.sf.javabdd.BDD&nbsp;bdd,
+        <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.Prefix-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../../org/batfish/common/bdd/package-summary.html">org.batfish.common.bdd</a> with type arguments of type <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
+<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/BDDPacket.html#restrict-net.sf.javabdd.BDD-java.util.List-">restrict</a></span>(net.sf.javabdd.BDD&nbsp;bdd,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.datamodel">
 <!--   -->
 </a>
@@ -224,19 +269,19 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRoute.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpAdvertisement.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Route.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Route.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRoute.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -256,13 +301,17 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BgpPeerConfigId.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpPeerConfigId.html#getRemotePeerPrefix--">getRemotePeerPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Interface.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Interface.html#getPrimaryNetwork--">getPrimaryNetwork</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BgpPeerConfigId.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpPeerConfigId.html#getRemotePeerPrefix--">getRemotePeerPrefix</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Prefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Prefix.html#parse-java.lang.String-">parse</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpWildcard.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#toPrefix--">toPrefix</a></span>()</code>&nbsp;</td>
 </tr>
@@ -292,11 +341,11 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">GenericRib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GenericRib.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PrefixTrie.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixTrie.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixTrie.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixTrie.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">GenericRib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GenericRib.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&gt;&gt;</code></td>
@@ -342,32 +391,30 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixSpaceList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixSpaceList.html#getAction-org.batfish.datamodel.Prefix-">getAction</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/PrefixRange.html" title="class in org.batfish.datamodel">PrefixRange</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PrefixRange.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixRange.html#moreSpecificThan-org.batfish.datamodel.Prefix-">moreSpecificThan</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>
 <div class="block">Returns a <a href="../../../../org/batfish/datamodel/PrefixRange.html" title="class in org.batfish.datamodel"><code>PrefixRange</code></a> that represents all more specific prefixes.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">RouteFilterList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterList.html#permits-org.batfish.datamodel.Prefix-">permits</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html" title="type parameter in AbstractRouteBuilder">S</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#setNetwork-org.batfish.datamodel.Prefix-">setNetwork</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">RouteFilterList.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterList.html#permits-org.batfish.datamodel.Prefix-">permits</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>
+<div class="block">Check if a given prefix is permitted by this filter list.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/BgpAdvertisement.Builder.html" title="class in org.batfish.datamodel">BgpAdvertisement.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpAdvertisement.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpAdvertisement.Builder.html#setNetwork-org.batfish.datamodel.Prefix-">setNetwork</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html" title="type parameter in AbstractRouteBuilder">S</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/AbstractRouteBuilder.html#setNetwork-org.batfish.datamodel.Prefix-">setNetwork</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">RouteBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteBuilder.html#setNetwork-org.batfish.datamodel.Prefix-">setNetwork</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/BgpPassivePeerConfig.Builder.html" title="class in org.batfish.datamodel">BgpPassivePeerConfig.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BgpPassivePeerConfig.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/BgpPassivePeerConfig.Builder.html#setPeerPrefix-org.batfish.datamodel.Prefix-">setPeerPrefix</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;peerPrefix)</code>&nbsp;</td>
 </tr>
@@ -477,6 +524,14 @@
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/EigrpRoute.html#EigrpRoute-int-org.batfish.datamodel.Prefix-java.lang.String-org.batfish.datamodel.Ip-org.batfish.datamodel.eigrp.EigrpMetric-long-">EigrpRoute</a></span>(int&nbsp;admin,
+          <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface,
+          <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
+          <a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric,
+          long&nbsp;processAsn)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/GeneratedRoute.html#GeneratedRoute-org.batfish.datamodel.Prefix-int-org.batfish.datamodel.Ip-org.batfish.datamodel.AsPath-java.lang.String-boolean-java.lang.String-java.lang.Long-java.lang.String-">GeneratedRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
               int&nbsp;administrativeCost,
               <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
@@ -487,10 +542,10 @@
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;metric,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/IpWildcard.html#IpWildcard-org.batfish.datamodel.Prefix-">IpWildcard</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalRoute.html#OspfExternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-java.lang.String-long-">OspfExternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                  int&nbsp;admin,
@@ -500,7 +555,7 @@
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser,
                  long&nbsp;costToAdvertiser)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalType1Route.html#OspfExternalType1Route-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-long-java.lang.String-">OspfExternalType1Route</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
                       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                       int&nbsp;admin,
@@ -510,7 +565,7 @@
                       long&nbsp;costToAdvertiser,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfExternalType2Route.html#OspfExternalType2Route-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-long-long-java.lang.String-">OspfExternalType2Route</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                       <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                       int&nbsp;admin,
@@ -520,51 +575,51 @@
                       long&nbsp;costToAdvertiser,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;advertiser)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfInterAreaRoute.html#OspfInterAreaRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfInterAreaRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                   int&nbsp;admin,
                   long&nbsp;metric,
                   long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfInternalRoute.html#OspfInternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfInternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                  <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                  int&nbsp;admin,
                  long&nbsp;metric,
                  long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfIntraAreaRoute.html#OspfIntraAreaRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfIntraAreaRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                   <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                   int&nbsp;admin,
                   long&nbsp;metric,
                   long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/OspfRoute.html#OspfRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-long-">OspfRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
          <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
          int&nbsp;admin,
          long&nbsp;metric,
          long&nbsp;area)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/PrefixRange.html#PrefixRange-org.batfish.datamodel.Prefix-org.batfish.datamodel.SubRange-">PrefixRange</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
            <a href="../../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;lengthRange)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipInternalRoute.html#RipInternalRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-">RipInternalRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
                 <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
                 int&nbsp;admin,
                 long&nbsp;metric)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RipRoute.html#RipRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-int-long-">RipRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
         <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
         int&nbsp;admin,
         long&nbsp;metric)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/Route.html#Route-java.lang.String-java.lang.String-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-java.lang.String-java.lang.String-int-long-org.batfish.datamodel.RoutingProtocol-int-">Route</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vrf,
      <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
@@ -576,12 +631,12 @@
      <a href="../../../../org/batfish/datamodel/RoutingProtocol.html" title="enum in org.batfish.datamodel">RoutingProtocol</a>&nbsp;protocol,
      int&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/RouteFilterLine.html#RouteFilterLine-org.batfish.datamodel.LineAction-org.batfish.datamodel.Prefix-org.batfish.datamodel.SubRange-">RouteFilterLine</a></span>(<a href="../../../../org/batfish/datamodel/LineAction.html" title="enum in org.batfish.datamodel">LineAction</a>&nbsp;action,
                <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
                <a href="../../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&nbsp;lengthRange)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/StaticRoute.html#StaticRoute-org.batfish.datamodel.Prefix-org.batfish.datamodel.Ip-java.lang.String-int-long-int-">StaticRoute</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;network,
            <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface,
@@ -625,6 +680,10 @@
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AclLineMatchExprs.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html#matchDst-org.batfish.datamodel.Prefix-">matchDst</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AclLineMatchExprs.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/acl/AclLineMatchExprs.html#matchSrc-org.batfish.datamodel.Prefix-">matchSrc</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -743,16 +802,16 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DestinationNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/DestinationNetwork.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
+<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PrefixExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpPrefix.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/IpPrefix.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PrefixExpr.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DestinationNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/DestinationNetwork.html#evaluate-org.batfish.datamodel.routing_policy.Environment-">evaluate</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;env)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -764,13 +823,13 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractionPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/AbstractionPrefixSet.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">PrefixSetExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">ExplicitPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/ExplicitPrefixSet.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
+<td class="colLast"><span class="typeNameLabel">AbstractionPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/AbstractionPrefixSet.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -779,8 +838,8 @@
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">PrefixSetExpr.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/PrefixSetExpr.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">ExplicitPrefixSet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/routing_policy/expr/ExplicitPrefixSet.html#matches-org.batfish.datamodel.Prefix-org.batfish.datamodel.routing_policy.Environment-">matches</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
        <a href="../../../../org/batfish/datamodel/routing_policy/Environment.html" title="class in org.batfish.datamodel.routing_policy">Environment</a>&nbsp;environment)</code>&nbsp;</td>
 </tr>
 </tbody>
@@ -846,7 +905,7 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">PrefixTracer.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/ibdp/PrefixTracer.html#summarize--">summarize</a></span>()</code>
-<div class="block">Structure: prefix -> action -> set of hostnames</div>
+<div class="block">Structure: prefix -&gt; action -&gt; set of hostnames</div>
 </td>
 </tr>
 </tbody>
@@ -914,14 +973,14 @@
 <td class="colLast"><span class="typeNameLabel">AbstractRib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getMatchingIps--">getMatchingIps</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractRib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">RibDelta.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/RibDelta.html#getPrefixes--">getPrefixes</a></span>()</code>
 <div class="block">Return the set of prefixes this delta has modifications for</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractRib.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/rib/AbstractRib.html#getPrefixes--">getPrefixes</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1146,6 +1205,24 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.routes">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a> in <a href="../../../../org/batfish/question/routes/package-summary.html">org.batfish.question.routes</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/question/routes/package-summary.html">org.batfish.question.routes</a> that return <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RoutesQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/routes/RoutesQuestion.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.representation.aws">
 <!--   -->
 </a>
@@ -1163,15 +1240,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NetworkAclEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/NetworkAclEntry.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Vpc.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/Vpc.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Subnet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/Subnet.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NetworkAclEntry.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/NetworkAclEntry.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Vpc.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/Vpc.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Subnet.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/aws/Subnet.html#getCidrBlock--">getCidrBlock</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -1218,15 +1295,23 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Ipv6BgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Ipv6BgpPeerGroup.html#getNeighborPrefix--">getNeighborPrefix</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LeafBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/LeafBgpPeerGroup.html#getNeighborPrefix--">getNeighborPrefix</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/IpBgpPeerGroup.html#getNeighborPrefix--">getNeighborPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Ipv6BgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/Ipv6BgpPeerGroup.html#getNeighborPrefix--">getNeighborPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DynamicIpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/DynamicIpBgpPeerGroup.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LeafBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/LeafBgpPeerGroup.html#getNeighborPrefix--">getNeighborPrefix</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DynamicIpv6BgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/DynamicIpv6BgpPeerGroup.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -1234,15 +1319,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DynamicIpBgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/DynamicIpBgpPeerGroup.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DynamicIpv6BgpPeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/DynamicIpv6BgpPeerGroup.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">OspfNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfNetwork.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StaticRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -1250,7 +1327,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/StaticRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">OspfNetwork.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/OspfNetwork.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -1278,12 +1355,12 @@
 <td class="colLast"><span class="typeNameLabel">BgpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/BgpProcess.html#getIpNetworks--">getIpNetworks</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">EigrpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getNetworks--">getNetworks</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">RipProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/RipProcess.html#getNetworks--">getNetworks</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">EigrpProcess.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/cisco/EigrpProcess.html#getNetworks--">getNetworks</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&gt;</code></td>
@@ -1454,11 +1531,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GeneratedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/GeneratedRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
-<td class="colLast"><span class="typeNameLabel">StaticRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">GeneratedRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/GeneratedRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
@@ -1779,21 +1856,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
-<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDPacket.html#restrict-net.sf.javabdd.BDD-org.batfish.datamodel.Prefix-">restrict</a></span>(net.sf.javabdd.BDD&nbsp;bdd,
-        <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDAcl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-org.batfish.datamodel.Prefix-">restrict</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html" title="class in org.batfish.symbolic.bdd">BDDRoute</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BDDRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html#restrict-org.batfish.datamodel.Prefix-">restrict</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
-<td class="colLast"><span class="typeNameLabel">IpSpaceToBDD.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/IpSpaceToBDD.html#toBDD-org.batfish.datamodel.Prefix-">toBDD</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDAcl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-org.batfish.datamodel.Prefix-">restrict</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;pfx)</code>
+<div class="block">Create a new version of the BDD restricted to a prefix</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1805,17 +1875,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
-<td class="colLast"><span class="typeNameLabel">BDDPacket.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDPacket.html#restrict-net.sf.javabdd.BDD-java.util.List-">restrict</a></span>(net.sf.javabdd.BDD&nbsp;bdd,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html" title="class in org.batfish.symbolic.bdd">BDDRoute</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BDDRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html" title="class in org.batfish.symbolic.bdd">BDDAcl</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDAcl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html" title="class in org.batfish.symbolic.bdd">BDDRoute</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BDDRoute.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDRoute.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">BDDAcl.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/BDDAcl.html#restrict-java.util.List-">restrict</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&gt;&nbsp;prefixes)</code>
+<div class="block">Create a new version of the BDD restricted to a list of prefixes</div>
+</td>
 </tr>
 </tbody>
 </table>

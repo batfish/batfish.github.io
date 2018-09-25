@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -141,6 +141,29 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#BASE_FLOW_TAG">BASE_FLOW_TAG</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#DELTA_FLOW_TAG">DELTA_FLOW_TAG</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -226,7 +249,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getSrcPort--">getSrcPort</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getState--">getState</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
@@ -234,50 +257,54 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsAck--">getTcpFlagsAck</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlags--">getTcpFlags</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsCwr--">getTcpFlagsCwr</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsAck--">getTcpFlagsAck</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsEce--">getTcpFlagsEce</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsCwr--">getTcpFlagsCwr</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsFin--">getTcpFlagsFin</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsEce--">getTcpFlagsEce</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsPsh--">getTcpFlagsPsh</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsFin--">getTcpFlagsFin</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsRst--">getTcpFlagsRst</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsPsh--">getTcpFlagsPsh</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsSyn--">getTcpFlagsSyn</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsRst--">getTcpFlagsRst</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsUrg--">getTcpFlagsUrg</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsSyn--">getTcpFlagsSyn</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#getTcpFlagsUrg--">getTcpFlagsUrg</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#prettyPrint-java.lang.String-">prettyPrint</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prefixString)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#toBuilder--">toBuilder</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -297,6 +324,40 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="BASE_FLOW_TAG">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BASE_FLOW_TAG</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> BASE_FLOW_TAG</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.batfish.datamodel.Flow.BASE_FLOW_TAG">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="DELTA_FLOW_TAG">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DELTA_FLOW_TAG</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> DELTA_FLOW_TAG</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#org.batfish.datamodel.Flow.DELTA_FLOW_TAG">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -318,7 +379,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockList">
 <li class="blockList">
 <h4>compareTo</h4>
-<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;rhs)</pre>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                     <a href="../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&nbsp;rhs)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo-T-" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;</code></dd>
@@ -470,7 +532,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockList">
 <li class="blockList">
 <h4>getState</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;getState()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;getState()</pre>
 </li>
 </ul>
 <a name="getTag--">
@@ -552,6 +614,16 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <li class="blockList">
 <h4>getTcpFlagsUrg</h4>
 <pre>public&nbsp;int&nbsp;getTcpFlagsUrg()</pre>
+</li>
+</ul>
+<a name="getTcpFlags--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTcpFlags</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/datamodel/TcpFlags.html" title="class in org.batfish.datamodel">TcpFlags</a>&nbsp;getTcpFlags()</pre>
 </li>
 </ul>
 <a name="hashCode--">
@@ -652,13 +724,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

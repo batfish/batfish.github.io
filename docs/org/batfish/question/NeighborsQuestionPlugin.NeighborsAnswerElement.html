@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,7 +172,7 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#addLanEdge-org.batfish.datamodel.Edge-">addLanEdge</a></span>(<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#addLayer3Edge-org.batfish.datamodel.Edge-">addLayer3Edge</a></span>(<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
@@ -180,11 +180,11 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getIbgpNeighbors--">getIbgpNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getEigrpNeighbors--">getEigrpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getLanNeighbors--">getLanNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getIbgpNeighbors--">getIbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a></code></td>
@@ -195,146 +195,174 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getLayer2Neighbors--">getLayer2Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getOspfNeighbors--">getOspfNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getLayer3Neighbors--">getLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRipNeighbors--">getRipNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getOspfNeighbors--">getOspfNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleEbgpNeighbors--">getRoleEbgpNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRipNeighbors--">getRipNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleIbgpNeighbors--">getRoleIbgpNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleEbgpNeighbors--">getRoleEbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleLanNeighbors--">getRoleLanNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleEigrpNeighbors--">getRoleEigrpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleOspfNeighbors--">getRoleOspfNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleIbgpNeighbors--">getRoleIbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleRipNeighbors--">getRoleRipNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleLayer3Neighbors--">getRoleLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleOspfNeighbors--">getRoleOspfNeighbors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getRoleRipNeighbors--">getRoleRipNeighbors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseEbgpNeighbors--">getVerboseEbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseEigrpEdge.html" title="class in org.batfish.datamodel.collections">VerboseEigrpEdge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseEigrpNeighbors--">getVerboseEigrpNeighbors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseIbgpNeighbors--">getVerboseIbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseLanNeighbors--">getVerboseLanNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseLayer3Neighbors--">getVerboseLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseOspfEdge.html" title="class in org.batfish.datamodel.collections">VerboseOspfEdge</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseOspfNeighbors--">getVerboseOspfNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseRipEdge.html" title="class in org.batfish.datamodel.collections">VerboseRipEdge</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#getVerboseRipNeighbors--">getVerboseRipNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initEbgpNeighbors--">initEbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initIbgpNeighbors--">initIbgpNeighbors</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initLanNeighbors--">initLanNeighbors</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initOspfNeighbors--">initOspfNeighbors</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initRipNeighbors--">initRipNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initEigrpNeighbors--">initEigrpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initVerboseLanNeighbors--">initVerboseLanNeighbors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initIbgpNeighbors--">initIbgpNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#prettyPrint--">prettyPrint</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initLayer3Neighbors--">initLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setEbgpNeighbors-java.util.SortedSet-">setEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ebgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initOspfNeighbors--">initOspfNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setIbgpNeighbors-java.util.SortedSet-">setIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ibgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initRipNeighbors--">initRipNeighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLanNeighbors-java.util.SortedSet-">setLanNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;lanNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#initVerboseLayer3Neighbors--">initVerboseLayer3Neighbors</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer1Neighbors-org.batfish.common.topology.Layer1Topology-">setLayer1Neighbors</a></span>(<a href="../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a>&nbsp;layer1Neighbors)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#prettyPrint--">prettyPrint</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer2Neighbors-org.batfish.common.topology.Layer2Topology-">setLayer2Neighbors</a></span>(<a href="../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a>&nbsp;layer2Neighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setEbgpNeighbors-java.util.SortedSet-">setEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ebgpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setOspfNeighbors-java.util.SortedSet-">setOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ospfNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setEigrpNeighbors-java.util.SortedSet-">setEigrpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;eigrpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRipNeighbors-java.util.SortedSet-">setRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ripNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setIbgpNeighbors-java.util.SortedSet-">setIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ibgpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleEbgpNeighbors-java.util.SortedSet-">setRoleEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleEbgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer1Neighbors-org.batfish.common.topology.Layer1Topology-">setLayer1Neighbors</a></span>(<a href="../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a>&nbsp;layer1Neighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleIbgpNeighbors-java.util.SortedSet-">setRoleIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleIbgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer2Neighbors-org.batfish.common.topology.Layer2Topology-">setLayer2Neighbors</a></span>(<a href="../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a>&nbsp;layer2Neighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleLanNeighbors-java.util.SortedSet-">setRoleLanNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleLanNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setLayer3Neighbors-java.util.SortedSet-">setLayer3Neighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;layer3Neighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleOspfNeighbors-java.util.SortedSet-">setRoleOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleOspfNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setOspfNeighbors-java.util.SortedSet-">setOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ospfNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleRipNeighbors-java.util.SortedSet-">setRoleRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleRipNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRipNeighbors-java.util.SortedSet-">setRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ripNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseEbgpNeighbors-java.util.Set-">setVerboseEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseEbgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleEbgpNeighbors-java.util.SortedSet-">setRoleEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleEbgpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseIbgpNeighbors-java.util.Set-">setVerboseIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseIbgpNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleEigrpNeighbors-java.util.SortedSet-">setRoleEigrpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleEigrpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseLanNeighbors-java.util.SortedSet-">setVerboseLanNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;verboseLanNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleIbgpNeighbors-java.util.SortedSet-">setRoleIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleIbgpNeighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseOspfNeighbors-java.util.SortedSet-">setVerboseOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseOspfEdge.html" title="class in org.batfish.datamodel.collections">VerboseOspfEdge</a>&gt;&nbsp;verboseOspfNeighbors)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleLayer3Neighbors-java.util.SortedSet-">setRoleLayer3Neighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleLayer3Neighbors)</code>&nbsp;</td>
 </tr>
 <tr id="i41" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleOspfNeighbors-java.util.SortedSet-">setRoleOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleOspfNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setRoleRipNeighbors-java.util.SortedSet-">setRoleRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleRipNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseEbgpNeighbors-java.util.Set-">setVerboseEbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseEbgpNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseEigrpNeighbors-java.util.SortedSet-">setVerboseEigrpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseEigrpEdge.html" title="class in org.batfish.datamodel.collections">VerboseEigrpEdge</a>&gt;&nbsp;verboseEigrpNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseIbgpNeighbors-java.util.Set-">setVerboseIbgpNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseIbgpNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseLayer3Neighbors-java.util.SortedSet-">setVerboseLayer3Neighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;verboseLayer3Neighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseOspfNeighbors-java.util.SortedSet-">setVerboseOspfNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseOspfEdge.html" title="class in org.batfish.datamodel.collections">VerboseOspfEdge</a>&gt;&nbsp;verboseOspfNeighbors)</code>&nbsp;</td>
+</tr>
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsAnswerElement.html#setVerboseRipNeighbors-java.util.SortedSet-">setVerboseRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseRipEdge.html" title="class in org.batfish.datamodel.collections">VerboseRipEdge</a>&gt;&nbsp;verboseRipNeighbors)</code>&nbsp;</td>
 </tr>
@@ -384,13 +412,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="addLanEdge-org.batfish.datamodel.Edge-">
+<a name="addLayer3Edge-org.batfish.datamodel.Edge-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addLanEdge</h4>
-<pre>public&nbsp;void&nbsp;addLanEdge(<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</pre>
+<h4>addLayer3Edge</h4>
+<pre>public&nbsp;void&nbsp;addLayer3Edge(<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&nbsp;edge)</pre>
 </li>
 </ul>
 <a name="getEbgpNeighbors--">
@@ -402,6 +430,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;getEbgpNeighbors()</pre>
 </li>
 </ul>
+<a name="getEigrpNeighbors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEigrpNeighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;getEigrpNeighbors()</pre>
+</li>
+</ul>
 <a name="getIbgpNeighbors--">
 <!--   -->
 </a>
@@ -409,15 +446,6 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <li class="blockList">
 <h4>getIbgpNeighbors</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;getIbgpNeighbors()</pre>
-</li>
-</ul>
-<a name="getLanNeighbors--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getLanNeighbors</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;getLanNeighbors()</pre>
 </li>
 </ul>
 <a name="getLayer1Neighbors--">
@@ -436,6 +464,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <li class="blockList">
 <h4>getLayer2Neighbors</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a>&nbsp;getLayer2Neighbors()</pre>
+</li>
+</ul>
+<a name="getLayer3Neighbors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLayer3Neighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;getLayer3Neighbors()</pre>
 </li>
 </ul>
 <a name="getOspfNeighbors--">
@@ -465,6 +502,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;getRoleEbgpNeighbors()</pre>
 </li>
 </ul>
+<a name="getRoleEigrpNeighbors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRoleEigrpNeighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;getRoleEigrpNeighbors()</pre>
+</li>
+</ul>
 <a name="getRoleIbgpNeighbors--">
 <!--   -->
 </a>
@@ -474,13 +520,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;getRoleIbgpNeighbors()</pre>
 </li>
 </ul>
-<a name="getRoleLanNeighbors--">
+<a name="getRoleLayer3Neighbors--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getRoleLanNeighbors</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;getRoleLanNeighbors()</pre>
+<h4>getRoleLayer3Neighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;getRoleLayer3Neighbors()</pre>
 </li>
 </ul>
 <a name="getRoleOspfNeighbors--">
@@ -510,6 +556,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;getVerboseEbgpNeighbors()</pre>
 </li>
 </ul>
+<a name="getVerboseEigrpNeighbors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVerboseEigrpNeighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseEigrpEdge.html" title="class in org.batfish.datamodel.collections">VerboseEigrpEdge</a>&gt;&nbsp;getVerboseEigrpNeighbors()</pre>
+</li>
+</ul>
 <a name="getVerboseIbgpNeighbors--">
 <!--   -->
 </a>
@@ -519,13 +574,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;getVerboseIbgpNeighbors()</pre>
 </li>
 </ul>
-<a name="getVerboseLanNeighbors--">
+<a name="getVerboseLayer3Neighbors--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getVerboseLanNeighbors</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;getVerboseLanNeighbors()</pre>
+<h4>getVerboseLayer3Neighbors</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;getVerboseLayer3Neighbors()</pre>
 </li>
 </ul>
 <a name="getVerboseOspfNeighbors--">
@@ -555,6 +610,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;initEbgpNeighbors()</pre>
 </li>
 </ul>
+<a name="initEigrpNeighbors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initEigrpNeighbors</h4>
+<pre>public&nbsp;void&nbsp;initEigrpNeighbors()</pre>
+</li>
+</ul>
 <a name="initIbgpNeighbors--">
 <!--   -->
 </a>
@@ -564,13 +628,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;initIbgpNeighbors()</pre>
 </li>
 </ul>
-<a name="initLanNeighbors--">
+<a name="initLayer3Neighbors--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>initLanNeighbors</h4>
-<pre>public&nbsp;void&nbsp;initLanNeighbors()</pre>
+<h4>initLayer3Neighbors</h4>
+<pre>public&nbsp;void&nbsp;initLayer3Neighbors()</pre>
 </li>
 </ul>
 <a name="initOspfNeighbors--">
@@ -591,13 +655,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;initRipNeighbors()</pre>
 </li>
 </ul>
-<a name="initVerboseLanNeighbors--">
+<a name="initVerboseLayer3Neighbors--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>initVerboseLanNeighbors</h4>
-<pre>public&nbsp;void&nbsp;initVerboseLanNeighbors()</pre>
+<h4>initVerboseLayer3Neighbors</h4>
+<pre>public&nbsp;void&nbsp;initVerboseLayer3Neighbors()</pre>
 </li>
 </ul>
 <a name="prettyPrint--">
@@ -622,6 +686,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;setEbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ebgpNeighbors)</pre>
 </li>
 </ul>
+<a name="setEigrpNeighbors-java.util.SortedSet-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEigrpNeighbors</h4>
+<pre>public&nbsp;void&nbsp;setEigrpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;eigrpNeighbors)</pre>
+</li>
+</ul>
 <a name="setIbgpNeighbors-java.util.SortedSet-">
 <!--   -->
 </a>
@@ -629,15 +702,6 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <li class="blockList">
 <h4>setIbgpNeighbors</h4>
 <pre>public&nbsp;void&nbsp;setIbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>&gt;&nbsp;ibgpNeighbors)</pre>
-</li>
-</ul>
-<a name="setLanNeighbors-java.util.SortedSet-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLanNeighbors</h4>
-<pre>public&nbsp;void&nbsp;setLanNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;lanNeighbors)</pre>
 </li>
 </ul>
 <a name="setLayer1Neighbors-org.batfish.common.topology.Layer1Topology-">
@@ -656,6 +720,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <li class="blockList">
 <h4>setLayer2Neighbors</h4>
 <pre>public&nbsp;void&nbsp;setLayer2Neighbors(<a href="../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a>&nbsp;layer2Neighbors)</pre>
+</li>
+</ul>
+<a name="setLayer3Neighbors-java.util.SortedSet-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLayer3Neighbors</h4>
+<pre>public&nbsp;void&nbsp;setLayer3Neighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;layer3Neighbors)</pre>
 </li>
 </ul>
 <a name="setOspfNeighbors-java.util.SortedSet-">
@@ -685,6 +758,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;setRoleEbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleEbgpNeighbors)</pre>
 </li>
 </ul>
+<a name="setRoleEigrpNeighbors-java.util.SortedSet-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRoleEigrpNeighbors</h4>
+<pre>public&nbsp;void&nbsp;setRoleEigrpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleEigrpNeighbors)</pre>
+</li>
+</ul>
 <a name="setRoleIbgpNeighbors-java.util.SortedSet-">
 <!--   -->
 </a>
@@ -694,13 +776,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;setRoleIbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleIbgpNeighbors)</pre>
 </li>
 </ul>
-<a name="setRoleLanNeighbors-java.util.SortedSet-">
+<a name="setRoleLayer3Neighbors-java.util.SortedSet-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setRoleLanNeighbors</h4>
-<pre>public&nbsp;void&nbsp;setRoleLanNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleLanNeighbors)</pre>
+<h4>setRoleLayer3Neighbors</h4>
+<pre>public&nbsp;void&nbsp;setRoleLayer3Neighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>&gt;&nbsp;roleLayer3Neighbors)</pre>
 </li>
 </ul>
 <a name="setRoleOspfNeighbors-java.util.SortedSet-">
@@ -730,6 +812,15 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;setVerboseEbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseEbgpNeighbors)</pre>
 </li>
 </ul>
+<a name="setVerboseEigrpNeighbors-java.util.SortedSet-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setVerboseEigrpNeighbors</h4>
+<pre>public&nbsp;void&nbsp;setVerboseEigrpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseEigrpEdge.html" title="class in org.batfish.datamodel.collections">VerboseEigrpEdge</a>&gt;&nbsp;verboseEigrpNeighbors)</pre>
+</li>
+</ul>
 <a name="setVerboseIbgpNeighbors-java.util.Set-">
 <!--   -->
 </a>
@@ -739,13 +830,13 @@ extends <a href="../../../org/batfish/datamodel/answers/AnswerElement.html" titl
 <pre>public&nbsp;void&nbsp;setVerboseIbgpNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/collections/VerboseBgpEdge.html" title="class in org.batfish.datamodel.collections">VerboseBgpEdge</a>&gt;&nbsp;verboseIbgpNeighbors)</pre>
 </li>
 </ul>
-<a name="setVerboseLanNeighbors-java.util.SortedSet-">
+<a name="setVerboseLayer3Neighbors-java.util.SortedSet-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setVerboseLanNeighbors</h4>
-<pre>public&nbsp;void&nbsp;setVerboseLanNeighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;verboseLanNeighbors)</pre>
+<h4>setVerboseLayer3Neighbors</h4>
+<pre>public&nbsp;void&nbsp;setVerboseLayer3Neighbors(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/VerboseEdge.html" title="class in org.batfish.datamodel">VerboseEdge</a>&gt;&nbsp;verboseLayer3Neighbors)</pre>
 </li>
 </ul>
 <a name="setVerboseOspfNeighbors-java.util.SortedSet-">

@@ -331,7 +331,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <h4>getIpOwners</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getIpOwners()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html#getIpOwners--">DataPlane</a></code></span></div>
-<div class="block">Return the map of Ip owners (as computed during dataplane computation). Map structure: Ip ->
+<div class="block">Return the map of Ip owners (as computed during dataplane computation). Map structure: Ip -&gt;
  Set of hostnames</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -348,7 +348,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;getIpVrfOwners()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html#getIpVrfOwners--">DataPlane</a></code></span></div>
 <div class="block">Return the map of Vrfs that own each Ip (as computed during dataplane computation). Map
- structure: Ip -> hostname -> set of Vrfs</div>
+ structure: Ip -&gt; hostname -&gt; set of Vrfs</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/DataPlane.html#getIpVrfOwners--">getIpVrfOwners</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a></code></dd>
@@ -372,7 +372,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <h4>getPrefixTracingInfo</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/dataplane/ibdp/PrefixTracer.html" title="class in org.batfish.dataplane.ibdp">PrefixTracer</a>&gt;&gt;&nbsp;getPrefixTracingInfo()</pre>
 <div class="block">Retrieve the <a href="../../../../org/batfish/dataplane/ibdp/PrefixTracer.html" title="class in org.batfish.dataplane.ibdp"><code>PrefixTracer</code></a> for each <a href="../../../../org/batfish/dataplane/ibdp/VirtualRouter.html" title="class in org.batfish.dataplane.ibdp"><code>VirtualRouter</code></a> after dataplane computation.
- Map structure: Hostname -> VRF name -> prefix tracer.</div>
+ Map structure: Hostname -&gt; VRF name -&gt; prefix tracer.</div>
 </li>
 </ul>
 <a name="getPrefixTracingInfoSummary--">
@@ -383,8 +383,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <h4>getPrefixTracingInfoSummary</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&gt;&gt;&nbsp;getPrefixTracingInfoSummary()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html#getPrefixTracingInfoSummary--">DataPlane</a></code></span></div>
-<div class="block">Return the summary of route prefix propagation. Map structure: Hostname -> VRF name -> Prefix
- -> action taken -> set of hostnames (peers).</div>
+<div class="block">Return the summary of route prefix propagation. Map structure: Hostname -&gt; VRF name -&gt;
+ Prefix -&gt; action taken -&gt; set of hostnames (peers).</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/DataPlane.html#getPrefixTracingInfoSummary--">getPrefixTracingInfoSummary</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a></code></dd>
@@ -399,7 +399,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <h4>getRibs</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/GenericRib.html" title="interface in org.batfish.datamodel">GenericRib</a>&lt;<a href="../../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&gt;&gt;&gt;&nbsp;getRibs()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html#getRibs--">DataPlane</a></code></span></div>
-<div class="block">Return the set of all (main) RIBs. Map structure: hostname -> VRF name -> GenericRib</div>
+<div class="block">Return the set of all (main) RIBs. Map structure: hostname -&gt; VRF name -&gt; GenericRib</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/DataPlane.html#getRibs--">getRibs</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a></code></dd>

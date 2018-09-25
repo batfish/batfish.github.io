@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" target="_top">Frames</a></li>
@@ -143,11 +143,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html#setDelay-java.lang.Double-">setDelay</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;delay)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html#setEnabled-boolean-">setEnabled</a></span>(boolean&nbsp;enabled)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html#setEnabled-boolean-">setEnabled</a></span>(boolean&nbsp;enabled)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html#setMetric-org.batfish.datamodel.eigrp.EigrpMetric-">setMetric</a></span>(<a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html#setPassive-boolean-">setPassive</a></span>(boolean&nbsp;passive)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -177,7 +181,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings</a>&nbsp;build()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings</a>&nbsp;build()</pre>
 </li>
 </ul>
 <a name="setAsn-java.lang.Long-">
@@ -186,25 +191,36 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setAsn</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setAsn(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn)</pre>
-</li>
-</ul>
-<a name="setDelay-java.lang.Double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setDelay</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setDelay(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;delay)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setAsn(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;asn)</pre>
 </li>
 </ul>
 <a name="setEnabled-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setEnabled</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setEnabled(boolean&nbsp;enabled)</pre>
+</li>
+</ul>
+<a name="setMetric-org.batfish.datamodel.eigrp.EigrpMetric-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMetric</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setMetric(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                <a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp">EigrpMetric</a>&nbsp;metric)</pre>
+</li>
+</ul>
+<a name="setPassive-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setPassive</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" title="class in org.batfish.datamodel.eigrp">EigrpInterfaceSettings.Builder</a>&nbsp;setPassive(boolean&nbsp;passive)</pre>
 </li>
 </ul>
 </li>
@@ -236,7 +252,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/datamodel/eigrp/EigrpInterfaceSettings.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/datamodel/eigrp/EigrpMetric.html" title="class in org.batfish.datamodel.eigrp"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/datamodel/eigrp/EigrpInterfaceSettings.Builder.html" target="_top">Frames</a></li>

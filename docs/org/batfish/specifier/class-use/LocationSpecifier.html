@@ -91,6 +91,10 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.testfilters">org.batfish.question.testfilters</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.specifier">org.batfish.specifier</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -114,6 +118,10 @@
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilityParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.html#getSourceLocationSpecifier--">getSourceLocationSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.html#getStartLocationSpecifier--">getStartLocationSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
@@ -126,6 +134,10 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html" title="class in org.batfish.question">ReachabilityParameters.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ReachabilityParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/ReachabilityParameters.Builder.html#setSourceLocationSpecifier-org.batfish.specifier.LocationSpecifier-">setSourceLocationSpecifier</a></span>(<a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a>&nbsp;sourceLocationSpecifier)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html" title="class in org.batfish.question">SearchFiltersParameters.Builder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SearchFiltersParameters.Builder.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/SearchFiltersParameters.Builder.html#setStartLocationSpecifier-org.batfish.specifier.LocationSpecifier-">setStartLocationSpecifier</a></span>(<a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a>&nbsp;startLocationSpecifier)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -144,6 +156,24 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SpecifiersQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersQuestion.html#getLocationSpecifier--">getLocationSpecifier</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.testfilters">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a> in <a href="../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a> that return <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TestFiltersQuestion.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/question/testfilters/TestFiltersQuestion.html#getStartLocationSpecifier--">getStartLocationSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -205,59 +235,71 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/InterfaceSpecifierInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">InterfaceSpecifierInterfaceLocationSpecifier</a></span></code>
+<div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that yields <a href="../../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocation</code></a>s based on an <code>InterfaceSpecifier</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/IntersectionLocationSpecifier.html" title="class in org.batfish.specifier">IntersectionLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that specifies the set intersection of nodes specified by two other
  specifiers.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">NameRegexInterfaceLinkLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying links of interfaces with names matching the input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">NameRegexInterfaceLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces with names matching the input regex.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">NodeNameRegexInterfaceLinkLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying links of interfaces belonging to nodes with names matching
  the input regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">NodeNameRegexInterfaceLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces belonging to nodes with names matching the
  input regex.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexLocationSpecifier.html" title="class in org.batfish.specifier">NodeNameRegexLocationSpecifier</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">NodeRoleRegexInterfaceLinkLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying links of interfaces belonging to nodes with roles matching
  the input dimension and regex.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">NodeRoleRegexInterfaceLocationSpecifier</a></span></code>
 <div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying interfaces belonging to nodes with roles matching the
  input dimension and regex.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexLocationSpecifier.html" title="class in org.batfish.specifier">NodeRoleRegexLocationSpecifier</a></span></code>
 <div class="block">An abstract <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> specifying locations by regex on node role names.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeSpecifierInterfaceLocationSpecifier.html" title="class in org.batfish.specifier">NodeSpecifierInterfaceLocationSpecifier</a></span></code>
+<div class="block">A <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> that yields <a href="../../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocation</code></a>s based on a <code>NodeSpecifier</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -269,8 +311,7 @@
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/ToInterfaceLinkLocationSpecifier.html" title="class in org.batfish.specifier">ToInterfaceLinkLocationSpecifier</a></span></code>
-<div class="block">Wraps another LocationSpecifer, and converts all its InterfaceLocations to
- InterfaceLinkLocations.</div>
+<div class="block">Wraps another <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a>, and converts all its <a href="../../../../org/batfish/specifier/InterfaceLocation.html" title="class in org.batfish.specifier"><code>InterfaceLocations</code></a> to <a href="../../../../org/batfish/specifier/InterfaceLinkLocation.html" title="class in org.batfish.specifier"><code>InterfaceLinkLocations</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -312,9 +353,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifier.html#INSTANCE">INSTANCE</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LocationSpecifiers.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/LocationSpecifiers.html#ALL_LOCATIONS">ALL_LOCATIONS</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifier.html#INSTANCE">INSTANCE</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AllInterfacesLocationSpecifier.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfacesLocationSpecifier.html#INSTANCE">INSTANCE</a></span></code>&nbsp;</td>
 </tr>
@@ -329,23 +374,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AllInterfacesLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfacesLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AltFlexibleLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AltFlexibleLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">CaseInsensitiveRegexLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/CaseInsensitiveRegexLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FlexibleLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
@@ -355,27 +384,19 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AllInterfacesLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfacesLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TypedLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/TypedLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DescriptionRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DescriptionRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;input)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DescriptionRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DescriptionRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;input)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AllInterfaceLinksLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/AllInterfaceLinksLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NameRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeNameRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeNameRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">FlexibleLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/FlexibleLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.Object-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
@@ -383,12 +404,27 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeRoleRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.String-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;rolePattern)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DescriptionRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DescriptionRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;input)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeRoleRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.String-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension,
+<td class="colLast"><span class="typeNameLabel">NodeNameRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NameRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NameRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NodeNameRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeNameRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;pattern)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DescriptionRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/DescriptionRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NodeRoleRegexInterfaceLinkLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLinkLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.String-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;rolePattern)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -398,24 +434,29 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NodeRoleRegexLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexLocationSpecifierFactory.html#buildLocationSpecifierTyped-java.lang.String-">buildLocationSpecifierTyped</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">NodeRoleRegexInterfaceLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexInterfaceLocationSpecifierFactory.html#buildLocationSpecifier-java.lang.String-java.util.regex.Pattern-">buildLocationSpecifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;rolePattern)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NodeRoleRegexLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/NodeRoleRegexLocationSpecifierFactory.html#buildLocationSpecifierTyped-java.lang.String-">buildLocationSpecifierTyped</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TypedLocationSpecifierFactory.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/TypedLocationSpecifierFactory.html#buildLocationSpecifierTyped-T-">buildLocationSpecifierTyped</a></span>(<a href="../../../../org/batfish/specifier/TypedLocationSpecifierFactory.html" title="type parameter in TypedLocationSpecifierFactory">T</a>&nbsp;input)</code>
 <div class="block">Construct a <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a> object for the supplied input.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LocationSpecifiers.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/LocationSpecifiers.html#difference-org.batfish.specifier.LocationSpecifier-org.batfish.specifier.LocationSpecifier-">difference</a></span>(<a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a>&nbsp;locsIn,
           <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a>&nbsp;locsOut)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LocationSpecifiers.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/LocationSpecifiers.html#from-org.batfish.datamodel.questions.InterfacesSpecifier-">from</a></span>(<a href="../../../../org/batfish/datamodel/questions/InterfacesSpecifier.html" title="class in org.batfish.datamodel.questions">InterfacesSpecifier</a>&nbsp;ingressInterfaces)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LocationSpecifiers.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/specifier/LocationSpecifiers.html#from-org.batfish.datamodel.questions.NodesSpecifier-">from</a></span>(<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;ingressNodes)</code>&nbsp;</td>
 </tr>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -138,7 +138,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Zone.html#Zone-java.lang.String-">Zone</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Zone.html#Zone-java.lang.String-org.batfish.representation.palo_alto.Vsys-">Zone</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+    <a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;vsys)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -163,6 +164,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Zone.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Zone.html#getVsys--">getVsys</a></span>()</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -185,13 +190,14 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Zone-java.lang.String-">
+<a name="Zone-java.lang.String-org.batfish.representation.palo_alto.Vsys-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Zone</h4>
-<pre>public&nbsp;Zone(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<pre>public&nbsp;Zone(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+            <a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;vsys)</pre>
 </li>
 </ul>
 </li>
@@ -214,10 +220,19 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <a name="getName--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+</li>
+</ul>
+<a name="getVsys--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getVsys</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/representation/palo_alto/Vsys.html" title="class in org.batfish.representation.palo_alto">Vsys</a>&nbsp;getVsys()</pre>
 </li>
 </ul>
 </li>

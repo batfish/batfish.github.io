@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">ExcludedRows</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">Represents rows that have been excludes from <a href="../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table"><code>TableAnswerElement</code></a> because they were covered
+<div class="block">Represents rows that have been excluded from <a href="../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table"><code>TableAnswerElement</code></a> because they were covered
  by an exclusion.</div>
 </li>
 </ul>
@@ -131,8 +131,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/table/ExcludedRows.html#ExcludedRows-java.lang.String-org.batfish.datamodel.table.Rows-">ExcludedRows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;exclusionName,
-            <a href="../../../../org/batfish/datamodel/table/Rows.html" title="class in org.batfish.datamodel.table">Rows</a>&nbsp;rows)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/table/ExcludedRows.html#ExcludedRows-java.lang.String-">ExcludedRows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;exclusionName)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -161,6 +160,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/table/Rows.html" title="class in org.batfish.datamodel.table">Rows</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/table/ExcludedRows.html#getRows--">getRows</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/table/ExcludedRows.html#getRowsList--">getRowsList</a></span>()</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -183,16 +186,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ExcludedRows-java.lang.String-org.batfish.datamodel.table.Rows-">
+<a name="ExcludedRows-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ExcludedRows</h4>
 <pre>public&nbsp;ExcludedRows(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;exclusionName,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                    <a href="../../../../org/batfish/datamodel/table/Rows.html" title="class in org.batfish.datamodel.table">Rows</a>&nbsp;rows)</pre>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;exclusionName)</pre>
 </li>
 </ul>
 </li>
@@ -224,10 +225,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="getRows--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRows</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/datamodel/table/Rows.html" title="class in org.batfish.datamodel.table">Rows</a>&nbsp;getRows()</pre>
+</li>
+</ul>
+<a name="getRowsList--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRowsList</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;getRowsList()</pre>
 </li>
 </ul>
 </li>

@@ -206,8 +206,8 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Vrf.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Vrf.html#getEigrpProcess--">getEigrpProcess</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Vrf.html#getEigrpProcesses--">getEigrpProcesses</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="../../../org/batfish/datamodel/GeneratedRoute6.html" title="class in org.batfish.datamodel">GeneratedRoute6</a>&gt;</code></td>
@@ -307,7 +307,7 @@ extends <a href="../../../org/batfish/common/util/ComparableStructure.html" titl
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Vrf.html#setEigrpProcess-org.batfish.datamodel.eigrp.EigrpProcess-">setEigrpProcess</a></span>(<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&nbsp;process)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Vrf.html#setEigrpProcesses-java.util.Map-">setEigrpProcesses</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&gt;&nbsp;eigrpProcesses)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -440,14 +440,17 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Navigab
 public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="../../../org/batfish/datamodel/GeneratedRoute.html" title="class in org.batfish.datamodel">GeneratedRoute</a>&gt;&nbsp;getGeneratedRoutes()</pre>
 </li>
 </ul>
-<a name="getEigrpProcess--">
+<a name="getEigrpProcesses--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getEigrpProcess</h4>
-<pre>@JsonPropertyDescription(value="EIGRP routing process for this VRF")
-public&nbsp;<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&nbsp;getEigrpProcess()</pre>
+<h4>getEigrpProcesses</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&gt;&nbsp;getEigrpProcesses()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>EIGRP routing processes for this VRF</dd>
+</dl>
 </li>
 </ul>
 <a name="getInterfaceNames--">
@@ -670,6 +673,15 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedS
 <pre>public&nbsp;void&nbsp;setGeneratedRoutes(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="../../../org/batfish/datamodel/GeneratedRoute.html" title="class in org.batfish.datamodel">GeneratedRoute</a>&gt;&nbsp;generatedRoutes)</pre>
 </li>
 </ul>
+<a name="setEigrpProcesses-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEigrpProcesses</h4>
+<pre>public&nbsp;void&nbsp;setEigrpProcesses(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&gt;&nbsp;eigrpProcesses)</pre>
+</li>
+</ul>
 <a name="setInterfaceNames-java.util.SortedSet-">
 <!--   -->
 </a>
@@ -695,15 +707,6 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedS
 <li class="blockList">
 <h4>setIsisProcess</h4>
 <pre>public&nbsp;void&nbsp;setIsisProcess(<a href="../../../org/batfish/datamodel/isis/IsisProcess.html" title="class in org.batfish.datamodel.isis">IsisProcess</a>&nbsp;process)</pre>
-</li>
-</ul>
-<a name="setEigrpProcess-org.batfish.datamodel.eigrp.EigrpProcess-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setEigrpProcess</h4>
-<pre>public&nbsp;void&nbsp;setEigrpProcess(<a href="../../../org/batfish/datamodel/eigrp/EigrpProcess.html" title="class in org.batfish.datamodel.eigrp">EigrpProcess</a>&nbsp;process)</pre>
 </li>
 </ul>
 <a name="setOspfProcess-org.batfish.datamodel.ospf.OspfProcess-">

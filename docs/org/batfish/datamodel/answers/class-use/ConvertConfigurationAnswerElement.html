@@ -95,6 +95,10 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.storage">org.batfish.storage</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.vendor">org.batfish.vendor</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -185,6 +189,60 @@
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Batfish.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/main/Batfish.html#getConfigurations-java.nio.file.Path-org.batfish.datamodel.answers.ConvertConfigurationAnswerElement-">getConfigurations</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;serializedVendorConfigPath,
                  <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a>&nbsp;answerElement)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.storage">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a> in <a href="../../../../../org/batfish/storage/package-summary.html">org.batfish.storage</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/storage/package-summary.html">org.batfish.storage</a> that return <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">StorageProvider.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/storage/StorageProvider.html#loadConvertConfigurationAnswerElement-java.lang.String-java.lang.String-">loadConvertConfigurationAnswerElement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>
+<div class="block">Returns the <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers"><code>ConvertConfigurationAnswerElement</code></a> that is the result of the phase that
+ converts vendor-specific configurations to vendor-independent configurations.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FileBasedStorage.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/storage/FileBasedStorage.html#loadConvertConfigurationAnswerElement-java.lang.String-java.lang.String-">loadConvertConfigurationAnswerElement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/batfish/storage/package-summary.html">org.batfish.storage</a> with parameters of type <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">StorageProvider.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/storage/StorageProvider.html#storeConfigurations-java.util.Map-org.batfish.datamodel.answers.ConvertConfigurationAnswerElement-java.lang.String-java.lang.String-">storeConfigurations</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                   <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a>&nbsp;convertAnswerElement,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>
+<div class="block">Stores the configuration information into the given snapshot.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">FileBasedStorage.</span><code><span class="memberNameLink"><a href="../../../../../org/batfish/storage/FileBasedStorage.html#storeConfigurations-java.util.Map-org.batfish.datamodel.answers.ConvertConfigurationAnswerElement-java.lang.String-java.lang.String-">storeConfigurations</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                   <a href="../../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a>&nbsp;convertAnswerElement,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;snapshot)</code>
+<div class="block">Stores the configuration information into the given testrig.</div>
+</td>
 </tr>
 </tbody>
 </table>

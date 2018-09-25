@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.batfish.datamodel.questions.Question">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.org.batfish.datamodel.questions.Question">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -103,12 +103,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">org.batfish.datamodel.questions.Question</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html" title="class in org.batfish.datamodel.questions">org.batfish.datamodel.questions.IPacketTraceQuestion</a></li>
-<li>
-<ul class="inheritance">
 <li>org.batfish.question.traceroute.TracerouteQuestion</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -124,7 +119,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">TracerouteQuestion</span>
-extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html" title="class in org.batfish.datamodel.questions">IPacketTraceQuestion</a></pre>
+extends <a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></pre>
 <div class="block">A question to perform a traceroute.
 
  <p>This question performs a virtual traceroute in the network from ingress node. The destination
@@ -170,23 +165,6 @@ extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestio
 </ul>
 </li>
 </ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#TracerouteQuestion--">TracerouteQuestion</a></span>()</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -206,68 +184,25 @@ extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestio
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getFlowBuilders--">getFlowBuilders</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getIgnoreAcls--">getIgnoreAcls</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the short name of this question, used in place of the classname to identify this
  question.</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceLocationStr--">getSourceLocationStr</a></span>()</code>&nbsp;</td>
+</tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceIpSpaceSpecifierFactory--">getSourceIpSpaceSpecifierFactory</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceIpSpaceSpecifierInput--">getSourceIpSpaceSpecifierInput</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceLocationSpecifierFactory--">getSourceLocationSpecifierFactory</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceLocationSpecifierInput--">getSourceLocationSpecifierInput</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#prettyPrint--">prettyPrint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#setIgnoreAcls-boolean-">setIgnoreAcls</a></span>(boolean&nbsp;ignoreAcls)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#setSourceIpSpaceSpecifierFactory-java.lang.String-">setSourceIpSpaceSpecifierFactory</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceIpSpaceSpecifierFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#setSourceIpSpaceSpecifierInput-java.lang.String-">setSourceIpSpaceSpecifierInput</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceIpSpaceSpecifierInput)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#setSourceLocationSpecifierFactory-java.lang.String-">setSourceLocationSpecifierFactory</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationSpecifierFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#setSourceLocationSpecifierInput-java.lang.String-">setSourceLocationSpecifierInput</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationSpecifierInput)</code>&nbsp;</td>
-</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.batfish.datamodel.questions.IPacketTraceQuestion">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.batfish.datamodel.questions.<a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html" title="class in org.batfish.datamodel.questions">IPacketTraceQuestion</a></h3>
-<code><a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#createBaseFlowBuilder--">createBaseFlowBuilder</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#createDstIpFromDst-java.util.Map-">createDstIpFromDst</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getDscp--">getDscp</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getDst--">getDst</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getDstPort--">getDstPort</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getDstProtocol--">getDstProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getEcn--">getEcn</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getFragmentOffset--">getFragmentOffset</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getIcmpCode--">getIcmpCode</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getIcmpType--">getIcmpType</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getIngressInterface--">getIngressInterface</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getIpProtocol--">getIpProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getPacketLength--">getPacketLength</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getSrcIp--">getSrcIp</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getSrcPort--">getSrcPort</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getSrcProtocol--">getSrcProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getState--">getState</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsAck--">getTcpFlagsAck</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsCwr--">getTcpFlagsCwr</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsEce--">getTcpFlagsEce</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsFin--">getTcpFlagsFin</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsPsh--">getTcpFlagsPsh</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsRst--">getTcpFlagsRst</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsSyn--">getTcpFlagsSyn</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#getTcpFlagsUrg--">getTcpFlagsUrg</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setDscp-java.lang.Integer-">setDscp</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setDst-java.lang.String-">setDst</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setDstPort-java.lang.Integer-">setDstPort</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setDstProtocol-org.batfish.datamodel.Protocol-">setDstProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setEcn-java.lang.Integer-">setEcn</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setFragmentOffset-java.lang.Integer-">setFragmentOffset</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setIcmpCode-java.lang.Integer-">setIcmpCode</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setIcmpType-java.lang.Integer-">setIcmpType</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setIngressInterface-java.lang.String-">setIngressInterface</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setIpProtocol-org.batfish.datamodel.IpProtocol-">setIpProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setPacketLength-java.lang.Integer-">setPacketLength</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setSrcIp-org.batfish.datamodel.Ip-">setSrcIp</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setSrcPort-java.lang.Integer-">setSrcPort</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setSrcProtocol-org.batfish.datamodel.Protocol-">setSrcProtocol</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setState-org.batfish.datamodel.State-">setState</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsAck-java.lang.Boolean-">setTcpFlagsAck</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsCwr-java.lang.Boolean-">setTcpFlagsCwr</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsEce-java.lang.Boolean-">setTcpFlagsEce</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsFin-java.lang.Boolean-">setTcpFlagsFin</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsPsh-java.lang.Boolean-">setTcpFlagsPsh</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsRst-java.lang.Boolean-">setTcpFlagsRst</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsSyn-java.lang.Boolean-">setTcpFlagsSyn</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#setTcpFlagsUrg-java.lang.Boolean-">setTcpFlagsUrg</a>, <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestion.html#toString--">toString</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.batfish.datamodel.questions.Question">
 <!--   -->
@@ -280,14 +215,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestio
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.batfish.datamodel.questions.IQuestion">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;org.batfish.datamodel.questions.<a href="../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></h3>
-<code><a href="../../../../org/batfish/datamodel/questions/IQuestion.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/IQuestion.html#toJsonString--">toJsonString</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -297,23 +225,6 @@ extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestio
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="TracerouteQuestion--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>TracerouteQuestion</h4>
-<pre>public&nbsp;TracerouteQuestion()</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -344,53 +255,14 @@ extends <a href="../../../../org/batfish/datamodel/questions/IPacketTraceQuestio
 <pre>public&nbsp;boolean&nbsp;getIgnoreAcls()</pre>
 </li>
 </ul>
-<a name="getFlowBuilders--">
+<a name="getSourceLocationStr--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getFlowBuilders</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.Builder.html" title="class in org.batfish.datamodel">Flow.Builder</a>&gt;&nbsp;getFlowBuilders()</pre>
-</li>
-</ul>
-<a name="getSourceLocationSpecifierFactory--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSourceLocationSpecifierFactory</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSourceLocationSpecifierFactory()</pre>
-</li>
-</ul>
-<a name="getSourceLocationSpecifierInput--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSourceLocationSpecifierInput</h4>
+<h4>getSourceLocationStr</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSourceLocationSpecifierInput()</pre>
-</li>
-</ul>
-<a name="getSourceIpSpaceSpecifierFactory--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSourceIpSpaceSpecifierFactory</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSourceIpSpaceSpecifierFactory()</pre>
-</li>
-</ul>
-<a name="getSourceIpSpaceSpecifierInput--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSourceIpSpaceSpecifierInput</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSourceIpSpaceSpecifierInput()</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSourceLocationStr()</pre>
 </li>
 </ul>
 <a name="getName--">
@@ -412,7 +284,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <a name="prettyPrint--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>prettyPrint</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;prettyPrint()</pre>
@@ -420,51 +292,6 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrint--">prettyPrint</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="setIgnoreAcls-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setIgnoreAcls</h4>
-<pre>public&nbsp;void&nbsp;setIgnoreAcls(boolean&nbsp;ignoreAcls)</pre>
-</li>
-</ul>
-<a name="setSourceLocationSpecifierFactory-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSourceLocationSpecifierFactory</h4>
-<pre>public&nbsp;void&nbsp;setSourceLocationSpecifierFactory(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationSpecifierFactory)</pre>
-</li>
-</ul>
-<a name="setSourceLocationSpecifierInput-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSourceLocationSpecifierInput</h4>
-<pre>public&nbsp;void&nbsp;setSourceLocationSpecifierInput(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationSpecifierInput)</pre>
-</li>
-</ul>
-<a name="setSourceIpSpaceSpecifierFactory-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setSourceIpSpaceSpecifierFactory</h4>
-<pre>public&nbsp;void&nbsp;setSourceIpSpaceSpecifierFactory(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceIpSpaceSpecifierFactory)</pre>
-</li>
-</ul>
-<a name="setSourceIpSpaceSpecifierInput-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setSourceIpSpaceSpecifierInput</h4>
-<pre>public&nbsp;void&nbsp;setSourceIpSpaceSpecifierInput(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceIpSpaceSpecifierInput)</pre>
 </li>
 </ul>
 </li>
@@ -522,13 +349,13 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.batfish.datamodel.questions.Question">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.org.batfish.datamodel.questions.Question">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

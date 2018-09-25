@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,25 +162,31 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Rule.html" title="class in org.batfish.representation.palo_alto">Rule</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Vsys.html#getRules--">getRules</a></span>()</code>
+<div class="block">Returns a map of rule name to rule for the rules in this vsys.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/ServiceGroup.html" title="class in org.batfish.representation.palo_alto">ServiceGroup</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Vsys.html#getServiceGroups--">getServiceGroups</a></span>()</code>
 <div class="block">Returns a map of service group name to serviceGroup for the service groups in this vsys.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Service.html" title="class in org.batfish.representation.palo_alto">Service</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Vsys.html#getServices--">getServices</a></span>()</code>
 <div class="block">Returns a map of service name to service for the services in this vsys.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/representation/palo_alto/SyslogServer.html" title="class in org.batfish.representation.palo_alto">SyslogServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Vsys.html#getSyslogServer-java.lang.String-java.lang.String-">getSyslogServer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;serverGroupName,
                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;serverName)</code>
 <div class="block">Returns a syslog server with the specified name in the specified server group.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Zone.html" title="class in org.batfish.representation.palo_alto">Zone</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/Vsys.html#getZones--">getZones</a></span>()</code>
 <div class="block">Returns a map of zone name to zone for the zones in this vsys.</div>
@@ -233,6 +239,16 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <h4>getName</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 <div class="block">Returns the name of this vsys.</div>
+</li>
+</ul>
+<a name="getRules--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRules</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Rule.html" title="class in org.batfish.representation.palo_alto">Rule</a>&gt;&nbsp;getRules()</pre>
+<div class="block">Returns a map of rule name to rule for the rules in this vsys.</div>
 </li>
 </ul>
 <a name="getServices--">

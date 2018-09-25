@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.common.Answerer">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -116,6 +116,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">TracerouteAnswerer</span>
 extends <a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a></pre>
+<div class="block">Produces the answer for <a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html" title="class in org.batfish.question.traceroute"><code>TracerouteQuestion</code></a></div>
 </li>
 </ul>
 </div>
@@ -128,6 +129,21 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#COL_FLOW">COL_FLOW</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#COL_TRACES">COL_TRACES</a></span></code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.batfish.common.Answerer">
 <!--   -->
@@ -154,12 +170,19 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#answer--">answer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#createMetadata--">createMetadata</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#answerDiff--">answerDiff</a></span>()</code>
+<div class="block">The default implementation for generating differential answers.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#createMetadata-boolean-">createMetadata</a></span>(boolean&nbsp;differential)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-">flowHistoryToRows</a></span>(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-boolean-">flowHistoryToRows</a></span>(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory,
+                 boolean&nbsp;differential)</code>
 <div class="block">Converts a flowHistory object into a set of Rows.</div>
 </td>
 </tr>
@@ -169,7 +192,7 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.common.<a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a></h3>
-<code><a href="../../../../org/batfish/common/Answerer.html#answerDiff--">answerDiff</a>, <a href="../../../../org/batfish/common/Answerer.html#create-org.batfish.datamodel.questions.Question-org.batfish.common.plugin.IBatfish-">create</a></code></li>
+<code><a href="../../../../org/batfish/common/Answerer.html#create-org.batfish.datamodel.questions.Question-org.batfish.common.plugin.IBatfish-">create</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -186,6 +209,40 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="COL_FLOW">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COL_FLOW</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_FLOW</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.question.traceroute.TracerouteAnswerer.COL_FLOW">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COL_TRACES">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>COL_TRACES</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_TRACES</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.question.traceroute.TracerouteAnswerer.COL_TRACES">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -205,24 +262,44 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 </dl>
 </li>
 </ul>
-<a name="createMetadata--">
+<a name="answerDiff--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>answerDiff</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a>&nbsp;answerDiff()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../org/batfish/common/Answerer.html#answerDiff--">Answerer</a></code></span></div>
+<div class="block">The default implementation for generating differential answers.
+
+ <p>It uses <a href="../../../../org/batfish/datamodel/table/TableDiff.html" title="class in org.batfish.datamodel.table"><code>TableDiff</code></a> if the answer element is a <a href="../../../../org/batfish/datamodel/table/TableAnswerElement.html" title="class in org.batfish.datamodel.table"><code>TableAnswerElement</code></a>. Otherwise,
+ it uses a JSON-level diff.
+
+ <p>Answerers that want a custom differential answer, should override this function.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../org/batfish/common/Answerer.html#answerDiff--">answerDiff</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="createMetadata-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createMetadata</h4>
-<pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a>&nbsp;createMetadata()</pre>
+<pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a>&nbsp;createMetadata(boolean&nbsp;differential)</pre>
 </li>
 </ul>
-<a name="flowHistoryToRows-org.batfish.datamodel.FlowHistory-">
+<a name="flowHistoryToRows-org.batfish.datamodel.FlowHistory-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>flowHistoryToRows</h4>
-<pre>public static&nbsp;com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;flowHistoryToRows(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory)</pre>
-<div class="block">Converts a flowHistory object into a set of Rows. Expects that the traces correspond to only
- one environment.</div>
+<pre>public static&nbsp;com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;flowHistoryToRows(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory,
+                                                                        boolean&nbsp;differential)</pre>
+<div class="block">Converts a flowHistory object into a set of Rows.</div>
 </li>
 </ul>
 </li>
@@ -279,13 +356,13 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.common.Answerer">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

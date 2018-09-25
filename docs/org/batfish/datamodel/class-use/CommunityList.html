@@ -86,6 +86,18 @@
 <td class="colFirst"><a href="#org.batfish.datamodel">org.batfish.datamodel</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.datamodel.visitors">org.batfish.datamodel.visitors</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.symbolic">org.batfish.symbolic</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.symbolic.bdd">org.batfish.symbolic.bdd</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -134,6 +146,68 @@
 <tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/CommunityListsDiff.html#CommunityListsDiff-java.util.NavigableMap-java.util.NavigableMap-">CommunityListsDiff</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html?is-external=true" title="class or interface in java.util">NavigableMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&gt;&nbsp;before,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html?is-external=true" title="class or interface in java.util">NavigableMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&gt;&nbsp;after)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.visitors">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a> in <a href="../../../../org/batfish/datamodel/visitors/package-summary.html">org.batfish.datamodel.visitors</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/datamodel/visitors/package-summary.html">org.batfish.datamodel.visitors</a> with parameters of type <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">VoidCommunitySetExprVisitor.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/visitors/VoidCommunitySetExprVisitor.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/visitors/CommunitySetExprVisitor.html" title="type parameter in CommunitySetExprVisitor">T</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunitySetExprVisitor.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/visitors/CommunitySetExprVisitor.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.symbolic">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a> in <a href="../../../../org/batfish/symbolic/package-summary.html">org.batfish.symbolic</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/symbolic/package-summary.html">org.batfish.symbolic</a> with parameters of type <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/RegexCommunitySet.html" title="class in org.batfish.datamodel">RegexCommunitySet</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunitySetExprToRegex.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/CommunitySetExprToRegex.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarCollector.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/CommunityVarCollector.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.symbolic.bdd">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a> in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> with parameters of type <a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,34 +156,50 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getInjectDefaultRoute--">getInjectDefaultRoute</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getMetricOfDefaultRoute--">getMetricOfDefaultRoute</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/representation/juniper/NssaSettings.html" title="class in org.batfish.representation.juniper">NssaSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getNssaSettings--">getNssaSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/representation/juniper/StubSettings.html" title="class in org.batfish.representation.juniper">StubSettings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getStubSettings--">getStubSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/StubType.html" title="enum in org.batfish.datamodel.ospf">StubType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getStubType--">getStubType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#getSummaries--">getSummaries</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#setInjectDefaultRoute-boolean-">setInjectDefaultRoute</a></span>(boolean&nbsp;injectDefaultRoute)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#setMetricOfDefaultRoute-int-">setMetricOfDefaultRoute</a></span>(int&nbsp;metricOfDefaultRoute)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#setNssaSettings-org.batfish.representation.juniper.NssaSettings-">setNssaSettings</a></span>(<a href="../../../../org/batfish/representation/juniper/NssaSettings.html" title="class in org.batfish.representation.juniper">NssaSettings</a>&nbsp;nssaSettings)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#setStubSettings-org.batfish.representation.juniper.StubSettings-">setStubSettings</a></span>(<a href="../../../../org/batfish/representation/juniper/StubSettings.html" title="class in org.batfish.representation.juniper">StubSettings</a>&nbsp;stubSettings)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/OspfArea.html#setStubType-org.batfish.datamodel.ospf.StubType-">setStubType</a></span>(<a href="../../../../org/batfish/datamodel/ospf/StubType.html" title="enum in org.batfish.datamodel.ospf">StubType</a>&nbsp;stubType)</code>&nbsp;</td>
 </tr>
@@ -226,6 +242,24 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getInjectDefaultRoute--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInjectDefaultRoute</h4>
+<pre>public&nbsp;boolean&nbsp;getInjectDefaultRoute()</pre>
+</li>
+</ul>
+<a name="getMetricOfDefaultRoute--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetricOfDefaultRoute</h4>
+<pre>public&nbsp;int&nbsp;getMetricOfDefaultRoute()</pre>
+</li>
+</ul>
 <a name="getNssaSettings--">
 <!--   -->
 </a>
@@ -260,6 +294,24 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>getSummaries</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&nbsp;getSummaries()</pre>
+</li>
+</ul>
+<a name="setInjectDefaultRoute-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInjectDefaultRoute</h4>
+<pre>public&nbsp;void&nbsp;setInjectDefaultRoute(boolean&nbsp;injectDefaultRoute)</pre>
+</li>
+</ul>
+<a name="setMetricOfDefaultRoute-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMetricOfDefaultRoute</h4>
+<pre>public&nbsp;void&nbsp;setMetricOfDefaultRoute(int&nbsp;metricOfDefaultRoute)</pre>
 </li>
 </ul>
 <a name="setNssaSettings-org.batfish.representation.juniper.NssaSettings-">

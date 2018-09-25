@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/specifier/RoleRegexNodeSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/specifier/ShorthandNodeSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -141,8 +141,8 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role">NodeRole</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContext.html#getNodeRolesByDimension-java.lang.String-">getNodeRolesByDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/specifier/SpecifierContext.html#getNodeRoleDimension-java.lang.String-">getNodeRoleDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/referencelibrary/ReferenceBook.html" title="class in org.batfish.referencelibrary">ReferenceBook</a>&gt;</code></td>
@@ -201,17 +201,19 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="getNodeRolesByDimension-java.lang.String-">
+<a name="getNodeRoleDimension-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNodeRolesByDimension</h4>
+<h4>getNodeRoleDimension</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role">NodeRole</a>&gt;&nbsp;getNodeRolesByDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</pre>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the set of <a href="../../../org/batfish/role/NodeRole.html" title="class in org.batfish.role"><code>NodeRole</code></a>s in the network with the input dimension.</dd>
+<dd>the <a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role"><code>NodeRoleDimension</code></a> if one exists by the provided name <code>dimension</code>. If
+     <code>dimension</code> is null, looks for the default dimension.</dd>
 </dl>
 </li>
 </ul>
@@ -224,8 +226,8 @@ var activeTableTab = "activeTableTab";
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&nbsp;getInterfaceOwnedIps()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each interface in the network. Mapping: hostname ->
-     interface name -> IpSpace.</dd>
+<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each interface in the network. Mapping: hostname -&gt;
+     interface name -&gt; IpSpace.</dd>
 </dl>
 </li>
 </ul>
@@ -256,8 +258,8 @@ var activeTableTab = "activeTableTab";
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&nbsp;getVrfOwnedIps()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each VRF in the network. Mapping: hostname -> VRF name ->
-     IpSpace.</dd>
+<dd>the <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpace</code></a>s owned by each VRF in the network. Mapping: hostname -&gt; VRF name
+     -&gt; IpSpace.</dd>
 </dl>
 </li>
 </ul>
@@ -307,7 +309,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/specifier/RoleRegexNodeSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/specifier/ShorthandNodeSpecifier.html" title="class in org.batfish.specifier"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/specifier/SpecifierContextImpl.html" title="class in org.batfish.specifier"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

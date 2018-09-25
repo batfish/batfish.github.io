@@ -99,7 +99,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.aclreachability2">org.batfish.question.aclreachability2</a></td>
+<td class="colFirst"><a href="#org.batfish.question.bgpproperties">org.batfish.question.bgpproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -111,15 +111,31 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.edges">org.batfish.question.edges</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.filterlinereachability">org.batfish.question.filterlinereachability</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.filtertable">org.batfish.question.filtertable</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
+<td class="colFirst"><a href="#org.batfish.question.initialization">org.batfish.question.initialization</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.interfaceproperties">org.batfish.question.interfaceproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question.ipowners">org.batfish.question.ipowners</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.ipsecsessionstatus">org.batfish.question.ipsecsessionstatus</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -139,7 +155,15 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.namedstructures">org.batfish.question.namedstructures</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.batfish.question.nodeproperties">org.batfish.question.nodeproperties</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.batfish.question.ospfproperties">org.batfish.question.ospfproperties</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -147,11 +171,19 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#org.batfish.question.reachfilter">org.batfish.question.reachfilter</a></td>
+<td class="colFirst"><a href="#org.batfish.question.reducedreachability">org.batfish.question.reducedreachability</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.referencedstructures">org.batfish.question.referencedstructures</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.batfish.question.routes">org.batfish.question.routes</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.batfish.question.searchfilters">org.batfish.question.searchfilters</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -159,7 +191,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.batfish.question.tracefilters">org.batfish.question.tracefilters</a></td>
+<td class="colFirst"><a href="#org.batfish.question.testfilters">org.batfish.question.testfilters</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -255,258 +287,244 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/AclReachabilityQuestionPlugin.AclReachabilityQuestion.html" title="class in org.batfish.question">AclReachabilityQuestionPlugin.AclReachabilityQuestion</a></span></code>
-<div class="block">Identifies unreachable lines in ACLs.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/BgpAdvertisementsQuestionPlugin.BgpAdvertisementsQuestion.html" title="class in org.batfish.question">BgpAdvertisementsQuestionPlugin.BgpAdvertisementsQuestion</a></span></code>
 <div class="block">Lists BGP adverstisements in the network.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/BgpAsnUseQuestionPlugin.BgpAsnUseQuestion.html" title="class in org.batfish.question">BgpAsnUseQuestionPlugin.BgpAsnUseQuestion</a></span></code>
 <div class="block">Lists ASNs that are being used by multiple nodes</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/BgpLoopbacksQuestionPlugin.BgpLoopbacksQuestion.html" title="class in org.batfish.question">BgpLoopbacksQuestionPlugin.BgpLoopbacksQuestion</a></span></code>
 <div class="block">Lists which loopback interfaces are being announced into BGP.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/BgpSessionStatusQuestionPlugin.BgpSessionStatusQuestion.html" title="class in org.batfish.question">BgpSessionStatusQuestionPlugin.BgpSessionStatusQuestion</a></span></code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns the status of BGP sessions.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ClusterNodesQuestionPlugin.ClusterNodesQuestion.html" title="class in org.batfish.question">ClusterNodesQuestionPlugin.ClusterNodesQuestion</a></span></code>
 <div class="block">Uses a form of clustering to partition nodes into equivalence classes.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/CompareSameNameQuestionPlugin.CompareSameNameQuestion.html" title="class in org.batfish.question">CompareSameNameQuestionPlugin.CompareSameNameQuestion</a></span></code>
 <div class="block">Compares named structures with identical names across multiple nodes.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/CompositeQuestionPlugin.CompositeQuestion.html" title="class in org.batfish.question">CompositeQuestionPlugin.CompositeQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ErrorQuestionPlugin.ErrorQuestion.html" title="class in org.batfish.question">ErrorQuestionPlugin.ErrorQuestion</a></span></code>
 <div class="block">Since this is not really a question; we do not document it as such.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/FileMapQuestionPlugin.FileMapQuestion.html" title="class in org.batfish.question">FileMapQuestionPlugin.FileMapQuestion</a></span></code>
-<div class="block">Outputs mapping of hostnames to filenames</div>
-</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/FileTreeQuestionPlugin.FileTreeQuestion.html" title="class in org.batfish.question">FileTreeQuestionPlugin.FileTreeQuestion</a></span></code>
-<div class="block">Outputs file tree of test-rig directory</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/InferPoliciesQuestionPlugin.InferPoliciesQuestion.html" title="class in org.batfish.question">InferPoliciesQuestionPlugin.InferPoliciesQuestion</a></span></code>
 <div class="block">Infer likely role-based consistency policies for the network.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/InferRolesQuestionPlugin.InferRolesQuestion.html" title="class in org.batfish.question">InferRolesQuestionPlugin.InferRolesQuestion</a></span></code>
 <div class="block">Infer a regex that identifies a role from a node name.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/InitInfoQuestionPlugin.InitInfoQuestion.html" title="class in org.batfish.question">InitInfoQuestionPlugin.InitInfoQuestion</a></span></code>
 <div class="block">Outputs results of test-rig initialization.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/IsisLoopbacksQuestionPlugin.IsisLoopbacksQuestion.html" title="class in org.batfish.question">IsisLoopbacksQuestionPlugin.IsisLoopbacksQuestion</a></span></code>
 <div class="block">Lists which loopbacks interfaces are being announced into ISIS.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/NamedStructureRoleConsistencyQuestionPlugin.NamedStructureRoleConsistencyQuestion.html" title="class in org.batfish.question">NamedStructureRoleConsistencyQuestionPlugin.NamedStructureRoleConsistencyQuestion</a></span></code>
 <div class="block">Checks a role-based consistency policy requiring that all nodes of the same role have the same
  value for some particular configuration property (e.g., DnsServers).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/NeighborsQuestionPlugin.NeighborsQuestion.html" title="class in org.batfish.question">NeighborsQuestionPlugin.NeighborsQuestion</a></span></code>
 <div class="block">Lists neighbor relationships in the testrig.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/NodesQuestionPlugin.NodesQuestion.html" title="class in org.batfish.question">NodesQuestionPlugin.NodesQuestion</a></span></code>
 <div class="block">Outputs the configuration of nodes in the network.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/OspfSessionCheckQuestionPlugin.OspfSessionCheckQuestion.html" title="class in org.batfish.question">OspfSessionCheckQuestionPlugin.OspfSessionCheckQuestion</a></span></code>
 <div class="block">Checks if OSPF sessions are correctly configured.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/OspfStatusQuestionPlugin.OspfStatusQuestion.html" title="class in org.batfish.question">OspfStatusQuestionPlugin.OspfStatusQuestion</a></span></code>
 <div class="block">Lists the OSPF status of interfaces.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/OutliersQuestionPlugin.OutliersQuestion.html" title="class in org.batfish.question">OutliersQuestionPlugin.OutliersQuestion</a></span></code>
 <div class="block">Detects and ranks outliers based on a comparison of nodes' configurations.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ParseTreesQuestionPlugin.ParseTreesQuestion.html" title="class in org.batfish.question">ParseTreesQuestionPlugin.ParseTreesQuestion</a></span></code>
 <div class="block">Outputs parse trees from test-rig initialization.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/PerRoleOutliersQuestionPlugin.PerRoleOutliersQuestion.html" title="class in org.batfish.question">PerRoleOutliersQuestionPlugin.PerRoleOutliersQuestion</a></span></code>
 <div class="block">Runs outlier detection on a per-role basis and then does a global ranking of the results.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/PerRoleQuestionPlugin.PerRoleQuestion.html" title="class in org.batfish.question">PerRoleQuestionPlugin.PerRoleQuestion</a></span></code>
 <div class="block">Answers a given question separately on each "role" within the specified dimension.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ReachabilityQuestionPlugin.ReachabilityQuestion.html" title="class in org.batfish.question">ReachabilityQuestionPlugin.ReachabilityQuestion</a></span></code>
 <div class="block">Details coming.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/RoleConsistencyQuestionPlugin.RoleConsistencyQuestion.html" title="class in org.batfish.question">RoleConsistencyQuestionPlugin.RoleConsistencyQuestion</a></span></code>
 <div class="block">Checks a role-based consistency policy requiring that all nodes of the same role have the same
  value for some particular configuration property (e.g., DnsServers).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/RolesQuestionPlugin.RolesQuestion.html" title="class in org.batfish.question">RolesQuestionPlugin.RolesQuestion</a></span></code>
 <div class="block">List the roles of each node.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/RoutesQuestionPlugin.RoutesQuestion.html" title="class in org.batfish.question">RoutesQuestionPlugin.RoutesQuestion</a></span></code>
 <div class="block">Outputs all routes (RIB) at nodes in the network.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SelfAdjacenciesQuestionPlugin.SelfAdjacenciesQuestion.html" title="class in org.batfish.question">SelfAdjacenciesQuestionPlugin.SelfAdjacenciesQuestion</a></span></code>
 <div class="block">Outputs cases where two interfaces on the same node are in the same subnet.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SleepQuestionPlugin.SleepQuestion.html" title="class in org.batfish.question">SleepQuestionPlugin.SleepQuestion</a></span></code>
 <div class="block">Since this is not really a question; we do not document it as such.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtBlackholeQuestionPlugin.BlackholeQuestion.html" title="class in org.batfish.question">SmtBlackholeQuestionPlugin.BlackholeQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtBoundedLengthQuestionPlugin.BoundedLengthQuestion.html" title="class in org.batfish.question">SmtBoundedLengthQuestionPlugin.BoundedLengthQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtDeterministicQuestionPlugin.DeterministicQuestion.html" title="class in org.batfish.question">SmtDeterministicQuestionPlugin.DeterministicQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtEqualLengthQuestionPlugin.EqualLengthQuestion.html" title="class in org.batfish.question">SmtEqualLengthQuestionPlugin.EqualLengthQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtForwardingQuestionPlugin.ForwardingQuestion.html" title="class in org.batfish.question">SmtForwardingQuestionPlugin.ForwardingQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtLoadBalanceQuestionPlugin.LoadBalanceQuestion.html" title="class in org.batfish.question">SmtLoadBalanceQuestionPlugin.LoadBalanceQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtLocalConsistencyQuestionPlugin.LocalConsistencyQuestion.html" title="class in org.batfish.question">SmtLocalConsistencyQuestionPlugin.LocalConsistencyQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtMultipathConsistencyQuestionPlugin.MultipathConsistencyQuestion.html" title="class in org.batfish.question">SmtMultipathConsistencyQuestionPlugin.MultipathConsistencyQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtReachabilityQuestionPlugin.ReachabilityQuestion.html" title="class in org.batfish.question">SmtReachabilityQuestionPlugin.ReachabilityQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtRoleQuestionPlugin.OldRoleQuestion.html" title="class in org.batfish.question">SmtRoleQuestionPlugin.OldRoleQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/SmtRoutingLoopQuestionPlugin.RoutingLoopQuestion.html" title="class in org.batfish.question">SmtRoutingLoopQuestionPlugin.RoutingLoopQuestion</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html" title="class in org.batfish.question">TracerouteQuestionPlugin.TracerouteQuestion</a></span></code>
-<div class="block">Perform a traceroute.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UndefinedReferencesQuestionPlugin.UndefinedReferencesQuestion.html" title="class in org.batfish.question">UndefinedReferencesQuestionPlugin.UndefinedReferencesQuestion</a></span></code>
 <div class="block">Outputs cases where undefined structures (e.g., ACL, routemaps) are referenced.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UniqueBgpPrefixOriginationQuestionPlugin.UniqueBgpPrefixOriginationQuestion.html" title="class in org.batfish.question">UniqueBgpPrefixOriginationQuestionPlugin.UniqueBgpPrefixOriginationQuestion</a></span></code>
 <div class="block">Lists cases where the same prefix is originated by multiple BGP speakers.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UniqueIpAssignmentsQuestionPlugin.UniqueIpAssignmentsQuestion.html" title="class in org.batfish.question">UniqueIpAssignmentsQuestionPlugin.UniqueIpAssignmentsQuestion</a></span></code>
 <div class="block">Lists IP addresses that are assigned to multiple interfaces.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/UnusedStructuresQuestionPlugin.UnusedStructuresQuestion.html" title="class in org.batfish.question">UnusedStructuresQuestionPlugin.UnusedStructuresQuestion</a></span></code>
 <div class="block">Outputs cases where structures (e.g., ACL, routemaps) are defined but not used.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/VIModelQuestionPlugin.VIModelQuestion.html" title="class in org.batfish.question">VIModelQuestionPlugin.VIModelQuestion</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -529,12 +547,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.aclreachability2">
+<li class="blockList"><a name="org.batfish.question.bgpproperties">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/aclreachability2/package-summary.html">org.batfish.question.aclreachability2</a></h3>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/bgpproperties/package-summary.html">org.batfish.question.bgpproperties</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../../../org/batfish/question/aclreachability2/package-summary.html">org.batfish.question.aclreachability2</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../../../org/batfish/question/bgpproperties/package-summary.html">org.batfish.question.bgpproperties</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Class and Description</th>
@@ -542,8 +560,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/aclreachability2/AclReachability2Question.html" title="class in org.batfish.question.aclreachability2">AclReachability2Question</a></span></code>
-<div class="block">A question that returns unreachable lines of ACLs in a tabular format.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/bgpproperties/BgpPropertiesQuestion.html" title="class in org.batfish.question.bgpproperties">BgpPropertiesQuestion</a></span></code>
+<div class="block">A question that returns properties of BGP routing processes.</div>
 </td>
 </tr>
 </tbody>
@@ -583,7 +601,47 @@
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/definedstructures/DefinedStructuresQuestion.html" title="class in org.batfish.question.definedstructures">DefinedStructuresQuestion</a></span></code>
-<div class="block">Fetches all defined structures in config files.</div>
+<div class="block">Fetches defined structures in config files.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.edges">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/edges/package-summary.html">org.batfish.question.edges</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/edges/package-summary.html">org.batfish.question.edges</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/edges/EdgesQuestion.html" title="class in org.batfish.question.edges">EdgesQuestion</a></span></code>
+<div class="block">Lists neighbor relationships in the network as edges.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.filterlinereachability">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/filterlinereachability/package-summary.html">org.batfish.question.filterlinereachability</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/filterlinereachability/package-summary.html">org.batfish.question.filterlinereachability</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/filterlinereachability/FilterLineReachabilityQuestion.html" title="class in org.batfish.question.filterlinereachability">FilterLineReachabilityQuestion</a></span></code>
+<div class="block">A question that returns unreachable lines of ACLs in a tabular format.</div>
 </td>
 </tr>
 </tbody>
@@ -604,6 +662,32 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/filtertable/FilterTableQuestion.html" title="class in org.batfish.question.filtertable">FilterTableQuestion</a></span></code>
 <div class="block"><a href="../../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions"><code>Question</code></a> to construct the default policies for a new testrig</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.initialization">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/initialization/package-summary.html">org.batfish.question.initialization</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/initialization/package-summary.html">org.batfish.question.initialization</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/initialization/FileParseStatusQuestion.html" title="class in org.batfish.question.initialization">FileParseStatusQuestion</a></span></code>
+<div class="block">A question that returns a table with the list of files parsed and their parse status.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/initialization/ParseWarningQuestion.html" title="class in org.batfish.question.initialization">ParseWarningQuestion</a></span></code>
+<div class="block">A question that returns a table with the parse warnings for each file.</div>
 </td>
 </tr>
 </tbody>
@@ -644,6 +728,26 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ipowners/IpOwnersQuestion.html" title="class in org.batfish.question.ipowners">IpOwnersQuestion</a></span></code>
 <div class="block">Queries the computed IP owners across all nodes/VRFs/Interfaces in the network.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.ipsecsessionstatus">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/ipsecsessionstatus/package-summary.html">org.batfish.question.ipsecsessionstatus</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ipsecsessionstatus/IpsecSessionStatusQuestion.html" title="class in org.batfish.question.ipsecsessionstatus">IpsecSessionStatusQuestion</a></span></code>
+<div class="block">Return status of all IPSec sessions in the network</div>
 </td>
 </tr>
 </tbody>
@@ -735,6 +839,26 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.namedstructures">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/namedstructures/package-summary.html">org.batfish.question.namedstructures</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/namedstructures/package-summary.html">org.batfish.question.namedstructures</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/namedstructures/NamedStructuresQuestion.html" title="class in org.batfish.question.namedstructures">NamedStructuresQuestion</a></span></code>
+<div class="block">A question that returns named structures of nodes in a tabular format.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.nodeproperties">
 <!--   -->
 </a>
@@ -750,6 +874,26 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/nodeproperties/NodePropertiesQuestion.html" title="class in org.batfish.question.nodeproperties">NodePropertiesQuestion</a></span></code>
 <div class="block">A question that returns properties of nodes in a tabular format.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.ospfproperties">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/ospfproperties/package-summary.html">org.batfish.question.ospfproperties</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/ospfproperties/package-summary.html">org.batfish.question.ospfproperties</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/ospfproperties/OspfPropertiesQuestion.html" title="class in org.batfish.question.ospfproperties">OspfPropertiesQuestion</a></span></code>
+<div class="block">A question that returns properties of OSPF routing processes.</div>
 </td>
 </tr>
 </tbody>
@@ -775,12 +919,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.reachfilter">
+<li class="blockList"><a name="org.batfish.question.reducedreachability">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/reachfilter/package-summary.html">org.batfish.question.reachfilter</a></h3>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/reducedreachability/package-summary.html">org.batfish.question.reducedreachability</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../../../org/batfish/question/reachfilter/package-summary.html">org.batfish.question.reachfilter</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../../../org/batfish/question/reducedreachability/package-summary.html">org.batfish.question.reducedreachability</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Class and Description</th>
@@ -788,8 +932,28 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/reachfilter/ReachFilterQuestion.html" title="class in org.batfish.question.reachfilter">ReachFilterQuestion</a></span></code>
-<div class="block">A question to check for multipath inconsistencies.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/reducedreachability/ReducedReachabilityQuestion.html" title="class in org.batfish.question.reducedreachability">ReducedReachabilityQuestion</a></span></code>
+<div class="block">A zero-input question to check for reduced reachability between base and delta snapshots.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.batfish.question.referencedstructures">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/referencedstructures/package-summary.html">org.batfish.question.referencedstructures</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/referencedstructures/package-summary.html">org.batfish.question.referencedstructures</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/referencedstructures/ReferencedStructuresQuestion.html" title="class in org.batfish.question.referencedstructures">ReferencedStructuresQuestion</a></span></code>
+<div class="block">A question that provides vendor-specific information about structures referenced in files.</div>
 </td>
 </tr>
 </tbody>
@@ -815,6 +979,26 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="org.batfish.question.searchfilters">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/searchfilters/package-summary.html">org.batfish.question.searchfilters</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/batfish/question/searchfilters/package-summary.html">org.batfish.question.searchfilters</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/searchfilters/SearchFiltersQuestion.html" title="class in org.batfish.question.searchfilters">SearchFiltersQuestion</a></span></code>
+<div class="block">A question to determine which flows match a particular ACL action.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.batfish.question.specifiers">
 <!--   -->
 </a>
@@ -829,8 +1013,7 @@
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/specifiers/SpecifiersQuestion.html" title="class in org.batfish.question.specifiers">SpecifiersQuestion</a></span></code>
-<div class="block">Allows users to see how <a href="../../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>location</code></a> and <a href="../../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>ipSpace</code></a>
- specifiers are resolved.</div>
+<div class="block">Allows users to see how different specifiers (<a href="../../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a>, <a href="../../../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier"><code>IpSpaceSpecifier</code></a>, <a href="../../../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier"><code>NodeSpecifier</code></a>, <a href="../../../../../org/batfish/specifier/FilterSpecifier.html" title="interface in org.batfish.specifier"><code>FilterSpecifier</code></a>, and <a href="../../../../../org/batfish/specifier/InterfaceSpecifier.html" title="interface in org.batfish.specifier"><code>InterfaceSpecifier</code></a>) are resolved.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -842,12 +1025,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.batfish.question.tracefilters">
+<li class="blockList"><a name="org.batfish.question.testfilters">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/tracefilters/package-summary.html">org.batfish.question.tracefilters</a></h3>
+<h3>Uses of <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a> in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
-<caption><span>Classes in <a href="../../../../../org/batfish/question/tracefilters/package-summary.html">org.batfish.question.tracefilters</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Classes in <a href="../../../../../org/batfish/question/testfilters/package-summary.html">org.batfish.question.testfilters</a> that implement <a href="../../../../../org/batfish/datamodel/questions/IQuestion.html" title="interface in org.batfish.datamodel.questions">IQuestion</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Class and Description</th>
@@ -855,7 +1038,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/tracefilters/TraceFiltersQuestion.html" title="class in org.batfish.question.tracefilters">TraceFiltersQuestion</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/question/testfilters/TestFiltersQuestion.html" title="class in org.batfish.question.testfilters">TestFiltersQuestion</a></span></code>
 <div class="block">Computes the fate of the flow at a filter.</div>
 </td>
 </tr>

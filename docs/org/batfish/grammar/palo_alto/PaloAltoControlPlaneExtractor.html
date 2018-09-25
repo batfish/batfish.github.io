@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,10 +134,9 @@ implements <a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/grammar/palo_alto/PaloAltoControlPlaneExtractor.html#PaloAltoControlPlaneExtractor-java.lang.String-org.batfish.grammar.palo_alto.PaloAltoCombinedParser-org.batfish.common.Warnings-boolean-">PaloAltoControlPlaneExtractor</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fileText,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/grammar/palo_alto/PaloAltoControlPlaneExtractor.html#PaloAltoControlPlaneExtractor-java.lang.String-org.batfish.grammar.palo_alto.PaloAltoCombinedParser-org.batfish.common.Warnings-">PaloAltoControlPlaneExtractor</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fileText,
                              <a href="../../../../org/batfish/grammar/palo_alto/PaloAltoCombinedParser.html" title="class in org.batfish.grammar.palo_alto">PaloAltoCombinedParser</a>&nbsp;combinedParser,
-                             <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;warnings,
-                             boolean&nbsp;unrecognizedAsRedFlag)</code>&nbsp;</td>
+                             <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;warnings)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -155,14 +154,10 @@ implements <a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/grammar/palo_alto/PaloAltoControlPlaneExtractor.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/vendor/VendorConfiguration.html" title="class in org.batfish.vendor">VendorConfiguration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/grammar/palo_alto/PaloAltoControlPlaneExtractor.html#getVendorConfiguration--">getVendorConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/grammar/palo_alto/PaloAltoControlPlaneExtractor.html#processParseTree-org.antlr.v4.runtime.ParserRuleContext-">processParseTree</a></span>(org.antlr.v4.runtime.ParserRuleContext&nbsp;tree)</code>&nbsp;</td>
 </tr>
@@ -188,7 +183,7 @@ implements <a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PaloAltoControlPlaneExtractor-java.lang.String-org.batfish.grammar.palo_alto.PaloAltoCombinedParser-org.batfish.common.Warnings-boolean-">
+<a name="PaloAltoControlPlaneExtractor-java.lang.String-org.batfish.grammar.palo_alto.PaloAltoCombinedParser-org.batfish.common.Warnings-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -196,8 +191,7 @@ implements <a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" 
 <h4>PaloAltoControlPlaneExtractor</h4>
 <pre>public&nbsp;PaloAltoControlPlaneExtractor(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fileText,
                                      <a href="../../../../org/batfish/grammar/palo_alto/PaloAltoCombinedParser.html" title="class in org.batfish.grammar.palo_alto">PaloAltoCombinedParser</a>&nbsp;combinedParser,
-                                     <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;warnings,
-                                     boolean&nbsp;unrecognizedAsRedFlag)</pre>
+                                     <a href="../../../../org/batfish/common/Warnings.html" title="class in org.batfish.common">Warnings</a>&nbsp;warnings)</pre>
 </li>
 </ul>
 </li>
@@ -208,19 +202,6 @@ implements <a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getUnimplementedFeatures--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedFeatures</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getUnimplementedFeatures()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/batfish/grammar/ControlPlaneExtractor.html" title="interface in org.batfish.grammar">ControlPlaneExtractor</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="getVendorConfiguration--">
 <!--   -->
 </a>

@@ -111,13 +111,13 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Graph.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/Graph.html#findAllCommunities--">findAllCommunities</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarCollector.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/CommunityVarCollector.html#collectCommunityVars-org.batfish.datamodel.Configuration-org.batfish.datamodel.routing_policy.expr.CommunitySetExpr-">collectCommunityVars</a></span>(<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;configuration,
+                    <a href="../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;communitySetExpr)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Graph.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/Graph.html#findAllCommunities-org.batfish.datamodel.Configuration-org.batfish.datamodel.routing_policy.expr.CommunitySetExpr-">findAllCommunities</a></span>(<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;conf,
-                  <a href="../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;ce)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Graph.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/Graph.html#findAllCommunities--">findAllCommunities</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a>&gt;</code></td>
@@ -155,6 +155,55 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a> in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> that return <a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#toCommunityVar-org.batfish.datamodel.routing_policy.expr.CommunitySetExpr-">toCommunityVar</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/CommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunitySetExpr</a>&nbsp;matchCondition)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#toCommunityVar-long-">toCommunityVar</a></span>(long&nbsp;community)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitCommunityHalvesExpr-org.batfish.datamodel.routing_policy.expr.CommunityHalvesExpr-">visitCommunityHalvesExpr</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/CommunityHalvesExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">CommunityHalvesExpr</a>&nbsp;communityHalvesExpr)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitCommunityList-org.batfish.datamodel.CommunityList-">visitCommunityList</a></span>(<a href="../../../../org/batfish/datamodel/CommunityList.html" title="class in org.batfish.datamodel">CommunityList</a>&nbsp;communityList)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitEmptyCommunitySetExpr-org.batfish.datamodel.routing_policy.expr.EmptyCommunitySetExpr-">visitEmptyCommunitySetExpr</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/EmptyCommunitySetExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">EmptyCommunitySetExpr</a>&nbsp;emptyCommunitySetExpr)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitLiteralCommunity-org.batfish.datamodel.routing_policy.expr.LiteralCommunity-">visitLiteralCommunity</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunity.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunity</a>&nbsp;literalCommunity)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitLiteralCommunityConjunction-org.batfish.datamodel.routing_policy.expr.LiteralCommunityConjunction-">visitLiteralCommunityConjunction</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunityConjunction.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunityConjunction</a>&nbsp;literalCommunityConjunction)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitLiteralCommunitySet-org.batfish.datamodel.routing_policy.expr.LiteralCommunitySet-">visitLiteralCommunitySet</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/LiteralCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">LiteralCommunitySet</a>&nbsp;literalCommunitySet)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitNamedCommunitySet-org.batfish.datamodel.routing_policy.expr.NamedCommunitySet-">visitNamedCommunitySet</a></span>(<a href="../../../../org/batfish/datamodel/routing_policy/expr/NamedCommunitySet.html" title="class in org.batfish.datamodel.routing_policy.expr">NamedCommunitySet</a>&nbsp;namedCommunitySet)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CommunityVarConverter.</span><code><span class="memberNameLink"><a href="../../../../org/batfish/symbolic/bdd/CommunityVarConverter.html#visitRegexCommunitySet-org.batfish.datamodel.RegexCommunitySet-">visitRegexCommunitySet</a></span>(<a href="../../../../org/batfish/datamodel/RegexCommunitySet.html" title="class in org.batfish.datamodel">RegexCommunitySet</a>&nbsp;regexCommunitySet)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../org/batfish/symbolic/bdd/package-summary.html">org.batfish.symbolic.bdd</a> that return types with arguments of type <a href="../../../../org/batfish/symbolic/CommunityVar.html" title="class in org.batfish.symbolic">CommunityVar</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>

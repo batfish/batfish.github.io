@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,7 +144,29 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#CATCHALL_APPLICATION_NAME">CATCHALL_APPLICATION_NAME</a></span></code>
+<div class="block">This is the name of an application that matches all traffic</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#CATCHALL_SERVICE_NAME">CATCHALL_SERVICE_NAME</a></span></code>
+<div class="block">This is the name of a service that matches all traffic</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#CATCHALL_ZONE_NAME">CATCHALL_ZONE_NAME</a></span></code>
+<div class="block">This is the name of the zone that matches traffic in all zones (but not unzoned traffic)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#DEFAULT_VSYS_NAME">DEFAULT_VSYS_NAME</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#NULL_VRF_NAME">NULL_VRF_NAME</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -172,7 +194,7 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#PaloAltoConfiguration-java.util.Set-">PaloAltoConfiguration</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;unimplementedFeatures)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#PaloAltoConfiguration--">PaloAltoConfiguration</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -199,22 +221,24 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#computeOutgoingFilterName-java.lang.String-">computeOutgoingFilterName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceOrZoneName)</code>
+<div class="block">Generate egress IpAccessList name given an interface or zone name</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#computeServiceGroupMemberAclName-java.lang.String-java.lang.String-">computeServiceGroupMemberAclName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vsysName,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;serviceGroupMemberName)</code>
 <div class="block">Generate IpAccessList name for the specified serviceGroupMemberName in the specified vsysName</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#getHostname--">getHostname</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Interface.html" title="class in org.batfish.representation.palo_alto">Interface</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#getInterfaces--">getInterfaces</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/palo_alto/PaloAltoConfiguration.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/VirtualRouter.html" title="class in org.batfish.representation.palo_alto">VirtualRouter</a>&gt;</code></td>
@@ -281,6 +305,48 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="CATCHALL_APPLICATION_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CATCHALL_APPLICATION_NAME</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CATCHALL_APPLICATION_NAME</pre>
+<div class="block">This is the name of an application that matches all traffic</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.representation.palo_alto.PaloAltoConfiguration.CATCHALL_APPLICATION_NAME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="CATCHALL_SERVICE_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CATCHALL_SERVICE_NAME</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CATCHALL_SERVICE_NAME</pre>
+<div class="block">This is the name of a service that matches all traffic</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.representation.palo_alto.PaloAltoConfiguration.CATCHALL_SERVICE_NAME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="CATCHALL_ZONE_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CATCHALL_ZONE_NAME</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CATCHALL_ZONE_NAME</pre>
+<div class="block">This is the name of the zone that matches traffic in all zones (but not unzoned traffic)</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.representation.palo_alto.PaloAltoConfiguration.CATCHALL_ZONE_NAME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a name="DEFAULT_VSYS_NAME">
 <!--   -->
 </a>
@@ -291,6 +357,19 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#org.batfish.representation.palo_alto.PaloAltoConfiguration.DEFAULT_VSYS_NAME">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="NULL_VRF_NAME">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NULL_VRF_NAME</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> NULL_VRF_NAME</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.representation.palo_alto.PaloAltoConfiguration.NULL_VRF_NAME">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -315,13 +394,13 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PaloAltoConfiguration-java.util.Set-">
+<a name="PaloAltoConfiguration--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PaloAltoConfiguration</h4>
-<pre>public&nbsp;PaloAltoConfiguration(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;unimplementedFeatures)</pre>
+<pre>public&nbsp;PaloAltoConfiguration()</pre>
 </li>
 </ul>
 </li>
@@ -352,19 +431,6 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
 <li class="blockList">
 <h4>getInterfaces</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/representation/palo_alto/Interface.html" title="class in org.batfish.representation.palo_alto">Interface</a>&gt;&nbsp;getInterfaces()</pre>
-</li>
-</ul>
-<a name="getUnimplementedFeatures--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnimplementedFeatures</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getUnimplementedFeatures()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/batfish/vendor/VendorConfiguration.html#getUnimplementedFeatures--">getUnimplementedFeatures</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/vendor/VendorConfiguration.html" title="class in org.batfish.vendor">VendorConfiguration</a></code></dd>
-</dl>
 </li>
 </ul>
 <a name="getVirtualRouters--">
@@ -457,6 +523,16 @@ extends <a href="../../../../org/batfish/vendor/VendorConfiguration.html" title=
                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;objectName)</pre>
 <div class="block">Generate unique object name (no collision across vsys namespaces) given a vsys name and
  original object name</div>
+</li>
+</ul>
+<a name="computeOutgoingFilterName-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeOutgoingFilterName</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;computeOutgoingFilterName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceOrZoneName)</pre>
+<div class="block">Generate egress IpAccessList name given an interface or zone name</div>
 </li>
 </ul>
 <a name="computeServiceGroupMemberAclName-java.lang.String-java.lang.String-">

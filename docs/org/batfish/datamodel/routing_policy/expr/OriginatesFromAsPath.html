@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -118,7 +118,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">OriginatesFromAsPath</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">OriginatesFromAsPath</span>
 extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -141,7 +142,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;org.batfish.datamodel.routing_policy.expr.<a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></h3>
-<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a></code></li>
+<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#Z:Z_simplified">_simplified</a>, <a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#PROP_COMMENT">PROP_COMMENT</a></code></li>
 </ul>
 </li>
 </ul>
@@ -194,14 +195,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/OriginatesFromAsPath.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/OriginatesFromAsPath.html#setAsRange-java.util.List-">setAsRange</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/SubRangeExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">SubRangeExpr</a>&gt;&nbsp;asRange)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/batfish/datamodel/routing_policy/expr/OriginatesFromAsPath.html#setExact-boolean-">setExact</a></span>(boolean&nbsp;exact)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -282,7 +275,8 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <ul class="blockList">
 <li class="blockList">
 <h4>getAsRange</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/SubRangeExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">SubRangeExpr</a>&gt;&nbsp;getAsRange()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/SubRangeExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">SubRangeExpr</a>&gt;&nbsp;getAsRange()</pre>
 </li>
 </ul>
 <a name="getExact--">
@@ -297,7 +291,7 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
@@ -305,24 +299,6 @@ extends <a href="../../../../../org/batfish/datamodel/routing_policy/expr/Boolea
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/batfish/datamodel/routing_policy/expr/BooleanExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">BooleanExpr</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="setAsRange-java.util.List-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setAsRange</h4>
-<pre>public&nbsp;void&nbsp;setAsRange(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/batfish/datamodel/routing_policy/expr/SubRangeExpr.html" title="class in org.batfish.datamodel.routing_policy.expr">SubRangeExpr</a>&gt;&nbsp;asRange)</pre>
-</li>
-</ul>
-<a name="setExact-boolean-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setExact</h4>
-<pre>public&nbsp;void&nbsp;setExact(boolean&nbsp;exact)</pre>
 </li>
 </ul>
 </li>

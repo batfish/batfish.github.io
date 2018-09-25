@@ -134,7 +134,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow6.html#Flow6-java.lang.String-org.batfish.datamodel.Ip6-org.batfish.datamodel.Ip6-int-int-org.batfish.datamodel.IpProtocol-int-int-int-int-int-org.batfish.datamodel.State-int-int-int-int-int-int-int-int-java.lang.String-">Flow6</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ingressNode,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow6.html#Flow6-java.lang.String-org.batfish.datamodel.Ip6-org.batfish.datamodel.Ip6-int-int-org.batfish.datamodel.IpProtocol-int-int-int-int-int-org.batfish.datamodel.FlowState-int-int-int-int-int-int-int-int-java.lang.String-">Flow6</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ingressNode,
      <a href="../../../org/batfish/datamodel/Ip6.html" title="class in org.batfish.datamodel">Ip6</a>&nbsp;srcIp,
      <a href="../../../org/batfish/datamodel/Ip6.html" title="class in org.batfish.datamodel">Ip6</a>&nbsp;dstIp,
      int&nbsp;srcPort,
@@ -145,7 +145,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
      int&nbsp;fragmentOffset,
      int&nbsp;icmpType,
      int&nbsp;icmpCode,
-     <a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;state,
+     <a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;state,
      int&nbsp;tcpFlagsCwr,
      int&nbsp;tcpFlagsEce,
      int&nbsp;tcpFlagsUrg,
@@ -224,7 +224,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow6.html#getSrcPort--">getSrcPort</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/Flow6.html#getState--">getState</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -297,7 +297,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Flow6-java.lang.String-org.batfish.datamodel.Ip6-org.batfish.datamodel.Ip6-int-int-org.batfish.datamodel.IpProtocol-int-int-int-int-int-org.batfish.datamodel.State-int-int-int-int-int-int-int-int-java.lang.String-">
+<a name="Flow6-java.lang.String-org.batfish.datamodel.Ip6-org.batfish.datamodel.Ip6-int-int-org.batfish.datamodel.IpProtocol-int-int-int-int-int-org.batfish.datamodel.FlowState-int-int-int-int-int-int-int-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -314,7 +314,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
              int&nbsp;fragmentOffset,
              int&nbsp;icmpType,
              int&nbsp;icmpCode,
-             <a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;state,
+             <a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;state,
              int&nbsp;tcpFlagsCwr,
              int&nbsp;tcpFlagsEce,
              int&nbsp;tcpFlagsUrg,
@@ -465,7 +465,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockList">
 <li class="blockList">
 <h4>getState</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/State.html" title="enum in org.batfish.datamodel">State</a>&nbsp;getState()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&nbsp;getState()</pre>
 </li>
 </ul>
 <a name="getTag--">
