@@ -27,76 +27,24 @@ title: hello
     <div class="section">
       <div class="justify-content-center row">
         <div class="col-10">
-          <div class="section-title">
-            <h2>Welcome!</h2>
-          </div>
-          <p>Batfish is a network configuration analysis tool developed jointly by researchers at Intentionet, Inc.; University
-            of California, Los Angeles; University of Southern California; and Microsoft Research. Though its individual
-            modules have various applications, its primary purpose is to detect bugs in network configurations.</p>
+          <p>
+            Batfish is a network configuration analysis tool that can find bugs and guarantee the correctness of (planned or 
+            current) network configurations. It enables network engineers to rapidly and safely evolve the network, without 
+            fear of outages or security breaches.
+          </p>
+          <p>
+            Batfish was originally developed jointly by researchers at Microsoft Research, the University
+            of California, Los Angeles, and the University of Southern California. Many others have since  
+            contributed to it. 
+          </p>
+          <p>
+            Batfish is currently maintained by and also offered as a supported service by 
+            <a href="https://www.intentionet.com">Intentionet</a>.
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Pipeline section-->
-    <div class="section">
-      <div class="justify-content-center row">
-        <div class="col-10">
-          <div class="section-title">
-            <h2>Batfish supports a wide variety of analyses</h2>
-          </div>
-
-          <div class="row">
-              <div class="card bg-none border-0 col-lg-6">
-                <div class="card-body">
-                  <h5 class="card-title">1. Compliance and best-practices guidelines</h5>
-                  <div class="card-text">
-                    <ul>
-                      <li class="py-2">Flag undefined-but-referenced or defined-but-unreferenced structures (e.g., ACLs, route maps)</li>
-                      <li class="py-2">Ensure that all interface MTUs are per the network's standard</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-none border-0 col-lg-6">
-                <div class="card-body">
-                  <h5 class="card-title">2. Checks on data flow</h5>
-                  <div class="card-text">
-                    <ul>
-                      <li class="py-2">Path (shape) between two devices is as expected (e.g., traverses a firewall, valley-free routing)</li>
-                      <li class="py-2">Number of paths between two devices is as expected (i.e., correct multi-path configuration)</li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-          </div>
-
-          <div class="row">
-              <div class="card bg-none border-0 col-lg-6">
-                <div class="card-body">
-                  <h5 class="card-title">3. Fault tolerance</h5>
-                  <div class="card-text">
-                    <ul>
-                      <li class="py-2">End-to-end reachability is not impacted for any flow after any single-link or single-device failure</li>
-                      <li class="py-2">Traffic correctly fails over after a failure</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-none border-0 col-lg-6">
-                <div class="card-body">
-                  <h5 class="card-title">4. Differential analysis of two sets of configurations</h5>
-                  <div class="card-text">
-                    <ul>
-                      <li class="py-2">End-to-end reachability is identical across new and old configurations</li>
-                      <li class="py-2">Two configurations, potentially from different vendors, are semantically equivalent</li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   <!-- Tutorial Videos Talks-->
     <div class="section">
       <div class="justify-content-center row">
