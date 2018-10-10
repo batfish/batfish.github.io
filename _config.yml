@@ -19,7 +19,6 @@ title: Batfish
 description: >- # this means to ignore newlines until "baseurl:"
 url: "https://batfish.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-email: admin@batfish.org
 google_analytics: UA-119529932-1
 intentionet_url: https://www.intentionet.com/
 
