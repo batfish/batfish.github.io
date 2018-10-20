@@ -435,9 +435,13 @@
 <h4>_nextHop</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _nextHop</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>_nonRouting</h4>
 <pre>boolean _nonRouting</pre>
+</li>
+<li class="blockListLast">
+<h4>_nonForwarding</h4>
+<pre>boolean _nonForwarding</pre>
 </li>
 </ul>
 </li>
@@ -598,6 +602,26 @@
 <li class="blockListLast">
 <h4>_regex</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _regex</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.batfish.datamodel.AsSet">
+<!--   -->
+</a>
+<h3>Class <a href="org/batfish/datamodel/AsSet.html" title="class in org.batfish.datamodel">org.batfish.datamodel.AsSet</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>_value</h4>
+<pre>com.google.common.collect.ImmutableSortedSet&lt;E&gt; _value</pre>
 </li>
 </ul>
 </li>
@@ -4987,10 +5011,10 @@
 </li>
 </ul>
 </li>
-<li class="blockList"><a name="org.batfish.datamodel.answers.ValidateEnvironmentAnswerElement">
+<li class="blockList"><a name="org.batfish.datamodel.answers.ValidateSnapshotAnswerElement">
 <!--   -->
 </a>
-<h3>Class <a href="org/batfish/datamodel/answers/ValidateEnvironmentAnswerElement.html" title="class in org.batfish.datamodel.answers">org.batfish.datamodel.answers.ValidateEnvironmentAnswerElement</a> extends <a href="org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a> implements Serializable</h3>
+<h3>Class <a href="org/batfish/datamodel/answers/ValidateSnapshotAnswerElement.html" title="class in org.batfish.datamodel.answers">org.batfish.datamodel.answers.ValidateSnapshotAnswerElement</a> extends <a href="org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -5091,11 +5115,26 @@
 <li class="blockList"><a name="org.batfish.datamodel.collections.NodeInterfacePair">
 <!--   -->
 </a>
-<h3>Class <a href="org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">org.batfish.datamodel.collections.NodeInterfacePair</a> extends <a href="org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
+<h3>Class <a href="org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">org.batfish.datamodel.collections.NodeInterfacePair</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
 </dl>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>_hostname</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _hostname</pre>
+</li>
+<li class="blockListLast">
+<h4>_interfaceName</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _interfaceName</pre>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="blockList"><a name="org.batfish.datamodel.collections.NodeIpPair">
 <!--   -->
@@ -5685,7 +5724,7 @@
 <li class="blockList"><a name="org.batfish.datamodel.ospf.OspfNeighbor">
 <!--   -->
 </a>
-<h3>Class <a href="org/batfish/datamodel/ospf/OspfNeighbor.html" title="class in org.batfish.datamodel.ospf">org.batfish.datamodel.ospf.OspfNeighbor</a> extends <a href="org/batfish/common/util/ComparableStructure.html" title="class in org.batfish.common.util">ComparableStructure</a>&lt;<a href="org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&gt; implements Serializable</h3>
+<h3>Class <a href="org/batfish/datamodel/ospf/OspfNeighbor.html" title="class in org.batfish.datamodel.ospf">org.batfish.datamodel.ospf.OspfNeighbor</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>
@@ -5703,36 +5742,12 @@
 <pre><a href="org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a> _iface</pre>
 </li>
 <li class="blockList">
+<h4>_link</h4>
+<pre><a href="org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a> _link</pre>
+</li>
+<li class="blockList">
 <h4>_owner</h4>
 <pre><a href="org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a> _owner</pre>
-</li>
-<li class="blockListLast">
-<h4>_vrf</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _vrf</pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="blockList"><a name="org.batfish.datamodel.ospf.OspfNeighbor.OspfNeighborSummary">
-<!--   -->
-</a>
-<h3>Class <a href="org/batfish/datamodel/ospf/OspfNeighbor.OspfNeighborSummary.html" title="class in org.batfish.datamodel.ospf">org.batfish.datamodel.ospf.OspfNeighbor.OspfNeighborSummary</a> extends <a href="org/batfish/common/util/ComparableStructure.html" title="class in org.batfish.common.util">ComparableStructure</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-<ul class="blockList">
-<li class="blockList">
-<h3>Serialized Fields</h3>
-<ul class="blockList">
-<li class="blockList">
-<h4>_localIp</h4>
-<pre><a href="org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> _localIp</pre>
-</li>
-<li class="blockList">
-<h4>_remoteIp</h4>
-<pre><a href="org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a> _remoteIp</pre>
 </li>
 <li class="blockListLast">
 <h4>_vrf</h4>
@@ -9179,16 +9194,6 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _name</pre>
 </li>
 <li class="blockList">
-<h4>_receivedBgpAdvertisements</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; _receivedBgpAdvertisements</pre>
-<div class="block">Set of all received BGP advertisements in <a href="org/batfish/datamodel/BgpAdvertisement.html" title="class in org.batfish.datamodel"><code>BgpAdvertisement</code></a> form</div>
-</li>
-<li class="blockList">
-<h4>_sentBgpAdvertisements</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">E</a>&gt; _sentBgpAdvertisements</pre>
-<div class="block">Set of all sent BGP advertisements in <a href="org/batfish/datamodel/BgpAdvertisement.html" title="class in org.batfish.datamodel"><code>BgpAdvertisement</code></a> form</div>
-</li>
-<li class="blockList">
 <h4>_fib</h4>
 <pre><a href="org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a> _fib</pre>
 <div class="block">FIB (forwarding information base) built from the main RIB</div>
@@ -10713,10 +10718,6 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _defaultOriginateMap</pre>
 </li>
 <li class="blockList">
-<h4>_defaultOriginateMapLine</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> _defaultOriginateMapLine</pre>
-</li>
-<li class="blockList">
 <h4>_description</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _description</pre>
 </li>
@@ -10731,10 +10732,6 @@
 <li class="blockList">
 <h4>_groupName</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _groupName</pre>
-</li>
-<li class="blockList">
-<h4>_groupNameLine</h4>
-<pre>int _groupNameLine</pre>
 </li>
 <li class="blockList">
 <h4>_inboundPrefixList</h4>
@@ -10787,10 +10784,6 @@
 <li class="blockList">
 <h4>_peerSession</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _peerSession</pre>
-</li>
-<li class="blockList">
-<h4>_peerSessionLine</h4>
-<pre>int _peerSessionLine</pre>
 </li>
 <li class="blockList">
 <h4>_remoteAs</h4>
@@ -11181,10 +11174,6 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _tacacsSourceInterface</pre>
 </li>
 <li class="blockList">
-<h4>_undefinedPeerGroups</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">V</a>&gt; _undefinedPeerGroups</pre>
-</li>
-<li class="blockList">
 <h4>_vendor</h4>
 <pre><a href="org/batfish/datamodel/ConfigurationFormat.html" title="enum in org.batfish.datamodel">ConfigurationFormat</a> _vendor</pre>
 </li>
@@ -11212,9 +11201,13 @@
 <h4>_trackingGroups</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; _trackingGroups</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>_communitySets</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; _communitySets</pre>
+</li>
+<li class="blockListLast">
+<h4>_interfacesBySecurityLevel</h4>
+<pre>com.google.common.collect.Multimap&lt;K,V&gt; _interfacesBySecurityLevel</pre>
 </li>
 </ul>
 </li>
@@ -12079,10 +12072,6 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _incomingFilter</pre>
 </li>
 <li class="blockList">
-<h4>_incomingFilterLine</h4>
-<pre>int _incomingFilterLine</pre>
-</li>
-<li class="blockList">
 <h4>_isisCost</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a> _isisCost</pre>
 </li>
@@ -12139,10 +12128,6 @@
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _outgoingFilter</pre>
 </li>
 <li class="blockList">
-<h4>_outgoingFilterLine</h4>
-<pre>int _outgoingFilterLine</pre>
-</li>
-<li class="blockList">
 <h4>_address</h4>
 <pre><a href="org/batfish/datamodel/InterfaceAddress.html" title="class in org.batfish.datamodel">InterfaceAddress</a> _address</pre>
 </li>
@@ -12153,10 +12138,6 @@
 <li class="blockList">
 <h4>_routingPolicy</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _routingPolicy</pre>
-</li>
-<li class="blockList">
-<h4>_routingPolicyLine</h4>
-<pre>int _routingPolicyLine</pre>
 </li>
 <li class="blockList">
 <h4>_secondaryAddresses</h4>
@@ -12202,9 +12183,13 @@
 <h4>_declaredNames</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">E</a>&gt; _declaredNames</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>_securityZone</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _securityZone</pre>
+</li>
+<li class="blockListLast">
+<h4>_securityLevel</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> _securityLevel</pre>
 </li>
 </ul>
 </li>
@@ -12625,10 +12610,6 @@
 <li class="blockList">
 <h3>Serialized Fields</h3>
 <ul class="blockList">
-<li class="blockList">
-<h4>_definitionLine</h4>
-<pre>int _definitionLine</pre>
-</li>
 <li class="blockListLast">
 <h4>_name</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _name</pre>
@@ -16567,10 +16548,6 @@
 <h4>_mainTerm</h4>
 <pre><a href="org/batfish/representation/juniper/BaseApplication.Term.html" title="class in org.batfish.representation.juniper">BaseApplication.Term</a> _mainTerm</pre>
 </li>
-<li class="blockList">
-<h4>_name</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> _name</pre>
-</li>
 <li class="blockListLast">
 <h4>_terms</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">V</a>&gt; _terms</pre>
@@ -19551,9 +19528,13 @@
 <h4>_prefix</h4>
 <pre><a href="org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a> _prefix</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>_tag</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a> _tag</pre>
+</li>
+<li class="blockListLast">
+<h4>_noInstall</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a> _noInstall</pre>
 </li>
 </ul>
 </li>
@@ -20686,15 +20667,6 @@
 <!--   -->
 </a>
 <h3>Class <a href="org/batfish/z3/AclIdentifier.html" title="class in org.batfish.z3">org.batfish.z3.AclIdentifier</a> extends <a href="org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; implements Serializable</h3>
-<dl class="nameValue">
-<dt>serialVersionUID:</dt>
-<dd>1L</dd>
-</dl>
-</li>
-<li class="blockList"><a name="org.batfish.z3.AclLine">
-<!--   -->
-</a>
-<h3>Class <a href="org/batfish/z3/AclLine.html" title="class in org.batfish.z3">org.batfish.z3.AclLine</a> extends <a href="org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&gt; implements Serializable</h3>
 <dl class="nameValue">
 <dt>serialVersionUID:</dt>
 <dd>1L</dd>

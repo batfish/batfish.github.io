@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,36 +162,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#getQuestionTemplates--">getQuestionTemplates</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#getQuestionTemplates-boolean-">getQuestionTemplates</a></span>(boolean&nbsp;verbose)</code>
+<div class="block">Returns content of question templates, keyed by name.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/batfish/coordinator/config/Settings.html" title="class in org.batfish.coordinator.config">Settings</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#getSettings--">getSettings</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/batfish/coordinator/WorkMgr.html" title="class in org.batfish.coordinator">WorkMgr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#getWorkMgr--">getWorkMgr</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#main-java.lang.String:A-">main</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#main-java.lang.String:A-org.batfish.common.BatfishLogger-org.batfish.common.util.BindPortFutures-">main</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args,
     <a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger,
     <a href="../../../org/batfish/common/util/BindPortFutures.html" title="class in org.batfish.common.util">BindPortFutures</a>&nbsp;portFutures)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#mainInit-java.lang.String:A-">mainInit</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;args)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#setAuthorizer-org.batfish.coordinator.authorizer.Authorizer-">setAuthorizer</a></span>(<a href="../../../org/batfish/coordinator/authorizer/Authorizer.html" title="interface in org.batfish.coordinator.authorizer">Authorizer</a>&nbsp;authorizer)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#setLogger-org.batfish.common.BatfishLogger-">setLogger</a></span>(<a href="../../../org/batfish/common/BatfishLogger.html" title="class in org.batfish.common">BatfishLogger</a>&nbsp;logger)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/Main.html#setWorkMgr-org.batfish.coordinator.WorkMgr-">setWorkMgr</a></span>(<a href="../../../org/batfish/coordinator/WorkMgr.html" title="class in org.batfish.coordinator">WorkMgr</a>&nbsp;workManager)</code>&nbsp;</td>
 </tr>
@@ -269,6 +275,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>getQuestionTemplates</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
 public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQuestionTemplates()</pre>
+</li>
+</ul>
+<a name="getQuestionTemplates-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQuestionTemplates</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQuestionTemplates(boolean&nbsp;verbose)</pre>
+<div class="block">Returns content of question templates, keyed by name. If <code>verbose</code> is <code>true</code>,
+ includes hidden templates. Returns <code>null</code> if question templates not configured.</div>
 </li>
 </ul>
 <a name="getSettings--">

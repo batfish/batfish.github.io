@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -74,7 +74,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.batfish.datamodel.questions.Question">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.datamodel.questions.Question">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionQuestion">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -102,7 +102,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">org.batfish.datamodel.questions.Question</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus.BgpSessionQuestion</a></li>
+<li>
+<ul class="inheritance">
 <li>org.batfish.question.bgpsessionstatus.BgpSessionStatusQuestion</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -118,7 +123,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BgpSessionStatusQuestion</span>
-extends <a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></pre>
+extends <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionQuestion</a></pre>
 <div class="block">Based on node configurations, determines the status of IBGP and EBGP sessions.</div>
 </li>
 </ul>
@@ -148,6 +153,13 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionQuestion">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.batfish.question.bgpsessionstatus.<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionQuestion</a></h3>
+<code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#Z:Z_nodes">_nodes</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#Z:Z_remoteNodes">_remoteNodes</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#Z:Z_status">_status</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#Z:Z_type">_type</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#PROP_NODES">PROP_NODES</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#PROP_REMOTE_NODES">PROP_REMOTE_NODES</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#PROP_STATUS">PROP_STATUS</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#PROP_TYPE">PROP_TYPE</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.batfish.datamodel.questions.Question">
 <!--   -->
 </a>
@@ -169,17 +181,15 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#BgpSessionStatusQuestion--">BgpSessionStatusQuestion</a></span>()</code>
-<div class="block">Create a new BGP Session question with default parameters.</div>
+<div class="block">Create a new BGP session status question with default parameters.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#BgpSessionStatusQuestion-java.util.SortedSet-java.lang.Boolean-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.lang.String-java.lang.String-">BgpSessionStatusQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;foreignBgpGroups,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;includeEstablishedCount,
-                        <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#BgpSessionStatusQuestion-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.lang.String-java.lang.String-">BgpSessionStatusQuestion</a></span>(<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
                         <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;status,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</code>
-<div class="block">Create a new BGP Session question.</div>
+<div class="block">Create a new BGP session status question.</div>
 </td>
 </tr>
 </table>
@@ -204,25 +214,20 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getIncludeEstablishedCount--">getIncludeEstablishedCount</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the short name of this question, used in place of the classname to identify this
  question.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getNodes--">getNodes</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html#getRemoteNodes--">getRemoteNodes</a></span>()</code>&nbsp;</td>
-</tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionQuestion">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.batfish.question.bgpsessionstatus.<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionQuestion</a></h3>
+<code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#getNodes--">getNodes</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#getRemoteNodes--">getRemoteNodes</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#getStatus--">getStatus</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html#getType--">getType</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.batfish.datamodel.questions.Question">
 <!--   -->
@@ -258,20 +263,16 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <li class="blockList">
 <h4>BgpSessionStatusQuestion</h4>
 <pre>public&nbsp;BgpSessionStatusQuestion()</pre>
-<div class="block">Create a new BGP Session question with default parameters.</div>
+<div class="block">Create a new BGP session status question with default parameters.</div>
 </li>
 </ul>
-<a name="BgpSessionStatusQuestion-java.util.SortedSet-java.lang.Boolean-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.lang.String-java.lang.String-">
+<a name="BgpSessionStatusQuestion-org.batfish.datamodel.questions.NodesSpecifier-org.batfish.datamodel.questions.NodesSpecifier-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BgpSessionStatusQuestion</h4>
 <pre>public&nbsp;BgpSessionStatusQuestion(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;foreignBgpGroups,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;includeEstablishedCount,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;nodes,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;remoteNodes,
@@ -279,17 +280,14 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;status,
                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</pre>
-<div class="block">Create a new BGP Session question.</div>
+<div class="block">Create a new BGP session status question.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>foreignBgpGroups</code> - only look at peers that belong to a given named BGP group.</dd>
-<dd><code>includeEstablishedCount</code> - run post-dataplane analysis to see how many sessions get
-     actually established.</dd>
 <dd><code>nodes</code> - Regular expression to match the nodes names for one end of the sessions. Default
      is '.*' (all nodes).</dd>
 <dd><code>remoteNodes</code> - Regular expression to match the nodes names for the other end of the
      sessions. Default is '.*' (all nodes).</dd>
-<dd><code>status</code> - Regular expression to match status type (see <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><code>BgpSessionInfo.SessionStatus</code></a>)</dd>
+<dd><code>status</code> - Regular expression to match status type (see <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.ConfiguredSessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><code>BgpSessionAnswerer.ConfiguredSessionStatus</code></a>)</dd>
 <dd><code>type</code> - Regular expression to match session type (see <a href="../../../../org/batfish/datamodel/BgpSessionProperties.SessionType.html" title="enum in org.batfish.datamodel"><code>BgpSessionProperties.SessionType</code></a>)</dd>
 </dl>
 </li>
@@ -317,19 +315,10 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </dl>
 </li>
 </ul>
-<a name="getIncludeEstablishedCount--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getIncludeEstablishedCount</h4>
-<pre>public&nbsp;boolean&nbsp;getIncludeEstablishedCount()</pre>
-</li>
-</ul>
 <a name="getName--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>getName</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
@@ -340,24 +329,6 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/batfish/datamodel/questions/Question.html#getName--">getName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="getNodes--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getNodes</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getNodes()</pre>
-</li>
-</ul>
-<a name="getRemoteNodes--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getRemoteNodes</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/questions/NodesSpecifier.html" title="class in org.batfish.datamodel.questions">NodesSpecifier</a>&nbsp;getRemoteNodes()</pre>
 </li>
 </ul>
 </li>
@@ -413,7 +384,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.batfish.datamodel.questions.Question">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.batfish.datamodel.questions.Question">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionQuestion">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

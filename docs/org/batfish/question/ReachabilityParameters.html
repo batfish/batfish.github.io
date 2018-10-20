@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -158,50 +158,56 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#builder--">builder</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getActions--">getActions</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#filterDispositions-java.util.Set-">filterDispositions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;dispositions)</code>
+<div class="block">Filter a set of dispositions only to the ones reachability questions support.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getActions--">getActions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getDestinationIpSpaceSpecifier--">getDestinationIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier">NodeSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getFinalNodesSpecifier--">getFinalNodesSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier">NodeSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getForbiddenTransitNodesSpecifier--">getForbiddenTransitNodesSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getHeaderSpace--">getHeaderSpace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getMaxChunkSize--">getMaxChunkSize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/NodeSpecifier.html" title="interface in org.batfish.specifier">NodeSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getRequiredTransitNodesSpecifier--">getRequiredTransitNodesSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/IpSpaceSpecifier.html" title="interface in org.batfish.specifier">IpSpaceSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getSourceIpSpaceSpecifier--">getSourceIpSpaceSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier">LocationSpecifier</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getSourceLocationSpecifier--">getSourceLocationSpecifier</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getSpecialize--">getSpecialize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/question/SrcNattedConstraint.html" title="enum in org.batfish.question">SrcNattedConstraint</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getSrcNatted--">getSrcNatted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/question/ReachabilityParameters.html#getUseCompression--">getUseCompression</a></span>()</code>&nbsp;</td>
 </tr>
@@ -242,7 +248,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getActions</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;&nbsp;getActions()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;getActions()</pre>
 </li>
 </ul>
 <a name="getDestinationIpSpaceSpecifier--">
@@ -281,7 +287,7 @@ public&nbsp;<a href="../../../org/batfish/specifier/NodeSpecifier.html" title="i
 <ul class="blockList">
 <li class="blockList">
 <h4>getHeaderSpace</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;getHeaderSpace()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;getHeaderSpace()</pre>
 </li>
 </ul>
 <a name="getMaxChunkSize--">
@@ -342,10 +348,25 @@ public&nbsp;<a href="../../../org/batfish/specifier/NodeSpecifier.html" title="i
 <a name="getUseCompression--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getUseCompression</h4>
 <pre>public&nbsp;boolean&nbsp;getUseCompression()</pre>
+</li>
+</ul>
+<a name="filterDispositions-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>filterDispositions</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;filterDispositions(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;dispositions)</pre>
+<div class="block">Filter a set of dispositions only to the ones reachability questions support.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the set of supported dispositions is empty.</dd>
+</dl>
 </li>
 </ul>
 </li>

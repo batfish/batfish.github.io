@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":6,"i3":6,"i4":10,"i5":10,"i6":6,"i7":6,"i8":10,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":6,"i2":6,"i3":6,"i4":10,"i5":10,"i6":6,"i7":6,"i8":10,"i9":10,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -235,43 +235,54 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#getNonForwarding--">getNonForwarding</a></span>()</code>
+<div class="block">Returns <code>true</code> if this route is non-forwarding, i.e., it can be installed in the main RIB
+ but not the FIB.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#getNonRouting--">getNonRouting</a></span>()</code>
 <div class="block">Check if this route is "non-routing", i.e., should not be installed in the main RIB.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../org/batfish/datamodel/RoutingProtocol.html" title="enum in org.batfish.datamodel">RoutingProtocol</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#getProtocol--">getProtocol</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#getTag--">getTag</a></span>()</code>
 <div class="block">Return the route's tag or <a href="../../../org/batfish/datamodel/AbstractRoute.html#NO_TAG"><code>NO_TAG</code></a> if no tag is present</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#protocolRouteString--">protocolRouteString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#routeCompare-org.batfish.datamodel.AbstractRoute-">routeCompare</a></span>(<a href="../../../org/batfish/datamodel/AbstractRoute.html" title="class in org.batfish.datamodel">AbstractRoute</a>&nbsp;rhs)</code>
 <div class="block">Helps implement the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang"><code>Comparable</code></a> interface.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#setNextHop-java.lang.String-">setNextHop</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHop)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#setNonForwarding-boolean-">setNonForwarding</a></span>(boolean&nbsp;nonForwarding)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#setNonRouting-boolean-">setNonRouting</a></span>(boolean&nbsp;nonRouting)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/AbstractRoute.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -436,6 +447,17 @@ public abstract&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="cla
  returned.</div>
 </li>
 </ul>
+<a name="getNonForwarding--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNonForwarding</h4>
+<pre>public final&nbsp;boolean&nbsp;getNonForwarding()</pre>
+<div class="block">Returns <code>true</code> if this route is non-forwarding, i.e., it can be installed in the main RIB
+ but not the FIB.</div>
+</li>
+</ul>
 <a name="getNonRouting--">
 <!--   -->
 </a>
@@ -510,6 +532,15 @@ public abstract&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="cla
 <li class="blockList">
 <h4>setNextHop</h4>
 <pre>public&nbsp;void&nbsp;setNextHop(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHop)</pre>
+</li>
+</ul>
+<a name="setNonForwarding-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNonForwarding</h4>
+<pre>public final&nbsp;void&nbsp;setNonForwarding(boolean&nbsp;nonForwarding)</pre>
 </li>
 </ul>
 <a name="setNonRouting-boolean-">

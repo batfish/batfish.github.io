@@ -138,7 +138,7 @@ extends <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.ht
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html#Z:Z_actions">_actions</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -196,7 +196,7 @@ extends <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.ht
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html#setActions-java.util.Set-">setActions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;&nbsp;actions)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html#setActions-java.util.Set-">setActions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;actions)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer.Builder</a></code></td>
@@ -208,7 +208,7 @@ extends <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.ht
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.z3.<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">ReachabilityQuerySynthesizer.Builder</a></h3>
-<code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setForbiddenTransitNodes-java.util.Set-">setForbiddenTransitNodes</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setRequiredTransitNodes-java.util.Set-">setRequiredTransitNodes</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setSrcIpConstraints-java.util.Map-">setSrcIpConstraints</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setSrcNatted-org.batfish.question.SrcNattedConstraint-">setSrcNatted</a></code></li>
+<code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setForbiddenTransitNodes-java.util.Set-">setForbiddenTransitNodes</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.acl.AclLineMatchExpr-">setHeaderSpace</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setRequiredTransitNodes-java.util.Set-">setRequiredTransitNodes</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setSrcIpConstraints-java.util.Map-">setSrcIpConstraints</a>, <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setSrcNatted-org.batfish.question.SrcNattedConstraint-">setSrcNatted</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -237,7 +237,7 @@ extends <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>_actions</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt; _actions</pre>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt; _actions</pre>
 </li>
 </ul>
 <a name="Z:Z_finalNodes">
@@ -306,7 +306,7 @@ extends <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>setActions</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer.Builder</a>&nbsp;setActions(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;&nbsp;actions)</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer.Builder</a>&nbsp;setActions(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;actions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setActions-java.util.Set-">setActions</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">ReachabilityQuerySynthesizer.Builder</a>&lt;<a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer</a>,<a href="../../../org/batfish/z3/StandardReachabilityQuerySynthesizer.Builder.html" title="class in org.batfish.z3">StandardReachabilityQuerySynthesizer.Builder</a>&gt;</code></dd>

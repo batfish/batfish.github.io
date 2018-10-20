@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/datamodel/PathConstraints.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/datamodel/PacketHeaderConstraintsUtil.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/datamodel/PacketHeaderConstraints.Builder.html" target="_top">Frames</a></li>
@@ -142,7 +142,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setDscps-java.util.Set-">setDscps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;dscps)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setDscps-org.batfish.datamodel.IntegerSpace-">setDscps</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;dscps)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
@@ -150,11 +150,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setDstPorts-java.util.Set-">setDstPorts</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;dstPorts)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setDstPorts-org.batfish.datamodel.IntegerSpace-">setDstPorts</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;dstPorts)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setEcns-java.util.Set-">setEcns</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;ecns)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setEcns-org.batfish.datamodel.IntegerSpace-">setEcns</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;ecns)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
@@ -162,15 +162,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setFragmentOffsets-java.util.Set-">setFragmentOffsets</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;fragmentOffsets)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setFragmentOffsets-org.batfish.datamodel.IntegerSpace-">setFragmentOffsets</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;fragmentOffsets)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setIcmpCodes-java.util.Set-">setIcmpCodes</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;icmpCodes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setIcmpCodes-org.batfish.datamodel.IntegerSpace-">setIcmpCodes</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;icmpCodes)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setIcmpTypes-java.util.Set-">setIcmpTypes</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;icmpTypes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setIcmpTypes-org.batfish.datamodel.IntegerSpace-">setIcmpTypes</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;icmpTypes)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
@@ -178,7 +178,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setPacketLengths-java.util.Set-">setPacketLengths</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;packetLengths)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setPacketLengths-org.batfish.datamodel.IntegerSpace-">setPacketLengths</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;packetLengths)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
@@ -186,7 +186,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setSrcPorts-java.util.Set-">setSrcPorts</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;srcPorts)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setSrcPorts-org.batfish.datamodel.IntegerSpace-">setSrcPorts</a></span>(<a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;srcPorts)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html#setTcpFlags-java.util.Set-">setTcpFlags</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -210,34 +214,34 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setDscps-java.util.Set-">
+<a name="setDscps-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDscps</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setDscps(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;dscps)</pre>
+                                                <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;dscps)</pre>
 </li>
 </ul>
-<a name="setEcns-java.util.Set-">
+<a name="setEcns-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setEcns</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setEcns(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;ecns)</pre>
+                                               <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;ecns)</pre>
 </li>
 </ul>
-<a name="setPacketLengths-java.util.Set-">
+<a name="setPacketLengths-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setPacketLengths</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setPacketLengths(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;packetLengths)</pre>
+                                                        <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;packetLengths)</pre>
 </li>
 </ul>
 <a name="setFlowStates-java.util.Set-">
@@ -250,14 +254,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowState.html" title="enum in org.batfish.datamodel">FlowState</a>&gt;&nbsp;flowStates)</pre>
 </li>
 </ul>
-<a name="setFragmentOffsets-java.util.Set-">
+<a name="setFragmentOffsets-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setFragmentOffsets</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setFragmentOffsets(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;fragmentOffsets)</pre>
+                                                          <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;fragmentOffsets)</pre>
 </li>
 </ul>
 <a name="setIpProtocols-java.util.Set-">
@@ -290,44 +294,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dstIps)</pre>
 </li>
 </ul>
-<a name="setIcmpCodes-java.util.Set-">
+<a name="setIcmpCodes-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setIcmpCodes</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setIcmpCodes(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;icmpCodes)</pre>
+                                                    <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;icmpCodes)</pre>
 </li>
 </ul>
-<a name="setIcmpTypes-java.util.Set-">
+<a name="setIcmpTypes-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setIcmpTypes</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setIcmpTypes(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;icmpTypes)</pre>
+                                                    <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;icmpTypes)</pre>
 </li>
 </ul>
-<a name="setSrcPorts-java.util.Set-">
+<a name="setSrcPorts-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSrcPorts</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setSrcPorts(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;srcPorts)</pre>
+                                                   <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;srcPorts)</pre>
 </li>
 </ul>
-<a name="setDstPorts-java.util.Set-">
+<a name="setDstPorts-org.batfish.datamodel.IntegerSpace-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDstPorts</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setDstPorts(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/SubRange.html" title="class in org.batfish.datamodel">SubRange</a>&gt;&nbsp;dstPorts)</pre>
+                                                   <a href="../../../org/batfish/datamodel/IntegerSpace.html" title="class in org.batfish.datamodel">IntegerSpace</a>&nbsp;dstPorts)</pre>
 </li>
 </ul>
 <a name="setApplications-java.util.Set-">
@@ -338,6 +342,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>setApplications</h4>
 <pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setApplications(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Protocol.html" title="enum in org.batfish.datamodel">Protocol</a>&gt;&nbsp;applications)</pre>
+</li>
+</ul>
+<a name="setTcpFlags-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTcpFlags</h4>
+<pre>public&nbsp;<a href="../../../org/batfish/datamodel/PacketHeaderConstraints.Builder.html" title="class in org.batfish.datamodel">PacketHeaderConstraints.Builder</a>&nbsp;setTcpFlags(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/TcpFlagsMatchConditions.html" title="class in org.batfish.datamodel">TcpFlagsMatchConditions</a>&gt;&nbsp;tcpFlags)</pre>
 </li>
 </ul>
 <a name="build--">
@@ -377,7 +391,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/datamodel/PathConstraints.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/datamodel/PacketHeaderConstraintsUtil.html" title="class in org.batfish.datamodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/datamodel/PacketHeaderConstraints.Builder.html" target="_top">Frames</a></li>

@@ -152,7 +152,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>org.codehaus.jettison.json.JSONArray</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/PoolMgrService.html#getQuestionTemplates--">getQuestionTemplates</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/PoolMgrService.html#getQuestionTemplates-boolean-">getQuestionTemplates</a></span>(boolean&nbsp;verbose)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>org.codehaus.jettison.json.JSONArray</code></td>
@@ -212,7 +212,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 public&nbsp;org.codehaus.jettison.json.JSONArray&nbsp;getInfo()</pre>
 </li>
 </ul>
-<a name="getQuestionTemplates--">
+<a name="getQuestionTemplates-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -221,7 +221,8 @@ public&nbsp;org.codehaus.jettison.json.JSONArray&nbsp;getInfo()</pre>
 <pre>@GET
  @Path(value="getquestiontemplates")
  @Produces(value="application/json")
-public&nbsp;org.codehaus.jettison.json.JSONArray&nbsp;getQuestionTemplates()</pre>
+public&nbsp;org.codehaus.jettison.json.JSONArray&nbsp;getQuestionTemplates(@QueryParam(value="verbose")
+                                                                                                                                                boolean&nbsp;verbose)</pre>
 </li>
 </ul>
 <a name="getStatus--">

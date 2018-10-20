@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -183,44 +183,48 @@ implements <a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExp
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#getBDDPacket--">getBDDPacket</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/common/bdd/HeaderSpaceToBDD.html" title="class in org.batfish.common.bdd">HeaderSpaceToBDD</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#getHeaderSpaceToBDD--">getHeaderSpaceToBDD</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#toBdd-org.batfish.datamodel.IpAccessList-">toBdd</a></span>(<a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl)</code>
 <div class="block">Convert an Access Control List (ACL) to a symbolic boolean expression.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitAndMatchExpr-org.batfish.datamodel.acl.AndMatchExpr-">visitAndMatchExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/AndMatchExpr.html" title="class in org.batfish.datamodel.acl">AndMatchExpr</a>&nbsp;andMatchExpr)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitFalseExpr-org.batfish.datamodel.acl.FalseExpr-">visitFalseExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/FalseExpr.html" title="class in org.batfish.datamodel.acl">FalseExpr</a>&nbsp;falseExpr)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitMatchHeaderSpace-org.batfish.datamodel.acl.MatchHeaderSpace-">visitMatchHeaderSpace</a></span>(<a href="../../../../org/batfish/datamodel/acl/MatchHeaderSpace.html" title="class in org.batfish.datamodel.acl">MatchHeaderSpace</a>&nbsp;matchHeaderSpace)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitMatchSrcInterface-org.batfish.datamodel.acl.MatchSrcInterface-">visitMatchSrcInterface</a></span>(<a href="../../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl">MatchSrcInterface</a>&nbsp;matchSrcInterface)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitNotMatchExpr-org.batfish.datamodel.acl.NotMatchExpr-">visitNotMatchExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/NotMatchExpr.html" title="class in org.batfish.datamodel.acl">NotMatchExpr</a>&nbsp;notMatchExpr)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitOriginatingFromDevice-org.batfish.datamodel.acl.OriginatingFromDevice-">visitOriginatingFromDevice</a></span>(<a href="../../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl">OriginatingFromDevice</a>&nbsp;originatingFromDevice)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitOrMatchExpr-org.batfish.datamodel.acl.OrMatchExpr-">visitOrMatchExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/OrMatchExpr.html" title="class in org.batfish.datamodel.acl">OrMatchExpr</a>&nbsp;orMatchExpr)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitPermittedByAcl-org.batfish.datamodel.acl.PermittedByAcl-">visitPermittedByAcl</a></span>(<a href="../../../../org/batfish/datamodel/acl/PermittedByAcl.html" title="class in org.batfish.datamodel.acl">PermittedByAcl</a>&nbsp;permittedByAcl)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>net.sf.javabdd.BDD</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/IpAccessListToBDD.html#visitTrueExpr-org.batfish.datamodel.acl.TrueExpr-">visitTrueExpr</a></span>(<a href="../../../../org/batfish/datamodel/acl/TrueExpr.html" title="class in org.batfish.datamodel.acl">TrueExpr</a>&nbsp;trueExpr)</code>&nbsp;</td>
 </tr>
@@ -323,6 +327,15 @@ implements <a href="../../../../org/batfish/datamodel/acl/GenericAclLineMatchExp
 <li class="blockList">
 <h4>getBDDPacket</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;getBDDPacket()</pre>
+</li>
+</ul>
+<a name="getHeaderSpaceToBDD--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHeaderSpaceToBDD</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/common/bdd/HeaderSpaceToBDD.html" title="class in org.batfish.common.bdd">HeaderSpaceToBDD</a>&nbsp;getHeaderSpaceToBDD()</pre>
 </li>
 </ul>
 <a name="toBdd-org.batfish.datamodel.IpAccessList-">

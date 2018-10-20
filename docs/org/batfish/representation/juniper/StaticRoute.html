@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,38 +175,46 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getNextHopIp--">getNextHopIp</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getNoInstall--">getNoInstall</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getPolicies--">getPolicies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getPrefix--">getPrefix</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#getTag--">getTag</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setDistance-int-">setDistance</a></span>(int&nbsp;distance)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setDrop-boolean-">setDrop</a></span>(boolean&nbsp;drop)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setMetric-int-">setMetric</a></span>(int&nbsp;metric)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setNextHopInterface-java.lang.String-">setNextHopInterface</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;nextHopInterface)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setNextHopIp-org.batfish.datamodel.Ip-">setNextHopIp</a></span>(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setNoInstall-java.lang.Boolean-">setNoInstall</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;noInstall)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/representation/juniper/StaticRoute.html#setTag-int-">setTag</a></span>(int&nbsp;tag)</code>&nbsp;</td>
 </tr>
@@ -294,6 +302,16 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <pre>public&nbsp;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getNextHopIp()</pre>
 </li>
 </ul>
+<a name="getNoInstall--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNoInstall</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;getNoInstall()</pre>
+</li>
+</ul>
 <a name="getPolicies--">
 <!--   -->
 </a>
@@ -364,6 +382,16 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <li class="blockList">
 <h4>setNextHopIp</h4>
 <pre>public&nbsp;void&nbsp;setNextHopIp(<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;nextHopIp)</pre>
+</li>
+</ul>
+<a name="setNoInstall-java.lang.Boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNoInstall</h4>
+<pre>public&nbsp;void&nbsp;setNoInstall(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;noInstall)</pre>
 </li>
 </ul>
 <a name="setTag-int-">

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
+var methods = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -126,6 +126,15 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ITracerouteEngine.html#buildFlows-org.batfish.datamodel.DataPlane-java.util.Set-java.util.Map-boolean-">buildFlows</a></span>(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a>&gt;&gt;&nbsp;fibs,
+          boolean&nbsp;ignoreAcls)</code>
+<div class="block">Builds the <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/FlowTrace.html" title="class in org.batfish.datamodel">FlowTrace</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/ITracerouteEngine.html#processFlows-org.batfish.datamodel.DataPlane-java.util.Set-java.util.Map-boolean-">processFlows</a></span>(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
@@ -150,13 +159,35 @@ var activeTableTab = "activeTableTab";
 <a name="processFlows-org.batfish.datamodel.DataPlane-java.util.Set-java.util.Map-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>processFlows</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/FlowTrace.html" title="class in org.batfish.datamodel">FlowTrace</a>&gt;&gt;&nbsp;processFlows(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a>&gt;&gt;&nbsp;fibs,
                                             boolean&nbsp;ignoreAcls)</pre>
+</li>
+</ul>
+<a name="buildFlows-org.batfish.datamodel.DataPlane-java.util.Set-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>buildFlows</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;&nbsp;buildFlows(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel">Fib</a>&gt;&gt;&nbsp;fibs,
+                                       boolean&nbsp;ignoreAcls)</pre>
+<div class="block">Builds the <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dataPlane</code> - <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel"><code>DataPlane</code></a> for this network snapshot</dd>
+<dd><code>flows</code> - <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a> for which <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s are to be found</dd>
+<dd><code>fibs</code> - <a href="../../../../org/batfish/datamodel/Fib.html" title="interface in org.batfish.datamodel"><code>Fib</code></a> for the dataplane</dd>
+<dd><code>ignoreAcls</code> - if true, will ignore ACLs</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util"><code>SortedMap</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s to <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,9 +176,10 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#TracerouteQuestion-java.lang.String-org.batfish.datamodel.PacketHeaderConstraints-boolean-">TracerouteQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationStr,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#TracerouteQuestion-java.lang.String-org.batfish.datamodel.PacketHeaderConstraints-boolean-int-">TracerouteQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationStr,
                   <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
-                  boolean&nbsp;ignoreAcls)</code>
+                  boolean&nbsp;ignoreAcls,
+                  int&nbsp;maxTraces)</code>
 <div class="block">Create a new traceroute question.</div>
 </td>
 </tr>
@@ -208,17 +209,21 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getIgnoreAcls--">getIgnoreAcls</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getMaxTraces--">getMaxTraces</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the short name of this question, used in place of the classname to identify this
  question.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getSourceLocationStr--">getSourceLocationStr</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#prettyPrint--">prettyPrint</a></span>()</code>&nbsp;</td>
 </tr>
@@ -251,7 +256,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="TracerouteQuestion-java.lang.String-org.batfish.datamodel.PacketHeaderConstraints-boolean-">
+<a name="TracerouteQuestion-java.lang.String-org.batfish.datamodel.PacketHeaderConstraints-boolean-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -261,13 +266,15 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationStr,
                           <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                           <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
-                          boolean&nbsp;ignoreAcls)</pre>
+                          boolean&nbsp;ignoreAcls,
+                          int&nbsp;maxTraces)</pre>
 <div class="block">Create a new traceroute question.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sourceLocationStr</code> - string representation of location that results in a <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a></dd>
 <dd><code>headerConstraints</code> - <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel"><code>PacketHeaderConstraints</code></a> specifying what flow to construct when</dd>
 <dd><code>ignoreAcls</code> - whether or not to evaluate ACLs on interfaces when performing a traceroute</dd>
+<dd><code>maxTraces</code> - the maximum number of traces to include in the answer</dd>
 </dl>
 </li>
 </ul>
@@ -301,6 +308,15 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <li class="blockList">
 <h4>getIgnoreAcls</h4>
 <pre>public&nbsp;boolean&nbsp;getIgnoreAcls()</pre>
+</li>
+</ul>
+<a name="getMaxTraces--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxTraces</h4>
+<pre>public&nbsp;int&nbsp;getMaxTraces()</pre>
 </li>
 </ul>
 <a name="getSourceLocationStr--">

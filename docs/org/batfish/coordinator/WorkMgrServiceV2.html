@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":42,"i5":10};
+var methods = {"i0":42,"i1":42,"i2":10,"i3":10,"i4":10,"i5":42,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,7 +153,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../org/batfish/coordinator/resources/ContainerResource.html" title="class in org.batfish.coordinator.resources">ContainerResource</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/coordinator/resources/NetworkResource.html" title="class in org.batfish.coordinator.resources">NetworkResource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#getContainerResource-java.lang.String-">getContainerResource</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
@@ -165,7 +165,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../org/batfish/coordinator/resources/ContainerResource.html" title="class in org.batfish.coordinator.resources">ContainerResource</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/coordinator/resources/NetworkResource.html" title="class in org.batfish.coordinator.resources">NetworkResource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#getNetworkResource-java.lang.String-">getNetworkResource</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>
 <div class="block">Relocate the request to ContainerResource.</div>
 </td>
@@ -178,11 +178,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>javax.ws.rs.core.Response</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#getQuestionTemplates-boolean-">getQuestionTemplates</a></span>(boolean&nbsp;verbose)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.core.Response</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#redirectContainer--">redirectContainer</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>javax.ws.rs.core.Response</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#redirectNetwork--">redirectNetwork</a></span>()</code>
 <div class="block">Redirect to /networks if the user does not supply a network ID.</div>
@@ -254,6 +258,19 @@ public&nbsp;javax.ws.rs.core.Response&nbsp;getNetworks()</pre>
 <div class="block">Returns the list of <a href="../../../org/batfish/common/Container.html" title="class in org.batfish.common"><code>networks</code></a> that the given API key may access.</div>
 </li>
 </ul>
+<a name="getQuestionTemplates-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQuestionTemplates</h4>
+<pre>@GET
+ @Path(value="question_templates")
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;javax.ws.rs.core.Response&nbsp;getQuestionTemplates(@QueryParam(value="verbose")
+                                                                                                        boolean&nbsp;verbose)</pre>
+</li>
+</ul>
 <a name="redirectContainer--">
 <!--   -->
 </a>
@@ -288,8 +305,8 @@ public&nbsp;javax.ws.rs.core.Response&nbsp;redirectNetwork()</pre>
 <h4>getContainerResource</h4>
 <pre>@Path(value="containers/{id}")
  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;<a href="../../../org/batfish/coordinator/resources/ContainerResource.html" title="class in org.batfish.coordinator.resources">ContainerResource</a>&nbsp;getContainerResource(@PathParam(value="id")
-                                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
+public&nbsp;<a href="../../../org/batfish/coordinator/resources/NetworkResource.html" title="class in org.batfish.coordinator.resources">NetworkResource</a>&nbsp;getContainerResource(@PathParam(value="id")
+                                                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Relocate the request to ContainerResource. Deprecated in favor of <a href="../../../org/batfish/coordinator/WorkMgrServiceV2.html#getNetworkResource-java.lang.String-"><code>getNetworkResource(String)</code></a> getNetworkResource}.</div>
 </li>
@@ -301,8 +318,8 @@ public&nbsp;<a href="../../../org/batfish/coordinator/resources/ContainerResourc
 <li class="blockList">
 <h4>getNetworkResource</h4>
 <pre>@Path(value="networks/{id}")
-public&nbsp;<a href="../../../org/batfish/coordinator/resources/ContainerResource.html" title="class in org.batfish.coordinator.resources">ContainerResource</a>&nbsp;getNetworkResource(@PathParam(value="id")
-                                                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
+public&nbsp;<a href="../../../org/batfish/coordinator/resources/NetworkResource.html" title="class in org.batfish.coordinator.resources">NetworkResource</a>&nbsp;getNetworkResource(@PathParam(value="id")
+                                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
 <div class="block">Relocate the request to ContainerResource.</div>
 </li>
 </ul>

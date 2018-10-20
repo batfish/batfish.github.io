@@ -141,7 +141,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#Z:Z_forbiddenTransitNodes">_forbiddenTransitNodes</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#Z:Z_headerSpace">_headerSpace</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -198,7 +198,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setActions-java.util.Set-">setActions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;&nbsp;actions)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setActions-java.util.Set-">setActions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;actions)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
@@ -210,7 +210,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.HeaderSpace-">setHeaderSpace</a></span>(<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html#setHeaderSpace-org.batfish.datamodel.acl.AclLineMatchExpr-">setHeaderSpace</a></span>(<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;headerSpace)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a></code></td>
@@ -261,7 +261,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>_headerSpace</h4>
-<pre>protected&nbsp;<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a> _headerSpace</pre>
+<pre>protected&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a> _headerSpace</pre>
 </li>
 </ul>
 <a name="Z:Z_srcIpConstraints">
@@ -340,7 +340,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setActions</h4>
-<pre>public abstract&nbsp;<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a>&nbsp;setActions(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/ForwardingAction.html" title="enum in org.batfish.datamodel">ForwardingAction</a>&gt;&nbsp;actions)</pre>
+<pre>public abstract&nbsp;<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a>&nbsp;setActions(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/FlowDisposition.html" title="enum in org.batfish.datamodel">FlowDisposition</a>&gt;&nbsp;actions)</pre>
 </li>
 </ul>
 <a name="setFinalNodes-java.util.Set-">
@@ -361,13 +361,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a>&nbsp;setForbiddenTransitNodes(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nonTransitNodes)</pre>
 </li>
 </ul>
-<a name="setHeaderSpace-org.batfish.datamodel.HeaderSpace-">
+<a name="setHeaderSpace-org.batfish.datamodel.acl.AclLineMatchExpr-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setHeaderSpace</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a>&nbsp;setHeaderSpace(<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace)</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.Builder.html" title="type parameter in ReachabilityQuerySynthesizer.Builder">T</a>&nbsp;setHeaderSpace(<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;headerSpace)</pre>
 </li>
 </ul>
 <a name="setSrcIpConstraints-java.util.Map-">

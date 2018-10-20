@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -140,6 +140,10 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#COL_TRACE_COUNT">COL_TRACE_COUNT</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#COL_TRACES">COL_TRACES</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -183,6 +187,17 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowHistoryToRows-org.batfish.datamodel.FlowHistory-boolean-">flowHistoryToRows</a></span>(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory,
                  boolean&nbsp;differential)</code>
 <div class="block">Converts a flowHistory object into a set of Rows.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#flowTracesToRows-java.util.SortedMap-int-">flowTracesToRows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;&nbsp;flowTraces,
+                int&nbsp;maxTraces)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteAnswerer.html#metadata--">metadata</a></span>()</code>
+<div class="block">Create metadata for the new traceroute v2 answer</div>
 </td>
 </tr>
 </table>
@@ -230,13 +245,26 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <a name="COL_TRACES">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>COL_TRACES</h4>
 <pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_TRACES</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#org.batfish.question.traceroute.TracerouteAnswerer.COL_TRACES">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+<a name="COL_TRACE_COUNT">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>COL_TRACE_COUNT</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_TRACE_COUNT</pre>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#org.batfish.question.traceroute.TracerouteAnswerer.COL_TRACE_COUNT">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -290,15 +318,35 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a>&nbsp;createMetadata(boolean&nbsp;differential)</pre>
 </li>
 </ul>
+<a name="metadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>metadata</h4>
+<pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a>&nbsp;metadata()</pre>
+<div class="block">Create metadata for the new traceroute v2 answer</div>
+</li>
+</ul>
 <a name="flowHistoryToRows-org.batfish.datamodel.FlowHistory-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>flowHistoryToRows</h4>
 <pre>public static&nbsp;com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;flowHistoryToRows(<a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a>&nbsp;flowHistory,
                                                                         boolean&nbsp;differential)</pre>
 <div class="block">Converts a flowHistory object into a set of Rows.</div>
+</li>
+</ul>
+<a name="flowTracesToRows-java.util.SortedMap-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>flowTracesToRows</h4>
+<pre>public static&nbsp;com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;flowTracesToRows(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;&nbsp;flowTraces,
+                                                                       int&nbsp;maxTraces)</pre>
 </li>
 </ul>
 </li>

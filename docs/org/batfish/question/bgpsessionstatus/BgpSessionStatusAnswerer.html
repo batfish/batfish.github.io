@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":9};
+var methods = {"i0":10,"i1":9,"i2":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusPlugin.html" title="class in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -102,7 +102,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">org.batfish.common.Answerer</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html" title="class in org.batfish.question.bgpsessionstatus">org.batfish.question.bgpsessionstatus.BgpSessionAnswerer</a></li>
+<li>
+<ul class="inheritance">
 <li>org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -114,13 +119,39 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">BgpSessionStatusAnswerer</span>
-extends <a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a></pre>
+extends <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionAnswerer</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus">BgpSessionStatusAnswerer.SessionStatus</a></span></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionAnswerer">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;org.batfish.question.bgpsessionstatus.<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionAnswerer</a></h3>
+<code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.ConfiguredSessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus">BgpSessionAnswerer.ConfiguredSessionStatus</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -135,41 +166,16 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_CONFIGURED_STATUS">COL_CONFIGURED_STATUS</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_ESTABLISHED_NEIGHBORS">COL_ESTABLISHED_NEIGHBORS</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_LOCAL_INTERFACE">COL_LOCAL_INTERFACE</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_LOCAL_IP">COL_LOCAL_IP</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_NODE">COL_NODE</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_REMOTE_NODE">COL_REMOTE_NODE</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_REMOTE_PREFIX">COL_REMOTE_PREFIX</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_SESSION_TYPE">COL_SESSION_TYPE</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_VRF_NAME">COL_VRF_NAME</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#COL_ESTABLISHED_STATUS">COL_ESTABLISHED_STATUS</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.org.batfish.question.bgpsessionstatus.BgpSessionAnswerer">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.batfish.question.bgpsessionstatus.<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionAnswerer</a></h3>
+<code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_LOCAL_AS">COL_LOCAL_AS</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_LOCAL_INTERFACE">COL_LOCAL_INTERFACE</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_LOCAL_IP">COL_LOCAL_IP</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_NODE">COL_NODE</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_REMOTE_AS">COL_REMOTE_AS</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_REMOTE_IP">COL_REMOTE_IP</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_REMOTE_NODE">COL_REMOTE_NODE</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_SESSION_TYPE">COL_SESSION_TYPE</a>, <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#COL_VRF">COL_VRF</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.batfish.common.Answerer">
 <!--   -->
@@ -220,16 +226,10 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#createMetadata-org.batfish.datamodel.questions.Question-">createMetadata</a></span>(<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>&nbsp;question)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionInfo</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#rawAnswer-org.batfish.question.bgpsessionstatus.BgpSessionStatusQuestion-">rawAnswer</a></span>(<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionStatusQuestion</a>&nbsp;question)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#getRows-org.batfish.question.bgpsessionstatus.BgpSessionQuestion-">getRows</a></span>(<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionQuestion</a>&nbsp;question)</code>
 <div class="block">Return the answer for <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html" title="class in org.batfish.question.bgpsessionstatus"><code>BgpSessionStatusQuestion</code></a> -- a set of BGP sessions and their
  status.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html#toRow-org.batfish.question.bgpsessionstatus.BgpSessionInfo-">toRow</a></span>(<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionInfo</a>&nbsp;info)</code>
-<div class="block">Creates a <a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table"><code>Row</code></a> object from the corresponding <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus"><code>BgpSessionInfo</code></a> object.</div>
 </td>
 </tr>
 </table>
@@ -261,120 +261,16 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="COL_CONFIGURED_STATUS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_CONFIGURED_STATUS</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_CONFIGURED_STATUS</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_CONFIGURED_STATUS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_ESTABLISHED_NEIGHBORS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_ESTABLISHED_NEIGHBORS</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_ESTABLISHED_NEIGHBORS</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_ESTABLISHED_NEIGHBORS">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_LOCAL_INTERFACE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_LOCAL_INTERFACE</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_LOCAL_INTERFACE</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_LOCAL_INTERFACE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_LOCAL_IP">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_LOCAL_IP</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_LOCAL_IP</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_LOCAL_IP">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_NODE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_NODE</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_NODE</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_NODE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_REMOTE_NODE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_REMOTE_NODE</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_REMOTE_NODE</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_REMOTE_NODE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_REMOTE_PREFIX">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_REMOTE_PREFIX</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_REMOTE_PREFIX</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_REMOTE_PREFIX">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_SESSION_TYPE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>COL_SESSION_TYPE</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_SESSION_TYPE</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_SESSION_TYPE">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="COL_VRF_NAME">
+<a name="COL_ESTABLISHED_STATUS">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>COL_VRF_NAME</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_VRF_NAME</pre>
+<h4>COL_ESTABLISHED_STATUS</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> COL_ESTABLISHED_STATUS</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_VRF_NAME">Constant Field Values</a></dd>
+<dd><a href="../../../../constant-values.html#org.batfish.question.bgpsessionstatus.BgpSessionStatusAnswerer.COL_ESTABLISHED_STATUS">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
@@ -418,41 +314,28 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 </dl>
 </li>
 </ul>
-<a name="rawAnswer-org.batfish.question.bgpsessionstatus.BgpSessionStatusQuestion-">
+<a name="getRows-org.batfish.question.bgpsessionstatus.BgpSessionQuestion-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>rawAnswer</h4>
-<pre>public&nbsp;com.google.common.collect.Multiset&lt;<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionInfo</a>&gt;&nbsp;rawAnswer(<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionStatusQuestion</a>&nbsp;question)</pre>
+<h4>getRows</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&gt;&nbsp;getRows(<a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionQuestion</a>&nbsp;question)</pre>
 <div class="block">Return the answer for <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusQuestion.html" title="class in org.batfish.question.bgpsessionstatus"><code>BgpSessionStatusQuestion</code></a> -- a set of BGP sessions and their
  status.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html#getRows-org.batfish.question.bgpsessionstatus.BgpSessionQuestion-">getRows</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionAnswerer.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionAnswerer</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="createMetadata-org.batfish.datamodel.questions.Question-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>createMetadata</h4>
 <pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/TableMetadata.html" title="class in org.batfish.datamodel.table">TableMetadata</a>&nbsp;createMetadata(<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>&nbsp;question)</pre>
-</li>
-</ul>
-<a name="toRow-org.batfish.question.bgpsessionstatus.BgpSessionInfo-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>toRow</h4>
-<pre>public static&nbsp;<a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table">Row</a>&nbsp;toRow(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                        <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus">BgpSessionInfo</a>&nbsp;info)</pre>
-<div class="block">Creates a <a href="../../../../org/batfish/datamodel/table/Row.html" title="class in org.batfish.datamodel.table"><code>Row</code></a> object from the corresponding <a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.html" title="class in org.batfish.question.bgpsessionstatus"><code>BgpSessionInfo</code></a> object.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>info</code> - The input object</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The output row</dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -482,8 +365,8 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionInfo.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusPlugin.html" title="class in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionQuestion.html" title="class in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.SessionStatus.html" title="enum in org.batfish.question.bgpsessionstatus"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/question/bgpsessionstatus/BgpSessionStatusAnswerer.html" target="_top">Frames</a></li>
@@ -507,7 +390,7 @@ extends <a href="../../../../org/batfish/common/Answerer.html" title="class in o
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

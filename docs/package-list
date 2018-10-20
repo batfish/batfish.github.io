@@ -5,7 +5,6 @@ org.batfish.bgp
 org.batfish.client
 org.batfish.client.answer
 org.batfish.client.config
-org.batfish.client.params
 org.batfish.common
 org.batfish.common.bdd
 org.batfish.common.ipspace
@@ -16,6 +15,7 @@ org.batfish.config
 org.batfish.coordinator
 org.batfish.coordinator.authorizer
 org.batfish.coordinator.config
+org.batfish.coordinator.id
 org.batfish.coordinator.queues
 org.batfish.coordinator.resources
 org.batfish.datamodel
@@ -23,8 +23,10 @@ org.batfish.datamodel.acl
 org.batfish.datamodel.acl.explanation
 org.batfish.datamodel.acl.normalize
 org.batfish.datamodel.answers
+org.batfish.datamodel.bgp
 org.batfish.datamodel.collections
 org.batfish.datamodel.eigrp
+org.batfish.datamodel.flow
 org.batfish.datamodel.hsrp
 org.batfish.datamodel.isis
 org.batfish.datamodel.ospf
@@ -47,6 +49,7 @@ org.batfish.dataplane.ibdp.schedule
 org.batfish.dataplane.protocols
 org.batfish.dataplane.rib
 org.batfish.dataplane.topology
+org.batfish.dataplane.traceroute
 org.batfish.grammar
 org.batfish.grammar.cisco
 org.batfish.grammar.flatjuniper
@@ -60,6 +63,7 @@ org.batfish.grammar.routing_table.eos
 org.batfish.grammar.routing_table.ios
 org.batfish.grammar.routing_table.nxos
 org.batfish.grammar.vyos
+org.batfish.identifiers
 org.batfish.job
 org.batfish.main
 org.batfish.question

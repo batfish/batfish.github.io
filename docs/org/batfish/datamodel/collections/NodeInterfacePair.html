@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,12 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">org.batfish.common.Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</li>
-<li>
-<ul class="inheritance">
 <li>org.batfish.datamodel.collections.NodeInterfacePair</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -113,12 +108,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">NodeInterfacePair</span>
-extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public class <span class="typeNameLabel">NodeInterfacePair</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;</pre>
+<div class="block">Combination of node name and interface name</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../serialized-form.html#org.batfish.datamodel.collections.NodeInterfacePair">Serialized Form</a></dd>
@@ -129,32 +127,6 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#NONE">NONE</a></span></code>&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.org.batfish.common.Pair">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;org.batfish.common.<a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a></h3>
-<code><a href="../../../../org/batfish/common/Pair.html#Z:Z_first">_first</a>, <a href="../../../../org/batfish/common/Pair.html#Z:Z_second">_second</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -167,8 +139,8 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#NodeInterfacePair-java.lang.String-java.lang.String-">NodeInterfacePair</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
-                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;iface)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#NodeInterfacePair-java.lang.String-java.lang.String-">NodeInterfacePair</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -186,25 +158,34 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#getHostname--">getHostname</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#compareTo-org.batfish.datamodel.collections.NodeInterfacePair-">compareTo</a></span>(<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#getInterface--">getInterface</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#getHostname--">getHostname</a></span>()</code>
+<div class="block">Return node name</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#getInterface--">getInterface</a></span>()</code>
+<div class="block">Return node interface name</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.batfish.common.Pair">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.batfish.common.<a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a></h3>
-<code><a href="../../../../org/batfish/common/Pair.html#compareTo-org.batfish.common.Pair-">compareTo</a>, <a href="../../../../org/batfish/common/Pair.html#equals-java.lang.Object-">equals</a>, <a href="../../../../org/batfish/common/Pair.html#getFirst--">getFirst</a>, <a href="../../../../org/batfish/common/Pair.html#getSecond--">getSecond</a>, <a href="../../../../org/batfish/common/Pair.html#hashCode--">hashCode</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -220,23 +201,6 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="NONE">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>NONE</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a> NONE</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -249,8 +213,8 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NodeInterfacePair</h4>
-<pre>public&nbsp;NodeInterfacePair(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;node,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;iface)</pre>
+<pre>public&nbsp;NodeInterfacePair(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hostname,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</pre>
 </li>
 </ul>
 </li>
@@ -267,7 +231,9 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <ul class="blockList">
 <li class="blockList">
 <h4>getHostname</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHostname()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHostname()</pre>
+<div class="block">Return node name</div>
 </li>
 </ul>
 <a name="getInterface--">
@@ -276,19 +242,60 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <ul class="blockList">
 <li class="blockList">
 <h4>getInterface</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getInterface()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getInterface()</pre>
+<div class="block">Return node interface name</div>
 </li>
 </ul>
 <a name="toString--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/batfish/common/Pair.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="compareTo-org.batfish.datamodel.collections.NodeInterfacePair-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>compareTo</h4>
+<pre>public&nbsp;int&nbsp;compareTo(<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&nbsp;other)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo-T-" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -345,13 +352,13 @@ extends <a href="../../../../org/batfish/common/Pair.html" title="class in org.b
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

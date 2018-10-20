@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/z3/AclLineIndependentSatisfiabilityQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/AclIdentifier.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -115,12 +115,34 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">AclLineMatchExprToBooleanExpr</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVisitor.html" title="interface in org.batfish.datamodel.acl">GenericAclLineMatchExprVisitor</a>&lt;<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;</pre>
+<div class="block">Converts <a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl"><code>AclLineMatchExpr</code></a> to <a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr"><code>BooleanExpr</code></a>.</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../org/batfish/z3/AclLineMatchExprToBooleanExpr.html" title="class in org.batfish.z3">AclLineMatchExprToBooleanExpr</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/AclLineMatchExprToBooleanExpr.html#NO_ACLS_NO_IP_SPACES_NO_SOURCES_ORIG_HEADERSPACE">NO_ACLS_NO_IP_SPACES_NO_SOURCES_ORIG_HEADERSPACE</a></span></code>
+<div class="block">Instance used to convert initial headerspace constraints.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -137,6 +159,13 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
                              <a href="../../../org/batfish/z3/Field.html" title="class in org.batfish.z3">Field</a>&nbsp;sourceInterfaceField,
                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&nbsp;sourceInterfaceFieldValues)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/AclLineMatchExprToBooleanExpr.html#AclLineMatchExprToBooleanExpr-java.util.Map-java.util.Map-org.batfish.z3.Field-java.util.Map-boolean-">AclLineMatchExprToBooleanExpr</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;nodeAcls,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                             <a href="../../../org/batfish/z3/Field.html" title="class in org.batfish.z3">Field</a>&nbsp;sourceInterfaceField,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&nbsp;sourceInterfaceFieldValues,
+                             boolean&nbsp;matchOriginalHeaderSpaceFields)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -216,6 +245,27 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="NO_ACLS_NO_IP_SPACES_NO_SOURCES_ORIG_HEADERSPACE">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NO_ACLS_NO_IP_SPACES_NO_SOURCES_ORIG_HEADERSPACE</h4>
+<pre>public static final&nbsp;<a href="../../../org/batfish/z3/AclLineMatchExprToBooleanExpr.html" title="class in org.batfish.z3">AclLineMatchExprToBooleanExpr</a> NO_ACLS_NO_IP_SPACES_NO_SOURCES_ORIG_HEADERSPACE</pre>
+<div class="block">Instance used to convert initial headerspace constraints. These constraints cannot refer to
+ <a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel"><code>ACLs</code></a> or <a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel"><code>IpSpaces</code></a> by name, or include any source
+ constraints (i.e. no <a href="../../../org/batfish/datamodel/acl/MatchSrcInterface.html" title="class in org.batfish.datamodel.acl"><code>MatchSrcInterface</code></a> or <a href="../../../org/batfish/datamodel/acl/OriginatingFromDevice.html" title="class in org.batfish.datamodel.acl"><code>OriginatingFromDevice</code></a> expressions).
+ The constraint is on the original headerspace variables (before any transformations).</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -225,13 +275,26 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <a name="AclLineMatchExprToBooleanExpr-java.util.Map-java.util.Map-org.batfish.z3.Field-java.util.Map-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>AclLineMatchExprToBooleanExpr</h4>
 <pre>public&nbsp;AclLineMatchExprToBooleanExpr(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;nodeAcls,
                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
                                      <a href="../../../org/batfish/z3/Field.html" title="class in org.batfish.z3">Field</a>&nbsp;sourceInterfaceField,
                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&nbsp;sourceInterfaceFieldValues)</pre>
+</li>
+</ul>
+<a name="AclLineMatchExprToBooleanExpr-java.util.Map-java.util.Map-org.batfish.z3.Field-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AclLineMatchExprToBooleanExpr</h4>
+<pre>public&nbsp;AclLineMatchExprToBooleanExpr(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&gt;&nbsp;nodeAcls,
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces,
+                                     <a href="../../../org/batfish/z3/Field.html" title="class in org.batfish.z3">Field</a>&nbsp;sourceInterfaceField,
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/IntExpr.html" title="class in org.batfish.z3.expr">IntExpr</a>&gt;&nbsp;sourceInterfaceFieldValues,
+                                     boolean&nbsp;matchOriginalHeaderSpaceFields)</pre>
 </li>
 </ul>
 </li>
@@ -395,7 +458,7 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/batfish/z3/AclLineIndependentSatisfiabilityQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/z3/AclIdentifier.html" title="class in org.batfish.z3"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class in org.batfish.z3"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -421,13 +484,13 @@ implements <a href="../../../org/batfish/datamodel/acl/GenericAclLineMatchExprVi
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

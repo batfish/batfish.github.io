@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,35 +168,26 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#getAnalysisCreationTimeOrMin-java.lang.String-java.lang.String-">getAnalysisCreationTimeOrMin</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#getAnalysisCreationTimeOrMin-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">getAnalysisCreationTimeOrMin</a></span>(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                            <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#getAnalysisSuggestedOrFalse-java.lang.String-java.lang.String-">getAnalysisSuggestedOrFalse</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#getAnalysisSuggestedOrFalse-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">getAnalysisSuggestedOrFalse</a></span>(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                           <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</code>
 <div class="block">Returns suggested property of given analysis's metadata, or false if no metadata exists.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#readMetadata-java.nio.file.Path-">readMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;metadataPath)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#readMetadata-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">readMetadata</a></span>(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+            <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#readMetadata-java.lang.String-java.lang.String-">readMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#writeMetadata-org.batfish.datamodel.AnalysisMetadata-java.nio.file.Path-">writeMetadata</a></span>(<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;metadata,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;metadataPath)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#writeMetadata-org.batfish.datamodel.AnalysisMetadata-java.lang.String-java.lang.String-">writeMetadata</a></span>(<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;metadata,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/coordinator/AnalysisMetadataMgr.html#writeMetadata-org.batfish.datamodel.AnalysisMetadata-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">writeMetadata</a></span>(<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;metadata,
+             <a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+             <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -237,42 +228,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getAnalysisCreationTimeOrMin-java.lang.String-java.lang.String-">
+<a name="getAnalysisCreationTimeOrMin-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAnalysisCreationTimeOrMin</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a>&nbsp;getAnalysisCreationTimeOrMin(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</pre>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a>&nbsp;getAnalysisCreationTimeOrMin(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                                                   <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</pre>
 </li>
 </ul>
-<a name="getAnalysisSuggestedOrFalse-java.lang.String-java.lang.String-">
+<a name="getAnalysisSuggestedOrFalse-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAnalysisSuggestedOrFalse</h4>
-<pre>public static&nbsp;boolean&nbsp;getAnalysisSuggestedOrFalse(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)</pre>
+<pre>public static&nbsp;boolean&nbsp;getAnalysisSuggestedOrFalse(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                                                  <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)</pre>
 <div class="block">Returns suggested property of given analysis's metadata, or false if no metadata exists.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>container</code> - Container in which to find analysis</dd>
-<dd><code>analysis</code> - Analysis whose suggested property to return</dd>
+<dd><code>networkId</code> - Container in which to find analysis</dd>
+<dd><code>analysisId</code> - Analysis whose suggested property to return</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>suggested property of given analysis's metadata, or false if no metadata exists</dd>
 </dl>
 </li>
 </ul>
-<a name="readMetadata-java.lang.String-java.lang.String-">
+<a name="readMetadata-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>readMetadata</h4>
-<pre>public static&nbsp;<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;readMetadata(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)
+<pre>public static&nbsp;<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;readMetadata(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                                            <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)
                                      throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -280,48 +271,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
-<a name="readMetadata-java.nio.file.Path-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readMetadata</h4>
-<pre>public static&nbsp;<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;readMetadata(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;metadataPath)
-                                     throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="writeMetadata-org.batfish.datamodel.AnalysisMetadata-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeMetadata</h4>
-<pre>public static&nbsp;void&nbsp;writeMetadata(<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;metadata,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;container,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;analysis)
-                          throws com.fasterxml.jackson.core.JsonProcessingException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
-</dl>
-</li>
-</ul>
-<a name="writeMetadata-org.batfish.datamodel.AnalysisMetadata-java.nio.file.Path-">
+<a name="writeMetadata-org.batfish.datamodel.AnalysisMetadata-org.batfish.identifiers.NetworkId-org.batfish.identifiers.AnalysisId-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>writeMetadata</h4>
 <pre>public static&nbsp;void&nbsp;writeMetadata(<a href="../../../org/batfish/datamodel/AnalysisMetadata.html" title="class in org.batfish.datamodel">AnalysisMetadata</a>&nbsp;metadata,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;metadataPath)
-                          throws com.fasterxml.jackson.core.JsonProcessingException</pre>
+                                 <a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;networkId,
+                                 <a href="../../../org/batfish/identifiers/AnalysisId.html" title="class in org.batfish.identifiers">AnalysisId</a>&nbsp;analysisId)
+                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>

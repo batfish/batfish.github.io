@@ -112,13 +112,15 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../org/batfish/z3/AclIdentifier.html" title="class in org.batfish.z3">AclIdentifier</a>, <a href="../../../org/batfish/z3/AclLine.html" title="class in org.batfish.z3">AclLine</a>, <a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>, <a href="../../../org/batfish/datamodel/collections/FileLinePair.html" title="class in org.batfish.datamodel.collections">FileLinePair</a>, <a href="../../../org/batfish/datamodel/FilterResult.html" title="class in org.batfish.datamodel">FilterResult</a>, <a href="../../../org/batfish/datamodel/Ip6Wildcard.html" title="class in org.batfish.datamodel">Ip6Wildcard</a>, <a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>, <a href="../../../org/batfish/datamodel/collections/IpPair.html" title="class in org.batfish.datamodel.collections">IpPair</a>, <a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>, <a href="../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>, <a href="../../../org/batfish/datamodel/collections/NodeIpPair.html" title="class in org.batfish.datamodel.collections">NodeIpPair</a>, <a href="../../../org/batfish/datamodel/Prefix6Range.html" title="class in org.batfish.datamodel">Prefix6Range</a>, <a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>, <a href="../../../org/batfish/question/SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair.html" title="class in org.batfish.question">SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair</a>, <a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a></dd>
+<dd><a href="../../../org/batfish/z3/AclIdentifier.html" title="class in org.batfish.z3">AclIdentifier</a>, <a href="../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>, <a href="../../../org/batfish/datamodel/collections/FileLinePair.html" title="class in org.batfish.datamodel.collections">FileLinePair</a>, <a href="../../../org/batfish/datamodel/FilterResult.html" title="class in org.batfish.datamodel">FilterResult</a>, <a href="../../../org/batfish/datamodel/Ip6Wildcard.html" title="class in org.batfish.datamodel">Ip6Wildcard</a>, <a href="../../../org/batfish/datamodel/collections/IpEdge.html" title="class in org.batfish.datamodel.collections">IpEdge</a>, <a href="../../../org/batfish/datamodel/collections/IpPair.html" title="class in org.batfish.datamodel.collections">IpPair</a>, <a href="../../../org/batfish/datamodel/IpWildcard.html" title="class in org.batfish.datamodel">IpWildcard</a>, <a href="../../../org/batfish/datamodel/collections/NodeIpPair.html" title="class in org.batfish.datamodel.collections">NodeIpPair</a>, <a href="../../../org/batfish/datamodel/Prefix6Range.html" title="class in org.batfish.datamodel">Prefix6Range</a>, <a href="../../../org/batfish/datamodel/RoleEdge.html" title="class in org.batfish.datamodel">RoleEdge</a>, <a href="../../../org/batfish/question/SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair.html" title="class in org.batfish.question">SelfAdjacenciesQuestionPlugin.SelfAdjacenciesAnswerElement.InterfaceIpPair</a>, <a href="../../../org/batfish/common/Warning.html" title="class in org.batfish.common">Warning</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Pair&lt;T1 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super T1&gt;,T2 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super T2&gt;&gt;</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public class <span class="typeNameLabel">Pair&lt;T1 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super T1&gt;,T2 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super T2&gt;&gt;</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/common/Pair.html" title="class in org.batfish.common">Pair</a>&lt;T1,T2&gt;&gt;</pre>
+<div class="block">A generic pair of comparable objects</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../serialized-form.html#org.batfish.common.Pair">Serialized Form</a></dd>
@@ -234,7 +236,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>_first</h4>
-<pre>protected final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super <a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a>&gt; _first</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+protected final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super <a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a>&gt; _first</pre>
 </li>
 </ul>
 <a name="Z:Z_second">
@@ -243,7 +246,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockListLast">
 <li class="blockList">
 <h4>_second</h4>
-<pre>protected final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super <a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a>&gt; _second</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+protected final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;? super <a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a>&gt; _second</pre>
 </li>
 </ul>
 </li>
@@ -307,7 +311,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>getFirst</h4>
-<pre>public final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a>&nbsp;getFirst()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T1</a>&nbsp;getFirst()</pre>
 </li>
 </ul>
 <a name="getSecond--">
@@ -316,7 +321,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializab
 <ul class="blockList">
 <li class="blockList">
 <h4>getSecond</h4>
-<pre>public final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a>&nbsp;getSecond()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public final&nbsp;<a href="../../../org/batfish/common/Pair.html" title="type parameter in Pair">T2</a>&nbsp;getSecond()</pre>
 </li>
 </ul>
 <a name="hashCode--">

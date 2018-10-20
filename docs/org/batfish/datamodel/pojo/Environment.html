@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -110,11 +110,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Environment</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">The <a href="../../../../org/batfish/datamodel/pojo/Environment.html" title="class in org.batfish.datamodel.pojo"><code>Environment</code></a> is an Object representation of the environment for BatFish
- service.
-
- <p>Each <a href="../../../../org/batfish/datamodel/pojo/Environment.html" title="class in org.batfish.datamodel.pojo"><code>Environment</code></a> contains a name and all informations of the environment
- <a href="../../../../org/batfish/datamodel/pojo/Environment.html#Z:Z_envName"><code>_envName</code></a>.</div>
+<div class="block">The <a href="../../../../org/batfish/datamodel/pojo/Environment.html" title="class in org.batfish.datamodel.pojo"><code>Environment</code></a> contains the information about the snapshot that is external to
+ configuration -- device up/down states, BGP announcements, etc..</div>
 </li>
 </ul>
 </div>
@@ -133,8 +130,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#Environment-java.lang.String-java.lang.String-java.util.SortedSet-java.util.SortedSet-java.util.SortedSet-java.util.SortedMap-java.util.SortedMap-java.util.SortedSet-">Environment</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;envName,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#Environment-java.lang.String-java.util.SortedSet-java.util.SortedSet-java.util.SortedSet-java.util.SortedMap-java.util.SortedMap-java.util.SortedSet-">Environment</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;edgeBlacklist,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;&nbsp;interfaceBlacklist,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;nodeBlacklist,
@@ -170,34 +166,30 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getEdgeBlacklist--">getEdgeBlacklist</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getEnvName--">getEnvName</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/BgpAdvertisement.html" title="class in org.batfish.datamodel">BgpAdvertisement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getExternalBgpAnnouncements--">getExternalBgpAnnouncements</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getInterfaceBlacklist--">getInterfaceBlacklist</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getNodeBlacklist--">getNodeBlacklist</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getRoutingTables--">getRoutingTables</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#getTestrigName--">getTestrigName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/pojo/Environment.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -223,14 +215,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Environment-java.lang.String-java.lang.String-java.util.SortedSet-java.util.SortedSet-java.util.SortedSet-java.util.SortedMap-java.util.SortedMap-java.util.SortedSet-">
+<a name="Environment-java.lang.String-java.util.SortedSet-java.util.SortedSet-java.util.SortedSet-java.util.SortedMap-java.util.SortedMap-java.util.SortedSet-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Environment</h4>
-<pre>public&nbsp;Environment(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;envName,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
+<pre>public&nbsp;Environment(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testrigName,
                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;edgeBlacklist,
                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
@@ -253,15 +244,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getEnvName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getEnvName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getEnvName()</pre>
-</li>
-</ul>
 <a name="getTestrigName--">
 <!--   -->
 </a>

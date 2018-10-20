@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,11 +129,73 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeInterfaceOwnedIps-java.util.Map-">computeInterfaceOwnedIps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</code>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ to (hostname -&gt; interface name -&gt; Ip).</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeInterfaceOwnedIps-java.util.Map-boolean-">computeInterfaceOwnedIps</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                        boolean&nbsp;excludeInactive)</code>
+<div class="block">Compute the <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s owned by each interface.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeInterfaceOwnedIpSpaces-java.util.Map-">computeInterfaceOwnedIpSpaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</code>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ and convert the set of owned Ips into an IpSpace.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpInterfaceOwners-java.util.Map-boolean-">computeIpInterfaceOwners</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;&nbsp;enabledInterfaces,
+                        boolean&nbsp;excludeInactive)</code>
+<div class="block">Compute a mapping from IP address to the interfaces that "own" that IP (e.g., as an network
+ interface address)</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpNodeOwners-java.util.Map-boolean-">computeIpNodeOwners</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                   boolean&nbsp;excludeInactive)</code>
+<div class="block">Compute a mapping of IP addresses to a set of hostnames that "own" this IP (e.g., as a network
+ interface address)</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpOwnersSimple-java.util.Map-">computeIpOwnersSimple</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;ipOwners)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpOwnersSimple-java.util.Map-boolean-">computeIpOwnersSimple</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                     boolean&nbsp;excludeInactive)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpVrfOwners-boolean-java.util.Map-">computeIpVrfOwners</a></span>(boolean&nbsp;excludeInactive,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;&nbsp;enabledInterfaces)</code>
+<div class="block">Compute a mapping of IP addresses to the VRFs that "own" this IP (e.g., as a network interface
+ address).</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeIpVrfOwners-java.util.Map-java.util.Map-">computeIpVrfOwners</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</code>
+<div class="block">Aggregate a mapping (Ip -&gt; host name -&gt; interface name) to (Ip -&gt; host name -&gt; vrf
+ name)</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeLayer1Topology-org.batfish.common.topology.Layer1Topology-java.util.Map-">computeLayer1Topology</a></span>(<a href="../../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a>&nbsp;rawLayer1Topology,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeLayer2Topology-org.batfish.common.topology.Layer1Topology-java.util.Map-">computeLayer2Topology</a></span>(<a href="../../../../org/batfish/common/topology/Layer1Topology.html" title="class in org.batfish.common.topology">Layer1Topology</a>&nbsp;layer1Topology,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>
@@ -141,7 +203,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  in the <code>configurations</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/common/topology/Layer3Topology.html" title="class in org.batfish.common.topology">Layer3Topology</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeLayer3Topology-org.batfish.common.topology.Layer2Topology-java.util.Map-">computeLayer3Topology</a></span>(<a href="../../../../org/batfish/common/topology/Layer2Topology.html" title="class in org.batfish.common.topology">Layer2Topology</a>&nbsp;layer2Topology,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>
@@ -149,26 +211,39 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  configurations.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeNodeInterfaces-java.util.Map-">computeNodeInterfaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>
+<div class="block">Compute the interfaces of each node.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#computeVrfOwnedIpSpaces-java.util.Map-">computeVrfOwnedIpSpaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipVrfOwners)</code>
+<div class="block">Invert a mapping from Ip to VRF owners (Ip -&gt; host name -&gt; VRF name) and combine all IPs
+ owned by each VRF into an IpSpace.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#getInterface-org.batfish.common.topology.Layer1Node-java.util.Map-">getInterface</a></span>(<a href="../../../../org/batfish/common/topology/Layer1Node.html" title="class in org.batfish.common.topology">Layer1Node</a>&nbsp;layer1Node,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#getInterface-org.batfish.common.topology.Layer2Node-java.util.Map-">getInterface</a></span>(<a href="../../../../org/batfish/common/topology/Layer2Node.html" title="class in org.batfish.common.topology">Layer2Node</a>&nbsp;layer2Node,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#toEdge-org.batfish.common.topology.Layer3Edge-">toEdge</a></span>(<a href="../../../../org/batfish/common/topology/Layer3Edge.html" title="class in org.batfish.common.topology">Layer3Edge</a>&nbsp;layer3Edge)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/common/topology/Layer2Node.html" title="class in org.batfish.common.topology">Layer2Node</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#toLayer2Node-org.batfish.common.topology.Layer1Node-int-">toLayer2Node</a></span>(<a href="../../../../org/batfish/common/topology/Layer1Node.html" title="class in org.batfish.common.topology">Layer1Node</a>&nbsp;layer1Node,
             int&nbsp;vlanId)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/topology/TopologyUtil.html#toTopology-org.batfish.common.topology.Layer3Topology-">toTopology</a></span>(<a href="../../../../org/batfish/common/topology/Layer3Topology.html" title="class in org.batfish.common.topology">Layer3Topology</a>&nbsp;layer3Topology)</code>&nbsp;</td>
 </tr>
@@ -288,11 +363,161 @@ public static&nbsp;<a href="../../../../org/batfish/common/topology/Layer2Node.h
 <a name="toTopology-org.batfish.common.topology.Layer3Topology-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toTopology</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;<a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a>&nbsp;toTopology(<a href="../../../../org/batfish/common/topology/Layer3Topology.html" title="class in org.batfish.common.topology">Layer3Topology</a>&nbsp;layer3Topology)</pre>
+</li>
+</ul>
+<a name="computeInterfaceOwnedIps-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeInterfaceOwnedIps</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;&nbsp;computeInterfaceOwnedIps(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                                                                       boolean&nbsp;excludeInactive)</pre>
+<div class="block">Compute the <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s owned by each interface. hostname -&gt; interface name -&gt; <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s.</div>
+</li>
+</ul>
+<a name="computeInterfaceOwnedIps-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeInterfaceOwnedIps</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&gt;&gt;&gt;&nbsp;computeInterfaceOwnedIps(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</pre>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ to (hostname -&gt; interface name -&gt; Ip).</div>
+</li>
+</ul>
+<a name="computeInterfaceOwnedIpSpaces-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeInterfaceOwnedIpSpaces</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&nbsp;computeInterfaceOwnedIpSpaces(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners)</pre>
+<div class="block">Invert a mapping from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a> to owner interfaces (Ip -&gt; hostname -&gt; interface name)
+ and convert the set of owned Ips into an IpSpace.</div>
+</li>
+</ul>
+<a name="computeIpNodeOwners-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpNodeOwners</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;computeIpNodeOwners(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                                                      boolean&nbsp;excludeInactive)</pre>
+<div class="block">Compute a mapping of IP addresses to a set of hostnames that "own" this IP (e.g., as a network
+ interface address)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>configurations</code> - <code>Configurations</code> keyed by hostname</dd>
+<dd><code>excludeInactive</code> - Whether to exclude inactive interfaces</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A map of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s to a set of hostnames that own this IP</dd>
+</dl>
+</li>
+</ul>
+<a name="computeIpInterfaceOwners-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpInterfaceOwners</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;computeIpInterfaceOwners(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;&nbsp;enabledInterfaces,
+                                                                       boolean&nbsp;excludeInactive)</pre>
+<div class="block">Compute a mapping from IP address to the interfaces that "own" that IP (e.g., as an network
+ interface address)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>enabledInterfaces</code> - A mapping of enabled interfaces hostname -&gt; interface name -&gt;
+     <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel"><code>Interface</code></a></dd>
+<dd><code>excludeInactive</code> - whether to ignore inactive interfaces</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A map from <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s to the <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel"><code>Interface</code></a>s that own them</dd>
+</dl>
+</li>
+</ul>
+<a name="computeIpVrfOwners-boolean-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpVrfOwners</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;computeIpVrfOwners(boolean&nbsp;excludeInactive,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;&nbsp;enabledInterfaces)</pre>
+<div class="block">Compute a mapping of IP addresses to the VRFs that "own" this IP (e.g., as a network interface
+ address).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>excludeInactive</code> - whether to ignore inactive interfaces</dd>
+<dd><code>enabledInterfaces</code> - A mapping of enabled interfaces hostname -&gt; interface name -&gt;
+     <a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel"><code>Interface</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A map of <a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel"><code>Ip</code></a>s to a map of hostnames to vrfs that own the Ip.</dd>
+</dl>
+</li>
+</ul>
+<a name="computeIpVrfOwners-java.util.Map-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpVrfOwners</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;computeIpVrfOwners(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipInterfaceOwners,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configs)</pre>
+<div class="block">Aggregate a mapping (Ip -&gt; host name -&gt; interface name) to (Ip -&gt; host name -&gt; vrf
+ name)</div>
+</li>
+</ul>
+<a name="computeVrfOwnedIpSpaces-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeVrfOwnedIpSpaces</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&nbsp;computeVrfOwnedIpSpaces(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&gt;&nbsp;ipVrfOwners)</pre>
+<div class="block">Invert a mapping from Ip to VRF owners (Ip -&gt; host name -&gt; VRF name) and combine all IPs
+ owned by each VRF into an IpSpace.</div>
+</li>
+</ul>
+<a name="computeIpOwnersSimple-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpOwnersSimple</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;computeIpOwnersSimple(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;ipOwners)</pre>
+</li>
+</ul>
+<a name="computeIpOwnersSimple-java.util.Map-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computeIpOwnersSimple</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;computeIpOwnersSimple(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
+                                                   boolean&nbsp;excludeInactive)</pre>
+</li>
+</ul>
+<a name="computeNodeInterfaces-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>computeNodeInterfaces</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Interface.html" title="class in org.batfish.datamodel">Interface</a>&gt;&gt;&nbsp;computeNodeInterfaces(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</pre>
+<div class="block">Compute the interfaces of each node.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>configurations</code> - The <a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel"><code>Configuration</code></a>s for the network</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A map from hostname to the interfaces of that node.</dd>
+</dl>
 </li>
 </ul>
 </li>

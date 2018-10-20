@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":38,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6,"i64":6,"i65":6,"i66":6,"i67":6,"i68":6,"i69":6,"i70":6,"i71":6,"i72":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":38,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6,"i64":6,"i65":6,"i66":6,"i67":6,"i68":6,"i69":6,"i70":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,30 +133,37 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#bddMultipathConsistency--">bddMultipathConsistency</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#bddReducedReachability--">bddReducedReachability</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/question/reducedreachability/DifferentialReachabilityResult.html" title="class in org.batfish.question.reducedreachability">DifferentialReachabilityResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#bddReducedReachability-org.batfish.question.reducedreachability.DifferentialReachabilityParameters-">bddReducedReachability</a></span>(<a href="../../../../org/batfish/question/reducedreachability/DifferentialReachabilityParameters.html" title="class in org.batfish.question.reducedreachability">DifferentialReachabilityParameters</a>&nbsp;parameters)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#checkDataPlane--">checkDataPlane</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#buildFlows-java.util.Set-boolean-">buildFlows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
+          boolean&nbsp;ignoreAcls)</code>
+<div class="block">Given a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s it populates the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for them</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#checkEnvironmentExists--">checkEnvironmentExists</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#checkDataPlane--">checkDataPlane</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#checkSnapshotOutputReady--">checkSnapshotOutputReady</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/DataPlaneAnswerElement.html" title="class in org.batfish.datamodel.answers">DataPlaneAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#computeDataPlane-boolean-">computeDataPlane</a></span>(boolean&nbsp;differentialContext)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#createAnswerer-org.batfish.datamodel.questions.Question-">createAnswerer</a></span>(<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>&nbsp;question)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#debugFlagEnabled-java.lang.String-">debugFlagEnabled</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;flag)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/question/searchfilters/DifferentialSearchFiltersResult.html" title="class in org.batfish.question.searchfilters">DifferentialSearchFiltersResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#differentialReachFilter-org.batfish.datamodel.Configuration-org.batfish.datamodel.IpAccessList-org.batfish.datamodel.Configuration-org.batfish.datamodel.IpAccessList-org.batfish.question.SearchFiltersParameters-">differentialReachFilter</a></span>(<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;baseConfig,
                        <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;baseAcl,
@@ -164,39 +171,35 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
                        <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;deltaAcl,
                        <a href="../../../../org/batfish/question/SearchFiltersParameters.html" title="class in org.batfish.question">SearchFiltersParameters</a>&nbsp;searchFiltersParameters)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>,<a href="../../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>,<a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getAnswererCreators--">getAnswererCreators</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getContainerName--">getContainerName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" title="class in org.batfish.common.plugin">DataPlanePlugin</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getDataPlanePlugin--">getDataPlanePlugin</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getDifferentialFlowTag--">getDifferentialFlowTag</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/pojo/Environment.html" title="class in org.batfish.datamodel.pojo">Environment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getEnvironment--">getEnvironment</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getEnvironmentTopology--">getEnvironmentTopology</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getFlowTag--">getFlowTag</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/grammar/GrammarSettings.html" title="interface in org.batfish.grammar">GrammarSettings</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getGrammarSettings--">getGrammarSettings</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/FlowHistory.html" title="class in org.batfish.datamodel">FlowHistory</a></code></td>
@@ -226,7 +229,7 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getQuestionTemplates--">getQuestionTemplates</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getQuestionTemplates-boolean-">getQuestionTemplates</a></span>(boolean&nbsp;verbose)</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/referencelibrary/ReferenceLibrary.html" title="class in org.batfish.referencelibrary">ReferenceLibrary</a></code></td>
@@ -251,204 +254,195 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getTestrigFileTree--">getTestrigFileTree</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code><a href="../../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#getTestrigName--">getTestrigName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initBgpAdvertisements-java.util.Map-">initBgpAdvertisements</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initBgpOriginationSpaceExplicit-java.util.Map-">initBgpOriginationSpaceExplicit</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/InitInfoAnswerElement.html" title="class in org.batfish.datamodel.answers">InitInfoAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initInfo-boolean-boolean-">initInfo</a></span>(boolean&nbsp;summary,
         boolean&nbsp;verboseError)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/InitInfoAnswerElement.html" title="class in org.batfish.datamodel.answers">InitInfoAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initInfoBgpAdvertisements-boolean-boolean-">initInfoBgpAdvertisements</a></span>(boolean&nbsp;summary,
                          boolean&nbsp;verboseError)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/InitInfoAnswerElement.html" title="class in org.batfish.datamodel.answers">InitInfoAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initInfoRoutes-boolean-boolean-">initInfoRoutes</a></span>(boolean&nbsp;summary,
               boolean&nbsp;verboseError)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#initRemoteRipNeighbors-java.util.Map-java.util.Map-org.batfish.datamodel.Topology-">initRemoteRipNeighbors</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;ipOwners,
                       <a href="../../../../org/batfish/datamodel/Topology.html" title="class in org.batfish.datamodel">Topology</a>&nbsp;topology)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadConfigurations--">loadConfigurations</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/ConvertConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ConvertConfigurationAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadConvertConfigurationAnswerElementOrReparse--">loadConvertConfigurationAnswerElementOrReparse</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadDataPlane--">loadDataPlane</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/collections/BgpAdvertisementsByVrf.html" title="class in org.batfish.datamodel.collections">BgpAdvertisementsByVrf</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadEnvironmentBgpTables--">loadEnvironmentBgpTables</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/collections/RoutesByVrf.html" title="class in org.batfish.datamodel.collections">RoutesByVrf</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadEnvironmentRoutingTables--">loadEnvironmentRoutingTables</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/BgpAdvertisement.html" title="class in org.batfish.datamodel">BgpAdvertisement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadExternalBgpAnnouncements-java.util.Map-">loadExternalBgpAnnouncements</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/ParseEnvironmentBgpTablesAnswerElement.html" title="class in org.batfish.datamodel.answers">ParseEnvironmentBgpTablesAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadParseEnvironmentBgpTablesAnswerElement--">loadParseEnvironmentBgpTablesAnswerElement</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/ParseEnvironmentRoutingTablesAnswerElement.html" title="class in org.batfish.datamodel.answers">ParseEnvironmentRoutingTablesAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadParseEnvironmentRoutingTablesAnswerElement--">loadParseEnvironmentRoutingTablesAnswerElement</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/ParseVendorConfigurationAnswerElement.html" title="class in org.batfish.datamodel.answers">ParseVendorConfigurationAnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadParseVendorConfigurationAnswerElement--">loadParseVendorConfigurationAnswerElement</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#loadQuestionSettings-org.batfish.datamodel.questions.Question-">loadQuestionSettings</a></span>(<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>&nbsp;question)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#multipath-org.batfish.question.ReachabilityParameters-">multipath</a></span>(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#newBatch-java.lang.String-int-">newBatch</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;description,
         int&nbsp;jobs)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#pathDiff-org.batfish.question.ReachabilityParameters-">pathDiff</a></span>(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#popEnvironment--">popEnvironment</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#popSnapshot--">popSnapshot</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#processFlows-java.util.Set-boolean-">processFlows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
             boolean&nbsp;ignoreAcls)</code>&nbsp;</td>
 </tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#pushBaseSnapshot--">pushBaseSnapshot</a></span>()</code>&nbsp;</td>
+</tr>
 <tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#pushBaseEnvironment--">pushBaseEnvironment</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#pushDeltaSnapshot--">pushDeltaSnapshot</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i51" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#pushDeltaEnvironment--">pushDeltaEnvironment</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/question/searchfilters/SearchFiltersResult.html" title="class in org.batfish.question.searchfilters">SearchFiltersResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#reachFilter-org.batfish.datamodel.Configuration-org.batfish.datamodel.IpAccessList-org.batfish.question.SearchFiltersParameters-">reachFilter</a></span>(<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&nbsp;node,
            <a href="../../../../org/batfish/datamodel/IpAccessList.html" title="class in org.batfish.datamodel">IpAccessList</a>&nbsp;acl,
            <a href="../../../../org/batfish/question/SearchFiltersParameters.html" title="class in org.batfish.question">SearchFiltersParameters</a>&nbsp;parameters)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#readExternalBgpAnnouncementsFile--">readExternalBgpAnnouncementsFile</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#reducedReachability-org.batfish.question.ReachabilityParameters-">reducedReachability</a></span>(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#registerAnswerer-java.lang.String-java.lang.String-java.util.function.BiFunction-">registerAnswerer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;questionClassName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a>,<a href="../../../../org/batfish/common/plugin/IBatfish.html" title="interface in org.batfish.common.plugin">IBatfish</a>,<a href="../../../../org/batfish/common/Answerer.html" title="class in org.batfish.common">Answerer</a>&gt;&nbsp;answererCreator)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#registerBgpTablePlugin-org.batfish.grammar.BgpTableFormat-org.batfish.common.plugin.BgpTablePlugin-">registerBgpTablePlugin</a></span>(<a href="../../../../org/batfish/grammar/BgpTableFormat.html" title="enum in org.batfish.grammar">BgpTableFormat</a>&nbsp;format,
                       <a href="../../../../org/batfish/common/plugin/BgpTablePlugin.html" title="class in org.batfish.common.plugin">BgpTablePlugin</a>&nbsp;bgpTablePlugin)</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#registerDataPlanePlugin-org.batfish.common.plugin.DataPlanePlugin-java.lang.String-">registerDataPlanePlugin</a></span>(<a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" title="class in org.batfish.common.plugin">DataPlanePlugin</a>&nbsp;plugin,
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Register a new dataplane plugin</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#registerExternalBgpAdvertisementPlugin-org.batfish.common.plugin.ExternalBgpAdvertisementPlugin-">registerExternalBgpAdvertisementPlugin</a></span>(<a href="../../../../org/batfish/common/plugin/ExternalBgpAdvertisementPlugin.html" title="class in org.batfish.common.plugin">ExternalBgpAdvertisementPlugin</a>&nbsp;externalBgpAdvertisementPlugin)</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtBlackhole-org.batfish.datamodel.questions.smt.HeaderQuestion-">smtBlackhole</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtBoundedLength-org.batfish.datamodel.questions.smt.HeaderLocationQuestion-java.lang.Integer-">smtBoundedLength</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderLocationQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderLocationQuestion</a>&nbsp;q,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;bound)</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtDeterminism-org.batfish.datamodel.questions.smt.HeaderQuestion-">smtDeterminism</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtEqualLength-org.batfish.datamodel.questions.smt.HeaderLocationQuestion-">smtEqualLength</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderLocationQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderLocationQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtForwarding-org.batfish.datamodel.questions.smt.HeaderQuestion-">smtForwarding</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtLoadBalance-org.batfish.datamodel.questions.smt.HeaderLocationQuestion-int-">smtLoadBalance</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderLocationQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderLocationQuestion</a>&nbsp;q,
               int&nbsp;threshold)</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtLocalConsistency-java.util.regex.Pattern-boolean-boolean-">smtLocalConsistency</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;routerRegex,
                    boolean&nbsp;strict,
                    boolean&nbsp;fullModel)</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtMultipathConsistency-org.batfish.datamodel.questions.smt.HeaderLocationQuestion-">smtMultipathConsistency</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderLocationQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderLocationQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtReachability-org.batfish.datamodel.questions.smt.HeaderLocationQuestion-">smtReachability</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderLocationQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderLocationQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtRoles-org.batfish.datamodel.questions.smt.RoleQuestion-">smtRoles</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/RoleQuestion.html" title="class in org.batfish.datamodel.questions.smt">RoleQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#smtRoutingLoop-org.batfish.datamodel.questions.smt.HeaderQuestion-">smtRoutingLoop</a></span>(<a href="../../../../org/batfish/datamodel/questions/smt/HeaderQuestion.html" title="class in org.batfish.datamodel.questions.smt">HeaderQuestion</a>&nbsp;q)</code>&nbsp;</td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/specifier/SpecifierContext.html" title="interface in org.batfish.specifier">SpecifierContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#specifierContext--">specifierContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#standard-org.batfish.question.ReachabilityParameters-">standard</a></span>(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</code>&nbsp;</td>
-</tr>
-<tr id="i72" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/plugin/IBatfish.html#writeDataPlane-org.batfish.datamodel.DataPlane-org.batfish.datamodel.answers.DataPlaneAnswerElement-">writeDataPlane</a></span>(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dp,
-              <a href="../../../../org/batfish/datamodel/answers/DataPlaneAnswerElement.html" title="class in org.batfish.datamodel.answers">DataPlaneAnswerElement</a>&nbsp;ae)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -472,13 +466,31 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="bddReducedReachability--">
+<a name="bddReducedReachability-org.batfish.question.reducedreachability.DifferentialReachabilityParameters-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>bddReducedReachability</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;bddReducedReachability()</pre>
+<pre><a href="../../../../org/batfish/question/reducedreachability/DifferentialReachabilityResult.html" title="class in org.batfish.question.reducedreachability">DifferentialReachabilityResult</a>&nbsp;bddReducedReachability(<a href="../../../../org/batfish/question/reducedreachability/DifferentialReachabilityParameters.html" title="class in org.batfish.question.reducedreachability">DifferentialReachabilityParameters</a>&nbsp;parameters)</pre>
+</li>
+</ul>
+<a name="buildFlows-java.util.Set-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>buildFlows</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;&nbsp;buildFlows(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
+                                       boolean&nbsp;ignoreAcls)</pre>
+<div class="block">Given a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s it populates the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for them</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>flows</code> - <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s for which <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s are to be found</dd>
+<dd><code>ignoreAcls</code> - if true, ACLs encountered while building the <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s are ignored</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util"><code>SortedMap</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a> to <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s</dd>
+</dl>
 </li>
 </ul>
 <a name="checkDataPlane--">
@@ -490,13 +502,13 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <pre>void&nbsp;checkDataPlane()</pre>
 </li>
 </ul>
-<a name="checkEnvironmentExists--">
+<a name="checkSnapshotOutputReady--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>checkEnvironmentExists</h4>
-<pre>void&nbsp;checkEnvironmentExists()</pre>
+<h4>checkSnapshotOutputReady</h4>
+<pre>void&nbsp;checkSnapshotOutputReady()</pre>
 </li>
 </ul>
 <a name="computeDataPlane-boolean-">
@@ -567,7 +579,7 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getContainerName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContainerName()</pre>
+<pre><a href="../../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;getContainerName()</pre>
 </li>
 </ul>
 <a name="getDataPlanePlugin--">
@@ -613,15 +625,6 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <li class="blockList">
 <h4>getFlowTag</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFlowTag()</pre>
-</li>
-</ul>
-<a name="getGrammarSettings--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getGrammarSettings</h4>
-<pre><a href="../../../../org/batfish/grammar/GrammarSettings.html" title="interface in org.batfish.grammar">GrammarSettings</a>&nbsp;getGrammarSettings()</pre>
 </li>
 </ul>
 <a name="getHistory--">
@@ -681,13 +684,13 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;roleDimension)</pre>
 </li>
 </ul>
-<a name="getQuestionTemplates--">
+<a name="getQuestionTemplates-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getQuestionTemplates</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQuestionTemplates()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQuestionTemplates(boolean&nbsp;verbose)</pre>
 </li>
 </ul>
 <a name="getRoutes-boolean-">
@@ -737,16 +740,7 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>getTestrigName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTestrigName()</pre>
-</li>
-</ul>
-<a name="initBgpAdvertisements-java.util.Map-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>initBgpAdvertisements</h4>
-<pre>void&nbsp;initBgpAdvertisements(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/Configuration.html" title="class in org.batfish.datamodel">Configuration</a>&gt;&nbsp;configurations)</pre>
+<pre><a href="../../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a>&nbsp;getTestrigName()</pre>
 </li>
 </ul>
 <a name="initBgpOriginationSpaceExplicit-java.util.Map-">
@@ -899,13 +893,13 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <pre><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a>&nbsp;pathDiff(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</pre>
 </li>
 </ul>
-<a name="popEnvironment--">
+<a name="popSnapshot--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>popEnvironment</h4>
-<pre>void&nbsp;popEnvironment()</pre>
+<h4>popSnapshot</h4>
+<pre>void&nbsp;popSnapshot()</pre>
 </li>
 </ul>
 <a name="loadExternalBgpAnnouncements-java.util.Map-">
@@ -927,22 +921,22 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
                   boolean&nbsp;ignoreAcls)</pre>
 </li>
 </ul>
-<a name="pushBaseEnvironment--">
+<a name="pushBaseSnapshot--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>pushBaseEnvironment</h4>
-<pre>void&nbsp;pushBaseEnvironment()</pre>
+<h4>pushBaseSnapshot</h4>
+<pre>void&nbsp;pushBaseSnapshot()</pre>
 </li>
 </ul>
-<a name="pushDeltaEnvironment--">
+<a name="pushDeltaSnapshot--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>pushDeltaEnvironment</h4>
-<pre>void&nbsp;pushDeltaEnvironment()</pre>
+<h4>pushDeltaSnapshot</h4>
+<pre>void&nbsp;pushDeltaSnapshot()</pre>
 </li>
 </ul>
 <a name="readExternalBgpAnnouncementsFile--">
@@ -1141,16 +1135,6 @@ extends <a href="../../../../org/batfish/common/plugin/IPluginConsumer.html" tit
 <li class="blockList">
 <h4>standard</h4>
 <pre><a href="../../../../org/batfish/datamodel/answers/AnswerElement.html" title="class in org.batfish.datamodel.answers">AnswerElement</a>&nbsp;standard(<a href="../../../../org/batfish/question/ReachabilityParameters.html" title="class in org.batfish.question">ReachabilityParameters</a>&nbsp;reachabilityParameters)</pre>
-</li>
-</ul>
-<a name="writeDataPlane-org.batfish.datamodel.DataPlane-org.batfish.datamodel.answers.DataPlaneAnswerElement-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>writeDataPlane</h4>
-<pre>void&nbsp;writeDataPlane(<a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dp,
-                    <a href="../../../../org/batfish/datamodel/answers/DataPlaneAnswerElement.html" title="class in org.batfish.datamodel.answers">DataPlaneAnswerElement</a>&nbsp;ae)</pre>
 </li>
 </ul>
 <a name="bddMultipathConsistency--">

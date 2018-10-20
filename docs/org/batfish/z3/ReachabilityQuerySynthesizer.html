@@ -161,7 +161,7 @@ extends <a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.html#Z:Z_headerSpace">_headerSpace</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -195,7 +195,7 @@ extends <a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.html#ReachabilityQuerySynthesizer-org.batfish.datamodel.HeaderSpace-java.util.Map-org.batfish.question.SrcNattedConstraint-java.util.Set-java.util.Set-">ReachabilityQuerySynthesizer</a></span>(<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/ReachabilityQuerySynthesizer.html#ReachabilityQuerySynthesizer-org.batfish.datamodel.acl.AclLineMatchExpr-java.util.Map-org.batfish.question.SrcNattedConstraint-java.util.Set-java.util.Set-">ReachabilityQuerySynthesizer</a></span>(<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;headerSpace,
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&nbsp;srcIpConstraints,
                             <a href="../../../org/batfish/question/SrcNattedConstraint.html" title="enum in org.batfish.question">SrcNattedConstraint</a>&nbsp;srcNatted,
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;transitNodes,
@@ -267,7 +267,7 @@ extends <a href="../../../org/batfish/z3/BaseQuerySynthesizer.html" title="class
 <li class="blockList">
 <h4>_headerSpace</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-protected final&nbsp;<a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a> _headerSpace</pre>
+protected final&nbsp;<a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a> _headerSpace</pre>
 </li>
 </ul>
 <a name="Z:Z_srcIpConstraints">
@@ -318,14 +318,14 @@ protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/uti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ReachabilityQuerySynthesizer-org.batfish.datamodel.HeaderSpace-java.util.Map-org.batfish.question.SrcNattedConstraint-java.util.Set-java.util.Set-">
+<a name="ReachabilityQuerySynthesizer-org.batfish.datamodel.acl.AclLineMatchExpr-java.util.Map-org.batfish.question.SrcNattedConstraint-java.util.Set-java.util.Set-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ReachabilityQuerySynthesizer</h4>
 <pre>public&nbsp;ReachabilityQuerySynthesizer(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                                    <a href="../../../org/batfish/datamodel/HeaderSpace.html" title="class in org.batfish.datamodel">HeaderSpace</a>&nbsp;headerSpace,
+                                    <a href="../../../org/batfish/datamodel/acl/AclLineMatchExpr.html" title="class in org.batfish.datamodel.acl">AclLineMatchExpr</a>&nbsp;headerSpace,
                                     <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&nbsp;srcIpConstraints,
                                     <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>

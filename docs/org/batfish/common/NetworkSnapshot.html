@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">NetworkSnapshot</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">A <a href="../../../org/batfish/common/NetworkSnapshot.html" title="class in org.batfish.common"><code>NetworkSnapshot</code></a> represents a <a href="../../../org/batfish/common/Snapshot.html" title="class in org.batfish.common"><code>Snapshot</code></a> in a specific network.</div>
+<div class="block">A <a href="../../../org/batfish/common/NetworkSnapshot.html" title="class in org.batfish.common"><code>NetworkSnapshot</code></a> represents a <a href="../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers"><code>snapshot</code></a> in a specific <a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers"><code>network</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -129,8 +129,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/common/NetworkSnapshot.html#NetworkSnapshot-java.lang.String-org.batfish.common.Snapshot-">NetworkSnapshot</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
-               <a href="../../../org/batfish/common/Snapshot.html" title="class in org.batfish.common">Snapshot</a>&nbsp;snapshot)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/common/NetworkSnapshot.html#NetworkSnapshot-org.batfish.identifiers.NetworkId-org.batfish.identifiers.SnapshotId-">NetworkSnapshot</a></span>(<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;network,
+               <a href="../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a>&nbsp;snapshot)</code>
 <div class="block">Returns a new <a href="../../../org/batfish/common/NetworkSnapshot.html" title="class in org.batfish.common"><code>NetworkSnapshot</code></a> corresponding to the given <code>network</code> and <code>snapshot</code>.</div>
 </td>
 </tr>
@@ -154,11 +154,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/NetworkSnapshot.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/NetworkSnapshot.html#getNetwork--">getNetwork</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../org/batfish/common/Snapshot.html" title="class in org.batfish.common">Snapshot</a></code></td>
+<td class="colFirst"><code><a href="../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/common/NetworkSnapshot.html#getSnapshot--">getSnapshot</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -191,16 +191,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="NetworkSnapshot-java.lang.String-org.batfish.common.Snapshot-">
+<a name="NetworkSnapshot-org.batfish.identifiers.NetworkId-org.batfish.identifiers.SnapshotId-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>NetworkSnapshot</h4>
 <pre>public&nbsp;NetworkSnapshot(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;network,
+                       <a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;network,
                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                       <a href="../../../org/batfish/common/Snapshot.html" title="class in org.batfish.common">Snapshot</a>&nbsp;snapshot)</pre>
+                       <a href="../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a>&nbsp;snapshot)</pre>
 <div class="block">Returns a new <a href="../../../org/batfish/common/NetworkSnapshot.html" title="class in org.batfish.common"><code>NetworkSnapshot</code></a> corresponding to the given <code>network</code> and <code>snapshot</code>.</div>
 </li>
 </ul>
@@ -218,7 +218,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getNetwork</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNetwork()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/identifiers/NetworkId.html" title="class in org.batfish.identifiers">NetworkId</a>&nbsp;getNetwork()</pre>
 </li>
 </ul>
 <a name="getSnapshot--">
@@ -227,7 +227,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSnapshot</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/common/Snapshot.html" title="class in org.batfish.common">Snapshot</a>&nbsp;getSnapshot()</pre>
+<pre>public&nbsp;<a href="../../../org/batfish/identifiers/SnapshotId.html" title="class in org.batfish.identifiers">SnapshotId</a>&nbsp;getSnapshot()</pre>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">

@@ -112,10 +112,11 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public final class <span class="typeNameLabel">IpLink</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public final class <span class="typeNameLabel">IpLink</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&gt;</pre>
-<div class="block">Represents a link by a pair of IP addresses.</div>
+<div class="block">Represents a Layer 3 link by a pair of IP addresses.</div>
 </li>
 </ul>
 </div>
@@ -135,7 +136,9 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/IpLink.html#IpLink-org.batfish.datamodel.Ip-org.batfish.datamodel.Ip-">IpLink</a></span>(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip1,
-      <a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip2)</code>&nbsp;</td>
+      <a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip2)</code>
+<div class="block">Create a new IpLink based on two IP addresses.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -154,7 +157,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/IpLink.html#compareTo-org.batfish.datamodel.IpLink-">compareTo</a></span>(<a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/IpLink.html#compareTo-org.batfish.datamodel.IpLink-">compareTo</a></span>(<a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -204,8 +207,11 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IpLink</h4>
-<pre>public&nbsp;IpLink(<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip1,
+<pre>public&nbsp;IpLink(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+              <a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip1,
+              <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
               <a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;ip2)</pre>
+<div class="block">Create a new IpLink based on two IP addresses.</div>
 </li>
 </ul>
 </li>
@@ -222,7 +228,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockList">
 <li class="blockList">
 <h4>getIp1</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getIp1()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getIp1()</pre>
 </li>
 </ul>
 <a name="getIp2--">
@@ -231,7 +238,8 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockList">
 <li class="blockList">
 <h4>getIp2</h4>
-<pre>public&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getIp2()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../org/batfish/datamodel/Ip.html" title="class in org.batfish.datamodel">Ip</a>&nbsp;getIp2()</pre>
 </li>
 </ul>
 <a name="compareTo-org.batfish.datamodel.IpLink-">
@@ -241,7 +249,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <li class="blockList">
 <h4>compareTo</h4>
 <pre>public&nbsp;int&nbsp;compareTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                     <a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&nbsp;o)</pre>
+                     <a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&nbsp;other)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true#compareTo-T-" title="class or interface in java.lang">compareTo</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../org/batfish/datamodel/IpLink.html" title="class in org.batfish.datamodel">IpLink</a>&gt;</code></dd>

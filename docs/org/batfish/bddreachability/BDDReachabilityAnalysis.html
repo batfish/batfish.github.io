@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../org/batfish/bddreachability/BDDMultipathInconsistency.html" title="class in org.batfish.bddreachability"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysisFactory.html" title="class in org.batfish.bddreachability"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -116,7 +116,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  particular, the graph nodes are <a href="../../../org/batfish/z3/expr/StateExpr.html" title="class in org.batfish.z3.expr"><code>StateExprs</code></a> and the edges are mostly the same as
  the NOD program rules/transitions. <code>BDDs</code> label the nodes and edges of the graph. A
  node label represent the set of packets that can reach that node, and an edge label represents
- the set of packets that can traverse the edge.
+ the set of packets that can traverse the edge. There is a single designated <a href="../../../org/batfish/z3/state/Query.html" title="class in org.batfish.z3.state"><code>Query</code></a>
+ StateExpr that we compute reachability sets (i.e. sets of packets that reach the query state).
+ The query state never has any out-edges, and has in-edges from the dispositions of interest.
 
  <p>The two main departures from the NOD program are: 1) ACLs are encoded as a single BDD that
  labels an edge (rather than a series of states/transitions in NOD programs). 2) Source NAT is
@@ -127,11 +129,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p>We currently implement backward all-pairs reachability. Forward reachability is useful for
  questions with a tight source constraint, e.g. "find me packets send from node A that get
  dropped". When reasoning about many sources simultaneously, we have to somehow remember the
- source, which is very expensive for a large number of sources. Something like multipath
- consistency -- "find me a packet and a node such that when the node sends the packet, it can be
- either accepted and dropped" -- for which there are many sources but only a few sinks (<a href="../../../org/batfish/z3/state/Accept.html" title="class in org.batfish.z3.state"><code>Accept</code></a>, <a href="../../../org/batfish/z3/state/Drop.html" title="class in org.batfish.z3.state"><code>Drop</code></a>, and <a href="../../../org/batfish/z3/state/NeighborUnreachable.html" title="class in org.batfish.z3.state"><code>NeighborUnreachable</code></a>), backward reachability is much more
- efficient. We still have to remember the sinks, but there's only ever 3 of those, no matter how
- many sources there are.</div>
+ source, which is very expensive for a large number of sources. For queries that have to consider
+ all packets that can reach the query state, backward reachability is much more efficient.</div>
 </li>
 </ul>
 </div>
@@ -151,12 +150,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,net.sf.javabdd.BDD&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysis.html#getIngressLocationAcceptBDDs--">getIngressLocationAcceptBDDs</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysis.html#getBDDPacket--">getBDDPacket</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysis.html#multipathInconsistencies-java.lang.String-">multipathInconsistencies</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;flowTag)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,net.sf.javabdd.BDD&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysis.html#getIngressLocationReachableBDDs--">getIngressLocationReachableBDDs</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -180,22 +179,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getIngressLocationAcceptBDDs--">
+<a name="getBDDPacket--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIngressLocationAcceptBDDs</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,net.sf.javabdd.BDD&gt;&nbsp;getIngressLocationAcceptBDDs()</pre>
+<h4>getBDDPacket</h4>
+<pre>public&nbsp;<a href="../../../org/batfish/common/bdd/BDDPacket.html" title="class in org.batfish.common.bdd">BDDPacket</a>&nbsp;getBDDPacket()</pre>
 </li>
 </ul>
-<a name="multipathInconsistencies-java.lang.String-">
+<a name="getIngressLocationReachableBDDs--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>multipathInconsistencies</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;multipathInconsistencies(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;flowTag)</pre>
+<h4>getIngressLocationReachableBDDs</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../org/batfish/z3/IngressLocation.html" title="class in org.batfish.z3">IngressLocation</a>,net.sf.javabdd.BDD&gt;&nbsp;getIngressLocationReachableBDDs()</pre>
 </li>
 </ul>
 </li>
@@ -225,7 +224,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../org/batfish/bddreachability/BDDMultipathInconsistency.html" title="class in org.batfish.bddreachability"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../org/batfish/bddreachability/BDDReachabilityAnalysisFactory.html" title="class in org.batfish.bddreachability"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

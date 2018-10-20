@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/role/NodeRoleDimension.Type.html" title="enum in org.batfish.role"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/role/OutliersHypothesis.html" title="enum in org.batfish.role"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/role/NodeRolesData.Builder.html" title="class in org.batfish.role"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/role/NodeRolesData.html" target="_top">Frames</a></li>
@@ -73,15 +73,15 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -108,7 +108,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">NodeRolesData</span>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
+public class <span class="typeNameLabel">NodeRolesData</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Class that captures the node roles</div>
 </li>
@@ -117,21 +118,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<!-- ======== NESTED CLASS SUMMARY ======== -->
 <ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
+<li class="blockList"><a name="nested.class.summary">
 <!--   -->
 </a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#NodeRolesData-java.lang.String-java.time.Instant-java.util.SortedSet-">NodeRolesData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultDimension,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a>&nbsp;lastModifiedTime,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;roleDimensions)</code>&nbsp;</td>
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.Builder.html" title="class in org.batfish.role">NodeRolesData.Builder</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -149,57 +150,34 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="../../../org/batfish/role/NodeRolesData.Builder.html" title="class in org.batfish.role">NodeRolesData.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#builder--">builder</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getDefaultDimension--">getDefaultDimension</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getLastModifiedTime--">getLastModifiedTime</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimension-java.nio.file.Path-java.lang.String-">getNodeRoleDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimension-java.lang.String-">getNodeRoleDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>
 <div class="block">Get the <a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role"><code>NodeRoleDimension</code></a> object for the specified dimension.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimension-java.lang.String-">getNodeRoleDimension</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</code>
-<div class="block">Returns the specified dimension in this NodeRolesData object</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimensions--">getNodeRoleDimensions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#mergeNodeRoleDimensions-java.nio.file.Path-java.util.SortedSet-java.lang.String-boolean-">mergeNodeRoleDimensions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;newDimensions,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultDimension,
-                       boolean&nbsp;deleteAutoFirst)</code>
-<div class="block">Merge the dimensions in current file with new data.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role">NodeRolesData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#read-java.nio.file.Path-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath)</code>
-<div class="block">Reads the <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role"><code>NodeRolesData</code></a> object from the provided Path.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#write-org.batfish.role.NodeRolesData-java.nio.file.Path-">write</a></span>(<a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role">NodeRolesData</a>&nbsp;data,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath)</code>&nbsp;</td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/role/NodeRolesData.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -207,7 +185,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -217,38 +195,30 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="NodeRolesData-java.lang.String-java.time.Instant-java.util.SortedSet-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>NodeRolesData</h4>
-<pre>public&nbsp;NodeRolesData(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultDimension,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a>&nbsp;lastModifiedTime,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;roleDimensions)</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="builder--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>builder</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../org/batfish/role/NodeRolesData.Builder.html" title="class in org.batfish.role">NodeRolesData.Builder</a>&nbsp;builder()</pre>
+</li>
+</ul>
 <a name="equals-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -261,16 +231,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultDimension</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultDimension()</pre>
-</li>
-</ul>
-<a name="getLastModifiedTime--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getLastModifiedTime</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html?is-external=true" title="class or interface in java.time">Instant</a>&nbsp;getLastModifiedTime()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultDimension()</pre>
 </li>
 </ul>
 <a name="getNodeRoleDimension-java.lang.String-">
@@ -279,24 +241,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getNodeRoleDimension</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)</pre>
-<div class="block">Returns the specified dimension in this NodeRolesData object</div>
-</li>
-</ul>
-<a name="getNodeRoleDimension-java.nio.file.Path-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getNodeRoleDimension</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath,
-                                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)
-                                                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimension(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dimension)
+                                                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Get the <a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role"><code>NodeRoleDimension</code></a> object for the specified dimension. If dimension is null,
- returns <a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimension-java.nio.file.Path-"><code>getNodeRoleDimension(Path)</code></a>.</div>
+ returns <a href="../../../org/batfish/role/NodeRolesData.html#getNodeRoleDimension--"><code>getNodeRoleDimension()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dataPath</code> - Path from where to read <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role"><code>NodeRolesData</code></a></dd>
 <dd><code>dimension</code> - The name of the dimension to fetch</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role"><code>NodeRoleDimension</code></a> object if one exists or throws <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NoSuchElementException.html?is-external=true" title="class or interface in java.util"><code>NoSuchElementException</code></a> if <code>dimension</code> is non-null and not found.</dd>
@@ -311,7 +263,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getNodeRoleDimensions</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimensions()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;getNodeRoleDimensions()</pre>
 </li>
 </ul>
 <a name="hashCode--">
@@ -327,63 +280,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
-<a name="mergeNodeRoleDimensions-java.nio.file.Path-java.util.SortedSet-java.lang.String-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>mergeNodeRoleDimensions</h4>
-<pre>public static&nbsp;void&nbsp;mergeNodeRoleDimensions(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../org/batfish/role/NodeRoleDimension.html" title="class in org.batfish.role">NodeRoleDimension</a>&gt;&nbsp;newDimensions,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultDimension,
-                                           boolean&nbsp;deleteAutoFirst)
-                                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block">Merge the dimensions in current file with new data. If the same dimension is present in both
- data sources, the new data wins. If defaultDimension is non-null, it is deemed as the default
- dimension. Optionally, delete all dimensions of type AUTO before adding new data.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dataPath</code> - Location of the old data</dd>
-<dd><code>newDimensions</code> - The new role data. Null values are treated as if the map were empty.</dd>
-<dd><code>defaultDimension</code> - Dimension to deem as default after merger</dd>
-<dd><code>deleteAutoFirst</code> - If dimensions of type AUTO should be deleted first</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="read-java.nio.file.Path-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>read</h4>
-<pre>public static&nbsp;<a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role">NodeRolesData</a>&nbsp;read(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath)
-                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<div class="block">Reads the <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role"><code>NodeRolesData</code></a> object from the provided Path. If the path does not exist,
- initializes a new object.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dataPath</code> - The Path to read from</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The read data</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - If file exists but its contents could not be cast to <a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role"><code>NodeRolesData</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="write-org.batfish.role.NodeRolesData-java.nio.file.Path-">
+<a name="toString--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>write</h4>
-<pre>public static&nbsp;void&nbsp;write(<a href="../../../org/batfish/role/NodeRolesData.html" title="class in org.batfish.role">NodeRolesData</a>&nbsp;data,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>&nbsp;dataPath)
-                  throws com.fasterxml.jackson.core.JsonProcessingException</pre>
+<h4>toString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>com.fasterxml.jackson.core.JsonProcessingException</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -415,7 +321,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../org/batfish/role/NodeRoleDimension.Type.html" title="enum in org.batfish.role"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../org/batfish/role/OutliersHypothesis.html" title="enum in org.batfish.role"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/batfish/role/NodeRolesData.Builder.html" title="class in org.batfish.role"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/batfish/role/NodeRolesData.html" target="_top">Frames</a></li>
@@ -439,15 +345,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
