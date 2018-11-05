@@ -94,15 +94,6 @@
 <div class="block"><span class="deprecationComment">in favor of <a href="org/batfish/question/bgpsessionstatus/BgpSessionStatusPlugin.html" title="class in org.batfish.question.bgpsessionstatus"><code>BgpSessionStatusPlugin</code></a></span></div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colOne"><a href="org/batfish/question/TracerouteQuestionPlugin.html" title="class in org.batfish.question">org.batfish.question.TracerouteQuestionPlugin</a></td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><a href="org/batfish/question/TracerouteQuestionPlugin.TracerouteAnswerer.html" title="class in org.batfish.question">org.batfish.question.TracerouteQuestionPlugin.TracerouteAnswerer</a></td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><a href="org/batfish/question/TracerouteQuestionPlugin.TracerouteQuestion.html" title="class in org.batfish.question">org.batfish.question.TracerouteQuestionPlugin.TracerouteQuestion</a></td>
-</tr>
 </tbody>
 </table>
 </li>
@@ -181,6 +172,16 @@
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrServiceV2.html#getContainers--">org.batfish.coordinator.WorkMgrServiceV2.getContainers()</a></td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><a href="org/batfish/datamodel/Edge.html#getInterface1--">org.batfish.datamodel.Edge.getInterface1()</a>
+<div class="block"><span class="deprecationComment">Use <a href="org/batfish/datamodel/Edge.html#getTail--"><code>Edge.getTail()</code></a></span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/batfish/datamodel/Edge.html#getInterface2--">org.batfish.datamodel.Edge.getInterface2()</a>
+<div class="block"><span class="deprecationComment">Use <a href="org/batfish/datamodel/Edge.html#getHead--"><code>Edge.getHead()</code></a></span></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/datamodel/Configuration.html#getInterfaces--">org.batfish.datamodel.Configuration.getInterfaces()</a></td>
 </tr>
 <tr class="rowColor">
@@ -196,79 +197,84 @@
 <td class="colOne"><a href="org/batfish/datamodel/table/Row.html#getKey-org.batfish.datamodel.table.TableMetadata-">org.batfish.datamodel.table.Row.getKey(TableMetadata)</a></td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="org/batfish/datamodel/ospf/OspfArea.html#getName--">org.batfish.datamodel.ospf.OspfArea.getName()</a>
+<div class="block"><span class="deprecationComment">Use <a href="org/batfish/datamodel/ospf/OspfArea.html#getAreaNumber--"><code>OspfArea.getAreaNumber()</code></a></span></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#getObject-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.getObject(String, String, String, String, String, String, String)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#getQuestionTemplates-java.lang.String-">org.batfish.coordinator.WorkMgrService.getQuestionTemplates(String)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgr.html#getTestrigInfo-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgr.getTestrigInfo(String, String)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgr.html#getTestrigObject-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgr.getTestrigObject(String, String, String)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/datamodel/table/Row.html#getValue-org.batfish.datamodel.table.TableMetadata-">org.batfish.datamodel.table.Row.getValue(TableMetadata)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#initContainer-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.initContainer(String, String, String, String)</a>
 <div class="block"><span class="deprecationComment">because containers were renamed to networks. Use <a href="org/batfish/coordinator/WorkMgrService.html#initNetwork-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>initNetwork</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#listContainers-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.listContainers(String, String)</a>
 <div class="block"><span class="deprecationComment">because containers were renamed to networks. Use <a href="org/batfish/coordinator/WorkMgrService.html#listNetworks-java.lang.String-java.lang.String-"><code>listNetworks</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#listSnapshots-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.listSnapshots(String, String, String, String)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#listTestrigs-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.listTestrigs(String, String, String)</a>
 <div class="block"><span class="deprecationComment">because testrigs were renamed to snapshots. Use <a href="org/batfish/coordinator/WorkMgrService.html#listSnapshots-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>listSnapshots</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgr.html#putObject-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-">org.batfish.coordinator.WorkMgr.putObject(String, String, String, InputStream)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#putObject-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-">org.batfish.coordinator.WorkMgrService.putObject(String, String, String, String, String, String, String, InputStream)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrServiceV2.html#redirectContainer--">org.batfish.coordinator.WorkMgrServiceV2.redirectContainer()</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/datamodel/questions/Question.InstanceData.Variable.html#setAllowedValues-java.util.SortedSet-">org.batfish.datamodel.questions.Question.InstanceData.Variable.setAllowedValues(SortedSet&lt;String&gt;)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/datamodel/ospf/OspfNeighbor.html#setIface-org.batfish.datamodel.Interface-">org.batfish.datamodel.ospf.OspfNeighbor.setIface(Interface)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/datamodel/Interface.html#setIsisCost-java.lang.Integer-">org.batfish.datamodel.Interface.setIsisCost(Integer)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/datamodel/Interface.html#setIsisL1InterfaceMode-org.batfish.datamodel.isis.IsisInterfaceMode-">org.batfish.datamodel.Interface.setIsisL1InterfaceMode(IsisInterfaceMode)</a></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/datamodel/Interface.html#setIsisL2InterfaceMode-org.batfish.datamodel.isis.IsisInterfaceMode-">org.batfish.datamodel.Interface.setIsisL2InterfaceMode(IsisInterfaceMode)</a></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/datamodel/IpsecProposal.html#setProtocol-org.batfish.datamodel.IpsecProtocol-">org.batfish.datamodel.IpsecProposal.setProtocol(IpsecProtocol)</a>
 <div class="block"><span class="deprecationComment">Use <a href="org/batfish/datamodel/IpsecProposal.html#setProtocols-java.util.SortedSet-"><code>IpsecProposal.setProtocols(SortedSet)</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#syncTestrigsSyncNow-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.syncTestrigsSyncNow(String, String, String, String, String)</a>
 <div class="block"><span class="deprecationComment">because testrigs were renamed to snapshots. Use <a href="org/batfish/coordinator/WorkMgrService.html#syncSnapshotsSyncNow-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>syncSnapshots</code></a>
      instead.</span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#syncTestrigsUpdateSettings-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">org.batfish.coordinator.WorkMgrService.syncTestrigsUpdateSettings(String, String, String, String, String)</a>
 <div class="block"><span class="deprecationComment">because testrigs were renamed to snapshots. Use <a href="org/batfish/coordinator/WorkMgrService.html#syncSnapshotsUpdateSettings-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>syncSnapshotsUpdateSettings</code></a> instead.</span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/batfish/coordinator/WorkMgrService.html#uploadTestrig-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-java.lang.String-">org.batfish.coordinator.WorkMgrService.uploadTestrig(String, String, String, String, InputStream, String)</a>
 <div class="block"><span class="deprecationComment">because testrigs were renamed to snapshots. Use <a href="org/batfish/coordinator/WorkMgrService.html#uploadSnapshot-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.io.InputStream-java.lang.String-java.lang.String-"><code>WorkMgrService.uploadSnapshot(String,
      String, String, String, String, String, InputStream, String, String)</code></a> instead.</span></div>

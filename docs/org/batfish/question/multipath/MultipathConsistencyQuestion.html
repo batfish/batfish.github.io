@@ -175,6 +175,10 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/multipath/MultipathConsistencyQuestion.html#MultipathConsistencyQuestion--">MultipathConsistencyQuestion</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/multipath/MultipathConsistencyQuestion.html#MultipathConsistencyQuestion-org.batfish.datamodel.PacketHeaderConstraints-org.batfish.question.specifiers.PathConstraintsInput-">MultipathConsistencyQuestion</a></span>(<a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
+                            <a href="../../../../org/batfish/question/specifiers/PathConstraintsInput.html" title="class in org.batfish.question.specifiers">PathConstraintsInput</a>&nbsp;pathConstraints)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -209,7 +213,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.datamodel.questions.<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></h3>
-<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#isQuestionClass-java.lang.String-">isQuestionClass</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.nio.file.Path-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrint--">prettyPrint</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
+<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrint--">prettyPrint</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -232,6 +236,18 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="MultipathConsistencyQuestion-org.batfish.datamodel.PacketHeaderConstraints-org.batfish.question.specifiers.PathConstraintsInput-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MultipathConsistencyQuestion</h4>
+<pre>public&nbsp;MultipathConsistencyQuestion(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                    <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
+                                    <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                    <a href="../../../../org/batfish/question/specifiers/PathConstraintsInput.html" title="class in org.batfish.question.specifiers">PathConstraintsInput</a>&nbsp;pathConstraints)</pre>
+</li>
+</ul>
 <a name="MultipathConsistencyQuestion--">
 <!--   -->
 </a>

@@ -230,7 +230,7 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getNeighborUnreachable--">getNeighborUnreachable</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/z3/SynthesizerInputImpl.html#getNeighborUnreachableOrExitsNetwork--">getNeighborUnreachableOrExitsNetwork</a></span>()</code>
 <div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpConstraintForWhichNoArpReplySent</div>
 </td>
 </tr>
@@ -556,18 +556,18 @@ implements <a href="../../../org/batfish/z3/SynthesizerInput.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="getNeighborUnreachable--">
+<a name="getNeighborUnreachableOrExitsNetwork--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNeighborUnreachable</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&nbsp;getNeighborUnreachable()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachable--">SynthesizerInput</a></code></span></div>
+<h4>getNeighborUnreachableOrExitsNetwork</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/z3/expr/BooleanExpr.html" title="class in org.batfish.z3.expr">BooleanExpr</a>&gt;&gt;&gt;&nbsp;getNeighborUnreachableOrExitsNetwork()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachableOrExitsNetwork--">SynthesizerInput</a></code></span></div>
 <div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpConstraintForWhichNoArpReplySent</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachable--">getNeighborUnreachable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
+<dd><code><a href="../../../org/batfish/z3/SynthesizerInput.html#getNeighborUnreachableOrExitsNetwork--">getNeighborUnreachableOrExitsNetwork</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/batfish/z3/SynthesizerInput.html" title="interface in org.batfish.z3">SynthesizerInput</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -43,7 +43,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/coordinator/resources/FilterGroupBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/coordinator/resources/IssueConfigBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/coordinator/resources/InterfaceGroupBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/coordinator/resources/ForkSnapshotBean.html" target="_top">Frames</a></li>
@@ -153,6 +153,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#restoreInterfaces">restoreInterfaces</a></span></code>
+<div class="block">List of interfaces to restore (undo deactivation)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#restoreLinks">restoreLinks</a></span></code>
+<div class="block">List of links to restore (undo deactivation)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#restoreNodes">restoreNodes</a></span></code>
+<div class="block">List of names of nodes to restore (undo deactivation)</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#zipFile">zipFile</a></span></code>
 <div class="block">Zip file, containing files to write to new snapshot input dir (same format as initial
@@ -174,11 +192,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#ForkSnapshotBean-java.lang.String-java.lang.String-java.util.List-java.util.List-java.util.List-byte:A-">ForkSnapshotBean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseSnapshotName,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/coordinator/resources/ForkSnapshotBean.html#ForkSnapshotBean-java.lang.String-java.lang.String-java.util.List-java.util.List-java.util.List-java.util.List-java.util.List-java.util.List-byte:A-">ForkSnapshotBean</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseSnapshotName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newSnapshotName,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;&nbsp;deactivateInterfacesList,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;deactivateLinksList,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;deactivateNodesList,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;&nbsp;restoreInterfacesList,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;restoreLinksList,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;restoreNodesList,
                 byte[]&nbsp;file)</code>&nbsp;</td>
 </tr>
 </table>
@@ -217,7 +238,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>baseSnapshot</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> baseSnapshot</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> baseSnapshot</pre>
 <div class="block">Name of the snapshot to copy</div>
 </li>
 </ul>
@@ -227,7 +248,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>newSnapshot</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> newSnapshot</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> newSnapshot</pre>
 <div class="block">Name of the snapshot to create</div>
 </li>
 </ul>
@@ -237,7 +258,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>deactivateInterfaces</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt; deactivateInterfaces</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt; deactivateInterfaces</pre>
 <div class="block">List of interfaces to deactivate</div>
 </li>
 </ul>
@@ -247,7 +268,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>deactivateLinks</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt; deactivateLinks</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt; deactivateLinks</pre>
 <div class="block">List of links to deactivate</div>
 </li>
 </ul>
@@ -257,8 +278,38 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>deactivateNodes</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; deactivateNodes</pre>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; deactivateNodes</pre>
 <div class="block">List of names of nodes to deactivate</div>
+</li>
+</ul>
+<a name="restoreInterfaces">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>restoreInterfaces</h4>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt; restoreInterfaces</pre>
+<div class="block">List of interfaces to restore (undo deactivation)</div>
+</li>
+</ul>
+<a name="restoreLinks">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>restoreLinks</h4>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt; restoreLinks</pre>
+<div class="block">List of links to restore (undo deactivation)</div>
+</li>
+</ul>
+<a name="restoreNodes">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>restoreNodes</h4>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; restoreNodes</pre>
+<div class="block">List of names of nodes to restore (undo deactivation)</div>
 </li>
 </ul>
 <a name="zipFile">
@@ -267,7 +318,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>zipFile</h4>
-<pre>public&nbsp;byte[] zipFile</pre>
+<pre>public final&nbsp;byte[] zipFile</pre>
 <div class="block">Zip file, containing files to write to new snapshot input dir (same format as initial
  snapshot-upload-zips)</div>
 </li>
@@ -280,17 +331,29 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ForkSnapshotBean-java.lang.String-java.lang.String-java.util.List-java.util.List-java.util.List-byte:A-">
+<a name="ForkSnapshotBean-java.lang.String-java.lang.String-java.util.List-java.util.List-java.util.List-java.util.List-java.util.List-java.util.List-byte:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ForkSnapshotBean</h4>
-<pre>public&nbsp;ForkSnapshotBean(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseSnapshotName,
+<pre>public&nbsp;ForkSnapshotBean(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseSnapshotName,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newSnapshotName,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;&nbsp;deactivateInterfacesList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;deactivateLinksList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;deactivateNodesList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/collections/NodeInterfacePair.html" title="class in org.batfish.datamodel.collections">NodeInterfacePair</a>&gt;&nbsp;restoreInterfacesList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/Edge.html" title="class in org.batfish.datamodel">Edge</a>&gt;&nbsp;restoreLinksList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;restoreNodesList,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                         byte[]&nbsp;file)</pre>
 </li>
 </ul>
@@ -322,7 +385,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/batfish/coordinator/resources/FilterGroupBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/batfish/coordinator/resources/IssueConfigBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/batfish/coordinator/resources/InterfaceGroupBean.html" title="class in org.batfish.coordinator.resources"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/batfish/coordinator/resources/ForkSnapshotBean.html" target="_top">Frames</a></li>

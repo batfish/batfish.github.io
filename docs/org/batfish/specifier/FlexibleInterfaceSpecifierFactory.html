@@ -121,6 +121,7 @@ implements <a href="../../../org/batfish/specifier/InterfaceSpecifierFactory.htm
  <ul>
    <li>null: returns ShorthandInterfaceSpecifier(InterfacesSpecifier.ALL)
    <li>connectedTo(ip, prefix, or wildcard): returns <a href="../../../org/batfish/specifier/InterfaceWithConnectedIpsSpecifier.html" title="class in org.batfish.specifier"><code>InterfaceWithConnectedIpsSpecifier</code></a>
+   <li><code>ref.interfaceGroup(foo, bar)</code>, which returns <a href="../../../org/batfish/specifier/ReferenceInterfaceGroupInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>ReferenceInterfaceGroupInterfaceSpecifier</code></a>;
    <li>vrf(regex): returns <a href="../../../org/batfish/specifier/VrfNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>VrfNameRegexInterfaceSpecifier</code></a>
    <li>zone(regex): returns <a href="../../../org/batfish/specifier/ZoneNameRegexInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>ZoneNameRegexInterfaceSpecifier</code></a>
    <li>all other inputs go directly to <a href="../../../org/batfish/specifier/ShorthandInterfaceSpecifier.html" title="class in org.batfish.specifier"><code>ShorthandInterfaceSpecifier</code></a>

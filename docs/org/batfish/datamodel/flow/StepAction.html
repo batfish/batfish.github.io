@@ -138,25 +138,64 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#BLOCKED">BLOCKED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#ACCEPTED">ACCEPTED</a></span></code>
+<div class="block">Action if the flow gets accepted at a hop</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#DROPPED">DROPPED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#DELIVERED_TO_SUBNET">DELIVERED_TO_SUBNET</a></span></code>
+<div class="block">Action if the flow gets delivered to subnet from the final hop</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#FORWARDED">FORWARDED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#DENIED">DENIED</a></span></code>
+<div class="block">Action if the flow gets denied at I/P or O/P interface</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#RECEIVED">RECEIVED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#EXITS_NETWORK">EXITS_NETWORK</a></span></code>
+<div class="block">Action if the flow will exit the network from the last hop</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#SENT_IN">SENT_IN</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#FORWARDED">FORWARDED</a></span></code>
+<div class="block">Action if flow gets forwarded from I/P to O/P interface</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#SENT_OUT">SENT_OUT</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#INSUFFICIENT_INFO">INSUFFICIENT_INFO</a></span></code>
+<div class="block">Action if information is insufficient to tell the final fate of the flow</div>
+</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#TERMINATED">TERMINATED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#NEIGHBOR_UNREACHABLE">NEIGHBOR_UNREACHABLE</a></span></code>
+<div class="block">Action when next neighbor is unreachable at the last hop</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#NO_ROUTE">NO_ROUTE</a></span></code>
+<div class="block">Action when no route exists for the given dest IP on a hop</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#NULL_ROUTED">NULL_ROUTED</a></span></code>
+<div class="block">Action when flow will be forwarded to a null interface</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#ORIGINATED">ORIGINATED</a></span></code>
+<div class="block">Action to show the origination of a flow in a virtual router</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#RECEIVED">RECEIVED</a></span></code>
+<div class="block">Action to show the receiving of a flow at a hop</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/flow/StepAction.html#TRANSMITTED">TRANSMITTED</a></span></code>
+<div class="block">Action to show the transmission of a flow from an output interface</div>
+</td>
 </tr>
 </table>
 </li>
@@ -215,22 +254,44 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Enum Constant Detail</h3>
-<a name="BLOCKED">
+<a name="ACCEPTED">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>BLOCKED</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> BLOCKED</pre>
+<h4>ACCEPTED</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> ACCEPTED</pre>
+<div class="block">Action if the flow gets accepted at a hop</div>
 </li>
 </ul>
-<a name="DROPPED">
+<a name="DELIVERED_TO_SUBNET">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>DROPPED</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> DROPPED</pre>
+<h4>DELIVERED_TO_SUBNET</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> DELIVERED_TO_SUBNET</pre>
+<div class="block">Action if the flow gets delivered to subnet from the final hop</div>
+</li>
+</ul>
+<a name="DENIED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DENIED</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> DENIED</pre>
+<div class="block">Action if the flow gets denied at I/P or O/P interface</div>
+</li>
+</ul>
+<a name="EXITS_NETWORK">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EXITS_NETWORK</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> EXITS_NETWORK</pre>
+<div class="block">Action if the flow will exit the network from the last hop</div>
 </li>
 </ul>
 <a name="FORWARDED">
@@ -240,6 +301,57 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>FORWARDED</h4>
 <pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> FORWARDED</pre>
+<div class="block">Action if flow gets forwarded from I/P to O/P interface</div>
+</li>
+</ul>
+<a name="INSUFFICIENT_INFO">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INSUFFICIENT_INFO</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> INSUFFICIENT_INFO</pre>
+<div class="block">Action if information is insufficient to tell the final fate of the flow</div>
+</li>
+</ul>
+<a name="NEIGHBOR_UNREACHABLE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NEIGHBOR_UNREACHABLE</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> NEIGHBOR_UNREACHABLE</pre>
+<div class="block">Action when next neighbor is unreachable at the last hop</div>
+</li>
+</ul>
+<a name="NO_ROUTE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NO_ROUTE</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> NO_ROUTE</pre>
+<div class="block">Action when no route exists for the given dest IP on a hop</div>
+</li>
+</ul>
+<a name="NULL_ROUTED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NULL_ROUTED</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> NULL_ROUTED</pre>
+<div class="block">Action when flow will be forwarded to a null interface</div>
+</li>
+</ul>
+<a name="ORIGINATED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ORIGINATED</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> ORIGINATED</pre>
+<div class="block">Action to show the origination of a flow in a virtual router</div>
 </li>
 </ul>
 <a name="RECEIVED">
@@ -249,33 +361,17 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>RECEIVED</h4>
 <pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> RECEIVED</pre>
+<div class="block">Action to show the receiving of a flow at a hop</div>
 </li>
 </ul>
-<a name="SENT_IN">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SENT_IN</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> SENT_IN</pre>
-</li>
-</ul>
-<a name="SENT_OUT">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SENT_OUT</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> SENT_OUT</pre>
-</li>
-</ul>
-<a name="TERMINATED">
+<a name="TRANSMITTED">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>TERMINATED</h4>
-<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> TERMINATED</pre>
+<h4>TRANSMITTED</h4>
+<pre>public static final&nbsp;<a href="../../../../org/batfish/datamodel/flow/StepAction.html" title="enum in org.batfish.datamodel.flow">StepAction</a> TRANSMITTED</pre>
+<div class="block">Action to show the transmission of a flow from an output interface</div>
 </li>
 </ul>
 </li>
