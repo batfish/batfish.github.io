@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,11 +137,35 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getNeighborUnreachable--">getNeighborUnreachable</a></span>()</code>
-<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpsForWhichNoArpResponse</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getDeliveredToSubnet--">getDeliveredToSubnet</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIPsWhichDeliveredToSubnet</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getExitsNetwork--">getExitsNetwork</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIPsWhichExitsNetwork</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getInsufficientInfo--">getInsufficientInfo</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; outInterface -&gt; dstIpsForWhichNoSufficientInfoToDetermine</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getNeighborUnreachable--">getNeighborUnreachable</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; outInterface -&gt; dstIpsForWhichCannotReachNeighbors</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getNeighborUnreachableOrExitsNetwork--">getNeighborUnreachableOrExitsNetwork</a></span>()</code>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpsForWhichNoArpResponse</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getNullRoutedIps--">getNullRoutedIps</a></span>()</code>
 <div class="block">Mapping: hostname -&gt; vrfName -&gt; nullRoutedIps <br>
@@ -149,7 +173,7 @@ var activeTableTab = "activeTableTab";
  the packet rather than forwarding it out some interface.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/batfish/datamodel/ForwardingAnalysis.html#getRoutableIps--">getRoutableIps</a></span>()</code>
 <div class="block">Mapping: hostname -&gt; vrfName -&gt; routableIps <br>
@@ -191,6 +215,36 @@ var activeTableTab = "activeTableTab";
 <div class="block">Mapping: edge -&gt; dstIpsForWhichArpReplySent</div>
 </li>
 </ul>
+<a name="getNeighborUnreachableOrExitsNetwork--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNeighborUnreachableOrExitsNetwork</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;&nbsp;getNeighborUnreachableOrExitsNetwork()</pre>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpsForWhichNoArpResponse</div>
+</li>
+</ul>
+<a name="getDeliveredToSubnet--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeliveredToSubnet</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;&nbsp;getDeliveredToSubnet()</pre>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIPsWhichDeliveredToSubnet</div>
+</li>
+</ul>
+<a name="getExitsNetwork--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExitsNetwork</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;&nbsp;getExitsNetwork()</pre>
+<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIPsWhichExitsNetwork</div>
+</li>
+</ul>
 <a name="getNeighborUnreachable--">
 <!--   -->
 </a>
@@ -198,7 +252,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getNeighborUnreachable</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;&nbsp;getNeighborUnreachable()</pre>
-<div class="block">Mapping: hostname -&gt; vrfName -&gt; outInterface -&gt; dstIpsForWhichNoArpResponse</div>
+<div class="block">Mapping: hostname -&gt; outInterface -&gt; dstIpsForWhichCannotReachNeighbors</div>
+</li>
+</ul>
+<a name="getInsufficientInfo--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInsufficientInfo</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&gt;&gt;&nbsp;getInsufficientInfo()</pre>
+<div class="block">Mapping: hostname -&gt; outInterface -&gt; dstIpsForWhichNoSufficientInfoToDetermine</div>
 </li>
 </ul>
 <a name="getNullRoutedIps--">

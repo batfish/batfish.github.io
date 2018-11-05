@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,8 +168,9 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersReachabilityQuestion.html#SpecifiersReachabilityQuestion-org.batfish.question.specifiers.DispositionSpecifier-org.batfish.datamodel.PacketHeaderConstraints-org.batfish.question.specifiers.PathConstraintsInput-">SpecifiersReachabilityQuestion</a></span>(<a href="../../../../org/batfish/question/specifiers/DispositionSpecifier.html" title="class in org.batfish.question.specifiers">DispositionSpecifier</a>&nbsp;actions,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersReachabilityQuestion.html#SpecifiersReachabilityQuestion-org.batfish.question.specifiers.DispositionSpecifier-org.batfish.datamodel.PacketHeaderConstraints-java.lang.Boolean-org.batfish.question.specifiers.PathConstraintsInput-">SpecifiersReachabilityQuestion</a></span>(<a href="../../../../org/batfish/question/specifiers/DispositionSpecifier.html" title="class in org.batfish.question.specifiers">DispositionSpecifier</a>&nbsp;actions,
                               <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
+                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;ignoreFilters,
                               <a href="../../../../org/batfish/question/specifiers/PathConstraintsInput.html" title="class in org.batfish.question.specifiers">PathConstraintsInput</a>&nbsp;pathConstraints)</code>
 <div class="block">Create a new reachability question.</div>
 </td>
@@ -204,6 +205,10 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersReachabilityQuestion.html#getHeaderConstraints--">getHeaderConstraints</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersReachabilityQuestion.html#getIgnoreFilters--">getIgnoreFilters</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/specifiers/SpecifiersReachabilityQuestion.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the short name of this question, used in place of the classname to identify this
@@ -216,7 +221,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.datamodel.questions.<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></h3>
-<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#isQuestionClass-java.lang.String-">isQuestionClass</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.nio.file.Path-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrint--">prettyPrint</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
+<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrint--">prettyPrint</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -239,7 +244,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpecifiersReachabilityQuestion-org.batfish.question.specifiers.DispositionSpecifier-org.batfish.datamodel.PacketHeaderConstraints-org.batfish.question.specifiers.PathConstraintsInput-">
+<a name="SpecifiersReachabilityQuestion-org.batfish.question.specifiers.DispositionSpecifier-org.batfish.datamodel.PacketHeaderConstraints-java.lang.Boolean-org.batfish.question.specifiers.PathConstraintsInput-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -250,6 +255,8 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
                                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                       <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
                                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&nbsp;ignoreFilters,
+                                      <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                       <a href="../../../../org/batfish/question/specifiers/PathConstraintsInput.html" title="class in org.batfish.question.specifiers">PathConstraintsInput</a>&nbsp;pathConstraints)</pre>
 <div class="block">Create a new reachability question. <code>null</code> values result in default parameter values.</div>
 <dl>
@@ -257,6 +264,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <dd><code>actions</code> - set of actions/flow dispositions to search for (default is <code>success</code>)</dd>
 <dd><code>headerConstraints</code> - header constraints that constrain the search space of valid flows.
      Default is unconstrained.</dd>
+<dd><code>ignoreFilters</code> - whether to ignore ingress and egress ACLs.</dd>
 <dd><code>pathConstraints</code> - path constraints dictating where a flow can originate/terminate/transit.
      Default is unconstrained.</dd>
 </dl>
@@ -288,6 +296,15 @@ public&nbsp;<a href="../../../../org/batfish/question/specifiers/DispositionSpec
 <h4>getHeaderConstraints</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;getHeaderConstraints()</pre>
+</li>
+</ul>
+<a name="getIgnoreFilters--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIgnoreFilters</h4>
+<pre>public&nbsp;boolean&nbsp;getIgnoreFilters()</pre>
 </li>
 </ul>
 <a name="getDataPlane--">

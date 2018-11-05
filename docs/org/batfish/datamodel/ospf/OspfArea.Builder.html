@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -119,6 +119,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public static class <span class="typeNameLabel">OspfArea.Builder</span>
 extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactoryBuilder.html" title="class in org.batfish.datamodel">NetworkFactory.NetworkFactoryBuilder</a>&lt;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.html" title="class in org.batfish.datamodel.ospf">OspfArea</a>&gt;</pre>
+<div class="block">A builder for <a href="../../../../org/batfish/datamodel/ospf/OspfArea.html" title="class in org.batfish.datamodel.ospf"><code>OspfArea</code></a></div>
 </li>
 </ul>
 </div>
@@ -138,32 +139,93 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.html" title="class in org.batfish.datamodel.ospf">OspfArea</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#build--">build</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#addInterface-java.lang.String-">addInterface</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNonStub--">setNonStub</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#addInterfaces-java.util.Collection-">addInterfaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNssa-org.batfish.datamodel.ospf.NssaSettings-">setNssa</a></span>(<a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#addSummaries-java.util.Map-">addSummaries</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&nbsp;summaries)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNumber-java.lang.Long-">setNumber</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#addSummary-org.batfish.datamodel.Prefix-org.batfish.datamodel.ospf.OspfAreaSummary-">addSummary</a></span>(<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
+          <a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&nbsp;summary)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setOspfProcess-org.batfish.datamodel.ospf.OspfProcess-">setOspfProcess</a></span>(<a href="../../../../org/batfish/datamodel/ospf/OspfProcess.html" title="class in org.batfish.datamodel.ospf">OspfProcess</a>&nbsp;ospfProcess)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.html" title="class in org.batfish.datamodel.ospf">OspfArea</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#build--">build</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setStub-org.batfish.datamodel.ospf.StubSettings-">setStub</a></span>(<a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stub)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setInjectDefaultRoute-boolean-">setInjectDefaultRoute</a></span>(boolean&nbsp;injectDefaultRoute)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setInterfaces-java.util.Collection-">setInterfaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</code>
+<div class="block">Replace all interfaces in the area</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setMetricOfDefaultRoute-int-">setMetricOfDefaultRoute</a></span>(int&nbsp;metricOfDefaultRoute)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNonStub--">setNonStub</a></span>()</code>
+<div class="block">Remove any stub settings, make this area not a Stub of any type</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNssa-org.batfish.datamodel.ospf.NssaSettings-">setNssa</a></span>(<a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</code>
+<div class="block">Set this area to be a not-so-stubby area with given settings, erase any other stub settings</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNssaSettings-org.batfish.datamodel.ospf.NssaSettings-">setNssaSettings</a></span>(<a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</code>
+<div class="block">Set the not-so-stubby settings only</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setNumber-long-">setNumber</a></span>(long&nbsp;number)</code>
+<div class="block">Set the area number</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setOspfProcess-org.batfish.datamodel.ospf.OspfProcess-">setOspfProcess</a></span>(<a href="../../../../org/batfish/datamodel/ospf/OspfProcess.html" title="class in org.batfish.datamodel.ospf">OspfProcess</a>&nbsp;ospfProcess)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setStub-org.batfish.datamodel.ospf.StubSettings-">setStub</a></span>(<a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stub)</code>
+<div class="block">Set this area to be a stub area with given settings, erase any NSSA settings</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setStubSettings-org.batfish.datamodel.ospf.StubSettings-">setStubSettings</a></span>(<a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stubSettings)</code>
+<div class="block">Set Stub settings only</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setStubType-org.batfish.datamodel.ospf.StubType-">setStubType</a></span>(<a href="../../../../org/batfish/datamodel/ospf/StubType.html" title="enum in org.batfish.datamodel.ospf">StubType</a>&nbsp;stubType)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setSummaries-java.util.Map-">setSummaries</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&nbsp;summaries)</code>
+<div class="block">Replace the area summaries</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html#setSummaryFilter-java.lang.String-">setSummaryFilter</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;summaryFilter)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -207,6 +269,77 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 </dl>
 </li>
 </ul>
+<a name="setInjectDefaultRoute-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInjectDefaultRoute</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setInjectDefaultRoute(boolean&nbsp;injectDefaultRoute)</pre>
+</li>
+</ul>
+<a name="addInterface-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addInterface</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;addInterface(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;interfaceName)</pre>
+</li>
+</ul>
+<a name="addInterfaces-java.util.Collection-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addInterfaces</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;addInterfaces(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</pre>
+</li>
+</ul>
+<a name="addSummary-org.batfish.datamodel.Prefix-org.batfish.datamodel.ospf.OspfAreaSummary-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSummary</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;addSummary(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                   <a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>&nbsp;prefix,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                   <a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&nbsp;summary)</pre>
+</li>
+</ul>
+<a name="addSummaries-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSummaries</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;addSummaries(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&nbsp;summaries)</pre>
+</li>
+</ul>
+<a name="setInterfaces-java.util.Collection-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInterfaces</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setInterfaces(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;interfaces)</pre>
+<div class="block">Replace all interfaces in the area</div>
+</li>
+</ul>
+<a name="setMetricOfDefaultRoute-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMetricOfDefaultRoute</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setMetricOfDefaultRoute(int&nbsp;metricOfDefaultRoute)</pre>
+</li>
+</ul>
 <a name="setNonStub--">
 <!--   -->
 </a>
@@ -214,6 +347,7 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 <li class="blockList">
 <h4>setNonStub</h4>
 <pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNonStub()</pre>
+<div class="block">Remove any stub settings, make this area not a Stub of any type</div>
 </li>
 </ul>
 <a name="setNssa-org.batfish.datamodel.ospf.NssaSettings-">
@@ -222,16 +356,30 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 <ul class="blockList">
 <li class="blockList">
 <h4>setNssa</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNssa(<a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNssa(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                <a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</pre>
+<div class="block">Set this area to be a not-so-stubby area with given settings, erase any other stub settings</div>
 </li>
 </ul>
-<a name="setNumber-java.lang.Long-">
+<a name="setNssaSettings-org.batfish.datamodel.ospf.NssaSettings-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNssaSettings</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNssaSettings(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                        <a href="../../../../org/batfish/datamodel/ospf/NssaSettings.html" title="class in org.batfish.datamodel.ospf">NssaSettings</a>&nbsp;nssa)</pre>
+<div class="block">Set the not-so-stubby settings only</div>
+</li>
+</ul>
+<a name="setNumber-long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setNumber</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNumber(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setNumber(long&nbsp;number)</pre>
+<div class="block">Set the area number</div>
 </li>
 </ul>
 <a name="setOspfProcess-org.batfish.datamodel.ospf.OspfProcess-">
@@ -240,7 +388,8 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 <ul class="blockList">
 <li class="blockList">
 <h4>setOspfProcess</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setOspfProcess(<a href="../../../../org/batfish/datamodel/ospf/OspfProcess.html" title="class in org.batfish.datamodel.ospf">OspfProcess</a>&nbsp;ospfProcess)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setOspfProcess(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       <a href="../../../../org/batfish/datamodel/ospf/OspfProcess.html" title="class in org.batfish.datamodel.ospf">OspfProcess</a>&nbsp;ospfProcess)</pre>
 </li>
 </ul>
 <a name="setStub-org.batfish.datamodel.ospf.StubSettings-">
@@ -249,16 +398,51 @@ extends <a href="../../../../org/batfish/datamodel/NetworkFactory.NetworkFactory
 <ul class="blockList">
 <li class="blockList">
 <h4>setStub</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setStub(<a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stub)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setStub(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                <a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stub)</pre>
+<div class="block">Set this area to be a stub area with given settings, erase any NSSA settings</div>
+</li>
+</ul>
+<a name="setStubSettings-org.batfish.datamodel.ospf.StubSettings-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStubSettings</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setStubSettings(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                        <a href="../../../../org/batfish/datamodel/ospf/StubSettings.html" title="class in org.batfish.datamodel.ospf">StubSettings</a>&nbsp;stubSettings)</pre>
+<div class="block">Set Stub settings only</div>
 </li>
 </ul>
 <a name="setStubType-org.batfish.datamodel.ospf.StubType-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setStubType</h4>
-<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setStubType(<a href="../../../../org/batfish/datamodel/ospf/StubType.html" title="enum in org.batfish.datamodel.ospf">StubType</a>&nbsp;stubType)</pre>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setStubType(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                    <a href="../../../../org/batfish/datamodel/ospf/StubType.html" title="enum in org.batfish.datamodel.ospf">StubType</a>&nbsp;stubType)</pre>
+</li>
+</ul>
+<a name="setSummaries-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSummaries</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setSummaries(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../org/batfish/datamodel/Prefix.html" title="class in org.batfish.datamodel">Prefix</a>,<a href="../../../../org/batfish/datamodel/ospf/OspfAreaSummary.html" title="class in org.batfish.datamodel.ospf">OspfAreaSummary</a>&gt;&nbsp;summaries)</pre>
+<div class="block">Replace the area summaries</div>
+</li>
+</ul>
+<a name="setSummaryFilter-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSummaryFilter</h4>
+<pre>public&nbsp;<a href="../../../../org/batfish/datamodel/ospf/OspfArea.Builder.html" title="class in org.batfish.datamodel.ospf">OspfArea.Builder</a>&nbsp;setSummaryFilter(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;summaryFilter)</pre>
 </li>
 </ul>
 </li>

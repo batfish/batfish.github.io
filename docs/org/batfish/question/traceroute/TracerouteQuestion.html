@@ -178,7 +178,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#TracerouteQuestion-java.lang.String-org.batfish.datamodel.PacketHeaderConstraints-boolean-int-">TracerouteQuestion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationStr,
                   <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
-                  boolean&nbsp;ignoreAcls,
+                  boolean&nbsp;ignoreFilters,
                   int&nbsp;maxTraces)</code>
 <div class="block">Create a new traceroute question.</div>
 </td>
@@ -206,7 +206,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getIgnoreAcls--">getIgnoreAcls</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/question/traceroute/TracerouteQuestion.html#getIgnoreFilters--">getIgnoreFilters</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -233,7 +233,7 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.batfish.datamodel.questions.<a href="../../../../org/batfish/datamodel/questions/Question.html" title="class in org.batfish.datamodel.questions">Question</a></h3>
-<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#isQuestionClass-java.lang.String-">isQuestionClass</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.nio.file.Path-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
+<code><a href="../../../../org/batfish/datamodel/questions/Question.html#configureTemplate-java.lang.String-java.lang.String-">configureTemplate</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getAssertion--">getAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDifferential--">getDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getDisplayHints--">getDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getExclusions--">getExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIncludeOneTableKeys--">getIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getIndependent--">getIndependent</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#getInstance--">getInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#parseQuestion-java.lang.String-">parseQuestion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#prettyPrintBase--">prettyPrintBase</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setAssertion-org.batfish.datamodel.questions.Assertion-">setAssertion</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDifferential-boolean-">setDifferential</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setDisplayHints-org.batfish.datamodel.questions.DisplayHints-">setDisplayHints</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setExclusions-java.util.List-">setExclusions</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setIncludeOneTableKeys-boolean-">setIncludeOneTableKeys</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#setInstance-org.batfish.datamodel.questions.Question.InstanceData-">setInstance</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toFullJsonString--">toFullJsonString</a>, <a href="../../../../org/batfish/datamodel/questions/Question.html#toJsonString--">toJsonString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -266,14 +266,14 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceLocationStr,
                           <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                           <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel">PacketHeaderConstraints</a>&nbsp;headerConstraints,
-                          boolean&nbsp;ignoreAcls,
+                          boolean&nbsp;ignoreFilters,
                           int&nbsp;maxTraces)</pre>
 <div class="block">Create a new traceroute question.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sourceLocationStr</code> - string representation of location that results in a <a href="../../../../org/batfish/specifier/LocationSpecifier.html" title="interface in org.batfish.specifier"><code>LocationSpecifier</code></a></dd>
 <dd><code>headerConstraints</code> - <a href="../../../../org/batfish/datamodel/PacketHeaderConstraints.html" title="class in org.batfish.datamodel"><code>PacketHeaderConstraints</code></a> specifying what flow to construct when</dd>
-<dd><code>ignoreAcls</code> - whether or not to evaluate ACLs on interfaces when performing a traceroute</dd>
+<dd><code>ignoreFilters</code> - whether or not to evaluate ACLs on interfaces when performing a traceroute</dd>
 <dd><code>maxTraces</code> - the maximum number of traces to include in the answer</dd>
 </dl>
 </li>
@@ -301,13 +301,13 @@ extends <a href="../../../../org/batfish/datamodel/questions/Question.html" titl
 </dl>
 </li>
 </ul>
-<a name="getIgnoreAcls--">
+<a name="getIgnoreFilters--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIgnoreAcls</h4>
-<pre>public&nbsp;boolean&nbsp;getIgnoreAcls()</pre>
+<h4>getIgnoreFilters</h4>
+<pre>public&nbsp;boolean&nbsp;getIgnoreFilters()</pre>
 </li>
 </ul>
 <a name="getMaxTraces--">

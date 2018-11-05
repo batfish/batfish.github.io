@@ -218,7 +218,7 @@ extends <a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" tit
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/ibdp/IncrementalDataPlanePlugin.html#buildFlows-java.util.Set-org.batfish.datamodel.DataPlane-boolean-">buildFlows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
           <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
-          boolean&nbsp;ignoreAcls)</code>
+          boolean&nbsp;ignoreFilters)</code>
 <div class="block">Builds the <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s</div>
 </td>
 </tr>
@@ -262,7 +262,7 @@ extends <a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" tit
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/batfish/dataplane/ibdp/IncrementalDataPlanePlugin.html#processFlows-java.util.Set-org.batfish.datamodel.DataPlane-boolean-">processFlows</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
             <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
-            boolean&nbsp;ignoreAcls)</code>&nbsp;</td>
+            boolean&nbsp;ignoreFilters)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -446,7 +446,7 @@ extends <a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" tit
 <h4>processFlows</h4>
 <pre>public&nbsp;void&nbsp;processFlows(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
                          <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
-                         boolean&nbsp;ignoreAcls)</pre>
+                         boolean&nbsp;ignoreFilters)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html#processFlows-java.util.Set-org.batfish.datamodel.DataPlane-boolean-">processFlows</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" title="class in org.batfish.common.plugin">DataPlanePlugin</a></code></dd>
@@ -461,7 +461,8 @@ extends <a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" tit
 <h4>buildFlows</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow">Trace</a>&gt;&gt;&nbsp;buildFlows(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel">Flow</a>&gt;&nbsp;flows,
                                               <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel">DataPlane</a>&nbsp;dataPlane,
-                                              boolean&nbsp;ignoreAcls)</pre>
+                                              boolean&nbsp;ignoreFilters)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html#buildFlows-java.util.Set-org.batfish.datamodel.DataPlane-boolean-">DataPlanePlugin</a></code></span></div>
 <div class="block">Builds the <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s for a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a>s</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
@@ -469,7 +470,7 @@ extends <a href="../../../../org/batfish/common/plugin/DataPlanePlugin.html" tit
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>flows</code> - <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a> for which <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s are to be found</dd>
 <dd><code>dataPlane</code> - <a href="../../../../org/batfish/datamodel/DataPlane.html" title="interface in org.batfish.datamodel"><code>DataPlane</code></a> for this network snapshot</dd>
-<dd><code>ignoreAcls</code> - if true, will ignore ACLs</dd>
+<dd><code>ignoreFilters</code> - if true, will ignore filters/ACLs encountered in the network</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><a href="https://docs.oracle.com/javase/8/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util"><code>SortedMap</code></a> of <a href="../../../../org/batfish/datamodel/Flow.html" title="class in org.batfish.datamodel"><code>Flow</code></a> to <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of <a href="../../../../org/batfish/datamodel/flow/Trace.html" title="class in org.batfish.datamodel.flow"><code>Trace</code></a>s</dd>
 </dl>

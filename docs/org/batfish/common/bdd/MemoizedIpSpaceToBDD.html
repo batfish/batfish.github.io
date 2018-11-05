@@ -119,7 +119,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">MemoizedIpSpaceToBDD</span>
 extends <a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd">IpSpaceToBDD</a></pre>
-<div class="block">An <a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd"><code>IpSpaceToBDD</code></a> that memoizes its <a href="../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html#visit-org.batfish.datamodel.IpSpace-"><code>GenericIpSpaceVisitor.visit(org.batfish.datamodel.IpSpace)</code></a> method using an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html?is-external=true" title="class or interface in java.util"><code>IdentityHashMap</code></a>.</div>
+<div class="block">An <a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="class in org.batfish.common.bdd"><code>IpSpaceToBDD</code></a> that memoizes its <a href="../../../../org/batfish/datamodel/visitors/GenericIpSpaceVisitor.html#visit-org.batfish.datamodel.IpSpace-"><code>GenericIpSpaceVisitor.visit(org.batfish.datamodel.IpSpace)</code></a> method.</div>
 </li>
 </ul>
 </div>
@@ -138,8 +138,7 @@ extends <a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="cl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/MemoizedIpSpaceToBDD.html#MemoizedIpSpaceToBDD-net.sf.javabdd.BDDFactory-org.batfish.common.bdd.BDDInteger-java.util.Map-">MemoizedIpSpaceToBDD</a></span>(net.sf.javabdd.BDDFactory&nbsp;factory,
-                    <a href="../../../../org/batfish/common/bdd/BDDInteger.html" title="class in org.batfish.common.bdd">BDDInteger</a>&nbsp;var,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/batfish/common/bdd/MemoizedIpSpaceToBDD.html#MemoizedIpSpaceToBDD-org.batfish.common.bdd.BDDInteger-java.util.Map-">MemoizedIpSpaceToBDD</a></span>(<a href="../../../../org/batfish/common/bdd/BDDInteger.html" title="class in org.batfish.common.bdd">BDDInteger</a>&nbsp;var,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</code>&nbsp;</td>
 </tr>
 </table>
@@ -190,14 +189,13 @@ extends <a href="../../../../org/batfish/common/bdd/IpSpaceToBDD.html" title="cl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MemoizedIpSpaceToBDD-net.sf.javabdd.BDDFactory-org.batfish.common.bdd.BDDInteger-java.util.Map-">
+<a name="MemoizedIpSpaceToBDD-org.batfish.common.bdd.BDDInteger-java.util.Map-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MemoizedIpSpaceToBDD</h4>
-<pre>public&nbsp;MemoizedIpSpaceToBDD(net.sf.javabdd.BDDFactory&nbsp;factory,
-                            <a href="../../../../org/batfish/common/bdd/BDDInteger.html" title="class in org.batfish.common.bdd">BDDInteger</a>&nbsp;var,
+<pre>public&nbsp;MemoizedIpSpaceToBDD(<a href="../../../../org/batfish/common/bdd/BDDInteger.html" title="class in org.batfish.common.bdd">BDDInteger</a>&nbsp;var,
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../org/batfish/datamodel/IpSpace.html" title="class in org.batfish.datamodel">IpSpace</a>&gt;&nbsp;namedIpSpaces)</pre>
 </li>
 </ul>

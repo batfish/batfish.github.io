@@ -71,6 +71,7 @@ org.batfish.question.aaaauthenticationlogin
 org.batfish.question.bgpproperties
 org.batfish.question.bgpsessionstatus
 org.batfish.question.definedstructures
+org.batfish.question.differentialreachability
 org.batfish.question.edges
 org.batfish.question.filterlinereachability
 org.batfish.question.filtertable
@@ -81,12 +82,12 @@ org.batfish.question.ipsecsessionstatus
 org.batfish.question.ipsecvpnstatus
 org.batfish.question.jsonpath
 org.batfish.question.jsonpathtotable
+org.batfish.question.loop
 org.batfish.question.multipath
 org.batfish.question.namedstructures
 org.batfish.question.nodeproperties
 org.batfish.question.ospfproperties
 org.batfish.question.prefixtracer
-org.batfish.question.reducedreachability
 org.batfish.question.referencedstructures
 org.batfish.question.routes
 org.batfish.question.searchfilters
