@@ -9,17 +9,9 @@ title: hello
     <div class="row">
       <div class="col-md-7  order-2 order-md-1">
         <h1 class="display-1">Batfish</h1>
-        <p>
-            Batfish is an open source network configuration analysis tool that can guarantee the correctness (planned or 
-            current) network configurations. It enables network engineers to rapidly and safely evolve the network, without 
-            fear of outages or security breaches.
-          </p>
-          <p>
-            Batfish was originally developed by researchers at Microsoft Research, the University
-            of California, Los Angeles, and the University of Southern California. Many others have since  
-            contributed to it. Batfish is currently maintained and offered as a supported service by 
-            <a href="https://www.intentionet.com">Intentionet</a>.
-          </p>
+        <p class="lead">
+          An open source network configuration analysis tool
+        </p>
       </div>
       <div class="col-md-5 order-1 order-md-2">
         <object id="batfish-logo" type="image/svg+xml" data="{{ '/assets/animated-batfish.svg' | relative_url}}" class="mx-2">
@@ -30,148 +22,200 @@ title: hello
   </div>
 
   {%- include banner.html -%}
+  <!-- Content -->
+  <div class="container">
+    <div class="section">
+      <div class="justify-content-center row">
+        <div class="col-10">
+          <p>
+            Batfish is a network configuration analysis tool that can find bugs and guarantee the correctness of (planned or 
+            current) network configurations. It enables network engineers to rapidly and safely evolve the network, without 
+            fear of outages or security breaches.
+          </p>
+          <p>
+            Batfish was originally developed jointly by researchers at Microsoft Research, the University
+            of California, Los Angeles, and the University of Southern California. Many others have since  
+            contributed to it. 
+          </p>
+          <p>
+            Batfish is currently maintained by and also offered as a supported service by 
+            <a href="https://www.intentionet.com">Intentionet</a>.
+          </p>
+        </div>
+      </div>
+    </div>
 
   <!-- Tutorial Videos Talks-->
-  <div class="section">
-    <section class="container p-t-3">
-      <div class="row">
-          <div class="col-lg-12">
-              <h1>Tutorials</h1>
-          </div>
-      </div>
-  </section>
-  <section class="carousel slide" data-ride="carousel" id="postsCarousel">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12 text-md-right lead">
-                  <a class="btn btn-outline-secondary prev"  title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-                  <a class="btn btn-outline-secondary next"  title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
-              </div>
-          </div>
-      </div>      
-      <div class="container p-t-0 m-t-2 carousel-inner">
-        <div class="row carousel-item active m-t-0">
-            <div class="row">
-                <h3>The basics</h3>
-              </div>
-              <div class="card-group">
-                    <div class="card">
-                <div class="card-image">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <!-- Getting started -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ca7kPAtfFqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
-                        </iframe> 
-                      </div>                              
-                </div>
-                <div class="card-body">
-                    <p class="card-text text-dark">How to get started with Batfish.</p>                          
-                </div>
-              </div>
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <!-- Validation configuration settings started -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/qOXRaVs1Uz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                        </div>                              
-                  </div>
-                <div class="card-body">
-                    <p class="card-text text-dark">How to validate configuration settings and ensure compliance.</p>                          
-                  </div>
-              </div>
-            </div>
+    <div class="section">
+      <div class="justify-content-center row">
+        <div class="col-10">
+          <div class="section-title">
+            <h2>Tutorials</h2>
           </div>
 
-          <div class="row carousel-item  m-t-0">
-              <div class="row">
-                  <h3>Analyzing ACLs and firewall rules</h3>
-                </div>
-              <div class="card-group">
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
+          <div class="carousel slide" data-ride="carousel" id="postsCarousel">
+              <div class="container carousel-inner">
+                  <!-- SECTION The Basics -->
+                  <div class="carousel-item active">
+                    <h4>The Basics</h4>
+                      <div class="card-deck">
+                        
+                        <!-- VIDEO Getting Started -->
+                        <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ca7kPAtfFqo"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen />
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to get started with Batfish.</p>
+                              </div>
+                          </div>
+                          <!-- END Getting Started -->
+          
+                          <!-- VIDEO Validating Configuration Setting -->
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <!-- Validation configuration settings started -->
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/qOXRaVs1Uz4"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to validate configuration settings and ensure compliance.</p>
+                              </div>
+                          </div>
+                          <!-- END Validating Configuration Setting -->
+                      </div>
+                  </div>
+                  <!-- END The Basics-->
+          
+          
+                  <!-- SECTION Analyzing ACLs and firewall rules -->
+                  <div class="carousel-item">
+                      <h4>Analyzing ACLs and firewall rules</h4>
+                      <div class="card-deck">
                           <!-- ACLs and firewalls -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/KixQYEDh33s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                      </div>                              
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/KixQYEDh33s"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to analyze ACLs and firewalls rules.</p>
+                              </div>
+                          </div>
+                          <!-- END ACLs and firewalls -->
+          
+                          <!-- Provably Safe ACLs and Firewalls -->
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/MJYLVL9UOWk"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to ensure that changes to ACLs and firewall rules are
+                                      correct.</p>
+                              </div>
+                          </div>
+                          <!-- END Provably Safe ACLs and Firewalls -->
+                      </div>
                   </div>
-                <div class="card-body">
-                    <p class="card-text text-dark">How to analyze ACLs and firewalls rules.</p>                          
+                  <!-- END Analyzing ACLs and firewall rules -->
+          
+          
+                  <!-- SECTION Analyzing Packet forwarding -->
+                  <div class="carousel-item">
+                      <h4>Analyzing packet forwarding</h4>
+                      <div class="card-deck">
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <!-- Forwarding analysis -->
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/yaJBH3ZZ5Dw"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to analyze forwarding paths of individual flows and verify
+                                      forwarding for <i>all</i> flows.</p>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <!-- Forwarding change analysis -->
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yje70Q8R79w"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to ensure that changes to the network do not impact packet
+                                      forwarding in unexpected ways.</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
+                  <!-- END Analyzing Packet forwarding -->
+          
+          
+                  <!-- SECTION Analyzing routing tables-->
+                  <div class="carousel-item">
+                      <div class="card-deck">
+                          <!-- Analyzing Routing Tables -->
+                          <div class="card">
+                              <div class="card-image">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/AutkFa0xUxg"
+                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen>
+                                      </iframe>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="card-text text-dark">How to view and analyze routing tables computed by Batfish.</p>
+                              </div>
+                          </div>
+                          <!-- END Analyzing Routing Tables -->
+          
+                      </div>
+                  </div>
+                  <!-- END Analyzing routing tables-->
               </div>
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <!-- Provably safe ACLs and firewalls -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/MJYLVL9UOWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                        </div>                              
-                  </div>
-                  <div class="card-body">
-                      <p class="card-text text-dark">How to ensure that changes to ACLs and firewall rules are correct.</p>                          
-                    </div>
-              </div>
-            </div>
+          
+              <!-- Carousel controls-->
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+              <!-- END Carousel controls-->
           </div>
 
-          <div class="row carousel-item  m-t-0">
-              <div class="row">
-                  <h3>Analyzing packet forwarding</h3>
-                </div>
-              <div class="card-group">
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <!-- Forwarding analysis -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/yaJBH3ZZ5Dw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                      </div>                              
-                  </div>
-                <div class="card-body">
-                    <p class="card-text text-dark">How to analyze forwarding paths of individual flows and verify forwarding for <i>all</i> flows.</p>                          
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <!-- Forwarding change analysis -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/Yje70Q8R79w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                      </div>                              
-                    </div>
-                  <div class="card-body">
-                      <p class="card-text text-dark">How to ensure that changes to the network do not impact packet forwarding in unexpected ways.</p>                          
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row carousel-item  m-t-0">
-              <div class="row">
-                  <h3>Analyzing routing tables</h3>
-                </div>
-              <div class="card-group">
-              <div class="card">
-                  <div class="card-image">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <!-- Routing table analysis -->
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/AutkFa0xUxg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>            
-                          </iframe> 
-                      </div>                              
-                  </div>
-                <div class="card-body">
-                    <p class="card-text text-dark">How to view and analyze routing tables computed by Batfish.</p>                          
-                  </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  </div>
-              </div>
-            </div>
-          </div>
         </div>
-  </section>
-  </div>
+      </div>
+    </div>
 
     <!-- NANOG Talks-->
     <div class="section">
@@ -203,7 +247,7 @@ title: hello
       <div class="justify-content-center row">
         <div class="col-10">
           <div class="section-title">
-            <h2>Primary papers on the technology</h2>
+            <h2>Primary publications that describe the technology</h2>
           </div>
           <div class="content-row my-4">
             <a href="https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-fogel.pdf">
@@ -246,7 +290,7 @@ title: hello
       <div class="justify-content-center row">
         <div class="col-10">
           <div class="section-title">
-            <h2>Papers that leverage Batfish</h2>
+            <h2>Other publications that build on Batfish</h2>
           </div>
           <div class="content-row my-4">
             <a href="https://ratul.org/papers/sigcomm2016-arc.pdf">
