@@ -75,7 +75,7 @@
         }
         .card{
             border: $color_muted;
-            background-color: rgba(0, 0, 0, 0);
+            background-color: $color_invisible;
             min-height: 280px;
         }
         .card-body{
