@@ -64,3 +64,28 @@
         padding-left: 20px;
     }
 }
+.carousel{
+    
+    .carousel-item {
+        h4{
+            text-align: center;
+            color: $color_accent;
+            margin-top:0px;
+            margin-bottom: 2em;
+        }
+        .card{
+            border: $color_muted;
+            background-color: $color_invisible;
+            min-height: 280px;
+        }
+        .card-body{
+            background: #2e2e2e;
+        }
+    }
+    
+    .carousel-control-prev,
+     .carousel-control-next{
+        bottom: unset;
+        top:-3.75em;
+    }    
+}
