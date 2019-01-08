@@ -9,18 +9,6 @@
     </div>
   </main>
   {%- include sub-footer.html -%}
-  <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>  
-	<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
-  <script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-
-  <script>
-    (function($) {
-      "use strict";
-      // manual carousel controls
-      $('.next').click(function(){ $('.carousel').carousel('next');return false; });
-      $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
-  })(jQuery);
-  </script>
 </body>
 
 </html>
