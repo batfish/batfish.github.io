@@ -1,4 +1,4 @@
-This repository contains souce for [www.batfish.org](https://www.batfish.org/).
+This repository contains source for [www.batfish.org](https://www.batfish.org/).
 
 You can build and view it locally using [Jekyll](https://jekyllrb.com/).
 
