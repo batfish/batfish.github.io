@@ -64,3 +64,17 @@
         padding-left: 20px;
     }
 }
+
+// Carousel
+.carousel-control-prev,
+.carousel-control-next {
+    width: unset;
+}
+
+.carousel {
+    padding: 0 50px 50px;
+}
+
+.card {
+    background: $color_muted;
+}

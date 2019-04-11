@@ -66,9 +66,26 @@ small,
 
 a {
     color: $color_accent;
+    cursor: pointer;
 }
 
 a:hover {
     color: $color_accent;
     text-decoration: underline;
+}
+
+.nav {
+    a:not([href]):not([tabindex]),
+    a:not([href]):not([tabindex]):hover,
+    a:not([href]):not([tabindex]):focus {
+        color: $color_accent;
+    }
+
+    a.nav-link {
+        text-decoration: none;
+    }
+
+    a.nav-link.active,a.nav-link:hover {
+        border-bottom: 2px solid $color_accent;
+    }
 }
