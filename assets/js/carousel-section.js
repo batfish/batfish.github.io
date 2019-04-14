@@ -58,3 +58,42 @@ $(document).ready(
         });
     }
 );
+
+$(document).ready(
+    function () {
+        // Bind buttons
+        let publicationButton1 = $("#publication-button-1")
+        let publicationButton2 = $("#publication-button-2")
+        const publicationButtons = [publicationButton1, publicationButton2];
+
+        // Bind publications
+        let publication1 = $("#publication-1");
+        let publication2 = $("#publication-2");
+        const publications = [publication1, publication2];
+
+        function activateSingleButton(selectedButton) {
+            // Remove active class from every button that was not selected
+            publicationButtons.forEach(button => {
+                button === selectedButton ? button.addClass('active') : button.removeClass('active');
+            });
+        }
+
+        function displaySinglePublication(selectedPublication) {
+            publications.forEach(publication => {
+                publication === selectedPublication ? publication.removeClass('d-none') : publication.addClass('d-none');
+            });
+        }
+
+        // Define button functions
+        publicationButton1.click(function () {
+            activateSingleButton(publicationButton1);
+            displaySinglePublication(publication1);
+        });
+
+        publicationButton2.click(function () {
+            activateSingleButton(publicationButton2);
+            displaySinglePublication(publication2);
+        });
+
+    }
+)
