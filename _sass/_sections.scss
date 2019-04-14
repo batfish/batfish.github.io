@@ -73,8 +73,14 @@
 
 .carousel {
     padding: 0 50px 50px;
+    .carousel-inner{
+        min-height: 555.500px;
+    }
 }
 
 .card {
     background: $color_muted;
+    .card-image{
+        padding: 2px;
+    }
 }
