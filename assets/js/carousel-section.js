@@ -27,6 +27,8 @@ $(document).ready(
             categories.forEach(category => {
                 category === selectedCategory ? category.removeClass('d-none') : category.addClass('d-none');
             })
+            // Reset carousel to first slide
+            selectedCategory.carousel(0);
         }
 
         // Define button functions
