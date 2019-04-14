@@ -1,60 +1,60 @@
 $(document).ready(
     function () {
         // Bind buttons
-        let sectionBtn01 = $("#section-01")
-        let sectionBtn02 = $("#section-02")
-        let sectionBtn03 = $("#section-03")
-        let sectionBtn04 = $("#section-04")
-        let sectionBtn05 = $("#section-05")
-        const buttons = [sectionBtn01, sectionBtn02, sectionBtn03, sectionBtn04, sectionBtn05];
+        let carouselButton1 = $("#carousel-button-1")
+        let carouselButton2 = $("#carousel-button-2")
+        let carouselButton3 = $("#carousel-button-3")
+        let carouselButton4 = $("#carousel-button-4")
+        let carouselButton5 = $("#carousel-button-5")
+        const carouselButtons = [carouselButton1, carouselButton2, carouselButton3, carouselButton4, carouselButton5];
 
-        // Bind categories
-        let category01 = $("#carousel-1");
-        let category02 = $("#carousel-2");
-        let category03 = $("#carousel-3");
-        let category04 = $("#carousel-4");
-        let category05 = $("#carousel-5");
-        const categories = [category01, category02, category03, category04, category05];
+        // Bind carousels
+        let carousel1 = $("#carousel-1");
+        let carousel2 = $("#carousel-2");
+        let carousel3 = $("#carousel-3");
+        let carousel4 = $("#carousel-4");
+        let carousel5 = $("#carousel-5");
+        const carousels = [carousel1, carousel2, carousel3, carousel4, carousel5];
 
         function activateSingleButton(selectedButton) {
             // Remove active class from every button that was not selected
-            buttons.forEach(button => {
+            carouselButtons.forEach(button => {
                 button === selectedButton ? button.addClass('active') : button.removeClass('active');
             })
         }
 
-        function displaySingleCategory(selectedCategory) {
-            categories.forEach(category => {
-                category === selectedCategory ? category.removeClass('d-none') : category.addClass('d-none');
+        function displaySingleCarousel(selectedCarousel) {
+            carousels.forEach(carousel => {
+                carousel === selectedCarousel ? carousel.removeClass('d-none') : carousel.addClass('d-none');
             })
             // Reset carousel to first slide
-            selectedCategory.carousel(0);
+            selectedCarousel.carousel(0);
         }
 
         // Define button functions
-        sectionBtn01.click(function () {
-            activateSingleButton(sectionBtn01);
-            displaySingleCategory(category01);
+        carouselButton1.click(function () {
+            activateSingleButton(carouselButton1);
+            displaySingleCarousel(carousel1);
         });
 
-        sectionBtn02.click(function () {
-            activateSingleButton(sectionBtn02);
-            displaySingleCategory(category02);
+        carouselButton2.click(function () {
+            activateSingleButton(carouselButton2);
+            displaySingleCarousel(carousel2);
         });
 
-        sectionBtn03.click(function () {
-            activateSingleButton(sectionBtn03);
-            displaySingleCategory(category03);
+        carouselButton3.click(function () {
+            activateSingleButton(carouselButton3);
+            displaySingleCarousel(carousel3);
         });
 
-        sectionBtn04.click(function () {
-            activateSingleButton(sectionBtn04);
-            displaySingleCategory(category04);
+        carouselButton4.click(function () {
+            activateSingleButton(carouselButton4);
+            displaySingleCarousel(carousel4);
         });
 
-        sectionBtn05.click(function () {
-            activateSingleButton(sectionBtn05);
-            displaySingleCategory(category05);
+        carouselButton5.click(function () {
+            activateSingleButton(carouselButton5);
+            displaySingleCarousel(carousel5);
         });
     }
 );
