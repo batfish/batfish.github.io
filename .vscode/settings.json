@@ -1,11 +1,16 @@
 {
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
+        "_site": true,
         "**/.DS_Store": true,
-        "_site": true
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "docs": true
     },
     "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var",
+    "html.format.wrapLineLength": 0,
 }

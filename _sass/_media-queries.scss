@@ -1,8 +1,12 @@
 @include media-breakpoint-down(sm) {
-    .site-footer,.section,.banner-container {
+
+    .site-footer,
+    .section,
+    .banner-container {
         text-align: center;
     }
-    .social-media-list a{
+
+    .social-media-list a {
         justify-content: center;
     }
 }
