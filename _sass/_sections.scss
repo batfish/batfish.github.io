@@ -16,6 +16,7 @@
         display: flex;
         align-items: center;
     }
+
     .svg-icon {
         fill: $color_accent;
         width: 20px;
@@ -26,6 +27,7 @@
 
 .site-footer {
     background: $color_contrast;
+
     ul {
         list-style: none;
         padding: 0px;
@@ -42,6 +44,7 @@
     h4 {
         color: $color_accent;
     }
+
     p {
         margin: 0px;
     }
@@ -49,17 +52,18 @@
 
 .section {
     margin: 5rem 0rem;
+
     .section-title {
         text-align: center;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     }
 
-    h5{
+    h5 {
         color: $color_accent_2;
     }
 
-    ul{
+    ul {
         list-style: none;
         padding-left: 20px;
     }
@@ -73,14 +77,16 @@
 
 .carousel {
     padding: 0 50px 50px;
-    .carousel-inner{
+
+    .carousel-inner {
         min-height: 555.500px;
     }
 }
 
 .card {
     background: $color_muted;
-    .card-image{
+
+    .card-image {
         padding: 2px;
     }
 }
