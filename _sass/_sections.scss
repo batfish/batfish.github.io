@@ -7,9 +7,36 @@
     padding-bottom: 6rem !important;
 }
 
-#batfish-logo {
-    max-width: 400px;
+
+@-webkit-keyframes floating {
+    0% {
+        transform: translate(11px, -250px);
+    }
+
+    100% {
+        transform: translateY(11px, -260px);
+    }
 }
+
+@keyframes floating {
+    0% {
+        transform: translate(11px, -250px);
+    }
+
+    100% {
+        transform: translate(11px, -260px);
+    }
+}
+
+#batfish-logo {
+    max-width: 300px;
+    animation: floating 2s infinite alternate;
+    -webkit-animation: floating 2s infinite alternate;
+    filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
+    -webkit-filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
+
+}
+
 
 .social-media-list {
     a {

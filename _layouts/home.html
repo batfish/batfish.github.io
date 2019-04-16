@@ -7,16 +7,19 @@ title: hello
   <!-- Banner -->
   <div class="container banner-container">
     <div class="row">
-      <div class="col-md-7  order-2 order-md-1">
+      <div class="col-md-5 order-1 order-md-1">
+        <object id="" type="image/svg+xml" data="{{ '/assets/animation_abstract.svg' | relative_url}}" class="mx-2">
+            <!-- TODO ADD FALLBACK FOR SVG-->
+      </object>
+        <object id="batfish-logo" type="image/svg+xml" data="{{ '/assets/animated-batfish.svg' | relative_url}}" class="mx-2">
+              <!-- TODO ADD FALLBACK FOR SVG-->
+        </object>
+      </div>
+      <div class="col-md-7  order-2 order-md-2">
         <h1 class="display-1">Batfish</h1>
         <p class="lead">
           An open source network configuration analysis tool
         </p>
-      </div>
-      <div class="col-md-5 order-1 order-md-2">
-        <object id="batfish-logo" type="image/svg+xml" data="{{ '/assets/animated-batfish.svg' | relative_url}}" class="mx-2">
-          <!-- TODO ADD FALLBACK FOR SVG-->
-        </object>
       </div>
     </div>
   </div>
