@@ -3,40 +3,21 @@
 }
 
 .banner-container {
-    padding-top: 10rem !important;
-    padding-bottom: 6rem !important;
-}
-
-
-@-webkit-keyframes floating {
-    0% {
-        transform: translate(11px, -250px);
-    }
-
-    100% {
-        transform: translateY(11px, -260px);
-    }
-}
-
-@keyframes floating {
-    0% {
-        transform: translate(11px, -250px);
-    }
-
-    100% {
-        transform: translate(11px, -260px);
-    }
+    padding: 7em 0px 6em 0;
 }
 
 #batfish-logo {
-    max-width: 300px;
-    animation: floating 2s infinite alternate;
-    -webkit-animation: floating 2s infinite alternate;
+    position: absolute;
+    max-width: 386px;
+    transform: translate(-55px, -366px);
     filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
     -webkit-filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
-
 }
 
+#amorphous-blob {
+    width: 500px;
+    transform: translate(-90px, -38px) rotate(18deg);
+}
 
 .social-media-list {
     a {
