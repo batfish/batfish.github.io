@@ -1,3 +1,15 @@
+@include media-breakpoint-down(md) {
+    #batfish-logo {
+        transform: translate(-55px, -310px);
+    }
+
+    #amorphous-blob {
+        width: 410px;
+        transform: translate(-90px, -38px) rotate(18deg);
+    }
+}
+
+
 @include media-breakpoint-down(sm) {
 
     .site-footer,
@@ -8,5 +20,30 @@
 
     .social-media-list a {
         justify-content: center;
+    }
+
+    #batfish-logo {
+        transform: translate(-410px, -10px);
+        width: 344px;
+    }
+
+    #amorphous-blob {
+        width: 410px;
+        transform: translate(0px, -38px) rotate(18deg);
+    }
+}
+
+
+@include media-breakpoint-down(xs) {
+
+
+    #batfish-logo {
+        transform: translate(-325px, -38px);
+        width: 300px;
+    }
+
+    #amorphous-blob {
+        max-width: 300px;
+        transform: translate(0px, -38px) rotate(18deg);
     }
 }
