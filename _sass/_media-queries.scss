@@ -1,3 +1,10 @@
+@include media-breakpoint-down(xl) {
+    #publication-link-container {
+        min-height: 520px;
+    }
+
+}
+
 @include media-breakpoint-down(md) {
     #batfish-logo {
         transform: translate(-55px, -310px);
@@ -6,6 +13,14 @@
     #amorphous-blob {
         width: 410px;
         transform: translate(-90px, -38px) rotate(18deg);
+    }
+
+    #publication-link-container {
+        min-height: 620px;
+    }
+
+    .carousel .carousel-inner {
+        min-height: unset;
     }
 }
 
@@ -20,6 +35,29 @@
 
     .social-media-list a {
         justify-content: center;
+    }
+
+    li.nav-item.mx-2 {
+        width: 100%;
+        border: 2px solid #D2951D;
+        margin: 5px 0px;
+    }
+
+    .nav a.nav-link.active,
+    .nav a.nav-link:hover {
+        border: unset;
+        background: #D2951D;
+        color: white;
+    }
+
+    nav a:not([href]):not([tabindex]),
+    .nav a:not([href]):not([tabindex]):hover,
+    .nav a:not([href]):not([tabindex]):focus {
+        color: white;
+    }
+
+    #publication-link-container {
+        min-height: 700px;
     }
 
     #batfish-logo {
