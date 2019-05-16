@@ -18,17 +18,17 @@ title: hello
         <p class="lead">
           An open source network configuration analysis tool
         </p>
-          <p>
-            Batfish finds errors and guarantees the correctness of planned or
-            current network configurations. It enables safe and rapid network evolution, without
-            the fear of outages or security breaches.
-          </p>
-          <p>
-            Batfish is maintained by and also offered as a supported service by
-            <a href="https://www.intentionet.com">Intentionet</a>. It was originally developed by 
-            researchers at Microsoft Research, UCLA, and USC. Many others have since
-            contributed to it. 
-          </p>
+        <p>
+          Batfish finds errors and guarantees the correctness of planned or
+          current network configurations. It enables safe and rapid network evolution, without
+          the fear of outages or security breaches.
+        </p>
+        <p>
+          Batfish is maintained by and also offered as a supported service by
+          <a href="https://www.intentionet.com">Intentionet</a>. It was originally developed by
+          researchers at Microsoft Research, UCLA, and USC. Many others have since
+          contributed to it.
+        </p>
       </div>
     </div>
   </div>
@@ -46,39 +46,39 @@ title: hello
           </div>
 
           <div class="content-row my-4">
-            <object type="image/svg+xml" data="{{ '/assets/comics/comic-01.svg' | relative_url}}" style="max-width:90vw"></object>
+            <img src="{{ '/assets/comics/comic-01.png' | relative_url}}" style="max-width:90vw">
           </div>
 
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <!-- Tutorial Videos Talks-->
-    <div class="section">
-      {%- include tutorial_carousel.html -%}
-    </div>
+      <!-- Tutorial Videos Talks-->
+      <div class="section">
+        {%- include tutorial_carousel.html -%}
+      </div>
 
-    <!-- Selected Community Resources -->
-    <div class="section">
-      <div class="justify-content-center row">
-        <div class="col-10">
-          <div class="section-title">
-            <h2>Selected Community Resources</h2>
-          </div>
+      <!-- Selected Community Resources -->
+      <div class="section">
+        <div class="justify-content-center row">
+          <div class="col-10">
+            <div class="section-title">
+              <h2>Selected Community Resources</h2>
+            </div>
 
-          <div class="content-row my-4">
-            <a href="https://www.youtube.com/watch?v=D9hZiW66jw4">
+            <div class="content-row my-4">
+              <a href="https://www.youtube.com/watch?v=D9hZiW66jw4">
               <h4>Talk at NANOG75: Using open source tools to validate network configuration</h4>
             </a>
-            <p>Daniel Halperin (@dhalperi)</p>
-          </div>
+              <p>Daniel Halperin (@dhalperi)</p>
+            </div>
 
-          <div class="content-row my-4">
-            <a href="https://www.ansible.com/resources/webinars-training/validating-pre-commit-network-configuration-changes-at-scale-with-batfish-ansible">
+            <div class="content-row my-4">
+              <a href="https://www.ansible.com/resources/webinars-training/validating-pre-commit-network-configuration-changes-at-scale-with-batfish-ansible">
               <h4>Webinar: Validating Pre-Commit Network Configuration Changes at Scale with Batfish and Ansible</h4>
             </a>
-            [<a href=https://github.com/batfish/ansible-demo>Code</a>]
+              [<a href=https://github.com/batfish/ansible-demo>Code</a>]
             <p>Andrius Benokraitis (RedHat, @andriusb), Ratul Mahajan (@ratulm), Samir Parikh (@saparikh)</p>
           </div>
 
@@ -86,7 +86,7 @@ title: hello
             <a href="https://eos.arista.com/network-ci-part-3/">
               <h4>Blog: Building a network CI pipeline with Gitlab, Ansible, cEOS, Robot Framework and Batfish (Signup required)</h4>
             </a>
-            [<a href=https://github.com/networkop/arista-network-ci>Code</a>]
+              [<a href=https://github.com/networkop/arista-network-ci>Code</a>]
             <p>Michael Kashin (Arista, @networkop1)</p>
           </div>
 
@@ -94,7 +94,7 @@ title: hello
             <a href="https://habr.com/ru/post/441532/">
               <h4>Tech article: Batfish introduction (In Russian)</h4>
             </a>
-            [<a href=https://github.com/showroute/batfish-habr>Code</a>]
+              [<a href=https://github.com/showroute/batfish-habr>Code</a>]
             <p>Dmitry Shaurov (Megafon, @DmitryShaurov)</p>
           </div>
 
@@ -102,47 +102,47 @@ title: hello
             <a href="https://tekunabe.hatenablog.jp/entry/2018/10/25/batfish">
               <h4>Blog: Introduction of tool "Batfish" which can read various configurations of network equipment and can perform various verification such as routing (In Japanese)</h4>
             </a>
-            <p>Yokochi (@akira6592 )</p>
-          </div>
+              <p>Yokochi (@akira6592 )</p>
+            </div>
 
-          <div class="content-row my-4">
-            <a href="https://unicast.network/posts/batfish_intro/">
+            <div class="content-row my-4">
+              <a href="https://unicast.network/posts/batfish_intro/">
               <h4>Blog: Batfish introduction</h4>
             </a>
-            <p>Ruari Carrol (Twitter, @rucarrol)</p>
-          </div>
+              <p>Ruari Carrol (Twitter, @rucarrol)</p>
+            </div>
 
+          </div>
         </div>
       </div>
+
+      <!-- Publications -->
+      <div class="section">
+        {%- include publications.html -%}
+      </div>
+
     </div>
+    <!-- End Content-->
 
-    <!-- Publications -->
-    <div class="section">
-      {%- include publications.html -%}
-    </div>
-
-  </div>
-  <!-- End Content-->
-
-  {%- if site.post.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.post -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
+    {%- if site.post.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.post -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.var | escape }}
         </a>
-      </h3>
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
+        </h3>
+        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
 
-  <p class="rss-subscribe">subscribe
-    <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
-  </p>
-  {%- endif -%}
-</div>
+    <p class="rss-subscribe">subscribe
+      <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+    </p>
+    {%- endif -%}
+  </div>
