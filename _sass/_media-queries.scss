@@ -1,18 +1,20 @@
+// Screen sizes ≥ 1200
 @include media-breakpoint-down(xl) {
     #publication-link-container {
         min-height: 520px;
     }
-
 }
 
+// Screen sizes ≥ 768px
 @include media-breakpoint-down(md) {
     #batfish-logo {
-        transform: translate(-55px, -310px);
+        transform: translate(-410px, -10px);
+        width: 344px;
     }
 
     #amorphous-blob {
         width: 410px;
-        transform: translate(-90px, -38px) rotate(18deg);
+        transform: translate(0px, -38px) rotate(18deg);
     }
 
     #publication-link-container {
@@ -22,10 +24,7 @@
     .carousel .carousel-inner {
         min-height: unset;
     }
-}
 
-
-@include media-breakpoint-down(sm) {
 
     .site-footer,
     .section,
@@ -36,6 +35,11 @@
     .social-media-list a {
         justify-content: center;
     }
+}
+
+// Screen sizes ≥ 576px
+@include media-breakpoint-down(sm) {
+
 
     li.nav-item.mx-2 {
         width: 100%;
@@ -60,21 +64,11 @@
         min-height: 700px;
     }
 
-    #batfish-logo {
-        transform: translate(-410px, -10px);
-        width: 344px;
-    }
 
-    #amorphous-blob {
-        width: 410px;
-        transform: translate(0px, -38px) rotate(18deg);
-    }
 }
 
-
+// Screen sizes < 576px
 @include media-breakpoint-down(xs) {
-
-
     #batfish-logo {
         transform: translate(-325px, -38px);
         width: 300px;
@@ -83,5 +77,13 @@
     #amorphous-blob {
         max-width: 300px;
         transform: translate(0px, -38px) rotate(18deg);
+    }
+}
+
+// Screen sizes <= 334 px
+@media (max-width: 334px) {
+    #batfish-logo {
+        transform: translate(-177px, -255px);
+        width: 300px;
     }
 }

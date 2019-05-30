@@ -3,20 +3,20 @@
 }
 
 .banner-container {
-    padding: 7em 0px 6em 0;
+    padding: 4em 0px 6em 0;
 }
 
 #batfish-logo {
     position: absolute;
     max-width: 386px;
-    transform: translate(-55px, -366px);
+    transform: translate(-55px, -328px);
     filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
     -webkit-filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, .7));
 }
 
 #amorphous-blob {
     width: 500px;
-    transform: translate(-90px, -38px) rotate(18deg);
+    transform: translate(-90px, 0px) rotate(18deg);
 }
 
 .social-media-list {
