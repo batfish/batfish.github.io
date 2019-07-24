@@ -1,7 +1,14 @@
 // Screen sizes ≥ 1200
 @include media-breakpoint-down(xl) {
+
+    /** May need adjusting if publication links are added **/
     #publication-link-container {
         min-height: 520px;
+    }
+
+    /** May need adjusting if community resource links are added **/
+    #community-resources-link-container {
+        min-height: 600px;
     }
 }
 
@@ -17,8 +24,14 @@
         transform: translate(0px, -38px) rotate(18deg);
     }
 
+    /** May need adjusting if publication links are added **/
     #publication-link-container {
         min-height: 620px;
+    }
+
+    /** May need adjusting if community resource links are added **/
+    #community-resources-link-container {
+        min-height: 760px;
     }
 
     .carousel .carousel-inner {
