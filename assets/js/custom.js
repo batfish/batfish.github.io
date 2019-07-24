@@ -94,6 +94,43 @@ $(document).ready(
             activateSingleButton(publicationButton2);
             displaySinglePublication(publication2);
         });
+    }
+)
 
+$(document).ready(
+    function () {
+        // Bind buttons
+        let communityResourceButton1 = $("#community-resource-button-1")
+        let communityResourceButton2 = $("#community-resource-button-2")
+        const communityResourceButtons = [communityResourceButton1, communityResourceButton2];
+
+        // Bind communityResources
+        let communityResource1 = $("#community-resources-1");
+        let communityResource2 = $("#community-resources-2");
+        const communityResources = [communityResource1, communityResource2];
+
+        function activateSingleButton(selectedButton) {
+            // Remove active class from every button that was not selected
+            communityResourceButtons.forEach(button => {
+                button === selectedButton ? button.addClass('active') : button.removeClass('active');
+            });
+        }
+
+        function displaySinglePublication(selectedPublication) {
+            communityResources.forEach(communityResource => {
+                communityResource === selectedPublication ? communityResource.removeClass('d-none') : communityResource.addClass('d-none');
+            });
+        }
+
+        // Define button functions
+        communityResourceButton1.click(function () {
+            activateSingleButton(communityResourceButton1);
+            displaySinglePublication(communityResource1);
+        });
+
+        communityResourceButton2.click(function () {
+            activateSingleButton(communityResourceButton2);
+            displaySinglePublication(communityResource2);
+        });
     }
 )
