@@ -3,7 +3,7 @@
 }
 
 .banner-container {
-    padding: 4em 0px 6em 0;
+    padding: 7em 0px 6em 0;
 }
 
 #batfish-logo {
@@ -43,8 +43,21 @@
     }
 }
 
+// Header and sub-footer
+.site-header,
 .site-sub-footer {
     background: $color_contrast;
+
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.site-header {
+    border-bottom: 1px solid $color_muted;
+}
+
+.site-sub-footer {
     border-top: 1px solid $color_muted;
 }
 
