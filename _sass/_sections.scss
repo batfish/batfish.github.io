@@ -43,17 +43,21 @@
     }
 }
 
-.site-header {
+// Header and sub-footer
+.site-header,
+.site-sub-footer {
     background: $color_contrast;
-    border-bottom: 1px solid $color_muted;
 
     .container {
         max-width: 1170px;
     }
 }
 
+.site-header {
+    border-bottom: 1px solid $color_muted;
+}
+
 .site-sub-footer {
-    background: $color_contrast;
     border-top: 1px solid $color_muted;
 }
 
