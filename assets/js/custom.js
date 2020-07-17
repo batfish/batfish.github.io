@@ -102,12 +102,14 @@ $(document).ready(
         // Bind buttons
         let communityResourceButton1 = $("#community-resource-button-1")
         let communityResourceButton2 = $("#community-resource-button-2")
-        const communityResourceButtons = [communityResourceButton1, communityResourceButton2];
+        let communityResourceButton3 = $("#community-resource-button-3")
+        const communityResourceButtons = [communityResourceButton1, communityResourceButton2, communityResourceButton3];
 
         // Bind communityResources
         let communityResource1 = $("#community-resources-1");
         let communityResource2 = $("#community-resources-2");
-        const communityResources = [communityResource1, communityResource2];
+        let communityResource3 = $("#community-resources-3");
+        const communityResources = [communityResource1, communityResource2, communityResource3];
 
         function activateSingleButton(selectedButton) {
             // Remove active class from every button that was not selected
@@ -131,6 +133,11 @@ $(document).ready(
         communityResourceButton2.click(function () {
             activateSingleButton(communityResourceButton2);
             displaySinglePublication(communityResource2);
+        });
+
+        communityResourceButton3.click(function () {
+            activateSingleButton(communityResourceButton3);
+            displaySinglePublication(communityResource3);
         });
     }
 )
