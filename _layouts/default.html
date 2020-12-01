@@ -3,6 +3,10 @@
   {%- include head.html -%}
 
   <body class="bg-gradient">
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics-noscript.html -%}
+    {%- endif -%}
+
     {%- include intentionet-banner.html -%}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
