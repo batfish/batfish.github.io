@@ -3,7 +3,7 @@
   {%- include head.html -%}
 
   <body class="bg-gradient">
-    {%- if jekyll.environment == 'production' -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics-noscript.html -%}
     {%- endif -%}
 
