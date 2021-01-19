@@ -8,6 +8,7 @@ You can build and view it locally using [Jekyll](https://jekyllrb.com/).
 gem install bundler jekyll
 cd <local repository directory>
 bundle install
+bundle add webrick
 bundle exec jekyll serve
 ```
 
