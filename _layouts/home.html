@@ -36,6 +36,27 @@ title: hello
   {%- include banner.html -%}
   <!-- Content -->
   <div class="container">
+
+    <!-- Tutorial Videos Talks-->
+    <div class="section">
+      {%- include tutorial_carousel.html -%}
+    </div>
+
+    <!-- OSS Users-->
+    <div class="section">
+      {%- include oss-users.html -%}
+    </div>
+
+    <!-- Selected Community Resources -->
+    <div class="section">
+      {%- include community-resources.html -%}
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+      {%- include publications.html -%}
+    </div>
+
     <!-- Latest Comic -->
     <div class="section">
       <div class="justify-content-center row">
@@ -51,25 +72,9 @@ title: hello
 
           </div>
         </div>
-      </div>
-
-
-      <!-- Tutorial Videos Talks-->
-      <div class="section">
-        {%- include tutorial_carousel.html -%}
-      </div>
-
-      <!-- Selected Community Resources -->
-      <div class="section">
-        {%- include community-resources.html -%}
-      </div>
-
-      <!-- Publications -->
-      <div class="section">
-        {%- include publications.html -%}
-      </div>
-
     </div>
+
+  </div>
     <!-- End Content-->
 
     {%- if site.post.size > 0 -%}
