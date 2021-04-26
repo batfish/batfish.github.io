@@ -36,40 +36,28 @@ title: hello
   {%- include banner.html -%}
   <!-- Content -->
   <div class="container">
-    <!-- Latest Comic -->
+
+    <!-- OSS Users-->
     <div class="section">
-      <div class="justify-content-center row">
-        <div class="col-12 p-0">
-
-          <div class="section-title">
-            <h2>Latest Comic</h2>
-          </div>
-
-          <div class="content-row my-4">
-            <img src="{{ '/assets/comics/comic-01.png' | relative_url}}" style="max-width:100%">
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Tutorial Videos Talks-->
-      <div class="section">
-        {%- include tutorial_carousel.html -%}
-      </div>
-
-      <!-- Selected Community Resources -->
-      <div class="section">
-        {%- include community-resources.html -%}
-      </div>
-
-      <!-- Publications -->
-      <div class="section">
-        {%- include publications.html -%}
-      </div>
-
+      {%- include oss-users.html -%}
     </div>
+
+    <!-- Tutorial Videos Talks-->
+    <div class="section">
+      {%- include tutorial_carousel.html -%}
+    </div>
+
+    <!-- Selected Community Resources -->
+    <div class="section">
+      {%- include community-resources.html -%}
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+      {%- include publications.html -%}
+    </div>
+
+  </div>
     <!-- End Content-->
 
     {%- if site.post.size > 0 -%}
