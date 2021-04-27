@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
 apt -qq install ruby 
 gem install bundler jekyll
 bundle install
