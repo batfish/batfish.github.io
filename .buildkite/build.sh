@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-sudo apt-get -qq install ruby 
+apt -qq install ruby 
 gem install bundler jekyll
 bundle install
 bundle add webrick
