@@ -1,5 +1,5 @@
-printf "\n********************\n"
-printf "* Build Jekyll"
-printf "\n********************\n"
-
+apt -qq install ruby 
+gem install bundler jekyll
+bundle install
+bundle add webrick
 bundle exec jekyll build
