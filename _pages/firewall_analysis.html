@@ -33,15 +33,11 @@ The <span style="font-weight: 600;">testFilters</span> query allows you to analy
 <tr>
 <td>
 <i># Check if a representative host can reach the DNS server</i>
-
-dns_flow = HeaderConstraints(srcIps="10.10.10.1",
-dstIps="218.8.104.58",
-applications=["dns"])
-
-answer = bfq.testFilters(headers=dns_flow,
-nodes="rtr-with-acl",
-filters="acl_in").answer()
-
+<br>
+dns_flow = HeaderConstraints(srcIps="10.10.10.1", dstIps="218.8.104.58", applications=["dns"])
+<p><br></p>
+answer = bfq.testFilters(headers=dns_flow, nodes="rtr-with-acl", filters="acl_in").answer()
+    <p><br></p>
 show(answer.frame())
 </td>
 </tr>
@@ -95,15 +91,12 @@ Building on the previous example, let’s see if the ACL permits access to the D
 <tr>
 <td>
 <i># Check if the subnet can reach the DNS server</i>
-
-<span>dns_traffic </span><span>=</span><span> HeaderConstraints(srcIps</span><span>=</span><span>"10.10.10.0/24"</span><span>,</span>
-<span>dstIps</span><span>=</span><span>"218.8.104.58"</span><span>,</span>
-<span>applications</span><span>=</span><span>[</span><span>"dns"</span><span>])</span>
-
-<span>answer </span><span>=</span><span> bfq</span><span>.</span><span>searchFilters(headers</span><span>=</span><span>dns_traffic,</span>
-<span>action</span><span>=</span><span>"deny"</span><span>,</span>
-<span>filters</span><span>=</span><span>"acl_in"</span><span>)</span><span>.</span><span>answer()</span>
-<span>show(answer</span><span>.</span><span>frame())</span>
+<p><br></p>
+dns_traffic = HeaderConstraints(srcIps="10.10.10.0/24", dstIps="218.8.104.58", applications=["dns"])
+<p><br></p>
+answer = bfq.searchFilters(headers=dns_traffic, action"deny", filters="acl_in").answer()
+<p><br></p>
+show(answer.frame())
 </td>
 </tr>
 </tbody>
@@ -154,8 +147,9 @@ What once started out as a nice pristine and easy to understand ACL or firewall 
 <tbody>
 <tr>
 <td>
-<i># Find unreachable lines in filters of rtr-with-acl</i>
+<i># Find unreachable lines in filters of rtr-with-acl</i><p><br></p>
 aclAns = bfq.filterLineReachability(nodes="rtr-with-acl").answer()
+<p><br></p>
 show(aclAns.frame().sort_values(by="Unreachable_Line"))
 </td>
 </tr>
