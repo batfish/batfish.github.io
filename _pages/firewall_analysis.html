@@ -3,7 +3,6 @@ layout: page
 title: Firewall and ACL Audits and Analysis
 permalink: /firewall_analysis
 ---
-
 <article class="post">
 
   <div class="post-content">
@@ -13,39 +12,44 @@ Manually reasoning about what an ACL or firewall policy will do to a packet, whe
 But this is where a tool such as Batfish comes into play. It provides multiple methods of analyzing ACLs and firewall rules, so that you can ensure that your security policy functions as desired. And it is built for you to do this programmatically, so you can easily incorporate this into any workflow.
 
 Batfish provides 4 core capabilities to analyze an ACL or firewall policy.
+<p><br></p>
 <ul>
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">testFilters</span></li>
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">searchFilters</span></li>
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">filterLineReachability</span></li>
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">compareFilters</span></li>
 </ul>
+<p><br></p>
 This article will show you how to use each of these capabilities to analyze an ACL and a change to an ACL. So let’s get started. This article assumes some familiarity with Batfish. Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
 <h3>Analyzing the filter behavior for a specific flow</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a><i>. </i>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+      <p><br></p>
 
 
 The <span style="font-weight: 600;">testFilters</span> query allows you to analyze the behavior of a filter with respect to a specific flow. For example, if I want to determine if an ACL is allowing a specific host to reach the DNS server, I would use <span style="font-weight: 600;">testFilters</span> as shown below.
-<table style="height: 238px;" width="669">
+<p><br></p>
+<table class="table-borderless table-dark">
 <tbody>
 <tr>
 <td>
-<pre><i># Check if a representative host can reach the DNS server</i>
+<i># Check if a representative host can reach the DNS server</i>
 
 dns_flow = HeaderConstraints(srcIps="10.10.10.1",
-                             dstIps="218.8.104.58",
-                             applications=["dns"])
+dstIps="218.8.104.58",
+applications=["dns"])
 
 answer = bfq.testFilters(headers=dns_flow,
-                         nodes="rtr-with-acl",
-                         filters="acl_in").answer()
+nodes="rtr-with-acl",
+filters="acl_in").answer()
 
-show(answer.frame())</pre>
+show(answer.frame())
 </td>
 </tr>
 </tbody>
 </table>
-&nbsp;
-<table>
+<p><br></p>
+
+<table class="table-dark">
 <tbody>
 <tr>
 <td>Node</td>
@@ -75,38 +79,40 @@ IP Protocol: UDP</td>
 </tr>
 </tbody>
 </table>
-&nbsp;
+<p><br></p>
 
 With a simple query, you can get a definitive answer about the behavior of a filter with regards to a specific flow. So before you make a change to an ACL or firewall rule, you can test the existing one and determine what action it takes for a specific flow (or sets of flows).
 
 But if you wanted to analyze the behavior of a filter for a large set of flows, you would use <span style="font-weight: 600;">searchFilters</span> instead.
 <h3>Analyzing the filter behavior for a large set of flows</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a><i>. </i>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<p><br></p>
 
 Building on the previous example, let’s see if the ACL permits access to the DNS server for ALL hosts in a given subnet. To do that, you actually “search” for any DNS flow from the source subnet to the DNS server that is denied. You are asking Batfish to see if there are any flows that violate your policy that all hosts in the given subnet MUST have access to the DNS server.
-<table style="height: 247px;" width="548">
+<p><br></p>
+<table class="table-dark table-borderless">
 <tbody>
 <tr>
 <td>
-<pre><i><span style="font-weight: 500;"># Check if the subnet can reach the DNS server</span></i>
+<i># Check if the subnet can reach the DNS server</i>
 
-<span style="font-weight: 500;">dns_traffic </span><span style="font-weight: 500;">=</span><span style="font-weight: 500;"> HeaderConstraints(srcIps</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">"10.10.10.0/24"</span><span style="font-weight: 500;">,</span>
-<span style="font-weight: 500;">                                dstIps</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">"218.8.104.58"</span><span style="font-weight: 500;">,</span>
-<span style="font-weight: 500;">                                applications</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">[</span><span style="font-weight: 500;">"dns"</span><span style="font-weight: 500;">])</span>
+<span>dns_traffic </span><span>=</span><span> HeaderConstraints(srcIps</span><span>=</span><span>"10.10.10.0/24"</span><span>,</span>
+<span>dstIps</span><span>=</span><span>"218.8.104.58"</span><span>,</span>
+<span>applications</span><span>=</span><span>[</span><span>"dns"</span><span>])</span>
 
-<span style="font-weight: 500;">answer </span><span style="font-weight: 500;">=</span><span style="font-weight: 500;"> bfq</span><span style="font-weight: 500;">.</span><span style="font-weight: 500;">searchFilters(headers</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">dns_traffic,</span>
-<span style="font-weight: 500;">                           action</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">"deny"</span><span style="font-weight: 500;">,</span>
-<span style="font-weight: 500;">                           filters</span><span style="font-weight: 500;">=</span><span style="font-weight: 500;">"acl_in"</span><span style="font-weight: 500;">)</span><span style="font-weight: 500;">.</span><span style="font-weight: 500;">answer()</span>
-<span style="font-weight: 500;">show(answer</span><span style="font-weight: 500;">.</span><span style="font-weight: 500;">frame())</span></pre>
+<span>answer </span><span>=</span><span> bfq</span><span>.</span><span>searchFilters(headers</span><span>=</span><span>dns_traffic,</span>
+<span>action</span><span>=</span><span>"deny"</span><span>,</span>
+<span>filters</span><span>=</span><span>"acl_in"</span><span>)</span><span>.</span><span>answer()</span>
+<span>show(answer</span><span>.</span><span>frame())</span>
 </td>
 </tr>
 </tbody>
 </table>
-&nbsp;
-<table>
+<p><br></p>
+<table class="table-dark">
 <tbody>
 <tr>
-<td><span style="font-weight: 500;">Node</span></td>
+<td>Node</td>
 <td>Filter_Name</td>
 <td>Flow</td>
 <td>Action</td>
@@ -133,28 +139,30 @@ IP Protocol: UDP</td>
 </tr>
 </tbody>
 </table>
-&nbsp;
+<p><br></p>
 
-As you can see, we did get a flow that matches the search condition and thus violates our desired guarantee of the entire subnet being able to reach the DNS server. The columns carry the same information as those for <span style="font-weight: 500;">testFilters</span> and provide insight into the violation. In particular, we see that a flow with source IP 10.10.10.42 is denied by an earlier line in the ACL. Such needles in the haystack are impossible to find with other tools and techniques.
+As you can see, we did get a flow that matches the search condition and thus violates our desired guarantee of the entire subnet being able to reach the DNS server. The columns carry the same information as those for <span>testFilters</span> and provide insight into the violation. In particular, we see that a flow with source IP 10.10.10.42 is denied by an earlier line in the ACL. Such needles in the haystack are impossible to find with other tools and techniques.
 
 Both <span style="font-weight: 600;">testFilters</span> and <span style="font-weight: 600;">searchFilters</span> help you analyze the behavior of an ACL or firewall rule with regards to a given flow or sets of flows. But Batfish provides another interesting capability to analyze a filter - <span style="font-weight: 600;">filterLineReachability</span>.
 <h3>Identifying unreachable filter lines</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a><i>. </i>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<p><br></p>
 
 What once started out as a nice pristine and easy to understand ACL or firewall policy, over time turns into quite a mess as the network and services evolve. Oftentimes you end up creating new rules that are partially or fully masked by earlier rules, thereby rendering your changes partially and wholly ineffective. To help you in this situation, Batfish has the query filterLineReachability.
-<table style="height: 110px;" width="658">
+<p><br></p>
+<table class="table-dark table-borderless">
 <tbody>
 <tr>
 <td>
-<pre><i><span style="font-weight: 500;"># Find unreachable lines in filters of rtr-with-acl</span></i>
-<i><span style="font-weight: 500;">aclAns </span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;"> bfq</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">filterLineReachability(nodes</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"rtr-with-acl"</span></i><i><span style="font-weight: 500;">)</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">answer()</span></i>
-<i><span style="font-weight: 500;">show(aclAns</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">frame()</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">sort_values(by</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"Unreachable_Line"</span></i><i><span style="font-weight: 500;">))</span></i></pre>
+<i># Find unreachable lines in filters of rtr-with-acl</i>
+aclAns = bfq.filterLineReachability(nodes="rtr-with-acl").answer()
+show(aclAns.frame().sort_values(by="Unreachable_Line"))
 </td>
 </tr>
 </tbody>
 </table>
-&nbsp;
-<table>
+<p><br></p>
+<table class="table-dark">
 <tbody>
 <tr>
 <td>Sources</td>
@@ -166,121 +174,126 @@ What once started out as a nice pristine and easy to understand ACL or firewall 
 <td>Additional_Inf<b>o</b></td>
 </tr>
 <tr>
-<td><span>rtr-with-acl: acl_in</span></td>
-<td><span>670 permit ip 166.146.58.184 any</span></td>
-<td><span>PERMIT</span></td>
-<td><span>540 deny ip 166.144.0.0/12 any</span></td>
-<td><span>True</span></td>
-<td><span>BLOCKING_LINES</span></td>
-<td><span>None</span></td>
+<td>rtr-with-acl: acl_in</td>
+<td>670 permit ip 166.146.58.184 any</td>
+<td>PERMIT</td>
+<td>540 deny ip 166.144.0.0/12 any</td>
+<td>True</td>
+<td>BLOCKING_LINES</td>
+<td>None</td>
 </tr>
 <tr>
-<td><span>rtr-with-acl: acl_in</span></td>
-<td><span>790 deny ip 54.203.159.1/32 any</span></td>
-<td><span>DENY</span></td>
-<td><span>500 deny ip 54.0.0.0/8 any</span></td>
-<td><span>False</span></td>
-<td><span>BLOCKING_LINES</span></td>
-<td><span>None</span></td>
+<td>rtr-with-acl: acl_in</td>
+<td>790 deny ip 54.203.159.1/32 any</td>
+<td>DENY</td>
+<td>500 deny ip 54.0.0.0/8 any</td>
+<td>False</td>
+<td>BLOCKING_LINES</td>
+<td>None</td>
 </tr>
 </tbody>
 </table>
-<pre>Each line in the answer above identifies an unreachable line in a filter. Let’s take a closer look at the first one. It shows that the <span style="font-weight: 500;">line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the <span style="font-weight: 500;">line 540</span> shown in the <span style="font-weight: 500;">Blocking_Lines</span> column. The <span style="font-weight: 500;">Different_Action</span> column indicates that the blocking <span style="font-weight: 500;">line 540</span> has the opposite action as the blocked <span style="font-weight: 500;">line 670</span>, a more worrisome situation than if actions were the same.</pre>
-The <span style="font-weight: 500;">Reason</span> column shows that the line is unreachable because it has other lines that block it, Lines can also be independently unreachable (i.e., no packet will ever match it) or may be unreachable because of circular references. The <span style="font-weight: 600;">filterLineReachability</span> question identifies such cases as well, and provides more information about them in the <span style="font-weight: 500;">Additional_Info</span> column.
+<p><br></p>
+Each line in the answer above identifies an unreachable line in a filter. Let’s take a closer look at the first one. It shows that the <span>line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the <span>line 540</span> shown in the <span>Blocking_Lines</span> column. The <span>Different_Action</span> column indicates that the blocking <span>line 540</span> has the opposite action as the blocked <span>line 670</span>, a more worrisome situation than if actions were the same.
+The <span>Reason</span> column shows that the line is unreachable because it has other lines that block it, Lines can also be independently unreachable (i.e., no packet will ever match it) or may be unreachable because of circular references. The <span style="font-weight: 600;">filterLineReachability</span> question identifies such cases as well, and provides more information about them in the <span>Additional_Info</span> column.
 
-&nbsp;
+<p><br></p>
 <h3>Comparing the behavior of filters</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a><i>. </i>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a>
+      <p><br></p>
 
 As your network evolves, the ACL and firewall policies change and grow, often resulting in large rule-sets that can exceed the capability of the specific device it is applied to, or result in a performance degradation. So you periodically try to refactor / compress these rules to mitigate this problem. The <span style="font-weight: 600;">compareFilters</span> query in Batfish allows you to compare the behaviors of your existing ACL/firewall policy and the new compressed one to ensure that you are not permitting or denying more traffic than desired.
 
-&nbsp;
-<table style="height: 456px;" width="984">
+<p></p>
+<br>
+<table class="table-dark table-borderless">
 <tbody>
 <tr>
 <td>
-<pre><i><span style="font-weight: 500;"># Initialize a snapshot with the original ACL</span></i>
+<i># Initialize a snapshot with the original ACL</i>
+<p>
+<i>original_snapshot </i> bf_session.init_snapshot_from_text(
+ original_acl,
+ platform="cisco-nx",
+ snapshot_name="original",
+ overwrite=True
+</p><br>
+<i><span># Initialize a snapshot with the compressed ACL</span></i>
+<p><i>compressed_snapshot </i> bf_session.init_snapshot_from_text(
+ compressed_acl,
+ platform="cisco-nx",
+ snapshot_name="compressed",
+ overwrite=True
+</p><br>
+<i><span># Now, compare the two ACLs in the two snapshots</span></i>
 
-<i><span style="font-weight: 500;">original_snapshot </span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;"> bf_session</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">init_snapshot_from_text(</span></i>
-<i><span style="font-weight: 500;">    original_acl,</span></i>
-<i><span style="font-weight: 500;">    platform</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"cisco-nx"</span></i><i><span style="font-weight: 500;">,</span></i>
-<i><span style="font-weight: 500;">    snapshot_name</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"original"</span></i><i><span style="font-weight: 500;">,</span></i>
-<i><span style="font-weight: 500;">    overwrite</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">True</span></i><i><span style="font-weight: 500;">)</span></i>
-
-<i><span style="font-weight: 500;"># Initialize a snapshot with the compressed ACL</span></i>
-
-<i><span style="font-weight: 500;">compressed_snapshot </span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;"> bf_session</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">init_snapshot_from_text(</span></i>
-<i><span style="font-weight: 500;">    compressed_acl,</span></i>
-<i><span style="font-weight: 500;">    platform</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"cisco-nx"</span></i><i><span style="font-weight: 500;">,</span></i>
-<i><span style="font-weight: 500;">    snapshot_name</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">"compressed"</span></i><i><span style="font-weight: 500;">,</span></i>
-<i><span style="font-weight: 500;">    overwrite</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">True</span></i><i><span style="font-weight: 500;">)</span></i>
-
-<i><span style="font-weight: 500;"># Now, compare the two ACLs in the two snapshots</span></i>
-
-<i><span style="font-weight: 500;">answer </span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;"> bfq</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">compareFilters()</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">answer(snapshot</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">compressed_snapshot, reference_snapshot</span></i><i><span style="font-weight: 500;">=</span></i><i><span style="font-weight: 500;">original_snapshot)</span></i>
-<i><span style="font-weight: 500;">show(answer</span></i><i><span style="font-weight: 500;">.</span></i><i><span style="font-weight: 500;">frame())</span></i></pre>
+answer = bfq.compareFilters().answer(snapshot=compressed_snapshot, reference_snapshot=original_snapshot)
+show(answer.frame())<br>
 </td>
 </tr>
 </tbody>
 </table>
-&nbsp;
-<table>
+<p><br></p>
+<table class="table table-striped table-dark">
 <tbody>
 <tr>
-<td><span style="font-weight: 500;">Node</span></td>
-<td><span style="font-weight: 500;">Filter_Name</span></td>
-<td><span style="font-weight: 500;">Line_Index</span></td>
-<td><span style="font-weight: 500;">Line_Content</span></td>
-<td><span style="font-weight: 500;">Line_Action</span></td>
-<td><span style="font-weight: 500;">Reference_Line_Index</span></td>
-<td><span style="font-weight: 500;">Reference_Line_Content</span></td>
+<td>Node</td>
+<td>Filter_Name</td>
+<td>Line_Index</td>
+<td>Line_Content</td>
+<td>Line_Action</td>
+<td>Reference_Line_Index</td>
+<td>Reference_Line_Content</td>
 </tr>
 <tr>
-<td><span style="font-weight: 500;">config</span></td>
-<td><span style="font-weight: 500;">acl</span></td>
-<td><span style="font-weight: 500;">16</span></td>
-<td><span style="font-weight: 500;">210 deny ip 218.67.71.0/23 any</span></td>
-<td><span style="font-weight: 500;">DENY</span></td>
-<td><span style="font-weight: 500;">50</span></td>
-<td><span style="font-weight: 500;">510 permit icmp any any echo-reply</span></td>
+<td>config</td>
+<td>acl</td>
+<td>16</td>
+<td>210 deny ip 218.67.71.0/23 any</td>
+<td>DENY</td>
+<td><span>50</span></td>
+<td><span>510 permit icmp any any echo-reply</span></td>
 </tr>
 <tr>
-<td><span style="font-weight: 500;">config</span></td>
-<td><span style="font-weight: 500;">acl</span></td>
-<td><span style="font-weight: 500;">40</span></td>
-<td><span style="font-weight: 500;">510 permit icmp any any echo-reply</span></td>
-<td><span style="font-weight: 500;">PERMIT</span></td>
-<td><span style="font-weight: 500;">21</span></td>
-<td><span style="font-weight: 500;">220 deny ip 218.67.72.0/24 any</span></td>
+<td><span>config</span></td>
+<td><span>acl</span></td>
+<td><span>40</span></td>
+<td><span>510 permit icmp any any echo-reply</span></td>
+<td><span>PERMIT</span></td>
+<td><span>21</span></td>
+<td><span>220 deny ip 218.67.72.0/24 any</span></td>
 </tr>
 <tr>
-<td><span style="font-weight: 500;">config</span></td>
-<td><span style="font-weight: 500;">acl</span></td>
-<td><span style="font-weight: 500;">41</span></td>
-<td><span style="font-weight: 500;">880 deny ip any any</span></td>
-<td><span style="font-weight: 500;">DENY</span></td>
-<td><span style="font-weight: 500;">7</span></td>
-<td><span style="font-weight: 500;">80 permit tcp 205.248.58.190/32 205.248.58.188/32 eq bgp</span></td>
+<td><span>config</span></td>
+<td><span>acl</span></td>
+<td><span>41</span></td>
+<td><span>880 deny ip any any</span></td>
+<td><span>DENY</span></td>
+<td><span>7</span></td>
+<td><span>80 permit tcp 205.248.58.190/32 205.248.58.188/32 eq bgp</span></td>
 </tr>
 </tbody>
 </table>
 The <span style="font-weight: 600;">compareFilters</span> question compares two filters and returns pairs of lines, one from each filter, that match the same flow(s) but treat them differently. If it reports no output, the filters are guaranteed to be identical. The analysis is exhaustive and considers all possible flows.
 
-As we can see from the output above, our compressed ACL is not the same as the original one. In particular, <span style="font-weight: 500;">line 210</span> of the compressed ACL will deny some flows that were being permitted by <span style="font-weight: 500;">line 510</span> of the original; and <span style="font-weight: 500;">line 510</span> of the compressed ACL will permit some flows that were being denied by <span style="font-weight: 500;">line 220</span> of the original ACL. Because the permit statements correspond to ICMP traffic, we can tell that the traffic treated by the two filters is ICMP. To narrow things down to specific source and destination IPs that are impacted, you can run the <span style="font-weight: 600;">searchFilters</span> query.
+As we can see from the output above, our compressed ACL is not the same as the original one. In particular, <span>line 210</span> of the compressed ACL will deny some flows that were being permitted by <span>line 510</span> of the original; and <span>line 510</span> of the compressed ACL will permit some flows that were being denied by <span>line 220</span> of the original ACL. Because the permit statements correspond to ICMP traffic, we can tell that the traffic treated by the two filters is ICMP. To narrow things down to specific source and destination IPs that are impacted, you can run the <span style="font-weight: 600;">searchFilters</span> query.
 
 To see these queries in action on example networks, please check out the Jupyter notebooks <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>. Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
 <h3>Community created resources</h3>
 A number of members of the Batfish open-source community have created content related to ACL and firewall policy changes. You can find a few of them here:
+      <p><br></p>
 <ul>
  	<li style="font-weight: 400;" aria-level="1"><a href="https://tech.ebayinc.com/engineering/safe-acl-change-through-model-based-analysis/">Safe ACL Change through Model-based Analysis, by eBay</a></li>
  	<li style="font-weight: 400;" aria-level="1"><a href="https://blog.networktocode.com/post/how-to-build-an-acl-auditor/">How to Build an ACL Auditor with Batfish, by Network to Code</a></li>
  	<li style="font-weight: 400;" aria-level="1"><a href="https://www.packetflow.co.uk/a-hands-on-guide-to-multi-tiered-firewall-changes-with-ansible-and-batfish-part-3/">A Hands-on Guide to Multi-Tiered Firewall Changes with Ansible and Batfish (Part 3), by Packet Coders</a></li>
 </ul>
+
 <h3>Summary</h3>
 Analyzing the behavior of ACLs and firewall policies is a pretty complex task. Batfish has a number of core capabilities that greatly simplifies this, as shown above. <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a> (offered by <a href="https://www.intentionet.com">Intentionet</a>) builds on these capabilities and provides an interactive UI-based and programmatic workflow to make it even easier to use. To learn more about <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise,</a> follow this <a href="https://www.intentionet.com/product/batfish-enterprise/">link</a>.
 
 If you want to learn more about Batfish or get involved in the open-source community, please join our <a href="https://join.slack.com/t/batfish-org/shared_invite/enQtMzA0Nzg2OTAzNzQ1LTcyYzY3M2Q0NWUyYTRhYjdlM2IzYzRhZGU1NWFlNGU2MzlhNDY3OTJmMDIyMjQzYmRlNjhkMTRjNWIwNTUwNTQ">Slack</a> workspace or find us on <a href="https://github.com/batfish/batfish">GitHub</a>.    </div>
-
+<p><br></p>
+<p><br></p>
 
   </div>
     <!-- End Content-->
