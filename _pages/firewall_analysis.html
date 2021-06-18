@@ -26,7 +26,7 @@ This article will show you how to use each of these capabilities to analyze an A
       <p><br></p>
 
 
-The <span style="font-weight: 600;">testFilters</span> query allows you to analyze the behavior of a filter with respect to a specific flow. For example, if I want to determine if an ACL is allowing a specific host to reach the DNS server, I would use <span style="font-weight: 600;">testFilters</span> as shown below.
+The <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> query allows you to analyze the behavior of a filter with respect to a specific flow. For example, if I want to determine if an ACL is allowing a specific host to reach the DNS server, I would use <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> as shown below.
 <p><br></p>
 <table class="table-dark table-borderless" style="font-family: monospace, monospace; color: black; background-color: lightgray">
 <tbody>
@@ -47,7 +47,7 @@ show(answer.frame())
 </table>
 <p><br></p>
 
-<table class="table-dark">
+<table class="table-striped table-dark" style="font-family: monospace, monospace;">
 <tbody>
 <tr>
 <td>Node</td>
@@ -79,14 +79,21 @@ IP Protocol: UDP</td>
 </table>
 <p><br></p>
 
-With a simple query, you can get a definitive answer about the behavior of a filter with regards to a specific flow. So before you make a change to an ACL or firewall rule, you can test the existing one and determine what action it takes for a specific flow (or sets of flows).
+With a simple query, you can get a definitive answer about the behavior of a filter with regards to a specific flow.
+      So before you make a change to an ACL or firewall rule, you can test the existing one and determine what action
+      it takes for a specific flow (or sets of flows).
 
-But if you wanted to analyze the behavior of a filter for a large set of flows, you would use <span style="font-weight: 600;">searchFilters</span> instead.
+But if you wanted to analyze the behavior of a filter for a large set of flows, you would use
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> instead.
 <h3>Analyzing the filter behavior for a large set of flows</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<i>Note: A detailed Jupyter notebook covering this example can be found
+</i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
 <p><br></p>
 
-Building on the previous example, let’s see if the ACL permits access to the DNS server for ALL hosts in a given subnet. To do that, you actually “search” for any DNS flow from the source subnet to the DNS server that is denied. You are asking Batfish to see if there are any flows that violate your policy that all hosts in the given subnet MUST have access to the DNS server.
+Building on the previous example, let’s see if the ACL permits access to the DNS server for ALL hosts in a given subnet.
+      To do that, you actually “search” for any DNS flow from the source subnet to the DNS server that is denied.
+      You are asking Batfish to see if there are any flows that violate your policy that all hosts in the given
+      subnet MUST have access to the DNS server.
 <p><br></p>
 <table class="table-dark table-borderless" style="font-family: monospace, monospace; color: black; background-color: lightgray">
 <tbody>
@@ -104,9 +111,9 @@ show(answer.frame())
 </tbody>
 </table>
 <p><br></p>
-<table class="table-dark" style="font-family: monospace, monospace;">
+<table class="table-striped table-dark" style="font-family: monospace, monospace;">
 <tbody>
-<tr style="color: black;">
+<tr>
 <td>Node</td>
 <td>Filter_Name</td>
 <td>Flow</td>
@@ -136,14 +143,26 @@ IP Protocol: UDP</td>
 </table>
 <p><br></p>
 
-As you can see, we did get a flow that matches the search condition and thus violates our desired guarantee of the entire subnet being able to reach the DNS server. The columns carry the same information as those for <span>testFilters</span> and provide insight into the violation. In particular, we see that a flow with source IP 10.10.10.42 is denied by an earlier line in the ACL. Such needles in the haystack are impossible to find with other tools and techniques.
+As you can see, we did get a flow that matches the search condition and thus violates our desired guarantee of the
+      entire subnet being able to reach the DNS server. The columns carry the same information as those for
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> and provide insight
+      into the violation. In particular, we see that a flow with source IP 10.10.10.42 is denied by an earlier line
+      in the ACL. Such needles in the haystack are impossible to find with other tools and techniques.
 
-Both <span style="font-weight: 600;">testFilters</span> and <span style="font-weight: 600;">searchFilters</span> help you analyze the behavior of an ACL or firewall rule with regards to a given flow or sets of flows. But Batfish provides another interesting capability to analyze a filter - <span style="font-weight: 600;">filterLineReachability</span>.
+Both <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> and
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> help you analyze
+      the behavior of an ACL or firewall rule with regards to a given flow or sets of flows. But Batfish provides
+      another interesting capability to analyze a filter -
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
 <h3>Identifying unreachable filter lines</h3>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
 <p><br></p>
 
-What once started out as a nice pristine and easy to understand ACL or firewall policy, over time turns into quite a mess as the network and services evolve. Oftentimes you end up creating new rules that are partially or fully masked by earlier rules, thereby rendering your changes partially and wholly ineffective. To help you in this situation, Batfish has the query filterLineReachability.
+What once started out as a nice pristine and easy to understand ACL or firewall policy, over time turns into quite a
+      mess as the network and services evolve. Oftentimes you end up creating new rules that are partially or fully
+      masked by earlier rules, thereby rendering your changes partially and wholly ineffective.
+      To help you in this situation, Batfish has the query
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
 <p><br></p>
 <table class="table-dark table-borderless" style="font-family: monospace, monospace; color: black; background-color: lightgray">
 <tbody>
@@ -158,7 +177,7 @@ show(aclAns.frame().sort_values(by="Unreachable_Line"))
 </tbody>
 </table>
 <p><br></p>
-<table class="table-dark" style="font-family: monospace, monospace;">
+<table class="table-striped table-dark" style="font-family: monospace, monospace;">
 <tbody>
 <tr>
 <td>Sources</td>
@@ -190,15 +209,29 @@ show(aclAns.frame().sort_values(by="Unreachable_Line"))
 </tbody>
 </table>
 <p><br></p>
-Each line in the answer above identifies an unreachable line in a filter. Let’s take a closer look at the first one. It shows that the <span>line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the <span>line 540</span> shown in the <span>Blocking_Lines</span> column. The <span>Different_Action</span> column indicates that the blocking <span>line 540</span> has the opposite action as the blocked <span>line 670</span>, a more worrisome situation than if actions were the same.
-The <span>Reason</span> column shows that the line is unreachable because it has other lines that block it, Lines can also be independently unreachable (i.e., no packet will ever match it) or may be unreachable because of circular references. The <span style="font-weight: 600;">filterLineReachability</span> question identifies such cases as well, and provides more information about them in the <span>Additional_Info</span> column.
+Each line in the answer above identifies an unreachable line in a filter. Let’s take a closer look at the first one.
+      It shows that the <span>line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the
+      <span>line 540</span> shown in the <span>Blocking_Lines</span> column. The <span>Different_Action</span> column
+      indicates that the blocking <span>line 540</span> has the opposite action as the blocked <span>line 670</span>,
+      a more worrisome situation than if actions were the same.
+The <span>Reason</span> column shows that the line is unreachable because it has other lines that block it,
+      Lines can also be independently unreachable (i.e., no packet will ever match it) or may be unreachable
+      because of circular references.
+      The <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>
+      question identifies such cases as well, and provides more information about them in the <span>Additional_Info</span>
+      column.
 
 <p><br></p>
 <h3>Comparing the behavior of filters</h3>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
 
-As your network evolves, the ACL and firewall policies change and grow, often resulting in large rule-sets that can exceed the capability of the specific device it is applied to, or result in a performance degradation. So you periodically try to refactor / compress these rules to mitigate this problem. The <span style="font-weight: 600;">compareFilters</span> query in Batfish allows you to compare the behaviors of your existing ACL/firewall policy and the new compressed one to ensure that you are not permitting or denying more traffic than desired.
+As your network evolves, the ACL and firewall policies change and grow, often resulting in large rule-sets that can
+      exceed the capability of the specific device it is applied to, or result in a performance degradation.
+      So you periodically try to refactor / compress these rules to mitigate this problem.
+      The <span style="font-family: monospace, monospace; font-weight: 600;"><b>compareFilters</b></span> query in
+      Batfish allows you to compare the behaviors of your existing ACL/firewall policy and the new compressed one to
+      ensure that you are not permitting or denying more traffic than desired.
 
 <p></p>
 <br>
@@ -230,7 +263,7 @@ show(answer.frame())<br>
 </tbody>
 </table>
 <p><br></p>
-<table class="table table-striped table-dark" style="font-family: monospace, monospace;">
+<table class="table-striped table-dark" style="font-family: monospace, monospace;">
 <tbody>
 <tr>
 <td>Node</td>
@@ -270,13 +303,24 @@ show(answer.frame())<br>
 </tr>
 </tbody>
 </table>
-The <span style="font-weight: 600;">compareFilters</span> question compares two filters and returns pairs of lines, one from each filter, that match the same flow(s) but treat them differently. If it reports no output, the filters are guaranteed to be identical. The analysis is exhaustive and considers all possible flows.
+The <span style="font-family: monospace, monospace; font-weight: 600;"><b>compareFilters</b></span> question
+      compares two filters and returns pairs of lines, one from each filter, that match the same flow(s) but treat
+      them differently. If it reports no output, the filters are guaranteed to be identical.
+      The analysis is exhaustive and considers all possible flows.
 
-As we can see from the output above, our compressed ACL is not the same as the original one. In particular, <span>line 210</span> of the compressed ACL will deny some flows that were being permitted by <span>line 510</span> of the original; and <span>line 510</span> of the compressed ACL will permit some flows that were being denied by <span>line 220</span> of the original ACL. Because the permit statements correspond to ICMP traffic, we can tell that the traffic treated by the two filters is ICMP. To narrow things down to specific source and destination IPs that are impacted, you can run the <span style="font-weight: 600;">searchFilters</span> query.
+As we can see from the output above, our compressed ACL is not the same as the original one.
+      In particular, <span>line 210</span> of the compressed ACL will deny some flows that were being permitted by
+      <span>line 510</span> of the original; and <span>line 510</span> of the compressed ACL will permit some flows
+      that were being denied by <span>line 220</span> of the original ACL. Because the permit statements correspond
+      to ICMP traffic, we can tell that the traffic treated by the two filters is ICMP. To narrow things down to
+      specific source and destination IPs that are impacted, you can run the
+      <span style="font-family:monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> query.
 
-To see these queries in action on example networks, please check out the Jupyter notebooks <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>. Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
+To see these queries in action on example networks, please check out the Jupyter notebooks
+      <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>. Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
 <h3>Community created resources</h3>
-A number of members of the Batfish open-source community have created content related to ACL and firewall policy changes. You can find a few of them here:
+A number of members of the Batfish open-source community have created content related to ACL and firewall policy
+      changes. You can find a few of them here:
       <p><br></p>
 <ul>
  	<li style="font-weight: 400;" aria-level="1"><a href="https://tech.ebayinc.com/engineering/safe-acl-change-through-model-based-analysis/">Safe ACL Change through Model-based Analysis, by eBay</a></li>
@@ -285,9 +329,18 @@ A number of members of the Batfish open-source community have created content re
 </ul>
 
 <h3>Summary</h3>
-Analyzing the behavior of ACLs and firewall policies is a pretty complex task. Batfish has a number of core capabilities that greatly simplifies this, as shown above. <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a> (offered by <a href="https://www.intentionet.com">Intentionet</a>) builds on these capabilities and provides an interactive UI-based and programmatic workflow to make it even easier to use. To learn more about <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise,</a> follow this <a href="https://www.intentionet.com/product/batfish-enterprise/">link</a>.
+Analyzing the behavior of ACLs and firewall policies is a pretty complex task. Batfish has a number of core
+      capabilities that greatly simplifies this, as shown above.
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a>
+      (offered by <a href="https://www.intentionet.com">Intentionet</a>) builds on these capabilities and provides
+      an interactive UI-based and programmatic workflow to make it even easier to use. To learn more about
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise,</a> follow this
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">link</a>.
 
-If you want to learn more about Batfish or get involved in the open-source community, please join our <a href="https://join.slack.com/t/batfish-org/shared_invite/enQtMzA0Nzg2OTAzNzQ1LTcyYzY3M2Q0NWUyYTRhYjdlM2IzYzRhZGU1NWFlNGU2MzlhNDY3OTJmMDIyMjQzYmRlNjhkMTRjNWIwNTUwNTQ">Slack</a> workspace or find us on <a href="https://github.com/batfish/batfish">GitHub</a>.    </div>
+If you want to learn more about Batfish or get involved in the open-source community, please join our
+      <a href="https://join.slack.com/t/batfish-org/shared_invite/enQtMzA0Nzg2OTAzNzQ1LTcyYzY3M2Q0NWUyYTRhYjdlM2IzYzRhZGU1NWFlNGU2MzlhNDY3OTJmMDIyMjQzYmRlNjhkMTRjNWIwNTUwNTQ">Slack</a>
+      workspace or find us on <a href="https://github.com/batfish/batfish">GitHub</a>.
+  </div>
 <p><br></p>
 <p><br></p>
 
