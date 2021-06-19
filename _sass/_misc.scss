@@ -18,3 +18,31 @@
 .bg-gradient-1 {
     background: linear-gradient(to bottom, #4c357f, #392760);
 }
+
+.bf-code {
+  background-color: $color_table_background;
+}
+
+.bf-table {
+  background-color: $color_table_background;
+
+  thead {
+    background-color: $color_table_header_background;
+    th {
+      border-color: transparent;
+      white-space: nowrap;
+    }
+  }
+
+  td {
+    border-color: transparent;
+  }
+
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.025);
+  }
+
+  &.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+}
