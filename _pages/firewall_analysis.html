@@ -9,9 +9,14 @@ keywords: firewall analysis, firewall change management, acl analysis, acl chang
 
   <div class="post-content">
 
-Manually reasoning about what an ACL or firewall policy will do to a packet, when it has rules that cover multiple fields of the IP header is extremely difficult, and as the rules grow in size becomes virtually impossible. Add to that the task of understanding what a change to the ACL or firewall policy will do, and you are in for quite a ride.
+Manually reasoning about what an ACL or firewall policy will do to a packet, when it has rules that cover
+      multiple fields of the IP header, is extremely difficult and as the rules grow in size becomes virtually
+      impossible. Add to that the task of understanding what a change to the ACL or firewall policy will do,
+      and you are in for quite a ride.
 
-But this is where a tool such as Batfish comes into play. It provides multiple methods of analyzing ACLs and firewall rules, so that you can ensure that your security policy functions as desired. And it is built for you to do this programmatically, so you can easily incorporate this into any workflow.
+This is where a tool such as Batfish comes into play. It provides multiple methods of analyzing ACLs and
+      firewall rules, so that you can ensure that your security policy functions as desired. And it is built for
+      you to do this programmatically, so you can easily incorporate this into any workflow.
 
 Batfish provides 4 core capabilities to analyze an ACL or firewall policy.
 <p><br></p>
@@ -22,13 +27,20 @@ Batfish provides 4 core capabilities to analyze an ACL or firewall policy.
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">compareFilters</span></li>
 </ul>
 <p><br></p>
-This article will show you how to use each of these capabilities to analyze an ACL and a change to an ACL. So let’s get started. This article assumes some familiarity with Batfish. Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
+This article will show you how to use each of these capabilities to analyze an ACL and a change to an ACL.
+      So let’s get started. This article assumes some familiarity with Batfish.
+      Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page
+      and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
 <h3>Analyzing the filter behavior for a specific flow</h3>
-<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i>
+      <a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
 
 
-The <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> query allows you to analyze the behavior of a filter with respect to a specific flow. For example, if I want to determine if an ACL is allowing a specific host to reach the DNS server, I would use <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> as shown below.
+The <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> query allows you to analyze the behavior of a filter
+      (Firewall policy or ACL rule) with respect to a specific flow. For example, if I want to determine if an ACL
+      is allowing a specific host to reach the
+      DNS server, I would use <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> as shown below.
 <p><br></p>
 <table class="table bf-code table-borderless text-monospace">
 <tbody>
@@ -165,7 +177,7 @@ Both <span style="font-family: monospace, monospace; font-weight: 600;"><b>testF
 <p><br></p>
 
 What once started out as a nice pristine and easy to understand ACL or firewall policy, over time turns into quite a
-      mess as the network and services evolve. Oftentimes you end up creating new rules that are partially or fully
+      mess as the network and services evolve. Oftentimes, you end up creating new rules that are partially or fully
       masked by earlier rules, thereby rendering your changes partially and wholly ineffective.
       To help you in this situation, Batfish has the query
       <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
@@ -177,7 +189,7 @@ What once started out as a nice pristine and easy to understand ACL or firewall 
 <i># Find unreachable lines in filters of rtr-with-acl</i><p><br></p>
 aclAns = bfq.filterLineReachability(nodes="rtr-with-acl").answer()
 <p><br></p>
-show(aclAns.frame().sort_values(by="Unreachable_Line"))
+show(aclAns.frame())
 </td>
 </tr>
 </tbody>
@@ -249,18 +261,11 @@ As your network evolves, the ACL and firewall policies change and grow, often re
 <td>
 <i># Initialize a snapshot with the original ACL</i>
 <p>
-<i>original_snapshot </i> bf_session.init_snapshot_from_text(
- original_acl,
- platform="cisco-nx",
- snapshot_name="original",
- overwrite=True
+<i>#original_snapshot </i>
+ original_snapshot="original"
 </p><br>
-<i><span># Initialize a snapshot with the compressed ACL</span></i>
-<p><i>compressed_snapshot </i> bf_session.init_snapshot_from_text(
- compressed_acl,
- platform="cisco-nx",
- snapshot_name="compressed",
- overwrite=True
+<p><i>#compressed_snapshot </i>
+ compressed_snapshot="compressed"
 </p><br>
 <i><span># Now, compare the two ACLs in the two snapshots</span></i>
 
@@ -328,7 +333,8 @@ As we can see from the output above, our compressed ACL is not the same as the o
       <span style="font-family:monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> query.
 
 To see these queries in action on example networks, please check out the Jupyter notebooks
-      <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>. Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
+      <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>.
+      Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
 <h3>Community created resources</h3>
 A number of members of the Batfish open-source community have created content related to ACL and firewall policy
       changes. You can find a few of them here:
