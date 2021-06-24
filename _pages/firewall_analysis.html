@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Firewall and ACL Audits and Analysis with Batfish
+title: Firewall and ACL Audits and Analysis | Batfish
 permalink: /firewall_analysis
-description: Learn how Batfish can help you not only audit existing Firewall policies and ACL rules, but also analyze the impact of proposed changes.
+description: Learn how Batfish can help you with Firewall and ACL audits and analysis.
 keywords: firewall analysis, firewall change management, acl analysis, acl change management, firewall workflow, acl workflow, firewall automation, acl automation
 ---
 <article class="post">
@@ -18,7 +18,7 @@ This is where a tool such as Batfish comes into play. It provides multiple metho
       firewall rules, so that you can ensure that your security policy functions as desired. And it is built for
       you to do this programmatically, so you can easily incorporate this into any workflow.
 
-Batfish provides 4 core capabilities to analyze an ACL or firewall policy.
+Batfish provides 4 core capabilities for Firewall and ACL audit and analysis:.
 <p><br></p>
 <ul>
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">testFilters</span></li>
@@ -27,11 +27,11 @@ Batfish provides 4 core capabilities to analyze an ACL or firewall policy.
  	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">compareFilters</span></li>
 </ul>
 <p><br></p>
-This article will show you how to use each of these capabilities to analyze an ACL and a change to an ACL.
+This article will show you how to use each of these capabilities to audit/analyze an ACL of firewall policy.
       So let’s get started. This article assumes some familiarity with Batfish.
       Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page
       and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
-<h3>Analyzing the filter behavior for a specific flow</h3>
+<h3>Analyzing the Firewall/ACL behavior for a specific flow</h3>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i>
       <a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
@@ -99,9 +99,9 @@ With a simple query, you can get a definitive answer about the behavior of a fil
       So before you make a change to an ACL or firewall rule, you can test the existing one and determine what action
       it takes for a specific flow (or sets of flows).
 
-But if you wanted to analyze the behavior of a filter for a large set of flows, you would use
+But if you wanted to analyze the behavior of a Firewall or ACL for a large set of flows, you would use
       <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> instead.
-<h3>Analyzing the filter behavior for a large set of flows</h3>
+<h3>Analyzing the Firewall/ACL behavior for a large set of flows</h3>
 <i>Note: A detailed Jupyter notebook covering this example can be found
 </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
 <p><br></p>
@@ -229,7 +229,7 @@ show(aclAns.frame())
 </tbody>
 </table>
 <p><br></p>
-Each line in the answer above identifies an unreachable line in a filter. Let’s take a closer look at the first one.
+Each line in the answer above identifies an unreachable line in a firewall policy or ACL. Let’s take a closer look at the first one.
       It shows that the <span>line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the
       <span>line 540</span> shown in the <span>Blocking_Lines</span> column. The <span>Different_Action</span> column
       indicates that the blocking <span>line 540</span> has the opposite action as the blocked <span>line 670</span>,
@@ -242,7 +242,7 @@ The <span>Reason</span> column shows that the line is unreachable because it has
       column.
 
 <p><br></p>
-<h3>Comparing the behavior of filters</h3>
+<h3>Comparing the behavior of Firewall policies or ACLs</h3>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
 
@@ -259,7 +259,6 @@ As your network evolves, the ACL and firewall policies change and grow, often re
 <tbody>
 <tr>
 <td>
-<i># Initialize a snapshot with the original ACL</i>
 <p>
 <i>#original_snapshot </i>
  original_snapshot="original"
@@ -320,8 +319,8 @@ show(answer.frame())<br>
 </table>
       <p><br></p>
 The <span style="font-family: monospace, monospace; font-weight: 600;"><b>compareFilters</b></span> question
-      compares two filters and returns pairs of lines, one from each filter, that match the same flow(s) but treat
-      them differently. If it reports no output, the filters are guaranteed to be identical.
+      compares two filters (firewall policies or ACLs) and returns pairs of lines, one from each filter, that match
+      the same flow(s) but treat them differently. If it reports no output, the filters are guaranteed to be identical.
       The analysis is exhaustive and considers all possible flows.
 
 As we can see from the output above, our compressed ACL is not the same as the original one.
@@ -346,7 +345,7 @@ A number of members of the Batfish open-source community have created content re
 </ul>
 
 <h3>Summary</h3>
-Analyzing the behavior of ACLs and firewall policies is a pretty complex task. Batfish has a number of core
+Analyzing firewall poliices and ACLs is a pretty complex task. Batfish has a number of core
       capabilities that greatly simplifies this, as shown above.
       <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a>
       (offered by <a href="https://www.intentionet.com">Intentionet</a>) builds on these capabilities and provides
