@@ -1,0 +1,388 @@
+---
+layout: page
+title: Firewall and ACL Audits and Analysis | Batfish
+permalink: /firewall_analysis
+description: Learn how Batfish can help you with Firewall and ACL audits and analysis.
+keywords: firewall analysis, firewall change management, acl analysis, acl change management, firewall workflow, acl workflow, firewall automation, acl automation
+---
+<article class="post">
+
+  <div class="post-content">
+
+Manually reasoning about what an ACL or firewall policy will do to a packet, when it has rules that cover
+      multiple fields of the IP header, is extremely difficult and as the rules grow in size becomes virtually
+      impossible. Add to that the task of understanding what a change to the ACL or firewall policy will do,
+      and you are in for quite a ride.
+
+This is where a tool such as Batfish comes into play. It provides multiple methods of analyzing ACLs and
+      firewall rules, so that you can ensure that your security policy functions as desired. And it is built for
+      you to do this programmatically, so you can easily incorporate this into any workflow.
+
+Batfish provides 4 core capabilities for Firewall and ACL audit and analysis:.
+<p><br></p>
+<ul>
+ 	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">testFilters</span></li>
+ 	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">searchFilters</span></li>
+ 	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">filterLineReachability</span></li>
+ 	<li style="font-weight: 600;" aria-level="1"><span style="font-weight: 600;">compareFilters</span></li>
+</ul>
+<p><br></p>
+This article will show you how to use each of these capabilities to audit/analyze an ACL of firewall policy.
+      So let’s get started. This article assumes some familiarity with Batfish.
+      Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page
+      and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
+<h3>Analyzing the Firewall/ACL behavior for a specific flow</h3>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i>
+      <a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+      <p><br></p>
+
+
+The <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> query allows you to analyze the behavior of a filter
+      (Firewall policy or ACL rule) with respect to a specific flow. For example, if I want to determine if an ACL
+      is allowing a specific host to reach the
+      DNS server, I would use <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> as shown below.
+<p><br></p>
+<table class="table bf-code table-borderless text-monospace">
+<tbody>
+<tr>
+<td>
+<i># Check if a representative host can reach the DNS server</i>
+<br>
+dns_flow = HeaderConstraints(srcIps="10.10.10.1", dstIps="218.8.104.58",
+                    applications=["dns"])
+<p><br></p>
+answer = bfq.testFilters(headers=dns_flow, nodes="rtr-with-acl",
+                    filters="acl_in").answer()
+    <p><br></p>
+show(answer.frame())
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+<table class="table bf-table table-striped table-hover table-responsive text-monospace">
+<thead>
+<tr>
+<th>Node</th>
+<th>Filter name</th>
+<th>Flow</th>
+<th>Action</th>
+<th>Line content</th>
+<th>Trace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rtr-with-acl</td>
+<td>acl_in</td>
+<td>Start Location: rtr-with-acl
+
+Src IP: 10.10.10.1
+
+Src Port: 49152
+
+Dst IP: 218.8.104.58
+
+Dst Port: 53
+
+IP Protocol: UDP</td>
+<td>PERMIT</td>
+<td>660 permit udp 10.10.10.0/24 218.8.104.58/32 eq domain</td>
+<td>Matched line 660 permit udp 10.10.10.0/24 218.8.104.58/32 eq domain</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+With a simple query, you can get a definitive answer about the behavior of a filter with regards to a specific flow.
+      So before you make a change to an ACL or firewall rule, you can test the existing one and determine what action
+      it takes for a specific flow (or sets of flows).
+
+But if you wanted to analyze the behavior of a Firewall or ACL for a large set of flows, you would use
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> instead.
+<h3>Analyzing the Firewall/ACL behavior for a large set of flows</h3>
+<i>Note: A detailed Jupyter notebook covering this example can be found
+</i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<p><br></p>
+
+Building on the previous example, let’s see if the ACL permits access to the DNS server for ALL hosts in a given subnet.
+      To do that, you actually “search” for any DNS flow from the source subnet to the DNS server that is denied.
+      You are asking Batfish to see if there are any flows that violate your policy that all hosts in the given
+      subnet MUST have access to the DNS server.
+<p><br></p>
+<table class="table bf-code table-borderless text-monospace">
+<tbody>
+<tr>
+<td>
+<i># Check if the subnet can reach the DNS server</i>
+<p><br></p>
+dns_traffic = HeaderConstraints(srcIps="10.10.10.0/24", dstIps="218.8.104.58", applications=["dns"])
+<p><br></p>
+answer = bfq.searchFilters(headers=dns_traffic, action"deny", filters="acl_in").answer()
+<p><br></p>
+show(answer.frame())
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="table bf-table table-striped table-hover table-responsive text-monospace">
+<thead>
+<tr>
+<th>Node</th>
+<th>Filter name</th>
+<th>Flow</th>
+<th>Action</th>
+<th>Line content</th>
+<th>Trace</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td>rtr-with-acl</td>
+<td>acl_in</td>
+<td>Start Location: rtr-with-acl
+
+Src IP: 10.10.10.42
+
+Src Port: 49152
+
+Dst IP: 218.8.104.58
+
+Dst Port: 53
+
+IP Protocol: UDP</td>
+<td>DENY</td>
+<td>460 deny udp 10.10.10.42/32 218.8.104.58/32 eq domain</td>
+<td>Matched line 460 deny udp 10.10.10.42/32 218.8.104.58/32 eq domain</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+As you can see, we did get a flow that matches the search condition and thus violates our desired guarantee of the
+      entire subnet being able to reach the DNS server. The columns carry the same information as those for
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> and provide insight
+      into the violation. In particular, we see that a flow with source IP 10.10.10.42 is denied by an earlier line
+      in the ACL. Such needles in the haystack are impossible to find with other tools and techniques.
+
+Both <span style="font-family: monospace, monospace; font-weight: 600;"><b>testFilters</b></span> and
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> help you analyze
+      the behavior of an ACL or firewall rule with regards to a given flow or sets of flows. But Batfish provides
+      another interesting capability to analyze a filter -
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
+<h3>Identifying unreachable filter lines</h3>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
+<p><br></p>
+
+What once started out as a nice pristine and easy to understand ACL or firewall policy, over time turns into quite a
+      mess as the network and services evolve. Oftentimes, you end up creating new rules that are partially or fully
+      masked by earlier rules, thereby rendering your changes partially and wholly ineffective.
+      To help you in this situation, Batfish has the query
+      <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
+<p><br></p>
+<table class="table bf-code table-borderless text-monospace" >
+<tbody>
+<tr>
+<td>
+<i># Find unreachable lines in filters of rtr-with-acl</i><p><br></p>
+aclAns = bfq.filterLineReachability(nodes="rtr-with-acl").answer()
+<p><br></p>
+show(aclAns.frame())
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="table bf-table table-striped table-hover table-responsive text-monospace" >
+<thead>
+<tr>
+<th>Sources</th>
+<th>Unreachable line</th>
+<th>Unreachable line action</th>
+<th>Blocking lines</th>
+<th>Different action</th>
+<th>Reason</th>
+<th>Additional info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rtr-with-acl: acl_in</td>
+<td>670 permit ip 166.146.58.184 any</td>
+<td>PERMIT</td>
+<td>540 deny ip 166.144.0.0/12 any</td>
+<td>True</td>
+<td>BLOCKING_LINES</td>
+<td>None</td>
+</tr>
+<tr>
+<td>rtr-with-acl: acl_in</td>
+<td>790 deny ip 54.203.159.1/32 any</td>
+<td>DENY</td>
+<td>500 deny ip 54.0.0.0/8 any</td>
+<td>False</td>
+<td>BLOCKING_LINES</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+Each line in the answer above identifies an unreachable line in a firewall policy or ACL. Let’s take a closer look at the first one.
+      It shows that the <span>line 670 permit ip 166.146.58.184 any</span> is unreachable because it is blocked by the
+      <span>line 540</span> shown in the <span>Blocking_Lines</span> column. The <span>Different_Action</span> column
+      indicates that the blocking <span>line 540</span> has the opposite action as the blocked <span>line 670</span>,
+      a more worrisome situation than if actions were the same.
+The <span>Reason</span> column shows that the line is unreachable because it has other lines that block it,
+      Lines can also be independently unreachable (i.e., no packet will ever match it) or may be unreachable
+      because of circular references.
+      The <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>
+      question identifies such cases as well, and provides more information about them in the <span>Additional_Info</span>
+      column.
+
+<p><br></p>
+<h3>Comparing the behavior of Firewall policies or ACLs</h3>
+<i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a>
+      <p><br></p>
+
+As your network evolves, the ACL and firewall policies change and grow, often resulting in large rule-sets that can
+      exceed the capability of the specific device it is applied to, or result in a performance degradation.
+      So you periodically try to refactor / compress these rules to mitigate this problem.
+      The <span style="font-family: monospace, monospace; font-weight: 600;"><b>compareFilters</b></span> query in
+      Batfish allows you to compare the behaviors of your existing ACL/firewall policy and the new compressed one to
+      ensure that you are not permitting or denying more traffic than desired.
+
+<p></p>
+<br>
+<table class="table bf-code table-borderless text-monospace">
+<tbody>
+<tr>
+<td>
+<p>
+<i>#original_snapshot </i>
+ original_snapshot="original"
+</p><br>
+<p><i>#compressed_snapshot </i>
+ compressed_snapshot="compressed"
+</p><br>
+<i><span># Now, compare the two ACLs in the two snapshots</span></i>
+
+answer = bfq.compareFilters().answer(snapshot=compressed_snapshot, reference_snapshot=original_snapshot)
+show(answer.frame())<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table class="table bf-table table-striped table-hover table-responsive text-monospace">
+<thead>
+<tr>
+<th>Node</th>
+<th>Filter name</th>
+<th>Line index</th>
+<th>Line content</th>
+<th>Line action</th>
+<th>Reference line index</th>
+<th>Reference line content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>config</td>
+<td>acl</td>
+<td>16</td>
+<td>210 deny ip 218.67.71.0/23 any</td>
+<td>DENY</td>
+<td><span>50</span></td>
+<td><span>510 permit icmp any any echo-reply</span></td>
+</tr>
+<tr>
+<td><span>config</span></td>
+<td><span>acl</span></td>
+<td><span>40</span></td>
+<td><span>510 permit icmp any any echo-reply</span></td>
+<td><span>PERMIT</span></td>
+<td><span>21</span></td>
+<td><span>220 deny ip 218.67.72.0/24 any</span></td>
+</tr>
+<tr>
+<td><span>config</span></td>
+<td><span>acl</span></td>
+<td><span>41</span></td>
+<td><span>880 deny ip any any</span></td>
+<td><span>DENY</span></td>
+<td><span>7</span></td>
+<td><span>80 permit tcp 205.248.58.190/32 205.248.58.188/32 eq bgp</span></td>
+</tr>
+</tbody>
+</table>
+      <p><br></p>
+The <span style="font-family: monospace, monospace; font-weight: 600;"><b>compareFilters</b></span> question
+      compares two filters (firewall policies or ACLs) and returns pairs of lines, one from each filter, that match
+      the same flow(s) but treat them differently. If it reports no output, the filters are guaranteed to be identical.
+      The analysis is exhaustive and considers all possible flows.
+
+As we can see from the output above, our compressed ACL is not the same as the original one.
+      In particular, <span>line 210</span> of the compressed ACL will deny some flows that were being permitted by
+      <span>line 510</span> of the original; and <span>line 510</span> of the compressed ACL will permit some flows
+      that were being denied by <span>line 220</span> of the original ACL. Because the permit statements correspond
+      to ICMP traffic, we can tell that the traffic treated by the two filters is ICMP. To narrow things down to
+      specific source and destination IPs that are impacted, you can run the
+      <span style="font-family:monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> query.
+
+To see these queries in action on example networks, please check out the Jupyter notebooks
+      <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>.
+      Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
+<h3>Community created resources</h3>
+A number of members of the Batfish open-source community have created content related to ACL and firewall policy
+      changes. You can find a few of them here:
+      <p><br></p>
+<ul>
+ 	<li style="font-weight: 400;" aria-level="1"><a href="https://tech.ebayinc.com/engineering/safe-acl-change-through-model-based-analysis/">Safe ACL Change through Model-based Analysis, by eBay</a></li>
+ 	<li style="font-weight: 400;" aria-level="1"><a href="https://blog.networktocode.com/post/how-to-build-an-acl-auditor/">How to Build an ACL Auditor with Batfish, by Network to Code</a></li>
+ 	<li style="font-weight: 400;" aria-level="1"><a href="https://www.packetflow.co.uk/a-hands-on-guide-to-multi-tiered-firewall-changes-with-ansible-and-batfish-part-3/">A Hands-on Guide to Multi-Tiered Firewall Changes with Ansible and Batfish (Part 3), by Packet Coders</a></li>
+</ul>
+
+<h3>Summary</h3>
+Analyzing firewall poliices and ACLs is a pretty complex task. Batfish has a number of core
+      capabilities that greatly simplifies this, as shown above.
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a>
+      (offered by <a href="https://www.intentionet.com">Intentionet</a>) builds on these capabilities and provides
+      an interactive UI-based and programmatic workflow to make it even easier to use. To learn more about
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise,</a> follow this
+      <a href="https://www.intentionet.com/product/batfish-enterprise/">link</a>.
+
+If you want to learn more about Batfish or get involved in the open-source community, please join our
+      <a href="https://join.slack.com/t/batfish-org/shared_invite/enQtMzA0Nzg2OTAzNzQ1LTcyYzY3M2Q0NWUyYTRhYjdlM2IzYzRhZGU1NWFlNGU2MzlhNDY3OTJmMDIyMjQzYmRlNjhkMTRjNWIwNTUwNTQ">Slack</a>
+      workspace or find us on <a href="https://github.com/batfish/batfish">GitHub</a>.
+  </div>
+<p><br></p>
+<p><br></p>
+
+  </div>
+    <!-- End Content-->
+
+    {%- if site.post.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.post -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.var | escape }}
+        </a>
+        </h3>
+        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe
+      <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+    </p>
+    {%- endif -%}
+  </div>
+</article>

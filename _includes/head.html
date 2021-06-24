@@ -3,7 +3,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if page.description %}
+  <meta name="description" content="{{ page.description}} ">
+  {% endif %}
+
+  {% if page.keywords %}
+  <meta name="keywords" content=" {{page.keywords}}">
+  {% endif %}
+
+  {%- if page.title -%}
+  <title>{{page.title}}</title>
+  {% else %}
   <title>Batfish - An open source network configuration analysis tool</title>
+  {%- endif -%}
 
   <link rel="icon" type="image/png" href="{{ "/assets/favicon/favicon-32x32.png" | relative_url }}" sizes="32x32" />
   <link rel="icon" type="image/png" href="{{ "/assets/favicon/favicon-16x16.png" | relative_url }}" sizes="16x16" />
