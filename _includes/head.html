@@ -11,9 +11,13 @@
   <meta name="keywords" content=" {{page.keywords}}">
   {% endif %}
 
+   {% if page.permalink %}
+   <link href="{{ "{{page.permalink}}" | relative_url }}" rel=“canonical”/>
+   {% endif %}
+
   {%- if page.title -%}
   <title>{{page.title}}</title>
-  {% else %}
+  {% else %}  
   <title>Batfish - An open source network configuration analysis tool</title>
   {%- endif -%}
 

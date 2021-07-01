@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Firewall and ACL Audits and Analysis | Batfish
-permalink: /firewall_analysis
+permalink: /firewall-analysis
 description: Learn how Batfish can help you with Firewall and ACL audits and analysis.
 keywords: firewall analysis, firewall change management, acl analysis, acl change management, firewall workflow, acl workflow, firewall automation, acl automation
 ---
@@ -31,7 +31,7 @@ This article will show you how to use each of these capabilities to audit/analyz
       So let’s get started. This article assumes some familiarity with Batfish.
       Please view the <a href="https://www.github.com/batfish/batfish">GitHub</a> page
       and <a href="https://pybatfish.readthedocs.io">docs</a> page for an overview.
-<h3>Analyzing the Firewall/ACL behavior for a specific flow</h3>
+<h2>Analyzing the Firewall/ACL behavior for a specific flow</h2>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i>
       <a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
@@ -101,7 +101,7 @@ With a simple query, you can get a definitive answer about the behavior of a fil
 
 But if you wanted to analyze the behavior of a Firewall or ACL for a large set of flows, you would use
       <span style="font-family: monospace, monospace; font-weight: 600;"><b>searchFilters</b></span> instead.
-<h3>Analyzing the Firewall/ACL behavior for a large set of flows</h3>
+<h2>Analyzing the Firewall/ACL behavior for a large set of flows</h2>
 <i>Note: A detailed Jupyter notebook covering this example can be found
 </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
 <p><br></p>
@@ -172,7 +172,7 @@ Both <span style="font-family: monospace, monospace; font-weight: 600;"><b>testF
       the behavior of an ACL or firewall rule with regards to a given flow or sets of flows. But Batfish provides
       another interesting capability to analyze a filter -
       <span style="font-family: monospace, monospace; font-weight: 600;"><b>filterLineReachability</b></span>.
-<h3>Identifying unreachable filter lines</h3>
+<h2>Identifying unreachable filter lines</h2>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/analyzing-acls-and-firewall-rules.html"><i>here</i></a>
 <p><br></p>
 
@@ -242,7 +242,7 @@ The <span>Reason</span> column shows that the line is unreachable because it has
       column.
 
 <p><br></p>
-<h3>Comparing the behavior of Firewall policies or ACLs</h3>
+<h2>Comparing the behavior of Firewall policies or ACLs</h2>
 <i>Note: A detailed Jupyter notebook covering this example can be found </i><a href="https://pybatfish.readthedocs.io/en/latest/notebooks/linked/safely-refactoring-acls-and-firewall-rules.html"><i>here</i></a>
       <p><br></p>
 
@@ -334,7 +334,7 @@ As we can see from the output above, our compressed ACL is not the same as the o
 To see these queries in action on example networks, please check out the Jupyter notebooks
       <a href="https://pybatfish.readthedocs.io/en/latest/public_notebooks.html#acls-and-firewalls">here</a>.
       Also, don’t forget to check out our <a href="https://www.youtube.com/playlist?list=PLUXUN_5CNTWJeMUqbUFcdi2qPnm_2mit3">video tutorials</a>.
-<h3>Community created resources</h3>
+<h2>Community created resources</h2>
 A number of members of the Batfish open-source community have created content related to ACL and firewall policy
       changes. You can find a few of them here:
       <p><br></p>
@@ -344,7 +344,7 @@ A number of members of the Batfish open-source community have created content re
  	<li style="font-weight: 400;" aria-level="1"><a href="https://www.packetflow.co.uk/a-hands-on-guide-to-multi-tiered-firewall-changes-with-ansible-and-batfish-part-3/">A Hands-on Guide to Multi-Tiered Firewall Changes with Ansible and Batfish (Part 3), by Packet Coders</a></li>
 </ul>
 
-<h3>Summary</h3>
+<h2>Summary</h2>
 Analyzing firewall poliices and ACLs is a pretty complex task. Batfish has a number of core
       capabilities that greatly simplifies this, as shown above.
       <a href="https://www.intentionet.com/product/batfish-enterprise/">Batfish Enterprise</a>
@@ -370,11 +370,11 @@ If you want to learn more about Batfish or get involved in the open-source commu
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.var | escape }}
         </a>
-        </h3>
+        </h2>
         {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
       </li>
       {%- endfor -%}
