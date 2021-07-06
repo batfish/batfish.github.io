@@ -11,6 +11,10 @@
   <meta name="keywords" content=" {{page.keywords}}">
   {% endif %}
 
+   {% if page.permalink %}
+   <link href="https://www.batfish.org{{ page.permalink }}" rel=“canonical”/>
+   {% endif %}
+
   {%- if page.title -%}
   <title>{{page.title}}</title>
   {% else %}
