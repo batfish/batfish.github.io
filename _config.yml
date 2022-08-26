@@ -37,6 +37,7 @@ markdown: kramdown
 safe: true
 
 plugins:
+  - some-nonexistent-plugin
   - jekyll-feed
 
 include:
