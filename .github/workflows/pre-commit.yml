@@ -1,0 +1,11 @@
+name: Pre-commit
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/jekyll-build-pages@v1.0.5
