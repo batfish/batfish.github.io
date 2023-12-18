@@ -13,7 +13,7 @@ code {
   word-break: break-word;
 
   // Streamline the style when inside anchors to avoid broken underline and more
-  a > & {
+  a>& {
     color: inherit;
   }
 }
@@ -40,6 +40,7 @@ pre {
   display: block;
   font-size: $code-font-size;
   color: $pre-color;
+  background-color: #f5f5f5;
 
   // Account for some code outputs that place code tags in pre tags
   code {

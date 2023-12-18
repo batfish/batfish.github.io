@@ -25,7 +25,9 @@ title: hello
         </p>
         <p>
           Batfish was originally developed by researchers at Microsoft Research, UCLA, and USC.
-          Many others have since contributed to it. 
+          It was later enhanced and maintained by Intentionet. Since the Intentionet team joined AWS, it has
+          been an AWS-managed open source project under the same license (Apache 2.0). Many others
+          have contributed to the project.
         </p>
       </div>
     </div>
@@ -56,27 +58,5 @@ title: hello
     </div>
 
   </div>
-    <!-- End Content-->
-
-    {%- if site.post.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.post -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.var | escape }}
-        </a>
-        </h3>
-        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe
-      <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
-    </p>
-    {%- endif -%}
-  </div>
+</div>
+<!-- End Content-->
