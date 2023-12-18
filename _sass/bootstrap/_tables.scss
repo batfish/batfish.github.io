@@ -3,6 +3,7 @@
 //
 
 .table {
+  border: 1px solid white;
   width: 100%;
   max-width: 100%;
   margin-bottom: $spacer;
@@ -20,7 +21,7 @@
     border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
-  tbody + tbody {
+  tbody+tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
   }
 
@@ -35,6 +36,7 @@
 //
 
 .table-sm {
+
   th,
   td {
     padding: $table-cell-padding-sm;
@@ -55,6 +57,7 @@
   }
 
   thead {
+
     th,
     td {
       border-bottom-width: (2 * $table-border-width);
@@ -63,10 +66,11 @@
 }
 
 .table-borderless {
+
   th,
   td,
   thead th,
-  tbody + tbody {
+  tbody+tbody {
     border: 0;
   }
 }
@@ -179,7 +183,7 @@
         -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
 
         // Prevent double border on horizontal scroll due to use of `display: block;`
-        > .table-bordered {
+        >.table-bordered {
           border: 0;
         }
       }
