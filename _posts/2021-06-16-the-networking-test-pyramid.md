@@ -71,7 +71,7 @@ Pybatfish implementations of all these tests is [here](https://github.com/intent
 
 ![](/assets/images/Screen-Shot-2021-06-06-at-8.02.00-PM.png){:width="800px"}
 
-Line 96 uses Batfish’s [bgpProcessConfiguration](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#BGP-Process-Configuration) question to extract information about all BGP processes on leaf nodes. This information is returned as a Pandas DataFrame—Pandas is a popular data analysis framework and a DataFrame is a tabular representation of the data—in which rows correspond to BGP processes and columns to different settings of the process.  Line 97 extracts BGP processes for which **Multipath\_EBGP** is False. Finally, Line 98 checks that no such processes were found.
+Line 96 uses Batfish’s [bgpProcessConfiguration](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#BGP-Process-Configuration) question to extract information about all BGP processes on leaf nodes. This information is returned as a Pandas DataFrame—Pandas is a popular data analysis framework and a DataFrame is a tabular representation of the data—in which rows correspond to BGP processes and columns to different settings of the process.  Line 97 extracts BGP processes for which **Multipath_EBGP** is False. Finally, Line 98 checks that no such processes were found.
 
 We see that tests take only a few lines of Python, and nowhere did we need to account for vendor-specific syntax or defaults. This simplicity stems from the structured, vendor-neutral data model that Batfish builds from device configs.
 
