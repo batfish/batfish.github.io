@@ -14,7 +14,7 @@ This category of bugs is as old as typewriters. Some entertaining examples off t
 
 - Incorrectly assigned address (a public IP!) to a router interface: _100.x.y.z_ instead of _10.x.y.z_
 - Mistyped prefix list name: **prefix-list PFX-LIST 10.1O0.10.128/25** (the letter ‘O’ instead of the number ‘0’ in the prefix)
-- Mistyped access-list for a SNMP community: _SNMP-ACCESS-LIST_ instead of _SNMP\_ACCESS\_LIST_ (‘-’ vs ‘\_’)
+- Mistyped access-list for a SNMP community: _SNMP-ACCESS-LIST_ instead of _SNMP_ACCESS_LIST_ (‘-’ vs ‘\_’)
 - Mistyped route-map name: _BLEAD-TRAFFIC_ instead of _BLEED-TRAFFIC_
 - Mistyped keyword: **no bgp defaults ipv4-unicast** instead of **no bgp default ipv4-unicast**
 - Wrong BGP neighbor IP: **neighbor 169.254.127.3 activate** instead of **neighbor 169.54.127.1 activate**

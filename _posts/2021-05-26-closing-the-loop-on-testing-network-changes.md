@@ -75,7 +75,7 @@ The **.answer().frame()** part transforms the information returned by the questi
 
 Suzieq’s Python interface is defined [here](https://suzieq.readthedocs.io/en/latest/developer/pythonAPI/). Suzieq organizes information in tables. For example, you can get the BGP table via:
 
-bgp\_tbl = get\_sqobject(‘bgp’)
+bgp_tbl = get_sqobject('bgp')
 
 Every table contains a set of functions that return a Pandas DataFrame. Two common functions are get() and aver() (because assert is a Python keyword, Suzieq uses aver, an old synonym). Because Suzieq analyzes the operational state of the network, you must first gather this state by running the Suzieq poller for the devices of interest. [These instructions](https://suzieq.readthedocs.io/en/latest/poller/) will help you start the poller on your network.
 
@@ -91,7 +91,7 @@ You can write Python programs that use the Batfish API to automate your pre-appr
 
 ![](/assets/images/fig-2.png){:width="800px"}
 
-This program initializes the network snapshot (with planned config modifications) in **init\_bf()** and defines two tests. **test\_bgp\_status()** uses the **bgpSessionStatus** question to validate that all BGP sessions will be established after the change. **test\_all\_svi\_prefixes\_are\_on\_all\_leafs()** verifies that the SVI prefixes will be reachable on all nodes. It uses the **interfaceProperties** question to retrieve all SVI prefixes and verifies that each is reachable on all nodes. You retrieve the list of nodes using the **nodeProperties** question
+This program initializes the network snapshot (with planned config modifications) in **init_bf()** and defines two tests. **test_bgp_status()** uses the **bgpSessionStatus** question to validate that all BGP sessions will be established after the change. **test_all_svi_prefixes_are_on_all_leafs()** verifies that the SVI prefixes will be reachable on all nodes. It uses the **interfaceProperties** question to retrieve all SVI prefixes and verifies that each is reachable on all nodes. You retrieve the list of nodes using the **nodeProperties** question
 
 **TIP:** The first time you use Batfish on your network, take a look at the output of **bfq.initIssues().answer().frame()** to confirm that Batfish understands it well. The output of this command is also a good thing to check when a test fails because problems such as syntax errors are also reported in it.
 
@@ -99,11 +99,11 @@ Hopefully, you now see the power of automated testing with tools like Batfish an
 
 You can even use pytest, the Python testing framework, to run the tests and make full use of an advanced testing framework. If any of the assertions fail, pytest will report them, and you can investigate the error, fix the config change, and rerun the test suite.
 
-Good testing tools also make it easy to debug test failures. How you do that depends on the test. For example, if we had assigned an incorrect interface IP address on the new leaf, **test\_bgp\_status()** would fail because not all sessions would be in **ESTABLISHED** state. You may then look at the output of **bgpSessionStatus** question, which for this example will show that the sessions on leaf03 and spine01 are incompatible. To understand why, you may then run the **bgpSessionCompatibility** question as follows.
+Good testing tools also make it easy to debug test failures. How you do that depends on the test. For example, if we had assigned an incorrect interface IP address on the new leaf, **test_bgp_status()** would fail because not all sessions would be in **ESTABLISHED** state. You may then look at the output of **bgpSessionStatus** question, which for this example will show that the sessions on leaf03 and spine01 are incompatible. To understand why, you may then run the **bgpSessionCompatibility** question as follows.
 
 ![](/assets/images/fig-3.png){:width="1000px"}
 
-This output tells you that you likely have the wrong IP address on leaf03 (**NO\_LOCAL\_IP**), and that spine01 expects to establish a session to 10.127.0.5 but no such IP is present in the snapshot (**UNKNOWN\_REMOTE**). If you fix the configs, and rerun the tests,  they should all pass now, and you can be confident that your change is ready to be scheduled for deployment.
+This output tells you that you likely have the wrong IP address on leaf03 (**NO_LOCAL_IP**), and that spine01 expects to establish a session to 10.127.0.5 but no such IP is present in the snapshot (**UNKNOWN_REMOTE**). If you fix the configs, and rerun the tests,  they should all pass now, and you can be confident that your change is ready to be scheduled for deployment.
 
 #### Deployment pre-testing
 
@@ -117,9 +117,9 @@ As in the case of Batfish, your automated test suite will be a Python program. T
 
 ![](/assets/images/fig-4.png){:width="800px"}
 
-Each test uses **get\_sqobject()** to get the relevant tables, then uses the get function to retrieve the rows and columns of interest, and finally checks that a specific column has an expected value on all nodes. The **.all()** checks that the field has that value on all rows of the retrieved dataset. Thus, the test to check that all spines are alive uses the “device” table to retrieve information about the spines, and checks that the “status” column has the value “alive” in all rows. **test\_spine\_port\_is\_free()** assumes that the spine ports have been cabled up and uses the lack of an LLDP peer to confirm that the port connecting to the new leaf is unused
+Each test uses **get_sqobject()** to get the relevant tables, then uses the get function to retrieve the rows and columns of interest, and finally checks that a specific column has an expected value on all nodes. The **.all()** checks that the field has that value on all rows of the retrieved dataset. Thus, the test to check that all spines are alive uses the “device” table to retrieve information about the spines, and checks that the “status” column has the value “alive” in all rows. **test_spine_port_is_free()** assumes that the spine ports have been cabled up and uses the lack of an LLDP peer to confirm that the port connecting to the new leaf is unused
 
-Like Batfish, this code is vendor-agnostic and works for any Suzieq-supported vendor. If you add additional leafs, you just need to change the values of SPINE\_IFNAME and NEW\_SVI\_PREFIX. This is the power of writing tests using frameworks like Suzieq.
+Like Batfish, this code is vendor-agnostic and works for any Suzieq-supported vendor. If you add additional leafs, you just need to change the values of SPINE_IFNAME and NEW_SVI_PREFIX. This is the power of writing tests using frameworks like Suzieq.
 
 If all deployment pre-tests pass, you can confidently deploy the change. But before you declare victory, you still need to test that the deployment went as planned. So, let's do that next.
 

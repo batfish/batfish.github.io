@@ -51,22 +51,22 @@ The _testRoutePolicies_ question enables you to test the behavior of a route pol
 
 For example, to test the "_deny all incoming routes with private addresses_" intent you would run _testRoutePolicies_ on routes with prefixes in the private address space and check that all of them are denied.
 
-Let’s take a look at an example route-policy from\_customer and evaluate its behavior with testRoutePolicies.
+Let’s take a look at an example route-policy from_customer and evaluate its behavior with testRoutePolicies.
 
 ```
-route-map from\_customer deny 100
+route-map from_customer deny 100
  match ip address prefix-list private-ips
 !
-route-map from\_customer permit 200
+route-map from_customer permit 200
  match ip address prefix-list from44
  match as-path origin44
  set community 20:30
  set local-preference 300
 !
-route-map from\_customer deny 300
+route-map from_customer deny 300
  match ip address prefix-list from44
 !
-route-map from\_customer permit 400
+route-map from_customer permit 400
  set community 20:30
  set local-preference 300
 
@@ -76,19 +76,19 @@ ip prefix-list private-ips seq 15 permit 192.168.0.0/16
 !
 ip prefix-list from44 seq 10 permit 5.5.5.0/24 ge 24
 !
-ip as-path access-list origin44 permit \_44$
+ip as-path access-list origin44 permit _44$
 ```
 
 ```
 inRoute1 = BgpRoute(network="10.0.0.0/24", originatorIp="4.4.4.4", originType="egp",protocol="bgp")
-result = bfq.testRoutePolicies(policies="from\_customer",direction="in",
- inputRoutes=\[inRoute1\]).answer().frame()
+result = bfq.testRoutePolicies(policies="from_customer",direction="in",
+ inputRoutes=[inRoute1]).answer().frame()
 print(result)
 
- Node     Policy\_Name    Input\_Route                                                                                                                                                             Action  Output\_Route Difference
+ Node     Policy_Name    Input_Route                                                                                                                                                             Action  Output_Route Difference
 
-0  border1  from\_customer  BgpRoute(network='10.0.0.0/24', originatorIp='4.4.4.4', originType='egp', protocol='bgp', asPath=\[\], communities=\[\], localPreference=0, metric=0, sourceProtocol=None)  DENY    None         None
-1  border2  from\_customer  BgpRoute(network='10.0.0.0/24', originatorIp='4.4.4.4', originType='egp', protocol='bgp', asPath=\[\], communities=\[\], localPreference=0, metric=0, sourceProtocol=None)  DENY    None         None
+0  border1  from_customer  BgpRoute(network='10.0.0.0/24', originatorIp='4.4.4.4', originType='egp', protocol='bgp', asPath=[], communities=[], localPreference=0, metric=0, sourceProtocol=None)  DENY    None         None
+1  border2  from_customer  BgpRoute(network='10.0.0.0/24', originatorIp='4.4.4.4', originType='egp', protocol='bgp', asPath=[], communities=[], localPreference=0, metric=0, sourceProtocol=None)  DENY    None         None
 ```
 
 As you can see, Batfish correctly determines that the 10.0.0.0/24 route advertisement will get denied by the policy.
@@ -105,28 +105,28 @@ For example, to verify the "_deny all incoming routes with private addresse_s" i
 
 ```
 \# Define the space of private addresses and route announcements
-privateIps = \["10.0.0.0/8:8-32", "172.16.0.0/28:28-32", "192.168.0.0/16:16-32"\]
+privateIps = ["10.0.0.0/8:8-32", "172.16.0.0/28:28-32", "192.168.0.0/16:16-32"]
 inRoutes1 = BgpRouteConstraints(prefix=privateIps)
 
 \# Verify that no such announcement is permitted by our policy
-result = bfq.searchRoutePolicies(policies="from\_customer",
+result = bfq.searchRoutePolicies(policies="from_customer",
  inputConstraints=inRoutes1,
  action="permit").answer().frame()
 
-print(result.loc\[0\])
+print(result.loc[0])
 
 Node         border2
-Policy\_Name  from\_customer
-Input\_Route  BgpRoute(network='192.168.0.0/32', originatorIp='0.0.0.0', originType='igp', protocol='bgp', asPath=\[\], communities=\[\], localPreference=0, metric=0, sourceProtocol=None)
+Policy_Name  from_customer
+Input_Route  BgpRoute(network='192.168.0.0/32', originatorIp='0.0.0.0', originType='igp', protocol='bgp', asPath=[], communities=[], localPreference=0, metric=0, sourceProtocol=None)
 Action       PERMIT
-Output\_Route BgpRoute(network='192.168.0.0/32', originatorIp='0.0.0.0', originType='igp', protocol='bgp', asPath=\[\], communities=\['20:30'\], localPreference=300, metric=0, sourceProtocol=None)
-Difference   BgpRouteDiffs(diffs=\[BgpRouteDiff(fieldName='communities', oldValue='\[\]', newValue='\[20:30\]'), BgpRouteDiff(fieldName='localPreference', oldValue='0', newValue='300')\])
+Output_Route BgpRoute(network='192.168.0.0/32', originatorIp='0.0.0.0', originType='igp', protocol='bgp', asPath=[], communities=['20:30'], localPreference=300, metric=0, sourceProtocol=None)
+Difference   BgpRouteDiffs(diffs=[BgpRouteDiff(fieldName='communities', oldValue='[]', newValue='[20:30]'), BgpRouteDiff(fieldName='localPreference', oldValue='0', newValue='300')])
 ```
 
-Batfish has found a route advertisement 192.168.0.0/32 that will be allowed by the routing policy, despite our intent being for it to be denied. There may be multiple route advertisements that violate our intent, Batfish picks one as an example to highlight the error. If you look closely at the routing policy, the route-map from\_customer is going to deny routes that match the prefix-list private-ips. The last entry in that prefix-list is incorrect. It is missing the "ge 16" option. As defined, that entry only matches the exact route 192.168.0.0/16, which means any other prefix from that 192.168.0.0/16 space will not be matched and therefore not be denied by the route-map.
+Batfish has found a route advertisement 192.168.0.0/32 that will be allowed by the routing policy, despite our intent being for it to be denied. There may be multiple route advertisements that violate our intent, Batfish picks one as an example to highlight the error. If you look closely at the routing policy, the route-map from_customer is going to deny routes that match the prefix-list private-ips. The last entry in that prefix-list is incorrect. It is missing the "ge 16" option. As defined, that entry only matches the exact route 192.168.0.0/16, which means any other prefix from that 192.168.0.0/16 space will not be matched and therefore not be denied by the route-map.
 
 ```
-route-map from\_customer deny 100  match ip address prefix-list private-ips
+route-map from_customer deny 100  match ip address prefix-list private-ips
 
 ip prefix-list private-ips seq 5 permit 10.0.0.0/8 ge 8 ip prefix-list private-ips seq 10 permit 172.16.0.0/28 ge 28
 ip prefix-list private-ips seq 15 permit 192.168.0.0/16
