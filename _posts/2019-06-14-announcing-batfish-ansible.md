@@ -31,7 +31,7 @@ To extract “facts” (config settings) from configuration files, one can simpl
  - name: Setup connection to Batfish service
    bf_session:
     host: localhost
-    name: local\_batfish
+    name: local_batfish
 
  - name: Initialize the example network
   bf_init_snapshot:
@@ -108,7 +108,7 @@ Those advantages aside, the real power of Batfish is in being able to _validate_
 
 ## Use case II: Fact validation
 
-Validating that facts in device configs match what is expected is easy with the  **_bf\_validate\_facts_** module.
+Validating that facts in device configs match what is expected is easy with the  **_bf_validate_facts_** module.
 
 ```
 - name: Validate facts gathered by Batfish
@@ -150,7 +150,7 @@ Beyond parsing configs, Batfish builds a full model of device configurations and
           name: Confirm that there are NO undefined references on any network device
 ```
 
-The task above includes four example assertions from our assertion library. The _**bf\_assert**_ module includes more, and based on community feedback, we’ll continue to make more of Batfish’s capabilities available this manner.
+The task above includes four example assertions from our assertion library. The _**bf_assert**_ module includes more, and based on community feedback, we’ll continue to make more of Batfish’s capabilities available this manner.
 
 Today’s release makes network validating broadly accessible, furthering our commitment to helping network engineers build secure and reliable networks.
 

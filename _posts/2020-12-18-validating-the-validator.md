@@ -25,16 +25,16 @@ To appreciate the need to go beyond RFCs and docs, consider the following FRR co
 2 ip community-list 14 permit 65001:4
 3 ip community-list 24 permit 65002:4
 4 !
-5 route-map com\_update permit 10
+5 route-map com_update permit 10
 6   match community 14
 7   on-match goto 20
 8   set community 65002:4 additive
 9 !
-10 route-map com\_update permit 20
+10 route-map com_update permit 20
 11   match community 65002:4
 12   set community 65002:5 additive
 13 !
-14 route-map com\_update permit 30
+14 route-map com_update permit 30
 15   match community 24
 16   set community 65002:6 additive
 17 !

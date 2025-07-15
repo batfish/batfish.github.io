@@ -51,9 +51,9 @@ To detect the error before deploying the buggy configuration to the network, the
 ```
     batfish> get bgpAdvertisements differential=true
 
-    + EBGP\_SENT dstIp:192.168.51.2 **srcNode:as65000\_R1** srcIp:192.168.51.1 **net:10.1.1.0/24** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002, 4259840010\] orIp:192.168.51.1
+    + EBGP_SENT dstIp:192.168.51.2 **srcNode:as65000_R1** srcIp:192.168.51.1 **net:10.1.1.0/24** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002, 4259840010\] orIp:192.168.51.1
 
-    + EBGP\_SENT dstIp:192.168.51.2 **srcNode:as65000\_R1** srcIp:192.168.51.1 **net:10.1.2.0/24** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002, 4259840010\] orIp:192.168.51.1
+    + EBGP_SENT dstIp:192.168.51.2 **srcNode:as65000_R1** srcIp:192.168.51.1 **net:10.1.2.0/24** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002, 4259840010\] orIp:192.168.51.1
 ```
 
 The output shows that **R1** announces two /24 routes only in the second configuration (indicated by ‘+’), a red flag if the change was never intended to leak such routes. Had it shown no routes, or only routes expected due to the change, the configuration can be deemed safe to deploy (assuming other correctness checks pass too).
@@ -63,7 +63,7 @@ The output shows that **R1** announces two /24 routes only in the second config
 ```
     batfish> get bgpAdvertisements prefixSpace=\["10.1.1.0/24:0-23"\]
 
-      EBGP\_SENT dstIp:192.168.51.2 **srcNode:as65000\_R1** srcIp:192.168.51.1 **net:10.1.0.0/16** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002\] orIp:192.168.51.1
+      EBGP_SENT dstIp:192.168.51.2 **srcNode:as65000_R1** srcIp:192.168.51.1 **net:10.1.0.0/16** nhip:192.168.51.1 origin:INCOMPLETE asPath:\[65000, 65001\] communities:\[4259840002\] orIp:192.168.51.1
 ```
 
 The output shows that there is indeed a less specific route (10.1.0.0/16) covering the more specifics.
