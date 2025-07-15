@@ -39,10 +39,10 @@ Let us illustrate how they work via an example: Allowing access to a new service
 
 Your change generation script will use the request parameters to generate the configuration commands for one or more devices. For example, it may generate the following change to the Palo Alto firewall at the edge of the network:
 
-set service S\_TCP\_80 protocol tcp port 80
-set service-group SG\_NEWSERVICE members S\_TCP\_80
-set service S\_TCP\_8080 protocol tcp port 8080
-set service-group SG\_NEWSERVICE members S\_TCP\_8080
+set service S_TCP_80 protocol tcp port 80
+set service-group SG_NEWSERVICE members S_TCP_80
+set service S_TCP_8080 protocol tcp port 8080
+set service-group SG_NEWSERVICE members S_TCP_8080
 
 set address tkt123-dst1 ip-netmask 10.100.40.0/24
 set address-group tkt123-dst static tkt123-dst1
@@ -54,7 +54,7 @@ set rulebase security rules tkt123 to INSIDE
 set rulebase security rules tkt123 source any
 set rulebase security rules tkt123 destination tkt123-dst
 set rulebase security rules tkt123 application any
-set rulebase security rules tkt123 service SG\_NEWSERVICE
+set rulebase security rules tkt123 service SG_NEWSERVICE
 set rulebase security rules tkt123 action allow
 
 This change may be generated using Jinja2 templates, an internal source-of-truth like Netbox, or the Palo Alto Ansible module. Regardless of how it is generated, you can submit it to Batfish Enterprise and analyze it using three criteria.
